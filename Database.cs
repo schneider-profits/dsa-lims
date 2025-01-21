@@ -350,6 +350,18 @@ namespace DSA_lims
             return Guid.Parse(o.ToString());
         }
 
+        public static string GetReportISODescFromLaboratoryId(SqlConnection conn, SqlTransaction trans, Guid labId)
+        {
+            SqlCommand cmd = new SqlCommand("select iso_report_description from laboratory where id = @lab_id", conn, trans);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@lab_id", labId);
+            object o = cmd.ExecuteScalar();
+            if (!IsValidField(o))
+                return String.Empty;
+
+            return o.ToString();
+        }
+
         public static int GetNextPreparationNumber(SqlConnection conn, SqlTransaction trans, Guid sampleId)
         {
             SqlCommand cmd = new SqlCommand("select max(number) from preparation where sample_id = @sample_id", conn, trans);

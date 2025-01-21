@@ -54,6 +54,8 @@
             this.linkAccreditedLogo = new System.Windows.Forms.LinkLabel();
             this.lblLaboratoryLogoSize = new System.Windows.Forms.Label();
             this.lblAccreditedLogoSize = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tbISODesc = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLaboratoryLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAccreditedLogo)).BeginInit();
@@ -66,17 +68,19 @@
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnOk);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 369);
+            this.panel1.Location = new System.Drawing.Point(0, 455);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(693, 28);
+            this.panel1.Size = new System.Drawing.Size(924, 34);
             this.panel1.TabIndex = 0;
             // 
             // btnCancel
             // 
             this.btnCancel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnCancel.Location = new System.Drawing.Point(493, 0);
+            this.btnCancel.Location = new System.Drawing.Point(658, 0);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 28);
+            this.btnCancel.Size = new System.Drawing.Size(133, 34);
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -85,9 +89,10 @@
             // btnOk
             // 
             this.btnOk.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnOk.Location = new System.Drawing.Point(593, 0);
+            this.btnOk.Location = new System.Drawing.Point(791, 0);
+            this.btnOk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(100, 28);
+            this.btnOk.Size = new System.Drawing.Size(133, 34);
             this.btnOk.TabIndex = 9;
             this.btnOk.Text = "Ok";
             this.btnOk.UseVisualStyleBackColor = true;
@@ -96,104 +101,116 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 29);
+            this.label1.Location = new System.Drawing.Point(32, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name";
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(114, 26);
+            this.tbName.Location = new System.Drawing.Point(152, 32);
+            this.tbName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbName.MaxLength = 256;
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(260, 20);
+            this.tbName.Size = new System.Drawing.Size(345, 22);
             this.tbName.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 55);
+            this.label2.Location = new System.Drawing.Point(32, 68);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.Size = new System.Drawing.Size(40, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Prefix";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 81);
+            this.label3.Location = new System.Drawing.Point(32, 100);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(58, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Address";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 107);
+            this.label4.Location = new System.Drawing.Point(33, 132);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(41, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Email";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 133);
+            this.label5.Location = new System.Drawing.Point(33, 164);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 13);
+            this.label5.Size = new System.Drawing.Size(94, 16);
             this.label5.TabIndex = 6;
             this.label5.Text = "Phone number";
             // 
             // tbPrefix
             // 
-            this.tbPrefix.Location = new System.Drawing.Point(114, 52);
+            this.tbPrefix.Location = new System.Drawing.Point(152, 64);
+            this.tbPrefix.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPrefix.MaxLength = 4;
             this.tbPrefix.Name = "tbPrefix";
-            this.tbPrefix.Size = new System.Drawing.Size(260, 20);
+            this.tbPrefix.Size = new System.Drawing.Size(345, 22);
             this.tbPrefix.TabIndex = 1;
             // 
             // tbAddress
             // 
-            this.tbAddress.Location = new System.Drawing.Point(114, 78);
+            this.tbAddress.Location = new System.Drawing.Point(152, 96);
+            this.tbAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbAddress.MaxLength = 256;
             this.tbAddress.Name = "tbAddress";
-            this.tbAddress.Size = new System.Drawing.Size(260, 20);
+            this.tbAddress.Size = new System.Drawing.Size(345, 22);
             this.tbAddress.TabIndex = 2;
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(114, 104);
+            this.tbEmail.Location = new System.Drawing.Point(152, 128);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbEmail.MaxLength = 80;
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(260, 20);
+            this.tbEmail.Size = new System.Drawing.Size(345, 22);
             this.tbEmail.TabIndex = 3;
             // 
             // tbPhone
             // 
-            this.tbPhone.Location = new System.Drawing.Point(114, 130);
+            this.tbPhone.Location = new System.Drawing.Point(152, 160);
+            this.tbPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPhone.MaxLength = 80;
             this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(260, 20);
+            this.tbPhone.Size = new System.Drawing.Size(345, 22);
             this.tbPhone.TabIndex = 4;
             // 
             // tbComment
             // 
-            this.tbComment.Location = new System.Drawing.Point(114, 184);
+            this.tbComment.Location = new System.Drawing.Point(152, 226);
+            this.tbComment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbComment.MaxLength = 1000;
             this.tbComment.Multiline = true;
             this.tbComment.Name = "tbComment";
             this.tbComment.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbComment.Size = new System.Drawing.Size(260, 147);
+            this.tbComment.Size = new System.Drawing.Size(345, 180);
             this.tbComment.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(25, 187);
+            this.label6.Location = new System.Drawing.Point(33, 230);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 13);
+            this.label6.Size = new System.Drawing.Size(64, 16);
             this.label6.TabIndex = 13;
             this.label6.Text = "Comment";
             // 
@@ -202,25 +219,28 @@
             this.cboxInstanceStatus.DisplayMember = "Name";
             this.cboxInstanceStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxInstanceStatus.FormattingEnabled = true;
-            this.cboxInstanceStatus.Location = new System.Drawing.Point(114, 157);
+            this.cboxInstanceStatus.Location = new System.Drawing.Point(152, 193);
+            this.cboxInstanceStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboxInstanceStatus.Name = "cboxInstanceStatus";
-            this.cboxInstanceStatus.Size = new System.Drawing.Size(260, 21);
+            this.cboxInstanceStatus.Size = new System.Drawing.Size(345, 24);
             this.cboxInstanceStatus.TabIndex = 5;
             this.cboxInstanceStatus.ValueMember = "Id";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(25, 160);
+            this.label7.Location = new System.Drawing.Point(33, 197);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 13);
+            this.label7.Size = new System.Drawing.Size(44, 16);
             this.label7.TabIndex = 15;
             this.label7.Text = "Status";
             // 
             // picLaboratoryLogo
             // 
             this.picLaboratoryLogo.BackColor = System.Drawing.SystemColors.Info;
-            this.picLaboratoryLogo.Location = new System.Drawing.Point(3, 3);
+            this.picLaboratoryLogo.Location = new System.Drawing.Point(4, 4);
+            this.picLaboratoryLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picLaboratoryLogo.Name = "picLaboratoryLogo";
             this.picLaboratoryLogo.Size = new System.Drawing.Size(200, 98);
             this.picLaboratoryLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -231,7 +251,8 @@
             // picAccreditedLogo
             // 
             this.picAccreditedLogo.BackColor = System.Drawing.SystemColors.Info;
-            this.picAccreditedLogo.Location = new System.Drawing.Point(3, 3);
+            this.picAccreditedLogo.Location = new System.Drawing.Point(4, 4);
+            this.picAccreditedLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picAccreditedLogo.Name = "picAccreditedLogo";
             this.picAccreditedLogo.Size = new System.Drawing.Size(200, 99);
             this.picAccreditedLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -243,26 +264,29 @@
             // 
             this.panelLaboratoryLogo.AutoScroll = true;
             this.panelLaboratoryLogo.Controls.Add(this.picLaboratoryLogo);
-            this.panelLaboratoryLogo.Location = new System.Drawing.Point(405, 39);
+            this.panelLaboratoryLogo.Location = new System.Drawing.Point(540, 48);
+            this.panelLaboratoryLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelLaboratoryLogo.Name = "panelLaboratoryLogo";
-            this.panelLaboratoryLogo.Size = new System.Drawing.Size(256, 128);
+            this.panelLaboratoryLogo.Size = new System.Drawing.Size(341, 158);
             this.panelLaboratoryLogo.TabIndex = 22;
             // 
             // panelAccreditedLogo
             // 
             this.panelAccreditedLogo.AutoScroll = true;
             this.panelAccreditedLogo.Controls.Add(this.picAccreditedLogo);
-            this.panelAccreditedLogo.Location = new System.Drawing.Point(405, 201);
+            this.panelAccreditedLogo.Location = new System.Drawing.Point(540, 247);
+            this.panelAccreditedLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelAccreditedLogo.Name = "panelAccreditedLogo";
-            this.panelAccreditedLogo.Size = new System.Drawing.Size(256, 128);
+            this.panelAccreditedLogo.Size = new System.Drawing.Size(341, 158);
             this.panelAccreditedLogo.TabIndex = 23;
             // 
             // linkLaboratoryLogo
             // 
             this.linkLaboratoryLogo.AutoSize = true;
-            this.linkLaboratoryLogo.Location = new System.Drawing.Point(405, 23);
+            this.linkLaboratoryLogo.Location = new System.Drawing.Point(540, 28);
+            this.linkLaboratoryLogo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLaboratoryLogo.Name = "linkLaboratoryLogo";
-            this.linkLaboratoryLogo.Size = new System.Drawing.Size(80, 13);
+            this.linkLaboratoryLogo.Size = new System.Drawing.Size(102, 16);
             this.linkLaboratoryLogo.TabIndex = 7;
             this.linkLaboratoryLogo.TabStop = true;
             this.linkLaboratoryLogo.Text = "Laboratory logo";
@@ -271,9 +295,10 @@
             // linkAccreditedLogo
             // 
             this.linkAccreditedLogo.AutoSize = true;
-            this.linkAccreditedLogo.Location = new System.Drawing.Point(405, 184);
+            this.linkAccreditedLogo.Location = new System.Drawing.Point(540, 226);
+            this.linkAccreditedLogo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkAccreditedLogo.Name = "linkAccreditedLogo";
-            this.linkAccreditedLogo.Size = new System.Drawing.Size(81, 13);
+            this.linkAccreditedLogo.Size = new System.Drawing.Size(102, 16);
             this.linkAccreditedLogo.TabIndex = 8;
             this.linkAccreditedLogo.TabStop = true;
             this.linkAccreditedLogo.Text = "Accredited logo";
@@ -282,26 +307,47 @@
             // lblLaboratoryLogoSize
             // 
             this.lblLaboratoryLogoSize.AutoSize = true;
-            this.lblLaboratoryLogoSize.Location = new System.Drawing.Point(528, 23);
+            this.lblLaboratoryLogoSize.Location = new System.Drawing.Point(704, 28);
+            this.lblLaboratoryLogoSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLaboratoryLogoSize.Name = "lblLaboratoryLogoSize";
-            this.lblLaboratoryLogoSize.Size = new System.Drawing.Size(123, 13);
+            this.lblLaboratoryLogoSize.Size = new System.Drawing.Size(157, 16);
             this.lblLaboratoryLogoSize.TabIndex = 26;
             this.lblLaboratoryLogoSize.Text = "<lblLaboratoryLogoSize>";
             // 
             // lblAccreditedLogoSize
             // 
             this.lblAccreditedLogoSize.AutoSize = true;
-            this.lblAccreditedLogoSize.Location = new System.Drawing.Point(528, 184);
+            this.lblAccreditedLogoSize.Location = new System.Drawing.Point(704, 226);
+            this.lblAccreditedLogoSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAccreditedLogoSize.Name = "lblAccreditedLogoSize";
-            this.lblAccreditedLogoSize.Size = new System.Drawing.Size(124, 13);
+            this.lblAccreditedLogoSize.Size = new System.Drawing.Size(157, 16);
             this.lblAccreditedLogoSize.TabIndex = 27;
             this.lblAccreditedLogoSize.Text = "<lblAccreditedLogoSize>";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(33, 417);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 16);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Report ISO Desc.";
+            // 
+            // tbISODesc
+            // 
+            this.tbISODesc.Location = new System.Drawing.Point(152, 414);
+            this.tbISODesc.MaxLength = 1024;
+            this.tbISODesc.Name = "tbISODesc";
+            this.tbISODesc.Size = new System.Drawing.Size(729, 22);
+            this.tbISODesc.TabIndex = 29;
+            // 
             // FormLaboratory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 397);
+            this.ClientSize = new System.Drawing.Size(924, 489);
+            this.Controls.Add(this.tbISODesc);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.lblAccreditedLogoSize);
             this.Controls.Add(this.lblLaboratoryLogoSize);
             this.Controls.Add(this.linkAccreditedLogo);
@@ -325,6 +371,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLaboratory";
@@ -370,5 +417,7 @@
         private System.Windows.Forms.LinkLabel linkAccreditedLogo;
         private System.Windows.Forms.Label lblLaboratoryLogoSize;
         private System.Windows.Forms.Label lblAccreditedLogoSize;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tbISODesc;
     }
 }

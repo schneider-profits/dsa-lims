@@ -56,7 +56,7 @@ namespace DSA_lims
         ToolTip ttCoords = new ToolTip();
 
         bool searchIsDirty = false;
-        bool auditLogIsSample = false;
+        bool auditLogIsSample = false;        
 
         public FormMain()
         {
@@ -1025,7 +1025,7 @@ namespace DSA_lims
                 {
                     miCustomers.Visible = true;
                     UI.PopulateCustomers(conn, InstanceStatus.Deleted, gridCustomers);
-                }
+                }                
             }
             catch (Exception ex)
             {
@@ -6916,12 +6916,29 @@ where s.instance_status_id = 1 and ass.id = a.id) as 'conn_samples',
                 return;
             }
 
-            FormReportAnalysisReport form = new FormReportAnalysisReport(assignment, Common.Settings.ISOName);
+            string reportISODesc = "";
+            SqlConnection conn = null;
+            try
+            {
+                conn = DB.OpenConnection();
+                reportISODesc = DB.GetReportISODescFromLaboratoryId(conn, null, Common.LabId);
+            }
+            catch (Exception ex)
+            {
+                Common.Log.Error(ex);
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn?.Close();
+            }
+            
+            FormReportAnalysisReport form = new FormReportAnalysisReport(assignment, reportISODesc);
             form.ShowDialog();
 
             if (form.HasNewVersion)
             {
-                SqlConnection conn = null;
+                conn = null;
                 try
                 {
                     conn = DB.OpenConnection();
@@ -11815,13 +11832,6 @@ insert into accreditation_term_x_sample_type_x_sample_component values(@accredit
             {
                 SetStatusMessage("Password updated for user " + Common.Username, StatusMessageType.Success);
             }
-        }
-
-        private void btnReportISOSave_Click(object sender, EventArgs e)
-        {
-            // Set ISO name
-            Common.Settings.ISOName = tbReportISO.Text.Trim();
-            SaveSettings(DSAEnvironment.SettingsFilename);
         }
     }
 }

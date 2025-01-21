@@ -48,8 +48,6 @@ namespace DSA_lims
         public int WindowLeft { get; set; }
         public int WindowTop { get; set; }
         public int WindowWidth { get; set; }
-        public int WindowHeight { get; set; }
-
-        public string ISOName { get; set; }
+        public int WindowHeight { get; set; }        
     }
 }

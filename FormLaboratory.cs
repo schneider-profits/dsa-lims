@@ -91,6 +91,7 @@ namespace DSA_lims
                         tbPhone.Text = reader.GetString("phone");
                         cboxInstanceStatus.SelectedValue = reader.GetInt32("instance_status_id");
                         tbComment.Text = reader.GetString("comment");
+                        tbISODesc.Text = reader.GetString("iso_report_description");
 
                         if (DB.IsValidField(reader["laboratory_logo"]))
                         {
@@ -167,6 +168,7 @@ namespace DSA_lims
             p["phone"] = tbPhone.Text.Trim();
             p["instance_status_id"] = cboxInstanceStatus.SelectedValue;
             p["comment"] = tbComment.Text.Trim();
+            p["iso_report_description"] = tbISODesc.Text.Trim();
 
             SqlConnection connection = null;
             SqlTransaction transaction = null;
@@ -228,8 +230,9 @@ namespace DSA_lims
             cmd.Parameters.AddWithValue("@assignment_counter", p["assignment_counter"]);                
             cmd.Parameters.AddWithValue("@instance_status_id", p["instance_status_id"]);
             cmd.Parameters.AddWithValue("@comment", p["comment"], String.Empty);
+            cmd.Parameters.AddWithValue("@iso_report_description", p["iso_report_description"], String.Empty);
 
-            if(p["laboratory_logo"] == null)
+            if (p["laboratory_logo"] == null)
                 cmd.Parameters.Add("@laboratory_logo", SqlDbType.VarBinary, -1).Value = DBNull.Value;
             else
                 cmd.Parameters.Add("@laboratory_logo", SqlDbType.VarBinary, -1).Value = p["laboratory_logo"];
@@ -261,6 +264,7 @@ namespace DSA_lims
             cmd.Parameters.AddWithValue("@phone", p["phone"], String.Empty);
             cmd.Parameters.AddWithValue("@instance_status_id", p["instance_status_id"]);
             cmd.Parameters.AddWithValue("@comment", p["comment"], String.Empty);
+            cmd.Parameters.AddWithValue("@iso_report_description", p["iso_report_description"], String.Empty);            
 
             if (p["laboratory_logo"] == null)
                 cmd.Parameters.Add("@laboratory_logo", SqlDbType.VarBinary, -1).Value = DBNull.Value;

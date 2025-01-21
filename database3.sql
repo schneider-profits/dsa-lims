@@ -66,3 +66,76 @@ GO
 
 update counters set value = 3 where name like 'database_version'
 go
+
+alter table laboratory add iso_report_description nvarchar(1024) default null;
+go
+
+alter proc csp_insert_laboratory
+	@id uniqueidentifier,
+	@name nvarchar(256),
+	@name_prefix nvarchar(8),
+	@address nvarchar(256),
+	@email nvarchar(80),
+	@phone nvarchar(80),
+	@last_assignment_counter_year int,
+	@assignment_counter int,
+	@instance_status_id int,
+	@comment nvarchar(1000),	
+	@iso_report_description nvarchar(1024),	
+	@laboratory_logo varbinary(max),
+	@accredited_logo varbinary(max),
+	@create_date datetime,
+	@create_id uniqueidentifier,
+	@update_date datetime,
+	@update_id uniqueidentifier
+as 
+	insert into laboratory values (
+		@id,
+		@name,
+		@name_prefix,
+		@address,
+		@email,
+		@phone,		
+		@last_assignment_counter_year,
+		@assignment_counter,
+		@instance_status_id,
+		@comment,				
+		@laboratory_logo,
+		@accredited_logo,
+		@create_date,
+		@create_id,
+		@update_date,
+		@update_id,
+		@iso_report_description
+	);
+
+alter proc csp_update_laboratory
+	@id uniqueidentifier,
+	@name nvarchar(256),
+	@name_prefix nvarchar(8),
+	@address nvarchar(256),
+	@email nvarchar(80),
+	@phone nvarchar(80),	
+	@instance_status_id int,
+	@comment nvarchar(1000),
+	@iso_report_description nvarchar(1024),	
+	@laboratory_logo varbinary(max),
+	@accredited_logo varbinary(max),
+	@update_date datetime,
+	@update_id uniqueidentifier
+as 
+	update laboratory set
+		id = @id,
+		name = @name,
+		name_prefix = @name_prefix,
+		address = @address,
+		email = @email,
+		phone = @phone,	
+		instance_status_id = @instance_status_id,
+		comment = @comment,		
+		laboratory_logo = @laboratory_logo,
+		accredited_logo = @accredited_logo,
+		update_date = @update_date,
+		update_id = @update_id,
+		iso_report_description = @iso_report_description
+	where id = @id
