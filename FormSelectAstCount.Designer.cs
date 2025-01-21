@@ -35,6 +35,7 @@
             this.lblInfo = new System.Windows.Forms.Label();
             this.lblCount = new System.Windows.Forms.Label();
             this.tbCount = new System.Windows.Forms.TextBox();
+            this.cbReturnToSender = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnOk);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 102);
+            this.panel1.Location = new System.Drawing.Point(0, 137);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(368, 28);
             this.panel1.TabIndex = 7;
@@ -82,7 +83,7 @@
             // lblCount
             // 
             this.lblCount.AutoSize = true;
-            this.lblCount.Location = new System.Drawing.Point(26, 51);
+            this.lblCount.Location = new System.Drawing.Point(28, 91);
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(35, 13);
             this.lblCount.TabIndex = 9;
@@ -90,17 +91,28 @@
             // 
             // tbCount
             // 
-            this.tbCount.Location = new System.Drawing.Point(67, 48);
+            this.tbCount.Location = new System.Drawing.Point(69, 88);
             this.tbCount.MaxLength = 8;
             this.tbCount.Name = "tbCount";
             this.tbCount.Size = new System.Drawing.Size(259, 20);
             this.tbCount.TabIndex = 10;
             // 
+            // cbReturnToSender
+            // 
+            this.cbReturnToSender.AutoSize = true;
+            this.cbReturnToSender.Location = new System.Drawing.Point(69, 55);
+            this.cbReturnToSender.Name = "cbReturnToSender";
+            this.cbReturnToSender.Size = new System.Drawing.Size(105, 17);
+            this.cbReturnToSender.TabIndex = 11;
+            this.cbReturnToSender.Text = "Return to sender";
+            this.cbReturnToSender.UseVisualStyleBackColor = true;
+            // 
             // FormSelectAstCount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 130);
+            this.ClientSize = new System.Drawing.Size(368, 165);
+            this.Controls.Add(this.cbReturnToSender);
             this.Controls.Add(this.tbCount);
             this.Controls.Add(this.lblCount);
             this.Controls.Add(this.lblInfo);
@@ -127,5 +139,6 @@
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Label lblCount;
         private System.Windows.Forms.TextBox tbCount;
+        private System.Windows.Forms.CheckBox cbReturnToSender;
     }
 }

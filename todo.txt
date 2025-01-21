@@ -1,0 +1,14 @@
+1
+Må ikke kunne fullføre en analyse som henger på en prep som ikker er fullført
+
+2
+Må ikke kunne fjerne fullført på en prep som har fullførte analyser
+
+3
+Må ikke kunne velge "Set existing preps" på en prep linje som ikke er satt til "Use existing"
+
+4
+Må kunne endre prep i oppdrag til (ikke) eksisterende så lenge det ikke er generert prepper for den
+
+5
+Finne ut hvorfor man ikke kan fjerne godkjenning på oppdrag. Skjer bare noen ganger

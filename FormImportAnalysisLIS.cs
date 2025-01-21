@@ -331,6 +331,9 @@ namespace DSA_lims
                     continue;
 
                 string nuclName = items[0].Trim().ToUpper();
+                if (!AllNuclides.ContainsKey(nuclName))
+                    throw new Exception("Nuclide " + nuclName + " does not exist in LIMS nuclide library");
+
                 AnalysisResult r = mAnalysis.Results.Find(x => x.NuclideId == AllNuclides[nuclName]);
                 if (r != null)                                
                 {                    

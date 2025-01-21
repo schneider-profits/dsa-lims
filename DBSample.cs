@@ -133,10 +133,49 @@ namespace DSA_lims
             return !DB.IsValidField(o) ? Guid.Empty : Guid.Parse(o.ToString());
         }
 
+        public string GetLaboratoryName(SqlConnection conn, SqlTransaction trans)
+        {
+            object o = DB.GetScalar(conn, trans, "select name from laboratory where id = @id", CommandType.Text, new SqlParameter("@id", LaboratoryId));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }
+
         public static Guid GetCreatorId(SqlConnection conn, SqlTransaction trans, Guid sampleId)
         {
             object o = DB.GetScalar(conn, trans, "select create_id from sample where id = @sid", CommandType.Text, new SqlParameter("@sid", sampleId));
             return !DB.IsValidField(o) ? Guid.Empty : Guid.Parse(o.ToString());
+        }
+
+        public string GetCreatorName(SqlConnection conn, SqlTransaction trans)
+        {
+            string query = @"
+select per.name from person per 
+    inner join account acc on acc.person_id = per.id 
+    inner join sample samp on samp.create_id = acc.id
+and samp.id = @id";
+
+            object o = DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@id", Id));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }
+
+        public string GetUpdatorName(SqlConnection conn, SqlTransaction trans)
+        {
+            string query = @"
+select per.name from person per 
+    inner join account acc on acc.person_id = per.id 
+    inner join sample samp on samp.update_id = acc.id
+and samp.id = @id";
+
+            object o = DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@id", Id));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
         }
 
         public string GetSampleTypeName(SqlConnection conn, SqlTransaction trans)
@@ -166,6 +205,38 @@ namespace DSA_lims
             return o.ToString();
         }
 
+        public string GetSamplingMethodName(SqlConnection conn, SqlTransaction trans)
+        {
+            object o = DB.GetScalar(conn, trans, "select name from sampling_method where id = @id", CommandType.Text, new SqlParameter("@id", SamplingMethodId));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }
+
+        public string GetStationName(SqlConnection conn, SqlTransaction trans)
+        {
+            object o = DB.GetScalar(conn, trans, "select name from station where id = @id", CommandType.Text, new SqlParameter("@id", StationId));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }        
+
+        public string GetCountyMunicipalityName(SqlConnection conn, SqlTransaction trans)
+        {
+            string query = @"
+select c.name + ' - ' + m.name from county c
+    inner join municipality m on m.county_id = c.id     
+and m.id = @id";
+
+            object o = DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@id", MunicipalityId));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }
+
         public string GetProjectName(SqlConnection conn, SqlTransaction trans)
         {
             object o = DB.GetScalar(conn, trans, @"
@@ -179,7 +250,22 @@ where ps.id = @psid
                 return "";
 
             return o.ToString();
-        }        
+        }
+
+        public string GetSamplerName(SqlConnection conn, SqlTransaction trans)
+        {
+            string query = @"
+select per.name from person per     
+    inner join sampler sam on sam.person_id = per.id
+    inner join sample samp on samp.sampler_id = sam.id
+and samp.id = @id";
+
+            object o = DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@id", Id));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }
 
         public bool HasRequiredFields()
         {

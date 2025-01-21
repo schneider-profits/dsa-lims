@@ -174,7 +174,7 @@ namespace DSA_lims
 
                 foreach (AssignmentPreparationMethod apm in ast.PreparationMethods)
                 {
-                    if (apm.PreparationLaboratoryId != mAssignment.LaboratoryId)
+                    if (apm.UseExistingPreparation)
                     {
                         // Check that external preparations exists
                         TreeNode[] tn = treeOrderLines.Nodes.Find(apm.Id.ToString(), true);
@@ -187,7 +187,7 @@ namespace DSA_lims
                             return;
                         }
                     }
-                }                
+                }
 
                 if (mSample.HasOrder(conn, trans, SelectedOrderId))
                 {
@@ -200,13 +200,13 @@ namespace DSA_lims
                 foreach (AssignmentPreparationMethod apm in ast.PreparationMethods)
                 {
                     List<Guid> exIds = null;
-                    if (apm.PreparationLaboratoryId != mAssignment.LaboratoryId)
+                    if (apm.UseExistingPreparation)
                     {
                         // External preparations
                         TreeNode[] tn = treeOrderLines.Nodes.Find(apm.Id.ToString(), true);
                         if (tn.Length < 1)
                             throw new Exception("No assignment preparation method node found in tree with id " + apm.Id.ToString());
-
+                        
                         exIds = tn[0].Tag as List<Guid>;
                     }
 
@@ -277,12 +277,12 @@ namespace DSA_lims
             else
             {
                 if (exIds.Count < 1)
-                    throw new Exception("Missing external preparation ids in list");
+                    throw new Exception("Missing existing preparation ids in list");
                 Guid pid = exIds[0];
                 exIds.RemoveAt(0);
                 p = mSample.Preparations.Find(x => x.Id == pid);
                 if(p == null)
-                    throw new Exception("External preparation with id " + pid + " was not found on sample " + mSample.Number);
+                    throw new Exception("Existing preparation with id " + pid + " was not found on sample " + mSample.Number);
             }
 
             return p;
@@ -387,11 +387,11 @@ namespace DSA_lims
             AssignmentSampleType ast = mAssignment.SampleTypes.Find(x => x.Id == astId);            
             AssignmentPreparationMethod apm = ast.PreparationMethods.Find(x => x.Id == apmId);
 
-            if(apm.PreparationLaboratoryId == mAssignment.LaboratoryId)
+            /*if(apm.PreparationLaboratoryId == mAssignment.LaboratoryId)
             {
                 MessageBox.Show("These preparation methods are not registered as external");
                 return;
-            }
+            }*/
 
             FormSelectExistingPreps form = new FormSelectExistingPreps(apm.PreparationLaboratoryId, mSample);
             if (form.ShowDialog() != DialogResult.OK)

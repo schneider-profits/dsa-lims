@@ -118,6 +118,7 @@ namespace DSA_lims
             apm.CreateId = Common.UserId;
             apm.UpdateDate = DateTime.Now;
             apm.UpdateId = Common.UserId;
+            apm.UseExistingPreparation = cbPrepsAlreadyExists.Checked;
             apm.Dirty = true;
             mAst.PreparationMethods.Add(apm);
 

@@ -330,6 +330,12 @@
     <Compile Include="FormOrderAddSampleType.Designer.cs">
       <DependentUpon>FormOrderAddSampleType.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormOrderCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderCopy.Designer.cs">
+      <DependentUpon>FormOrderCopy.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOrderNew.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -497,6 +503,12 @@
     </Compile>
     <Compile Include="FormSampleType.Designer.cs">
       <DependentUpon>FormSampleType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSampleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSampleView.Designer.cs">
+      <DependentUpon>FormSampleView.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSamplingMeth.cs">
       <SubType>Form</SubType>
@@ -683,6 +695,7 @@
     <Compile Include="UtilsMedia.cs" />
     <Compile Include="UtilsPdf.cs" />
     <Content Include="database2.sql" />
+    <Content Include="database3.sql" />
     <Content Include="dsa-lims.ico" />
     <Content Include="DSA-LIMS_MANUAL.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -692,6 +705,7 @@
     <None Include="images\check2.png" />
     <None Include="images\uncheck2.png" />
     <None Include="images\file_16.png" />
+    <None Include="images\eye.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -822,6 +836,9 @@
     <EmbeddedResource Include="FormOrderAddSampleType.resx">
       <DependentUpon>FormOrderAddSampleType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderCopy.resx">
+      <DependentUpon>FormOrderCopy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormOrderNew.resx">
       <DependentUpon>FormOrderNew.cs</DependentUpon>
     </EmbeddedResource>
@@ -905,6 +922,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSampleType.resx">
       <DependentUpon>FormSampleType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSampleView.resx">
+      <DependentUpon>FormSampleView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSamplingMeth.resx">
       <DependentUpon>FormSamplingMeth.cs</DependentUpon>

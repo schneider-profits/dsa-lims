@@ -48,6 +48,8 @@ namespace DSA_lims
         public DateTime UpdateDate { get; set; }
         public Guid UpdateId { get; set; }
 
+        public bool UseExistingPreparation { get; set; }
+
         public List<AssignmentAnalysisMethod> AnalysisMethods { get; set; }
 
         public bool Dirty;
@@ -114,6 +116,7 @@ namespace DSA_lims
                 cmd.Parameters.AddWithValue("@create_id", Common.UserId, Guid.Empty);
                 cmd.Parameters.AddWithValue("@update_date", DateTime.Now);
                 cmd.Parameters.AddWithValue("@update_id", Common.UserId, Guid.Empty);
+                cmd.Parameters.AddWithValue("@use_existing_preparation", UseExistingPreparation);
 
                 cmd.ExecuteNonQuery();
 
@@ -134,6 +137,7 @@ namespace DSA_lims
                     cmd.Parameters.AddWithValue("@comment", Comment, String.Empty);                    
                     cmd.Parameters.AddWithValue("@update_date", DateTime.Now);
                     cmd.Parameters.AddWithValue("@update_id", Common.UserId, Guid.Empty);
+                    cmd.Parameters.AddWithValue("@use_existing_preparation", UseExistingPreparation);
 
                     cmd.ExecuteNonQuery();
 
@@ -186,6 +190,7 @@ namespace DSA_lims
                 CreateId = reader.GetGuid("create_id");
                 UpdateDate = reader.GetDateTime("update_date");
                 UpdateId = reader.GetGuid("update_id");
+                UseExistingPreparation = reader.GetBoolean("use_existing_preparation");
                 Dirty = false;
             }
 

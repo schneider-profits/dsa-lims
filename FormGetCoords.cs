@@ -188,5 +188,41 @@ namespace DSA_lims
 
             gmap.Refresh();
         }
+
+        private void btnSearchLocation_Click(object sender, EventArgs e)
+        {
+            GeocodingProvider gp = GMapProviders.OpenStreetMap as GeocodingProvider;                        
+
+            if (gp != null)
+            {            
+                GeoCoderStatusCode status;
+
+                Cursor.Current = Cursors.WaitCursor;
+                var pt = gp.GetPoint(tbSearchLocation.Text.Trim(), out status);
+                Cursor.Current = Cursors.Default;
+
+                if (status == GeoCoderStatusCode.OK && pt.HasValue)
+                {
+                    gmap.Position = pt.Value;
+                }
+                else
+                {
+                    MessageBox.Show("Could not find \"" + tbSearchLocation.Text.Trim() + "\"");                    
+                }
+            }
+            else
+            {
+                MessageBox.Show("Could not set search provider");                
+            }
+        }
+
+        private void tbSearchLocation_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Return))
+            {
+                e.Handled = true;
+                btnSearchLocation_Click(sender, e);
+            }
+        }
     }
 }

@@ -233,7 +233,37 @@ namespace DSA_lims
                     cmd.ExecuteNonQuery();
                 }
             }
-        }        
+        }
+
+        public string GetCreatorName(SqlConnection conn, SqlTransaction trans)
+        {
+            string query = @"
+select per.name from person per 
+    inner join account acc on acc.person_id = per.id 
+    inner join preparation prep on prep.create_id = acc.id
+and prep.id = @id";
+
+            object o = DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@id", Id));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }
+
+        public string GetUpdatorName(SqlConnection conn, SqlTransaction trans)
+        {
+            string query = @"
+select per.name from person per 
+    inner join account acc on acc.person_id = per.id 
+    inner join preparation prep on prep.update_id = acc.id
+and prep.id = @id";
+
+            object o = DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@id", Id));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }
 
         public bool IsClosed(SqlConnection conn, SqlTransaction trans)
         {

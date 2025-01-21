@@ -534,7 +534,7 @@ select
 from assignment a
 	inner join assignment_sample_type ast on ast.assignment_id = a.id
 	inner join assignment_preparation_method apm on apm.assignment_sample_type_id = ast.id and apm.preparation_laboratory_id = a.laboratory_id
-where a.id = @aid
+where a.id = @aid and apm.use_existing_preparation = 0
 ) as 'npreparations',
 (
 select 

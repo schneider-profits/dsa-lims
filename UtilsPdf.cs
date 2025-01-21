@@ -494,13 +494,13 @@ order by s.number, p.number, a.number
                 AddTextToParagraph(p, "Oppdragsgiver: " + a.CustomerContactName, fontTimes12);
                 AddTextToParagraph(p, "Tidsfrist: " + a.Deadline.Value.ToString(Utils.DateFormatNorwegian), fontTimes12);
                 if(a.RequestedSigmaAct == 0)
-                    AddTextToParagraph(p, "Ønsket sigma aktivitet: ", fontTimes12);
+                    AddTextToParagraph(p, "Ønsket sigma for usikkerhet: ", fontTimes12);
                 else
-                    AddTextToParagraph(p, "Ønsket sigma aktivitet: " + a.RequestedSigmaAct, fontTimes12);
+                    AddTextToParagraph(p, "Ønsket sigma for usikkerhet: " + a.RequestedSigmaAct, fontTimes12);
                 if(a.RequestedSigmaMDA == 0)
-                    AddTextToParagraph(p, "Ønsket sigma usikkerhet: ", fontTimes12);
+                    AddTextToParagraph(p, "Ønsket sigma for MDA: ", fontTimes12);
                 else
-                    AddTextToParagraph(p, "Ønsket sigma usikkerhet: " + a.RequestedSigmaMDA, fontTimes12);
+                    AddTextToParagraph(p, "Ønsket sigma for MDA: " + a.RequestedSigmaMDA, fontTimes12);
                 AddTextToParagraph(p, "", fontTimes10);
                 document.Add(p);
 

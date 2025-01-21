@@ -36,6 +36,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Diagnostics;
 using Newtonsoft.Json;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace DSA_lims
 {
@@ -43,7 +44,7 @@ namespace DSA_lims
     {
         private bool initialized = false;
         private ResourceManager r = null;
-        
+
         int statusMessageTimeout = 16000;
         System.Timers.Timer statusMessageTimer = null;
 
@@ -55,13 +56,13 @@ namespace DSA_lims
         ToolTip ttCoords = new ToolTip();
 
         bool searchIsDirty = false;
-        bool auditLogIsSample = false;        
+        bool auditLogIsSample = false;
 
         public FormMain()
         {
             InitializeComponent();
-            
-            SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);            
+
+            SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
 
             Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en");
             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en");
@@ -96,7 +97,7 @@ namespace DSA_lims
             tbPrepAnalLODEndWeight.KeyPress += CustomEvents.Numeric_KeyPress;
             tbPrepAnalLODTemperature.KeyPress += CustomEvents.Numeric_KeyPress;
             tbPrepAnalLODStartWeightAsh.KeyPress += CustomEvents.Numeric_KeyPress;
-            tbPrepAnalLODEndWeightAsh.KeyPress += CustomEvents.Numeric_KeyPress;            
+            tbPrepAnalLODEndWeightAsh.KeyPress += CustomEvents.Numeric_KeyPress;
             tbPrepAnalLODTemperatureAsh.KeyPress += CustomEvents.Numeric_KeyPress;
             tbPrepAnalLODStartWeightAsh2.KeyPress += CustomEvents.Numeric_KeyPress;
             tbPrepAnalLODEndWeightAsh2.KeyPress += CustomEvents.Numeric_KeyPress;
@@ -106,7 +107,7 @@ namespace DSA_lims
             tbPrepAnalPrepQuantity.KeyPress += CustomEvents.Numeric_KeyPress;
             tbSearchActMin.KeyPress += CustomEvents.Numeric_KeyPress;
             tbSearchActMax.KeyPress += CustomEvents.Numeric_KeyPress;
-        }        
+        }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
@@ -165,12 +166,12 @@ namespace DSA_lims
             }
             catch (Exception ex)
             {
-                if(Common.Log != null)
+                if (Common.Log != null)
                     Common.Log.Fatal(ex);
                 MessageBox.Show(ex.Message);
                 Environment.Exit(1);
-            }                
-        }        
+            }
+        }
 
         private void StatusMessageTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
@@ -226,7 +227,7 @@ namespace DSA_lims
                 }
                 else if (tabsPrepAnal.SelectedTab == tabPrepAnalSample)
                 {
-                    if(sample.IsDirty())
+                    if (sample.IsDirty())
                     {
                         btnPrepAnalSampleUpdate.ForeColor = Color.Green;
                         btnPrepAnalSampleDiscard.ForeColor = Color.Red;
@@ -266,10 +267,10 @@ namespace DSA_lims
             }
             else if (tabs.SelectedTab == tabSearch && tabsSearch.SelectedTab == tabSearchSearch)
             {
-                if (searchIsDirty)                
-                    btnSearchSearch.ForeColor = Color.Green;                
-                else                
-                    btnSearchSearch.ForeColor = SystemColors.ControlText;                
+                if (searchIsDirty)
+                    btnSearchSearch.ForeColor = Color.Green;
+                else
+                    btnSearchSearch.ForeColor = SystemColors.ControlText;
             }
         }
 
@@ -417,11 +418,11 @@ namespace DSA_lims
                 {
                     cboxOrdersLaboratory.SelectedValue = Common.LabId;
                     cboxSamplesLaboratory.SelectedValue = Common.LabId;
-                }                    
-                
+                }
+
                 cboxSamplesStatus.SelectedValue = InstanceStatus.Active;
                 cboxOrdersWorkflowStatus.SelectedValue = WorkflowStatus.Construction;
-                
+
                 PopulateOrders();
                 btnOrdersSearch.ForeColor = SystemColors.ControlText;
 
@@ -434,7 +435,7 @@ namespace DSA_lims
                 SetMenuItemVisibilities();
 
                 ActiveControl = tbMenuLookup;
-                
+
                 Common.Log.Info("Application initialized successfully");
             }
             catch (Exception ex)
@@ -468,8 +469,8 @@ namespace DSA_lims
                     DialogResult r = MessageBox.Show("Changes to the current analysis will be discarded. Do you want to continue?", "Warning", MessageBoxButtons.YesNo);
                     if (r == DialogResult.No)
                         return false;
-                }                
-                
+                }
+
                 sample.ClearDirty();
                 preparation.ClearDirty();
                 analysis.ClearDirty();
@@ -501,10 +502,10 @@ namespace DSA_lims
         }
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
-        {            
+        {
             try
             {
-                if(!DiscardUnsavedChanges())
+                if (!DiscardUnsavedChanges())
                 {
                     e.Cancel = true;
                     return;
@@ -539,7 +540,7 @@ namespace DSA_lims
 
                 SaveSettings(DSAEnvironment.SettingsFilename);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 Common.Log.Error(ex);
@@ -575,13 +576,13 @@ namespace DSA_lims
                     lblStatus.ForeColor = Color.Red;
                     break;
             }
-            
+
             statusMessageTimer.Start();
         }
 
         private void HideMenuItems()
         {
-            miSample.Visible = miOrder.Visible = miSearch.Visible = miMeta.Visible = miOrders.Visible 
+            miSample.Visible = miOrder.Visible = miSearch.Visible = miMeta.Visible = miOrders.Visible
                 = miSamples.Visible = miProjects.Visible = miCustomers.Visible = miTypeRelations.Visible = miSys.Visible = false;
         }
 
@@ -593,7 +594,7 @@ namespace DSA_lims
             miSamplers.Visible = false;
             miSamplingMethods.Visible = false;
             miCompanies.Visible = false;
-            miCustomers.Visible = false;           
+            miCustomers.Visible = false;
         }
 
         private void HideSysMenuItems()
@@ -605,11 +606,11 @@ namespace DSA_lims
             miAccreditationTerms.Visible = false;
             miGeometries.Visible = false;
             miPersonalia.Visible = false;
-        }        
+        }
 
         private void miLogout_Click(object sender, EventArgs e)
         {
-            if (!DiscardUnsavedChanges())            
+            if (!DiscardUnsavedChanges())
                 return;
 
             try
@@ -618,7 +619,7 @@ namespace DSA_lims
                 ShowLogin();
                 initialized = InitializeUI();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -684,9 +685,9 @@ namespace DSA_lims
                     }
                 }
 
-                trans.Commit();     
+                trans.Commit();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 trans?.Rollback();
                 Common.Log.Error(ex);
@@ -735,7 +736,7 @@ namespace DSA_lims
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
             }
-        }        
+        }
 
         private void SetLanguageLabels(ResourceManager r)
         {
@@ -743,7 +744,7 @@ namespace DSA_lims
             lblMenuOrders.Text = r.GetString(lblMenuOrders.Name);
             btnMenuNewSample.Text = r.GetString(btnMenuNewSample.Name);
             miFile.Text = r.GetString(miFile.Name);
-        }        
+        }
 
         private void SetMenuItemVisibilities()
         {
@@ -776,7 +777,7 @@ namespace DSA_lims
             // FIXME: Accreditation rules
 
             if (Roles.HasAccess(Role.LaboratoryAdministrator) && Common.LabId != Guid.Empty)
-            {                
+            {
                 miSearchView.Enabled = miProjectsView.Enabled = miCustomersView.Enabled = miTypeRelationsView.Enabled = miMetadataView.Enabled = miSystemDataView.Enabled = true;
                 btnMenuNewSample.Enabled = btnMenuSamples.Enabled = btnMenuNewOrder.Enabled = btnOrders.Enabled = btnMenuCustomer.Enabled = btnMenuProjects.Enabled = btnMenuMetadata.Enabled = btnMenuSearch.Enabled = true;
                 tbMenuLookup.Enabled = true;
@@ -821,14 +822,14 @@ namespace DSA_lims
 
         private void tabs_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblCurrentTab.Text = tabs.SelectedTab.Text;            
+            lblCurrentTab.Text = tabs.SelectedTab.Text;
 
             HideMenuItems();
 
             if (tabs.SelectedTab == tabMenu)
             {
                 tbMenuLookup.Text = "";
-                ActiveControl = tbMenuLookup;                
+                ActiveControl = tbMenuLookup;
             }
             else if (tabs.SelectedTab == tabSample)
             {
@@ -836,14 +837,14 @@ namespace DSA_lims
             }
             else if (tabs.SelectedTab == tabOrder)
             {
-                miOrder.Visible = true;                
+                miOrder.Visible = true;
             }
             else if (tabs.SelectedTab == tabSearch)
             {
                 miSearch.Visible = true;
-            }            
-            else if(tabs.SelectedTab == tabMetadata)
-            {                
+            }
+            else if (tabs.SelectedTab == tabMetadata)
+            {
                 miMeta.Visible = true;
                 tabsMeta_SelectedIndexChanged(sender, e);
             }
@@ -856,7 +857,7 @@ namespace DSA_lims
                 miSamples.Visible = true;
                 tbSamplesLookup.Text = "";
                 ActiveControl = tbSamplesLookup;
-            }            
+            }
             else if (tabs.SelectedTab == tabProjects)
             {
                 miProjects.Visible = true;
@@ -868,7 +869,7 @@ namespace DSA_lims
             else if (tabs.SelectedTab == tabTypeRel)
             {
                 miTypeRelations.Visible = true;
-            }                        
+            }
             else if (tabs.SelectedTab == tabSysdata)
             {
                 miSys.Visible = true;
@@ -879,12 +880,12 @@ namespace DSA_lims
         private void btnSamples_Click(object sender, EventArgs e)
         {
             tabs.SelectedTab = tabSamples;
-        }                
+        }
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
             tabs.SelectedTab = tabOrders;
-        }                                                        
+        }
 
         private void tabsSample_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -892,18 +893,18 @@ namespace DSA_lims
         }
 
         private void treeSampleTypes_AfterSelect(object sender, TreeViewEventArgs e)
-        {            
+        {
             TreeNode tnode = e.Node;
 
             lblTypeRelSampCompSel.Text = lblTypeRelSampPrepSel.Text = tnode.Text;
-            
+
             lbSampleTypesComponents.Items.Clear();
             lbSampleTypesInheritedComponents.Items.Clear();
 
-            SqlConnection conn = null;            
+            SqlConnection conn = null;
             try
             {
-                conn = DB.OpenConnection();            
+                conn = DB.OpenConnection();
 
                 Guid sampleTypeId = Guid.Parse(tnode.Name);
 
@@ -914,7 +915,7 @@ namespace DSA_lims
                 UI.PopulateSampleTypePrepMeth(conn, null, tnode, lbTypeRelSampTypePrepMeth, lbTypeRelSampTypeInheritedPrepMeth);
             }
             catch (Exception ex)
-            {                
+            {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
             }
@@ -922,7 +923,7 @@ namespace DSA_lims
             {
                 conn?.Close();
             }
-        }        
+        }
 
         private void AddSampleTypeComponents(SqlConnection conn, SqlTransaction trans, Guid sampleTypeId, bool inherited, TreeNode tnode)
         {
@@ -943,22 +944,22 @@ namespace DSA_lims
         }
 
         private void miNewLaboratory_Click(object sender, EventArgs e)
-        {            
+        {
             FormLaboratory form = new FormLaboratory();
-            switch(form.ShowDialog())
-            {                
+            switch (form.ShowDialog())
+            {
                 case DialogResult.OK:
                     SetStatusMessage("Laboratory " + form.LaboratoryName + " created");
 
                     SqlConnection conn = null;
                     try
                     {
-                        conn = DB.OpenConnection();                        
+                        conn = DB.OpenConnection();
                         UI.PopulateLaboratories(conn, InstanceStatus.Deleted, gridSysLab);
 
                         UI.PopulateComboBoxes(conn, "csp_select_laboratories_short", new[] {
                             new SqlParameter("@instance_status_level", InstanceStatus.Active)
-                        }, cboxSampleLaboratory, cboxOrderLaboratory);                        
+                        }, cboxSampleLaboratory, cboxOrderLaboratory);
                     }
                     catch (Exception ex)
                     {
@@ -973,7 +974,7 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Create laboratory failed", StatusMessageType.Error);
                     break;
-            }                            
+            }
         }
 
         private void miDeleteLaboratory_Click(object sender, EventArgs e)
@@ -990,7 +991,7 @@ namespace DSA_lims
             try
             {
                 conn = DB.OpenConnection();
-                
+
                 if (tabsMeta.SelectedTab == tabMetaStations)
                 {
                     miStations.Visible = true;
@@ -1024,9 +1025,9 @@ namespace DSA_lims
                 {
                     miCustomers.Visible = true;
                     UI.PopulateCustomers(conn, InstanceStatus.Deleted, gridCustomers);
-                }                
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -1038,7 +1039,7 @@ namespace DSA_lims
         }
 
         private void tabsSys_SelectedIndexChanged(object sender, EventArgs e)
-        {            
+        {
             HideSysMenuItems();
 
             SqlConnection conn = null;
@@ -1046,7 +1047,7 @@ namespace DSA_lims
             try
             {
                 conn = DB.OpenConnection();
-                
+
                 if (tabsSys.SelectedTab == tabSysLaboratories)
                 {
                     miLaboratories.Visible = true;
@@ -1079,7 +1080,7 @@ namespace DSA_lims
                 }
                 else if (tabsSys.SelectedTab == tabSysAccredRules)
                 {
-                    miAccreditationTerms.Visible = true;                    
+                    miAccreditationTerms.Visible = true;
                     UI.PopulateAccreditationTerms(conn, null, InstanceStatus.Deleted, gridSysAccTerms);
                 }
             }
@@ -1098,7 +1099,7 @@ namespace DSA_lims
         {
             // New user
 
-            if(!Roles.HasAccess(Role.LaboratoryAdministrator))
+            if (!Roles.HasAccess(Role.LaboratoryAdministrator))
             {
                 MessageBox.Show("You don't have access to create laboratory users");
                 return;
@@ -1166,7 +1167,7 @@ namespace DSA_lims
             }
 
             SetStatusMessage("Edited username " + form.UserName);
-        }        
+        }
 
         private void miDeleteUser_Click(object sender, EventArgs e)
         {
@@ -1175,7 +1176,7 @@ namespace DSA_lims
 
         private void miResetPass_Click(object sender, EventArgs e)
         {
-            if(gridSysUsers.SelectedRows.Count < 1)
+            if (gridSysUsers.SelectedRows.Count < 1)
             {
                 MessageBox.Show("You must select a user first");
                 return;
@@ -1184,7 +1185,7 @@ namespace DSA_lims
             Guid userId = Utils.MakeGuid(gridSysUsers.SelectedRows[0].Cells["id"].Value);
             string username = gridSysUsers.SelectedRows[0].Cells["username"].Value.ToString();
             FormResetPassword form = new FormResetPassword(userId, username);
-            if(form.ShowDialog() == DialogResult.OK)
+            if (form.ShowDialog() == DialogResult.OK)
             {
                 SetStatusMessage("Password updated for user " + username, StatusMessageType.Success);
             }
@@ -1195,7 +1196,7 @@ namespace DSA_lims
             // edit lab
             if (gridSysLab.SelectedRows.Count < 1)
                 return;
-            
+
             Guid lid = Utils.MakeGuid(gridSysLab.SelectedRows[0].Cells["id"].Value);
 
             FormLaboratory form = new FormLaboratory(lid);
@@ -1207,12 +1208,12 @@ namespace DSA_lims
                     SqlConnection conn = null;
                     try
                     {
-                        conn = DB.OpenConnection();                        
+                        conn = DB.OpenConnection();
                         UI.PopulateLaboratories(conn, InstanceStatus.Deleted, gridSysLab);
 
                         UI.PopulateComboBoxes(conn, "csp_select_laboratories_short", new[] {
                             new SqlParameter("@instance_status_level", InstanceStatus.Active)
-                        }, cboxSampleLaboratory, cboxOrderLaboratory);                        
+                        }, cboxSampleLaboratory, cboxOrderLaboratory);
                     }
                     catch (Exception ex)
                     {
@@ -1225,10 +1226,10 @@ namespace DSA_lims
                     }
                     break;
                 case DialogResult.Abort:
-                    SetStatusMessage("Update laboratory failed", StatusMessageType.Error);                    
+                    SetStatusMessage("Update laboratory failed", StatusMessageType.Error);
                     break;
-            }                        
-        }        
+            }
+        }
 
         private void miProjectsNew_Click(object sender, EventArgs e)
         {
@@ -1249,12 +1250,12 @@ namespace DSA_lims
                     SqlConnection conn = null;
                     try
                     {
-                        conn = DB.OpenConnection();                        
+                        conn = DB.OpenConnection();
                         UI.PopulateProjectsMain(conn, gridProjectMain);
 
                         UI.PopulateComboBoxes(conn, "csp_select_projects_main_short", new[] {
                             new SqlParameter("@instance_status_level", InstanceStatus.Deleted)
-                        }, cboxSamplesProjects, cboxSampleProject);                        
+                        }, cboxSamplesProjects, cboxSampleProject);
                     }
                     catch (Exception ex)
                     {
@@ -1269,8 +1270,8 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Create main project failed", StatusMessageType.Error);
                     break;
-            }                        
-        }        
+            }
+        }
 
         private void miProjectsEdit_Click(object sender, EventArgs e)
         {
@@ -1294,12 +1295,12 @@ namespace DSA_lims
                     SqlConnection conn = null;
                     try
                     {
-                        conn = DB.OpenConnection();                        
+                        conn = DB.OpenConnection();
                         UI.PopulateProjectsMain(conn, gridProjectMain);
 
                         UI.PopulateComboBoxes(conn, "csp_select_projects_main_short", new[] {
                             new SqlParameter("@instance_status_level", InstanceStatus.Deleted)
-                        }, cboxSamplesProjects, cboxSampleProject);                        
+                        }, cboxSamplesProjects, cboxSampleProject);
                     }
                     catch (Exception ex)
                     {
@@ -1314,7 +1315,7 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Edit main project failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miProjectsDelete_Click(object sender, EventArgs e)
@@ -1346,7 +1347,7 @@ namespace DSA_lims
 
             Guid pmid = Utils.MakeGuid(gridProjectMain.SelectedRows[0].Cells["id"].Value);
             string pmname = gridProjectMain.SelectedRows[0].Cells["name"].Value.ToString();
-            
+
             FormProjectSub form = new FormProjectSub(pmname, pmid);
             switch (form.ShowDialog())
             {
@@ -1451,8 +1452,8 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Create nuclide failed", StatusMessageType.Error);
                     break;
-            }            
-        }        
+            }
+        }
 
         private void miSampleTypesNew_Click(object sender, EventArgs e)
         {
@@ -1527,6 +1528,83 @@ namespace DSA_lims
                 MessageBox.Show("You don't have access to manage sample types");
                 return;
             }
+
+            if (treeSampleTypes.SelectedNode == null)
+            {
+                MessageBox.Show("You must select a sample type");
+                return;
+            }
+
+            Guid sampleTypeId = Utils.MakeGuid(treeSampleTypes.SelectedNode.Name);
+
+            SqlConnection conn = null;
+            SqlTransaction trans = null;
+            try
+            {
+                conn = DB.OpenConnection();
+                trans = conn.BeginTransaction();
+
+                object o = DB.GetScalar(conn, trans, "select count(*) from sample_type where parent_id = @id", CommandType.Text, new SqlParameter("@id", sampleTypeId));
+                if (o == null)
+                    throw new Exception("Unable to query parent_id from sample_type");
+                int count = (int)o;
+                if(count > 0)
+                {
+                    MessageBox.Show("Can not delete a sample type with children");
+                    return;
+                }
+
+                o = DB.GetScalar(conn, trans, "select count(*) from sample where sample_type_id = @id", CommandType.Text, new SqlParameter("@id", sampleTypeId));
+                if (o == null)
+                    throw new Exception("Unable to query sample_type_id from sample");
+                count = (int)o;
+                if (count > 0)
+                {
+                    MessageBox.Show("Can not delete a sample type which is in use");
+                    return;
+                }
+
+                o = DB.GetScalar(conn, trans, "select count(*) from sample_component where sample_type_id = @id", CommandType.Text, new SqlParameter("@id", sampleTypeId));
+                if (o == null)
+                    throw new Exception("Unable to query sample_type_id from sample_component");
+                count = (int)o;
+                if (count > 0)
+                {
+                    MessageBox.Show("Can not delete a sample type which has a component");
+                    return;
+                }
+
+                o = DB.GetScalar(conn, trans, "select count(*) from sample_type_x_preparation_method where sample_type_id = @id", CommandType.Text, new SqlParameter("@id", sampleTypeId));
+                if (o == null)
+                    throw new Exception("Unable to query sample_type_id from sample_type_x_preparation_method");
+                count = (int)o;
+                if (count > 0)
+                {
+                    MessageBox.Show("Can not delete a sample type which has a preparation method");
+                    return;
+                }
+                
+                SqlCommand cmd = new SqlCommand("delete from sample_type where id = @id", conn, trans);                                
+                cmd.Parameters.AddWithValue("@id", sampleTypeId);
+                cmd.ExecuteNonQuery();
+
+                trans.Commit();
+                
+                DB.LoadSampleTypes(conn, null);
+                UI.PopulateSampleTypes(conn, treeSampleTypes);
+                UI.PopulateSampleTypes(treeSampleTypes, cboxSampleSampleType);
+            }
+            catch (Exception ex)
+            {
+                trans?.Rollback();
+                Common.Log.Error(ex);
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            finally
+            {
+                conn?.Close();
+            }
         }
 
         private void miSystemDataView_Click(object sender, EventArgs e)
@@ -1545,9 +1623,9 @@ namespace DSA_lims
             catch (Exception ex)
             {
                 Common.Log.Error(ex);
-                MessageBox.Show(ex.Message);                
+                MessageBox.Show(ex.Message);
             }
-        }        
+        }
 
         private void miSearchView_Click(object sender, EventArgs e)
         {
@@ -1641,7 +1719,7 @@ namespace DSA_lims
             if (gridSysNuclides.SelectedRows.Count < 1)
                 return;
 
-            DataGridViewRow row = gridSysNuclides.SelectedRows[0];            
+            DataGridViewRow row = gridSysNuclides.SelectedRows[0];
             Guid nid = Utils.MakeGuid(row.Cells["id"].Value);
 
             FormNuclide form = new FormNuclide(nid);
@@ -1655,7 +1733,7 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Update nuclide failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miNewGeometry_Click(object sender, EventArgs e)
@@ -1673,8 +1751,8 @@ namespace DSA_lims
                     SetStatusMessage("Geometry " + form.GeometryName + " created");
                     using (SqlConnection conn = DB.OpenConnection())
                     {
-                        UI.PopulateGeometries(conn, gridSysGeom);  
-                                              
+                        UI.PopulateGeometries(conn, gridSysGeom);
+
                         UI.PopulateComboBoxes(conn, "csp_select_preparation_geometries_short", new[] {
                             new SqlParameter("@instance_status_level", InstanceStatus.Deleted)
                         }, cboxPrepAnalPrepGeom);
@@ -1683,7 +1761,7 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Create geometry failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miEditGeometry_Click(object sender, EventArgs e)
@@ -1711,7 +1789,7 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Update geometry failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miDeleteGeometry_Click(object sender, EventArgs e)
@@ -1726,7 +1804,7 @@ namespace DSA_lims
         }
 
         private void miNewCounty_Click(object sender, EventArgs e)
-        {            
+        {
             FormCounty form = new FormCounty();
             switch (form.ShowDialog())
             {
@@ -1744,11 +1822,11 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Create county failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miEditCounty_Click(object sender, EventArgs e)
-        {        
+        {
             if (gridSysCounty.SelectedRows.Count < 1)
                 return;
 
@@ -1772,7 +1850,7 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Create county failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miDeleteCounty_Click(object sender, EventArgs e)
@@ -1781,7 +1859,7 @@ namespace DSA_lims
         }
 
         private void miNewMunicipality_Click(object sender, EventArgs e)
-        {        
+        {
             if (gridSysCounty.SelectedRows.Count < 1)
                 return;
 
@@ -1800,20 +1878,20 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Create municipality failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miEditMunicipality_Click(object sender, EventArgs e)
-        {        
+        {
             if (gridSysCounty.SelectedRows.Count < 1)
                 return;
 
             if (gridSysMunicipality.SelectedRows.Count < 1)
                 return;
-            
+
             Guid cid = Utils.MakeGuid(gridSysCounty.SelectedRows[0].Cells["id"].Value);
             string cName = gridSysCounty.SelectedRows[0].Cells["name"].Value.ToString();
-            Guid mid = Utils.MakeGuid(gridSysMunicipality.SelectedRows[0].Cells["id"].Value);            
+            Guid mid = Utils.MakeGuid(gridSysMunicipality.SelectedRows[0].Cells["id"].Value);
 
             FormMunicipality form = new FormMunicipality(cid, mid, cName);
             switch (form.ShowDialog())
@@ -1826,13 +1904,13 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Update municipality failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miDeleteMunicipality_Click(object sender, EventArgs e)
         {
             // delete municipality
-        }        
+        }
 
         private void miNewStation_Click(object sender, EventArgs e)
         {
@@ -1849,17 +1927,17 @@ namespace DSA_lims
                     SetStatusMessage("Station " + form.StationName + " created");
                     using (SqlConnection conn = DB.OpenConnection())
                     {
-                        UI.PopulateStations(conn, gridMetaStation);  
-                                              
+                        UI.PopulateStations(conn, gridMetaStation);
+
                         UI.PopulateComboBoxes(conn, "csp_select_stations_short", new[] {
                             new SqlParameter("@instance_status_level", InstanceStatus.Deleted)
                         }, cboxSampleInfoStations);
-                    }                        
+                    }
                     break;
                 case DialogResult.Abort:
                     SetStatusMessage("Create station failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miEditStation_Click(object sender, EventArgs e)
@@ -1872,7 +1950,7 @@ namespace DSA_lims
 
             if (gridMetaStation.SelectedRows.Count < 1)
                 return;
-            
+
             Guid sid = Utils.MakeGuid(gridMetaStation.SelectedRows[0].Cells["id"].Value);
 
             FormStation form = new FormStation(sid);
@@ -1882,16 +1960,16 @@ namespace DSA_lims
                     SetStatusMessage("Station " + form.StationName + " updated");
                     using (SqlConnection conn = DB.OpenConnection())
                     {
-                        UI.PopulateStations(conn, gridMetaStation);                        
+                        UI.PopulateStations(conn, gridMetaStation);
                         UI.PopulateComboBoxes(conn, "csp_select_stations_short", new[] {
                             new SqlParameter("@instance_status_level", InstanceStatus.Deleted)
                         }, cboxSampleInfoStations);
-                    }                        
+                    }
                     break;
                 case DialogResult.Abort:
                     SetStatusMessage("Update station failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miDeleteStation_Click(object sender, EventArgs e)
@@ -1930,7 +2008,7 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Create sample storage failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miEditSampleStorage_Click(object sender, EventArgs e)
@@ -1943,7 +2021,7 @@ namespace DSA_lims
 
             if (gridMetaSampleStorage.SelectedRows.Count < 1)
                 return;
-            
+
             Guid ssid = Utils.MakeGuid(gridMetaSampleStorage.SelectedRows[0].Cells["id"].Value);
 
             FormSampleStorage form = new FormSampleStorage(ssid);
@@ -1963,7 +2041,7 @@ namespace DSA_lims
                 case DialogResult.Abort:
                     SetStatusMessage("Update sample storage failed", StatusMessageType.Error);
                     break;
-            }                        
+            }
         }
 
         private void miDeleteSampleStorage_Click(object sender, EventArgs e)
@@ -1997,7 +2075,7 @@ namespace DSA_lims
                         UI.PopulateComboBoxes(conn, "csp_select_samplers_short", new[] {
                             new SqlParameter("@instance_status_level", InstanceStatus.Deleted)
                         }, cboxSampleInfoSampler);
-                    }                        
+                    }
                     break;
                 case DialogResult.Abort:
                     SetStatusMessage("Create sampler failed", StatusMessageType.Error);
@@ -2018,7 +2096,7 @@ namespace DSA_lims
                 MessageBox.Show("You must select a sampler first");
                 return;
             }
-            
+
             Guid sid = Utils.MakeGuid(gridMetaSamplers.SelectedRows[0].Cells["id"].Value);
 
             FormSampler form = new FormSampler(sid);
@@ -2028,12 +2106,12 @@ namespace DSA_lims
                     SetStatusMessage("Sampler " + form.SamplerName + " updated");
                     using (SqlConnection conn = DB.OpenConnection())
                     {
-                        UI.PopulateSamplers(conn, InstanceStatus.Deleted, gridMetaSamplers);                        
+                        UI.PopulateSamplers(conn, InstanceStatus.Deleted, gridMetaSamplers);
 
                         UI.PopulateComboBoxes(conn, "csp_select_samplers_short", new[] {
                             new SqlParameter("@instance_status_level", InstanceStatus.Deleted)
                         }, cboxSampleInfoSampler);
-                    }                        
+                    }
                     break;
                 case DialogResult.Abort:
                     SetStatusMessage("Update sampler failed", StatusMessageType.Error);
@@ -2086,18 +2164,18 @@ namespace DSA_lims
             {
                 conn?.Close();
             }
-        }        
+        }
 
         private void cboxSampleSampleType_Leave(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(cboxSampleSampleType.Text.Trim()))
-            {                
+            {
                 cboxSampleSampleType.SelectedItem = Guid.Empty;
                 cboxSampleSampleComponent.DataSource = null;
                 return;
             }
 
-            if(!Utils.IsValidGuid(cboxSampleSampleType.SelectedValue))
+            if (!Utils.IsValidGuid(cboxSampleSampleType.SelectedValue))
             {
                 cboxSampleSampleType.SelectedValue = Guid.Empty;
                 cboxSampleSampleComponent.DataSource = null;
@@ -2191,7 +2269,7 @@ namespace DSA_lims
             try
             {
                 conn = DB.OpenConnection();
-                using (SqlDataReader reader = DB.GetDataReader(conn, null, "csp_select_station", CommandType.StoredProcedure, 
+                using (SqlDataReader reader = DB.GetDataReader(conn, null, "csp_select_station", CommandType.StoredProcedure,
                     new SqlParameter("@id", stationId)))
                 {
                     reader.Read();
@@ -2254,7 +2332,7 @@ namespace DSA_lims
             {
                 conn?.Close();
             }
-        }        
+        }
 
         private void miSamplesNew_Click(object sender, EventArgs e)
         {
@@ -2272,7 +2350,7 @@ namespace DSA_lims
                 PopulateSample(conn, null, sample, true);
                 PopulateSamples();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -2286,13 +2364,13 @@ namespace DSA_lims
             tabsSample.SelectedTab = tabSamplesInfo;
 
             SetStatusMessage("Sample " + form.SampleNumber + " created successfully");
-        }        
+        }
 
         private void miSamplesEdit_Click(object sender, EventArgs e)
         {
             // edit sample
 
-            if(gridSamples.SelectedRows.Count != 1)
+            if (gridSamples.SelectedRows.Count != 1)
             {
                 MessageBox.Show("You must select a single sample first");
                 return;
@@ -2316,7 +2394,7 @@ namespace DSA_lims
 
                 PopulateSample(conn, null, sample, true);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -2326,13 +2404,13 @@ namespace DSA_lims
             {
                 conn?.Close();
             }
-            
+
             tabs.SelectedTab = tabSample;
             tabsSample.SelectedTab = tabSamplesInfo;
         }
 
         private void PopulateSample(SqlConnection conn, SqlTransaction trans, Sample s, bool clearDirty)
-        {            
+        {
             cboxSampleSampleType.SelectedValue = s.SampleTypeId;
             cboxSampleSampleComponent.SelectedValue = s.SampleComponentId;
             cboxSampleInfoSampler.SelectedValue = s.SamplerId;
@@ -2441,6 +2519,9 @@ namespace DSA_lims
             lblSampleToolId.Text = "[Sample] " + s.Number.ToString();
             lblSampleToolLaboratory.Text = String.IsNullOrEmpty(cboxSampleLaboratory.Text) ? "" : "[Laboratory] " + cboxSampleLaboratory.Text;
 
+            lblSampleToolCreator.Text = "[Creator] " + s.GetCreatorName(conn, trans);
+            lblSampleToolUpdator.Text = "[Last Update] " + s.GetUpdatorName(conn, trans);
+
             PopulateSampleParameters(s, clearDirty);
 
             // Show attachments
@@ -2449,7 +2530,7 @@ namespace DSA_lims
             if (clearDirty)
             {
                 sample.ClearDirty();
-            }                        
+            }
         }
 
         private void PopulateSampleParameters(Sample s, bool clearDirty)
@@ -2458,7 +2539,7 @@ namespace DSA_lims
             gridSampleParameters.Rows.Clear();
 
             gridSampleParameters.Columns.Add("Id", "Id");
-            gridSampleParameters.Columns.Add("Name", "Name");            
+            gridSampleParameters.Columns.Add("Name", "Name");
             gridSampleParameters.Columns.Add("Value", "Value");
             gridSampleParameters.Columns.Add("Type", "Type");
 
@@ -2466,7 +2547,7 @@ namespace DSA_lims
             {
                 gridSampleParameters.Rows.Add(new object[] {
                     p.Id,
-                    p.Name,                    
+                    p.Name,
                     p.Value,
                     p.Type
                 });
@@ -2477,12 +2558,12 @@ namespace DSA_lims
             if (clearDirty)
                 foreach (SampleParameter p in s.Parameters)
                     p.Dirty = false;
-        }        
+        }
 
         private void miSamplesSplit_Click(object sender, EventArgs e)
         {
             // split sample
-            if(gridSamples.SelectedRows.Count != 1)
+            if (gridSamples.SelectedRows.Count != 1)
             {
                 MessageBox.Show("You must select a single sample to split");
                 return;
@@ -2490,7 +2571,7 @@ namespace DSA_lims
 
             Guid sid = Guid.Parse(gridSamples.SelectedRows[0].Cells["id"].Value.ToString());
             string comp = gridSamples.SelectedRows[0].Cells["sample_component_name"].Value.ToString();
-            if(!String.IsNullOrEmpty(comp))
+            if (!String.IsNullOrEmpty(comp))
             {
                 MessageBox.Show("Cannot split a sample which is already a component");
                 return;
@@ -2521,7 +2602,7 @@ namespace DSA_lims
             FormSampleSplit form = new FormSampleSplit(sid, treeSampleTypes);
             if (form.ShowDialog() != DialogResult.OK)
                 return;
-            
+
             PopulateSamples();
 
             SetStatusMessage("Splitting sample successful");
@@ -2536,8 +2617,8 @@ namespace DSA_lims
                 return;
             }
 
-            List<Guid> sampleIds = new List<Guid>();            
-            foreach(DataGridViewRow row in gridSamples.SelectedRows)
+            List<Guid> sampleIds = new List<Guid>();
+            foreach (DataGridViewRow row in gridSamples.SelectedRows)
                 sampleIds.Add(Utils.MakeGuid(row.Cells["id"].Value));
 
             var sampleIdsArr = from item in sampleIds select "'" + item + "'";
@@ -2546,10 +2627,10 @@ namespace DSA_lims
             SqlConnection conn = null;
             try
             {
-                conn = DB.OpenConnection();                
+                conn = DB.OpenConnection();
 
                 int mergeTest = Convert.ToInt32(DB.GetScalar(conn, null, "select count(transform_to_id) from sample where id in (" + sampleIdsCsv + ")", CommandType.Text));
-                if(mergeTest > 0)
+                if (mergeTest > 0)
                 {
                     MessageBox.Show("Cannot merge, one or more of these samples has already been merged");
                     return;
@@ -2576,7 +2657,7 @@ namespace DSA_lims
             FormSampleMerge form = new FormSampleMerge(sampleIds, treeSampleTypes);
             if (form.ShowDialog() != DialogResult.OK)
                 return;
-            
+
             PopulateSamples();
 
             SetStatusMessage("Merging samples successful");
@@ -2590,13 +2671,13 @@ namespace DSA_lims
             {
                 MessageBox.Show("You must select a single sample first");
                 return;
-            }                
+            }
 
             if (!Utils.IsValidGuid(Common.LabId) || !Roles.HasAccess(Role.LaboratoryAdministrator, Role.LaboratoryOperator))
             {
                 MessageBox.Show("You don't have access to add samples to orders");
                 return;
-            }            
+            }
 
             Guid sampleId = Guid.Parse(gridSamples.SelectedRows[0].Cells["id"].Value.ToString());
             string sampleName = gridSamples.SelectedRows[0].Cells["number"].Value.ToString();
@@ -2625,13 +2706,13 @@ namespace DSA_lims
             finally
             {
                 conn?.Close();
-            }                        
+            }
 
             FormSelectOrder form = new FormSelectOrder(treeSampleTypes, sample);
             if (form.ShowDialog() == DialogResult.OK)
             {
                 SetStatusMessage("Successfully added sample " + sampleName + " to order " + form.SelectedOrderName);
-            }            
+            }
 
             conn = null;
             try
@@ -2656,7 +2737,7 @@ namespace DSA_lims
             foreach (DataGridViewRow row in gridSamples.SelectedRows)
             {
                 string locked_name = row.Cells["locked_name"].Value.ToString();
-                if (!String.IsNullOrEmpty(locked_name))            
+                if (!String.IsNullOrEmpty(locked_name))
                     return true;
             }
             return false;
@@ -2664,7 +2745,7 @@ namespace DSA_lims
 
         private void miSamplesSetProject_Click(object sender, EventArgs e)
         {
-            if(gridSamples.SelectedRows.Count < 1)
+            if (gridSamples.SelectedRows.Count < 1)
             {
                 MessageBox.Show("You must select one or more samples first");
                 return;
@@ -2678,7 +2759,7 @@ namespace DSA_lims
 
             FormSelectProject form = new FormSelectProject();
             if (form.ShowDialog() != DialogResult.OK)
-                return;            
+                return;
 
             SqlConnection conn = null;
             SqlTransaction trans = null;
@@ -2693,7 +2774,7 @@ namespace DSA_lims
                 progressSamples.Maximum = gridSamples.SelectedRows.Count;
                 progressSamples.Value = 0;
 
-                Sample s = new Sample();                
+                Sample s = new Sample();
 
                 foreach (DataGridViewRow row in gridSamples.SelectedRows)
                 {
@@ -2708,7 +2789,7 @@ namespace DSA_lims
                     progressSamples.Value++;
                 }
 
-                trans.Commit();                
+                trans.Commit();
 
                 PopulateSamples();
 
@@ -2725,8 +2806,8 @@ namespace DSA_lims
                 conn?.Close();
                 tabs.Enabled = true;
                 progressSamples.Visible = false;
-            }            
-        }        
+            }
+        }
 
         private void miSamplesSetSampler_Click(object sender, EventArgs e)
         {
@@ -2744,7 +2825,7 @@ namespace DSA_lims
 
             FormSelectSampler form = new FormSelectSampler();
             if (form.ShowDialog() != DialogResult.OK)
-                return;            
+                return;
 
             SqlConnection conn = null;
             SqlTransaction trans = null;
@@ -2778,7 +2859,7 @@ namespace DSA_lims
 
                 SetStatusMessage("Updating sampler successful");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 trans?.Rollback();
                 Common.Log.Error(ex);
@@ -2789,7 +2870,7 @@ namespace DSA_lims
                 conn?.Close();
                 tabs.Enabled = true;
                 progressSamples.Visible = false;
-            }                        
+            }
         }
 
         private void miSamplesSetSamplingMethod_Click(object sender, EventArgs e)
@@ -2808,7 +2889,7 @@ namespace DSA_lims
 
             FormSelectSamplingMethod form = new FormSelectSamplingMethod();
             if (form.ShowDialog() != DialogResult.OK)
-                return;            
+                return;
 
             SqlConnection conn = null;
             SqlTransaction trans = null;
@@ -2855,7 +2936,7 @@ namespace DSA_lims
                 conn?.Close();
                 tabs.Enabled = true;
                 progressSamples.Visible = false;
-            }                        
+            }
         }
 
         private void miSamplesPrepAnal_Click(object sender, EventArgs e)
@@ -2868,13 +2949,13 @@ namespace DSA_lims
                 return;
             }
 
-            if(!Utils.IsValidGuid(Common.LabId))
+            if (!Utils.IsValidGuid(Common.LabId))
             {
                 MessageBox.Show("You must be a member of a laboratory in order to access preparations and analyses");
                 return;
             }
-            
-            if(gridSamples.SelectedRows.Count != 1)
+
+            if (gridSamples.SelectedRows.Count != 1)
             {
                 MessageBox.Show("You must select a single sample first");
                 return;
@@ -2888,7 +2969,7 @@ namespace DSA_lims
                 conn = DB.OpenConnection();
                 sample.LoadFromDB(conn, null, sid);
 
-                if (!PopulatePrepAnal(conn, sample))                
+                if (!PopulatePrepAnal(conn, sample))
                     return;
             }
             catch (Exception ex)
@@ -2908,7 +2989,7 @@ namespace DSA_lims
 
         private bool PopulatePrepAnal(SqlConnection conn, Sample s)
         {
-            if(!s.HasRequiredFields())
+            if (!s.HasRequiredFields())
             {
                 MessageBox.Show("This sample is not complete yet");
                 return false;
@@ -2917,9 +2998,9 @@ namespace DSA_lims
             treePrepAnal.Nodes.Clear();
 
             TreeNode sampleNode = null;
-            Font fontSample = new Font(treePrepAnal.Font, FontStyle.Bold);            
+            Font fontSample = new Font(treePrepAnal.Font, FontStyle.Bold);
 
-            using (SqlDataReader reader = DB.GetDataReader(conn, null, "csp_select_sample_header", CommandType.StoredProcedure, 
+            using (SqlDataReader reader = DB.GetDataReader(conn, null, "csp_select_sample_header", CommandType.StoredProcedure,
                 new SqlParameter("@id", s.Id)))
             {
                 reader.Read();
@@ -2928,7 +3009,7 @@ namespace DSA_lims
                 sampleNode = treePrepAnal.Nodes.Add(sample.Id.ToString(), txt);
                 sampleNode.NodeFont = fontSample;
             }
-            
+
             using (SqlDataReader reader = DB.GetDataReader(conn, null, "csp_select_preparation_headers_for_sample", CommandType.StoredProcedure,
                 new SqlParameter("@sample_id", s.Id)))
             {
@@ -2936,14 +3017,14 @@ namespace DSA_lims
                 {
                     int status = reader.GetInt32("workflow_status_id");
                     string txt = reader.GetString("preparation_number") + " - " + reader.GetString("preparation_method_name");
-                    if(DB.IsValidField(reader["assignment_name"]))
+                    if (DB.IsValidField(reader["assignment_name"]))
                         txt += ", " + reader.GetString("assignment_name");
                     TreeNode prepNode = sampleNode.Nodes.Add(reader.GetString("preparation_id"), txt);
                     prepNode.ToolTipText = reader.GetString("preparation_method_name_full");
                     prepNode.ForeColor = WorkflowStatus.GetStatusColor(status);
                 }
             }
-                
+
             foreach (TreeNode prepNode in sampleNode.Nodes)
             {
                 Guid prepId = Guid.Parse(prepNode.Name);
@@ -2954,7 +3035,7 @@ namespace DSA_lims
                     {
                         int status = reader.GetInt32("workflow_status_id");
                         string txt = reader.GetString("analysis_number") + " - " + reader.GetString("analysis_method_name");
-                        if(DB.IsValidField(reader["assignment_name"]))
+                        if (DB.IsValidField(reader["assignment_name"]))
                             txt += ", " + reader.GetString("assignment_name");
                         TreeNode analNode = prepNode.Nodes.Add(reader.GetString("analysis_id"), txt);
                         analNode.ToolTipText = reader.GetString("analysis_method_name_full");
@@ -2964,7 +3045,7 @@ namespace DSA_lims
             }
 
             treePrepAnal.ExpandAll();
-            
+
             tbPrepAnalInfoComment.Text = s.Comment;
             tbPrepAnalWetWeight.Text = s.WetWeight_g.ToString();
             tbPrepAnalDryWeight.Text = s.DryWeight_g.ToString();
@@ -2997,7 +3078,7 @@ namespace DSA_lims
 
             FormSelectBoolean form = new FormSelectBoolean("Samples excempt from public? ");
             if (form.ShowDialog() != DialogResult.OK)
-                return;            
+                return;
 
             SqlConnection conn = null;
             SqlTransaction trans = null;
@@ -3042,7 +3123,7 @@ namespace DSA_lims
                 conn?.Close();
                 tabs.Enabled = true;
                 progressSamples.Visible = false;
-            }            
+            }
         }
 
         private void miSamplesSetInstanceStatus_Click(object sender, EventArgs e)
@@ -3061,13 +3142,13 @@ namespace DSA_lims
 
             FormSelectInstanceStatus form = new FormSelectInstanceStatus();
             if (form.ShowDialog() != DialogResult.OK)
-                return;            
+                return;
 
             SqlConnection conn = null;
             SqlTransaction trans = null;
 
             try
-            {                
+            {
                 conn = DB.OpenConnection();
                 trans = conn.BeginTransaction();
 
@@ -3108,7 +3189,7 @@ namespace DSA_lims
                 conn?.Close();
                 tabs.Enabled = true;
                 progressSamples.Visible = false;
-            }                        
+            }
         }
 
         private void miSamplingMethodNew_Click(object sender, EventArgs e)
@@ -3128,7 +3209,7 @@ namespace DSA_lims
                     SetStatusMessage("Sampling method " + form.SamplingMethodName + " created");
                     using (SqlConnection conn = DB.OpenConnection())
                     {
-                        UI.PopulateSamplingMethods(conn, InstanceStatus.Deleted, gridMetaSamplingMeth);                        
+                        UI.PopulateSamplingMethods(conn, InstanceStatus.Deleted, gridMetaSamplingMeth);
 
                         UI.PopulateComboBoxes(conn, "csp_select_sampling_methods_short", new[] {
                             new SqlParameter("@instance_status_level", InstanceStatus.Deleted)
@@ -3165,7 +3246,7 @@ namespace DSA_lims
                     using (SqlConnection conn = DB.OpenConnection())
                     {
                         UI.PopulateSamplingMethods(conn, InstanceStatus.Deleted, gridMetaSamplingMeth);
-                                              
+
                         UI.PopulateComboBoxes(conn, "csp_select_sampling_methods_short", new[] {
                             new SqlParameter("@instance_status_level", InstanceStatus.Deleted)
                         }, cboxSampleInfoSamplingMeth);
@@ -3259,9 +3340,9 @@ namespace DSA_lims
             if (gridTypeRelPrepMeth.SelectedRows.Count < 1)
             {
                 MessageBox.Show("You must select a preparation method first");
-                return;                
+                return;
             }
-            
+
             Guid pmid = Utils.MakeGuid(gridTypeRelPrepMeth.SelectedRows[0].Cells["id"].Value);
 
             FormPreparationMethod form = new FormPreparationMethod(pmid);
@@ -3333,7 +3414,7 @@ namespace DSA_lims
                 MessageBox.Show("You must select a analysis method first");
                 return;
             }
-            
+
             Guid amid = Utils.MakeGuid(gridTypeRelAnalMeth.SelectedRows[0].Cells["id"].Value);
 
             FormAnalysisMethods form = new FormAnalysisMethods(amid);
@@ -3379,16 +3460,16 @@ namespace DSA_lims
                 MessageBox.Show("You must select a sample type first");
                 return;
             }
-            
+
             List<Guid> methodsAbove = GetPreparationMethodsForSampleType(treeSampleTypes.SelectedNode, true);
 
             List<Guid> methodsBelow = new List<Guid>();
             GetPreparationMethodsBelowSampleType(treeSampleTypes.SelectedNode, methodsBelow);
 
             FormSampTypeXPrepMeth form = new FormSampTypeXPrepMeth(
-                treeSampleTypes.SelectedNode.Text, 
-                Guid.Parse(treeSampleTypes.SelectedNode.Name), 
-                methodsAbove, 
+                treeSampleTypes.SelectedNode.Text,
+                Guid.Parse(treeSampleTypes.SelectedNode.Name),
+                methodsAbove,
                 methodsBelow);
 
             if (form.ShowDialog() == DialogResult.Cancel)
@@ -3403,13 +3484,13 @@ namespace DSA_lims
             catch (Exception ex)
             {
                 Common.Log.Error(ex);
-                MessageBox.Show(ex.Message);                
+                MessageBox.Show(ex.Message);
             }
             finally
             {
                 conn?.Close();
             }
-        }        
+        }
 
         private List<Guid> GetPreparationMethodsForSampleType(TreeNode tnode, bool ascend)
         {
@@ -3424,7 +3505,7 @@ namespace DSA_lims
                 cmd.Parameters.AddWithValue("@sample_type_id", sampleTypeId, Guid.Empty);
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    while (reader.Read())                    
+                    while (reader.Read())
                         existingMethods.Add(reader.GetGuid("id"));
                 }
 
@@ -3483,14 +3564,17 @@ namespace DSA_lims
 
             // new sample component
             Guid sampleTypeId = Guid.Parse(treeSampleTypes.SelectedNode.Name);
+            List<string> inheritedSampleTypes = new List<string>();
+            foreach(Lemma<Guid, string> item in lbSampleTypesInheritedComponents.Items)            
+                inheritedSampleTypes.Add(item.Name);
 
-            FormSampleComponent form = new FormSampleComponent(sampleTypeId, treeSampleTypes.SelectedNode.Text);
+            FormSampleComponent form = new FormSampleComponent(sampleTypeId, treeSampleTypes.SelectedNode.Text, inheritedSampleTypes);
             switch (form.ShowDialog())
             {
                 case DialogResult.OK:
                     SetStatusMessage("Sample component " + form.SampleComponentName + " created");
                     using (SqlConnection conn = DB.OpenConnection())
-                    {                        
+                    {
                         UI.PopulateSampleComponents(conn, sampleTypeId, lbSampleTypesComponents);
                     }
                     break;
@@ -3577,7 +3661,7 @@ namespace DSA_lims
             catch (Exception ex)
             {
                 Common.Log.Error(ex);
-                MessageBox.Show(ex.Message);                
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -3651,7 +3735,7 @@ namespace DSA_lims
                     cmd.Parameters.AddWithValue("@amid", amid);
                     cmd.Parameters.AddWithValue("@nid", l.Id);
                     cmd.ExecuteNonQuery();
-                }                
+                }
 
                 UI.PopulateAnalMethNuclides(conn, trans, amid, lbTypRelAnalMethNuclides);
 
@@ -3667,7 +3751,7 @@ namespace DSA_lims
             {
                 conn?.Close();
             }
-        }        
+        }
 
         private void miTypeRelPrepMethAddAnalMeth_Click(object sender, EventArgs e)
         {
@@ -3748,13 +3832,13 @@ namespace DSA_lims
                 return;
             }
 
-            if(gridTypeRelPrepMeth.SelectedRows.Count < 1)
+            if (gridTypeRelPrepMeth.SelectedRows.Count < 1)
             {
                 MessageBox.Show("You must select a preparation method first");
                 return;
             }
 
-            if(lbTypRelPrepMethAnalMeth.SelectedItems.Count < 1)
+            if (lbTypRelPrepMethAnalMeth.SelectedItems.Count < 1)
             {
                 MessageBox.Show("You must select one or more analysis methods first");
                 return;
@@ -3783,7 +3867,7 @@ namespace DSA_lims
 
                 trans.Commit();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 trans?.Rollback();
                 Common.Log.Error(ex);
@@ -3793,7 +3877,7 @@ namespace DSA_lims
             {
                 conn?.Close();
             }
-        }                        
+        }
 
         private void miOrdersNew_Click(object sender, EventArgs e)
         {
@@ -3837,7 +3921,7 @@ namespace DSA_lims
         private void miOrdersEdit_Click(object sender, EventArgs e)
         {
             // edit existing order
-            if(gridOrders.SelectedRows.Count < 1)
+            if (gridOrders.SelectedRows.Count < 1)
             {
                 MessageBox.Show("You must select an order first");
                 return;
@@ -3878,7 +3962,7 @@ namespace DSA_lims
         private void miOrdersDelete_Click(object sender, EventArgs e)
         {
             // delete order
-        }        
+        }
 
         private void PopulateOrder(SqlConnection conn, SqlTransaction trans, Assignment a, bool clearDirty)
         {
@@ -3916,6 +4000,9 @@ namespace DSA_lims
             if (a.LastWorkflowStatusDate.HasValue)
                 tbOrderLastWorkflowStatusBy.Text += " at " + a.LastWorkflowStatusDate.Value.ToString(Utils.DateTimeFormatNorwegian);
 
+            lblOrderToolsCreator.Text = "[Creator] " + a.GetCreatorName(conn, trans) + " " + a.CreateDate.ToString(Utils.DateFormatNorwegian);
+            lblOrderToolsUpdator.Text = "[Last Update] " + a.GetUpdatorName(conn, trans) + " " + a.UpdateDate.ToString(Utils.DateFormatNorwegian);
+
             PopulateOrderContent(conn, trans, a);
 
             // Show attachments
@@ -3923,7 +4010,7 @@ namespace DSA_lims
 
             PopulateOrderOverview(conn, trans, a);
 
-            if(clearDirty)
+            if (clearDirty)
             {
                 assignment.Dirty = false;
                 foreach (AssignmentSampleType ast in a.SampleTypes)
@@ -3932,7 +4019,7 @@ namespace DSA_lims
                     foreach (AssignmentPreparationMethod apm in ast.PreparationMethods)
                     {
                         apm.Dirty = false;
-                        foreach (AssignmentAnalysisMethod aam in apm.AnalysisMethods)                 
+                        foreach (AssignmentAnalysisMethod aam in apm.AnalysisMethods)
                             aam.Dirty = false;
                     }
                 }
@@ -3971,6 +4058,8 @@ namespace DSA_lims
                     txt = apm.PreparationMethodCount.ToString() + ", " + apm.PreparationMethodName(conn, trans);
                     if (Utils.IsValidGuid(apm.PreparationLaboratoryId))
                         txt += " (" + apm.PreparationLaboratoryName(conn, trans) + ")";
+                    if(apm.UseExistingPreparation)
+                        txt += " Use existing";
 
                     TreeNode tn = tnode.Nodes.Add(apm.Id.ToString(), txt);
                     tn.Tag = apm;
@@ -3984,7 +4073,7 @@ namespace DSA_lims
                             txt += " (" + assignment.LaboratoryName(conn, trans) + ")";
 
                         bool hasAccred = DB.HasAccreditationForOrderLine(conn, trans, a.LaboratoryId, ast.SampleTypeId, ast.SampleComponentId, apm.PreparationMethodId, aam.AnalysisMethodId);
-                        if (hasAccred)                        
+                        if (hasAccred)
                             txt += " A";
 
                         TreeNode tn2 = tn.Nodes.Add(aam.Id.ToString(), txt);
@@ -4000,21 +4089,21 @@ namespace DSA_lims
             }
 
             treeOrderContent.ExpandAll();
-        }        
+        }
 
         private void PopulateOrderOverview(SqlConnection conn, SqlTransaction trans, Assignment a)
         {
             // Populate order overview            
 
             Font fontSample = new Font(tvOrderContent.Font, FontStyle.Bold);
-            
+
             tvOrderContent.Nodes.Clear();
 
             List<SampleHeader> sampHeaders = new List<SampleHeader>();
 
             TreeNode root = tvOrderContent.Nodes.Add(a.Name);
             root.NodeFont = fontSample;
-            
+
             string query = @"
 select s.id as 'sample_id', s.number as 'sample_number', p.id as 'preparation_id', p.number as 'preparation_number', a.id as 'analysis_id', a.number as 'analysis_number'
 from analysis a
@@ -4071,7 +4160,7 @@ from preparation p
             inner join sample s on s.id = p.sample_id
 where p.instance_status_id = 1 and p.assignment_id = @assid
 order by s.number, p.number
-";            
+";
             using (SqlDataReader reader = DB.GetDataReader(conn, trans, query, CommandType.Text, new SqlParameter("@assid", a.Id)))
             {
                 while (reader.Read())
@@ -4139,7 +4228,7 @@ order by s.number, p.number
                 MessageBox.Show("This order has been closed and can not be updated");
                 return;
             }
-                            
+
             if (assignment.ApprovedLaboratory || assignment.ApprovedCustomer)
             {
                 MessageBox.Show("This order has been approved and can not be updated");
@@ -4159,7 +4248,7 @@ order by s.number, p.number
             catch (Exception ex)
             {
                 Common.Log.Error(ex);
-                MessageBox.Show(ex.Message);             
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -4196,7 +4285,7 @@ order by s.number, p.number
             }
 
             TreeNode tnode = treeOrderContent.SelectedNode;
-            if(tnode.Level != 0)
+            if (tnode.Level != 0)
             {
                 MessageBox.Show("You must select a top level sample type");
                 return;
@@ -4216,8 +4305,8 @@ select count(*) from sample s
             {
                 conn = DB.OpenConnection();
                 trans = conn.BeginTransaction();
-                                
-                n = (int)DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@astid", astId));                
+
+                n = (int)DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@astid", astId));
                 if (n > 0)
                 {
                     MessageBox.Show("Can not delete this sample type, it has " + n + " samples connected to it");
@@ -4231,7 +4320,7 @@ select count(*) from sample s
                 List<Guid> delApmIds = new List<Guid>();
                 using (SqlDataReader reader = DB.GetDataReader(conn, trans, "select id from assignment_preparation_method where assignment_sample_type_id = @astid", CommandType.Text, new SqlParameter("@astid", astId)))
                 {
-                    while(reader.Read())                    
+                    while (reader.Read())
                         delApmIds.Add(reader.GetGuid("id"));
                 }
 
@@ -4252,10 +4341,10 @@ select count(*) from sample s
                 cmd.Parameters.AddWithValue("@astid", astId);
                 cmd.ExecuteNonQuery();
 
-                trans.Commit();                
+                trans.Commit();
             }
-            catch(Exception ex)
-            {                
+            catch (Exception ex)
+            {
                 trans?.Rollback();
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -4270,7 +4359,7 @@ select count(*) from sample s
             {
                 var ast = assignment.SampleTypes.Find(x => x.Id == astId);
                 assignment.SampleTypes.Remove(ast);
-            }            
+            }
 
             tnode.Remove();
         }
@@ -4285,14 +4374,14 @@ select count(*) from sample s
             }
 
             TreeNode tnode = treeOrderContent.SelectedNode;
-            if(tnode.Level != 0)
+            if (tnode.Level != 0)
             {
                 MessageBox.Show("You must select a sample type first");
                 return;
             }
 
             AssignmentSampleType ast = tnode.Tag as AssignmentSampleType;
-            
+
             if (assignment.WorkflowStatusId == WorkflowStatus.Complete)
             {
                 MessageBox.Show("This order has been closed and can not be updated");
@@ -4311,7 +4400,7 @@ select count(*) from sample s
                 conn = DB.OpenConnection();
                 int nSamples;
                 DB.GetSampleCountForAST(conn, null, ast.Id, out nSamples);
-                if(nSamples > 0)
+                if (nSamples > 0)
                 {
                     MessageBox.Show("Can not add preparation methods to this sample type because it has " + nSamples + " samples connected to it");
                     return;
@@ -4429,10 +4518,32 @@ select count(*) from sample s
         private void miOrderSave_Click(object sender, EventArgs e)
         {
             // save order            
-            if(!assignment.IsDirty())
+            if (!assignment.IsDirty())
             {
                 SetStatusMessage("Nothing to save for order " + assignment.Name);
                 return;
+            }
+
+            if (cbOrderApprovedLaboratory.Checked)
+            {                
+                foreach (AssignmentSampleType ast in assignment.SampleTypes)
+                {
+                    int workFound = 0;
+                    foreach (AssignmentPreparationMethod apm in ast.PreparationMethods)
+                    {
+                        if (apm.PreparationLaboratoryId == Common.LabId)
+                            workFound++;
+
+                        foreach (AssignmentAnalysisMethod aam in apm.AnalysisMethods)
+                                workFound++;
+                    }
+
+                    if (workFound == 0)
+                    {
+                        MessageBox.Show("You can not approve a sample type without any preparations or analyses");
+                        return;
+                    }
+                }                
             }            
 
             int wfStatus = (int)cboxOrderStatus.SelectedValue;
@@ -4464,13 +4575,13 @@ select count(*) from sample s
             DateTime deadline = (DateTime)tbOrderDeadline.Tag;
             if (deadline.Date < DateTime.Now.Date)
             {
-                if(assignment.WorkflowStatusId == WorkflowStatus.Complete && wfStatus == WorkflowStatus.Construction)
-                {                    
+                if (assignment.WorkflowStatusId == WorkflowStatus.Complete && wfStatus == WorkflowStatus.Construction)
+                {
                     FormSelectDate form = new FormSelectDate("New deadline required");
                     if (form.ShowDialog() != DialogResult.OK)
                         return;
 
-                    if(form.SelectedDate.Date < DateTime.Now.Date)
+                    if (form.SelectedDate.Date < DateTime.Now.Date)
                     {
                         MessageBox.Show("Deadline can not be in the past");
                         return;
@@ -4484,7 +4595,7 @@ select count(*) from sample s
                     cbOrderApprovedCustomer.Checked = false;
                     cbOrderApprovedLaboratory.Checked = false;
                 }
-                else if(wfStatus == WorkflowStatus.Rejected)
+                else if (wfStatus == WorkflowStatus.Rejected)
                 {
 
                 }
@@ -4533,7 +4644,7 @@ select count(*) from sample s
 
             if (cbOrderApprovedLaboratory.Checked)
             {
-                if(!assignment.ApprovedLaboratory)
+                if (!assignment.ApprovedLaboratory)
                 {
                     if (!Utils.IsValidGuid(Common.LabId))
                     {
@@ -4594,7 +4705,7 @@ select count(*) from sample s
             try
             {
                 conn = DB.OpenConnection();
-                trans = conn.BeginTransaction();                
+                trans = conn.BeginTransaction();
 
                 if (wfStatus == WorkflowStatus.Complete)
                 {
@@ -4611,7 +4722,7 @@ select count(*) from sample s
                     int nReqSamples, nReqPreparations, nReqAnalyses;
                     DB.GetOrderRequiredInventory(conn, trans, assignment.Id, out nReqSamples, out nReqPreparations, out nReqAnalyses);
 
-                    if(nCurrSamples < nReqSamples)
+                    if (nCurrSamples < nReqSamples)
                     {
                         MessageBox.Show("Can not set this order to complete. Connected samples " + nCurrSamples + " of " + nReqSamples);
                         return;
@@ -4632,7 +4743,7 @@ select count(*) from sample s
                     // Check that everything is complete
                     string query = "select count(*) from preparation where assignment_id = @assid and workflow_status_id > 1 and instance_status_id < 2";
                     int np = (int)DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@assid", assignment.Id));
-                    if(np < nReqPreparations)
+                    if (np < nReqPreparations)
                     {
                         MessageBox.Show("Can not set this order to complete. One or more preparations are not completed or rejected");
                         return;
@@ -4673,10 +4784,10 @@ select count(*) from sample s
                 assignment.ApprovedLaboratory = cbOrderApprovedLaboratory.Checked;
                 assignment.ApprovedCustomer = cbOrderApprovedCustomer.Checked;
                 assignment.ReportComment = tbOrderReportComment.Text.Trim();
-                assignment.WorkflowStatusId = wfStatus;                           
+                assignment.WorkflowStatusId = wfStatus;
 
                 assignment.StoreToDB(conn, trans);
-                                
+
                 string json = JsonConvert.SerializeObject(assignment);
                 DB.AddAuditMessage(conn, trans, "assignment", assignment.Id, AuditOperationType.Update, json, "");
 
@@ -4688,7 +4799,7 @@ select count(*) from sample s
 
                 SetStatusMessage("Order " + assignment.Name + " updated");
 
-                tbOrderReportComment.Enabled = cbOrderApprovedLaboratory.Enabled = cbOrderApprovedCustomer.Enabled = 
+                tbOrderReportComment.Enabled = cbOrderApprovedLaboratory.Enabled = cbOrderApprovedCustomer.Enabled =
                     !(assignment.WorkflowStatusId == WorkflowStatus.Complete);
             }
             catch (Exception ex)
@@ -4757,7 +4868,7 @@ select count(*) from sample s
                 MessageBox.Show("You must select a customer first");
                 return;
             }
-            
+
             Guid cid = Utils.MakeGuid(gridCustomers.SelectedRows[0].Cells["id"].Value);
 
             FormCustomer form = new FormCustomer(cid);
@@ -4785,7 +4896,7 @@ select count(*) from sample s
                 MessageBox.Show("You don't have access to delete customers");
                 return;
             }
-        }        
+        }
 
         private void gridSysCounty_SelectionChanged(object sender, EventArgs e)
         {
@@ -4799,7 +4910,7 @@ select count(*) from sample s
                 conn = DB.OpenConnection();
                 UI.PopulateMunicipalities(conn, cid, gridSysMunicipality);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -4823,8 +4934,8 @@ select count(*) from sample s
             try
             {
                 Guid pmid = Utils.MakeGuid(gridProjectMain.SelectedRows[0].Cells["id"].Value);
-                conn = DB.OpenConnection();                
-                UI.PopulateProjectsSub(conn, pmid, gridProjectSub);                
+                conn = DB.OpenConnection();
+                UI.PopulateProjectsSub(conn, pmid, gridProjectSub);
             }
             catch (Exception ex)
             {
@@ -4888,7 +4999,7 @@ select count(*) from sample s
             assignment.Dirty = true;
 
             if (!Utils.IsValidGuid(cboxOrderLaboratory.SelectedValue))
-            {            
+            {
                 cboxOrderResponsible.SelectedValue = Guid.Empty;
                 return;
             }
@@ -4932,7 +5043,7 @@ select count(*) from sample s
                 Guid sid, pid;
                 switch (e.Node.Level)
                 {
-                    case 0:                        
+                    case 0:
                         sid = Guid.Parse(e.Node.Name);
                         sample.LoadFromDB(conn, null, sid);
                         PopulateSampleInfo(conn, null, sample, e.Node, true);
@@ -4944,7 +5055,7 @@ select count(*) from sample s
                         sample.LoadFromDB(conn, null, sid);
                         pid = Guid.Parse(e.Node.Name);
                         preparation = sample.Preparations.Find(x => x.Id == pid);
-                        if(preparation == null)
+                        if (preparation == null)
                         {
                             Common.Log.Error("Unable to find preparation " + pid + " in sample " + sid);
                             MessageBox.Show("Unable to find preparation " + pid + " in sample " + sid);
@@ -4999,17 +5110,17 @@ select count(*) from sample s
         {
             if (e.Node == null)
                 return;
-            
+
             var selected = (e.State & TreeNodeStates.Selected) == TreeNodeStates.Selected;
             var unfocused = !e.Node.TreeView.Focused;
-            
+
             if (selected && unfocused)
             {
                 var font = e.Node.NodeFont ?? e.Node.TreeView.Font;
                 e.Graphics.FillRectangle(SystemBrushes.Highlight, e.Bounds);
                 TextRenderer.DrawText(e.Graphics, e.Node.Text, font, e.Bounds, SystemColors.HighlightText, TextFormatFlags.GlyphOverhangPadding);
             }
-            else e.DrawDefault = true;            
+            else e.DrawDefault = true;
         }
 
         private void treePrepAnal_DrawNode(object sender, DrawTreeNodeEventArgs e)
@@ -5046,15 +5157,15 @@ select count(*) from sample s
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
-            }   
+            }
             finally
             {
                 conn?.Close();
-            }         
+            }
         }
 
         private void tabs_Deselecting(object sender, TabControlCancelEventArgs e)
@@ -5067,19 +5178,19 @@ select count(*) from sample s
 
             SqlConnection conn = null;
             try
-            {                
+            {
                 if (e.TabPage == tabSample || e.TabPage == tabPrepAnal)
                 {
                     conn = DB.OpenConnection();
-                    DB.UnlockSamples(conn);                    
+                    DB.UnlockSamples(conn);
                 }
                 else if (e.TabPage == tabOrder)
                 {
-                    conn = DB.OpenConnection();                    
-                    DB.UnlockOrders(conn);                    
+                    conn = DB.OpenConnection();
+                    DB.UnlockOrders(conn);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -5096,9 +5207,9 @@ select count(*) from sample s
                 tabs.SelectedTab = tabSamples;
             else if (tabs.SelectedTab == tabOrder)
                 tabs.SelectedTab = tabOrders;
-            else if(tabs.SelectedTab == tabAuditLog)
+            else if (tabs.SelectedTab == tabAuditLog)
             {
-                if(auditLogIsSample)
+                if (auditLogIsSample)
                     tabs.SelectedTab = tabSamples;
                 else tabs.SelectedTab = tabOrders;
             }
@@ -5137,13 +5248,19 @@ select count(*) from sample s
                 return;
             }
 
-            if((int)cboxSampleInstanceStatus.SelectedValue == 0)
+            if ((int)cboxSampleInstanceStatus.SelectedValue == 0)
             {
                 MessageBox.Show("Status is mandatory");
                 return;
             }
 
-            if(!String.IsNullOrEmpty(tbSampleInfoAltitude.Text) && !Utils.IsValidDecimal(tbSampleInfoAltitude.Text))
+            if (tbSampleReferenceDate.Tag == null)
+            {
+                MessageBox.Show("Reference date is mandatory");
+                return;
+            }
+
+            if (!String.IsNullOrEmpty(tbSampleInfoAltitude.Text) && !Utils.IsValidDecimal(tbSampleInfoAltitude.Text))
             {
                 MessageBox.Show("Altitude must be a number");
                 return;
@@ -5157,9 +5274,9 @@ select count(*) from sample s
                     lat = UtilsGeo.GetLatitude(tbSampleInfoLatitude.Text.Trim());
 
                 if (!String.IsNullOrEmpty(tbSampleInfoLongitude.Text.Trim()))
-                    lon = UtilsGeo.GetLongitude(tbSampleInfoLongitude.Text.Trim());                
+                    lon = UtilsGeo.GetLongitude(tbSampleInfoLongitude.Text.Trim());
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 return;
@@ -5183,16 +5300,13 @@ select count(*) from sample s
                     return;
                 }
 
-                if (tbSampleReferenceDate.Tag != null)
+                DateTime newRefDate = (DateTime)tbSampleReferenceDate.Tag;
+                if (sample.ReferenceDate != newRefDate)
                 {
-                    DateTime newRefDate = (DateTime)tbSampleReferenceDate.Tag;
-                    if (sample.ReferenceDate != newRefDate)
+                    if (sample.HasCompletedAnalysisResults(conn, trans))
                     {
-                        if (sample.HasCompletedAnalysisResults(conn, trans))
-                        {
-                            MessageBox.Show("Can not change reference date. This sample has one or more completed analyses");
-                            return;
-                        }
+                        MessageBox.Show("Can not change reference date. This sample has one or more completed analyses");
+                        return;
                     }
                 }
 
@@ -5269,31 +5383,31 @@ select count(*) from sample s
                 conn = DB.OpenConnection();
                 trans = conn.BeginTransaction();
 
-                if(preparation.IsClosed(conn, trans))
+                if (preparation.IsClosed(conn, trans))
                 {
                     MessageBox.Show("This preparation belongs to a closed order and can not be updated");
                     return;
                 }
 
-                if(!Utils.IsValidGuid(cboxPrepAnalPrepGeom.SelectedValue))
+                if (!Utils.IsValidGuid(cboxPrepAnalPrepGeom.SelectedValue) && (int)cboxPrepAnalPrepWorkflowStatus.SelectedValue != WorkflowStatus.Rejected)
                 {
                     MessageBox.Show("Geometry is required");
                     return;
                 }
 
-                if (String.IsNullOrEmpty(tbPrepAnalPrepAmount.Text))
+                if (String.IsNullOrEmpty(tbPrepAnalPrepAmount.Text) && (int)cboxPrepAnalPrepWorkflowStatus.SelectedValue != WorkflowStatus.Rejected)
                 {
                     MessageBox.Show("Preparation amount is required");
                     return;
                 }
-                
-                if ((int)cboxPrepAnalPrepAmountUnit.SelectedValue == 0)
+
+                if ((int)cboxPrepAnalPrepAmountUnit.SelectedValue == 0 && (int)cboxPrepAnalPrepWorkflowStatus.SelectedValue != WorkflowStatus.Rejected)
                 {
                     MessageBox.Show("Preparation amount unit is required");
                     return;
                 }
 
-                if ((int)cboxPrepAnalPrepWorkflowStatus.SelectedValue == 0)
+                if ((int)cboxPrepAnalPrepWorkflowStatus.SelectedValue == 0 && (int)cboxPrepAnalPrepWorkflowStatus.SelectedValue != WorkflowStatus.Rejected)
                 {
                     MessageBox.Show("Preparation status is required");
                     return;
@@ -5301,31 +5415,40 @@ select count(*) from sample s
 
 
                 Guid pgid = Utils.MakeGuid(cboxPrepAnalPrepGeom.SelectedValue);
-                if (!String.IsNullOrEmpty(tbPrepAnalPrepFillHeight.Text) && Utils.IsValidGuid(pgid))
+                if (!String.IsNullOrEmpty(tbPrepAnalPrepFillHeight.Text) && Utils.IsValidGuid(pgid) && (int)cboxPrepAnalPrepWorkflowStatus.SelectedValue != WorkflowStatus.Rejected)
                 {
                     double fh = Convert.ToDouble(tbPrepAnalPrepFillHeight.Text);
                     PreparationGeometry pg = new PreparationGeometry(conn, trans, pgid);
-                    if(fh < pg.MinFillHeightMM || fh > pg.MaxFillHeightMM)
+                    if (fh < pg.MinFillHeightMM || fh > pg.MaxFillHeightMM)
                     {
                         MessageBox.Show("Fill height " + fh + " is outside valid range. Valid range is [" + pg.MinFillHeightMM + ", " + pg.MaxFillHeightMM + "]");
                         return;
                     }
                 }
 
-                if(preparation.WorkflowStatusId == WorkflowStatus.Complete && (int)cboxPrepAnalPrepWorkflowStatus.SelectedValue == WorkflowStatus.Complete)
+                if (preparation.WorkflowStatusId == WorkflowStatus.Complete && (int)cboxPrepAnalPrepWorkflowStatus.SelectedValue == WorkflowStatus.Complete)
                 {
                     MessageBox.Show("Can not save a completed preparation");
                     return;
                 }
-                
+
                 if (preparation.WorkflowStatusId != WorkflowStatus.Rejected && (int)cboxPrepAnalPrepWorkflowStatus.SelectedValue == WorkflowStatus.Rejected)
                 {
                     SqlCommand cmd = new SqlCommand("select count(*) from analysis where preparation_id = @pid and workflow_status_id <> 3", conn, trans);
                     cmd.Parameters.AddWithValue("@pid", preparation.Id);
                     int n = (int)cmd.ExecuteScalar();
-                    if(n > 0)
+                    if (n > 0)
                     {
                         MessageBox.Show("Can not reject this preparation because one or more analyses are not rejected");
+                        return;
+                    }
+                }
+
+                foreach(Analysis a in preparation.Analyses)
+                {
+                    if((int)cboxPrepAnalPrepWorkflowStatus.SelectedValue != WorkflowStatus.Complete && a.WorkflowStatusId == WorkflowStatus.Complete)
+                    {
+                        MessageBox.Show("Can not set this preparation to construction because one or more analyses are complete");
                         return;
                     }
                 }
@@ -5349,7 +5472,7 @@ select count(*) from sample s
                 treePrepAnal.SelectedNode.ForeColor = WorkflowStatus.GetStatusColor(preparation.WorkflowStatusId);
                 SetStatusMessage("Preparation " + sample.Number + "/" + preparation.Number + " updated successfully");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 trans?.Rollback();
                 Common.Log.Error(ex);
@@ -5366,13 +5489,15 @@ select count(*) from sample s
             lblPrepAnalPrepRange.Text = "";
             cboxPrepAnalPrepGeom.SelectedValue = p.PreparationGeometryId;
             tbPrepAnalPrepFillHeight.Text = p.FillHeightMM.ToString();
-            tbPrepAnalPrepAmount.Text = p.Amount.ToString();            
+            tbPrepAnalPrepAmount.Text = p.Amount.ToString();
             cboxPrepAnalPrepAmountUnit.SelectedValue = p.PrepUnitId;
-            tbPrepAnalPrepQuantity.Text = p.Quantity.ToString();            
+            tbPrepAnalPrepQuantity.Text = p.Quantity.ToString();
             cboxPrepAnalPrepQuantityUnit.SelectedValue = p.QuantityUnitId;
             tbPrepAnalPrepComment.Text = p.Comment;
             cboxPrepAnalPrepWorkflowStatus.SelectedValue = p.WorkflowStatusId;
             tbPrepAnalPrepReqUnit.Text = p.GetRequestedActivityUnitName(conn, trans);
+
+            lblPreparationToolsCreator.Text = "[Creator] " + p.GetCreatorName(conn, trans) + " [Last Update] " + p.GetUpdatorName(conn, trans);
 
             if (Utils.IsValidGuid(p.PreparationGeometryId))
             {
@@ -5388,9 +5513,9 @@ select count(*) from sample s
             if (Utils.IsValidGuid(p.AssignmentId))
             {
                 Guid labId = DB.GetLaboratoryIdFromOrderId(conn, trans, p.AssignmentId);
-                if(Utils.IsValidGuid(labId))
+                if (Utils.IsValidGuid(labId))
                 {
-                    if(labId != Common.LabId)
+                    if (labId != Common.LabId)
                     {
                         btnPrepAnalPrepUpdate.Enabled = false;
                         btnPrepAnalPrepDiscard.Enabled = false;
@@ -5404,12 +5529,12 @@ select count(*) from sample s
 
         private void btnPrepAnalAnalUpdate_Click(object sender, EventArgs e)
         {
-            if(!analysis.IsDirty())
-            {                
+            if (!analysis.IsDirty())
+            {
                 SetStatusMessage("Nothing to save for analysis " + preparation.Number + "/" + analysis.Number);
                 return;
             }
-            
+
             SqlConnection conn = null;
             SqlTransaction trans = null;
 
@@ -5422,15 +5547,15 @@ select count(*) from sample s
                 {
                     MessageBox.Show("This analysis belongs to a closed order and can not be updated");
                     return;
-                }                
+                }
 
-                if(!Utils.IsValidGuid(cboxPrepAnalAnalUnit.SelectedValue))
+                if (!Utils.IsValidGuid(cboxPrepAnalAnalUnit.SelectedValue) && (int)cboxPrepAnalAnalWorkflowStatus.SelectedValue != WorkflowStatus.Rejected)
                 {
                     MessageBox.Show("Analysis unit is required");
                     return;
                 }
 
-                if((int)cboxPrepAnalAnalWorkflowStatus.SelectedValue == 0)
+                if ((int)cboxPrepAnalAnalWorkflowStatus.SelectedValue == 0 && (int)cboxPrepAnalAnalWorkflowStatus.SelectedValue != WorkflowStatus.Rejected)
                 {
                     MessageBox.Show("Analysis status is required");
                     return;
@@ -5442,7 +5567,7 @@ select count(*) from sample s
                     {
                         MessageBox.Show("The spectrum reference " + tbPrepAnalAnalSpecRef.Text.Trim() + " is already used by sample " + sampleNum);
                         return;
-                    }                    
+                    }
                 }
 
                 if (analysis.WorkflowStatusId == WorkflowStatus.Complete && (int)cboxPrepAnalAnalWorkflowStatus.SelectedValue == WorkflowStatus.Complete)
@@ -5467,7 +5592,13 @@ select count(*) from sample s
                         MessageBox.Show("Can not reject this analysis because one or more results are approved");
                         return;
                     }
-                }                
+                }
+
+                if (preparation.WorkflowStatusId != WorkflowStatus.Complete && (int)cboxPrepAnalAnalWorkflowStatus.SelectedValue == WorkflowStatus.Complete)
+                {
+                    MessageBox.Show("Can not complete this analysis because the preparation is not completed");
+                    return;
+                }
 
                 analysis.ActivityUnitId = Utils.MakeGuid(cboxPrepAnalAnalUnit.SelectedValue);
                 analysis.ActivityUnitTypeId = Utils.MakeGuid(cboxPrepAnalAnalUnitType.SelectedValue);
@@ -5475,7 +5606,7 @@ select count(*) from sample s
                 analysis.Comment = tbPrepAnalAnalComment.Text;
                 analysis.WorkflowStatusId = (int)cboxPrepAnalAnalWorkflowStatus.SelectedValue;
 
-                analysis.StoreToDB(conn, trans);                
+                analysis.StoreToDB(conn, trans);
 
                 string json = JsonConvert.SerializeObject(sample);
                 DB.AddAuditMessage(conn, trans, "sample", sample.Id, AuditOperationType.Update, json, "");
@@ -5491,7 +5622,7 @@ select count(*) from sample s
                     catch { }
                 }
 
-                trans.Commit();                                
+                trans.Commit();
 
                 treePrepAnal.SelectedNode.ForeColor = WorkflowStatus.GetStatusColor(analysis.WorkflowStatusId);
                 SetStatusMessage("Analysis " + sample.Number + "/" + preparation.Number + "/" + analysis.Number + " updated successfully");
@@ -5503,21 +5634,21 @@ select count(*) from sample s
                 MessageBox.Show(ex.Message);
             }
             finally
-            {                
+            {
                 conn?.Close();
-            }            
-        }        
+            }
+        }
 
         private void cboxPrepAnalPrepGeom_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblPrepAnalPrepRange.Text = "";            
+            lblPrepAnalPrepRange.Text = "";
 
             if (Utils.IsValidGuid(cboxPrepAnalPrepGeom.SelectedValue))
             {
                 SqlConnection conn = null;
                 try
                 {
-                    conn = DB.OpenConnection();                    
+                    conn = DB.OpenConnection();
                     PreparationGeometry pg = new PreparationGeometry(conn, null, Utils.MakeGuid(cboxPrepAnalPrepGeom.SelectedValue));
                     lblPrepAnalPrepRange.Text = "[" + pg.MinFillHeightMM + ", " + pg.MaxFillHeightMM + "]";
                 }
@@ -5536,7 +5667,7 @@ select count(*) from sample s
         }
 
         private void btnPrepAnalSampleUpdate_Click(object sender, EventArgs e)
-        {            
+        {
             SqlConnection conn = null;
             SqlTransaction trans = null;
 
@@ -5580,7 +5711,7 @@ select count(*) from sample s
 
                 sample.WetWeight_g = Utils.ToDouble(tbPrepAnalWetWeight.Text);
                 sample.DryWeight_g = Utils.ToDouble(tbPrepAnalDryWeight.Text);
-                sample.Volume_l = Utils.ToDouble(tbPrepAnalVolume.Text);                
+                sample.Volume_l = Utils.ToDouble(tbPrepAnalVolume.Text);
                 sample.LodWeightStart = lodStart;
                 sample.LodWeightEnd = lodEnd;
                 sample.LodTemperature = Utils.ToDouble(tbPrepAnalLODTemperature.Text);
@@ -5588,8 +5719,8 @@ select count(*) from sample s
                 sample.LodFactor = Utils.ToDouble(tbPrepAnalLODFactor.Text);
                 sample.LodWeightStartAsh = lodStartAsh;
                 sample.LodWeightEndAsh = lodEndAsh;
-                sample.LodTemperatureAsh = Utils.ToDouble(tbPrepAnalLODTemperatureAsh.Text);                
-                sample.LodWaterPercentAsh = Utils.ToDouble(tbPrepAnalLODWaterPercentAsh.Text);                
+                sample.LodTemperatureAsh = Utils.ToDouble(tbPrepAnalLODTemperatureAsh.Text);
+                sample.LodWaterPercentAsh = Utils.ToDouble(tbPrepAnalLODWaterPercentAsh.Text);
                 sample.LodFactorAsh = Utils.ToDouble(tbPrepAnalLODFactorAsh.Text);
                 sample.LodWeightStartAsh2 = lodStartAsh2;
                 sample.LodWeightEndAsh2 = lodEndAsh2;
@@ -5619,12 +5750,12 @@ select count(*) from sample s
         }
 
         private void PopulateSampleInfo(SqlConnection conn, SqlTransaction trans, Sample s, TreeNode tnode, bool clearDirty)
-        {                        
+        {
             tnode.ToolTipText = "Component: " + sample.GetSampleComponentName(conn, trans) + Environment.NewLine
                 + "External Id: " + sample.ExternalId + Environment.NewLine
                 + "Project: " + sample.GetProjectName(conn, trans) + Environment.NewLine
                 + "Reference date: " + sample.ReferenceDate.Value.ToString(Utils.DateTimeFormatNorwegian);
-            
+
             tbPrepAnalInfoComment.Text = s.Comment;
             tbPrepAnalWetWeight.Text = s.WetWeight_g.ToString();
             tbPrepAnalDryWeight.Text = s.DryWeight_g.ToString();
@@ -5637,8 +5768,8 @@ select count(*) from sample s
 
             tbPrepAnalLODStartWeightAsh.Text = s.LodWeightStartAsh.ToString();
             tbPrepAnalLODEndWeightAsh.Text = s.LodWeightEndAsh.ToString();
-            tbPrepAnalLODTemperatureAsh.Text = s.LodTemperatureAsh.ToString();            
-            tbPrepAnalLODWaterPercentAsh.Text = s.LodWaterPercentAsh.ToString();            
+            tbPrepAnalLODTemperatureAsh.Text = s.LodTemperatureAsh.ToString();
+            tbPrepAnalLODWaterPercentAsh.Text = s.LodWaterPercentAsh.ToString();
             tbPrepAnalLODFactorAsh.Text = s.LodFactorAsh.ToString();
 
             tbPrepAnalLODStartWeightAsh2.Text = s.LodWeightStartAsh2.ToString();
@@ -5692,7 +5823,7 @@ select count(*) from sample s
             {
                 MessageBox.Show("You can not edit a completed analysis");
                 return;
-            }            
+            }
 
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = "LIS files (*.lis)|*.lis";
@@ -5703,7 +5834,7 @@ select count(*) from sample s
             a.ImportFile = dialog.FileName;
 
             FormImportAnalysisLIS form = new FormImportAnalysisLIS(preparation, a);
-            if (form.ShowDialog() != DialogResult.OK)            
+            if (form.ShowDialog() != DialogResult.OK)
                 return;
 
             analysis = a.Clone();
@@ -5736,7 +5867,9 @@ select count(*) from sample s
             tbPrepAnalAnalSpecRef.Text = a.SpecterReference;
             tbPrepAnalAnalNuclLib.Text = a.NuclideLibrary;
             tbPrepAnalAnalMDALib.Text = a.MDALibrary;
-            tbPrepAnalAnalComment.Text = a.Comment;            
+            tbPrepAnalAnalComment.Text = a.Comment;
+
+            lblAnalysisToolsCreator.Text = "[Creator] " + a.GetCreatorName(conn, trans) + " [Last Update] " + a.GetUpdatorName(conn, trans);
 
             PopulateAnalysisResults(a, clearDirty);
 
@@ -5778,7 +5911,7 @@ select count(*) from sample s
             actApprCol.HeaderText = "Act.Appr.";
             actApprCol.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             gridPrepAnalResults.Columns.Add(actApprCol);
-            gridPrepAnalResults.Columns.Add("DetectionLimit", "MDA.");            
+            gridPrepAnalResults.Columns.Add("DetectionLimit", "MDA.");
             DataGridViewCheckBoxColumn mdaApprCol = new DataGridViewCheckBoxColumn();
             mdaApprCol.Name = "DetectionLimitApproved";
             mdaApprCol.HeaderText = "MDA.Appr.";
@@ -5788,7 +5921,7 @@ select count(*) from sample s
             accApprCol.Name = "Accredited";
             accApprCol.HeaderText = "Accredited";
             accApprCol.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            gridPrepAnalResults.Columns.Add(accApprCol);            
+            gridPrepAnalResults.Columns.Add(accApprCol);
             DataGridViewCheckBoxColumn repApprCol = new DataGridViewCheckBoxColumn();
             repApprCol.Name = "Reportable";
             repApprCol.HeaderText = "Reportable";
@@ -5808,7 +5941,7 @@ select count(*) from sample s
                     ar.Accredited,
                     ar.Reportable
                 });
-            }            
+            }
 
             gridPrepAnalResults.Columns["Id"].Visible = false;
 
@@ -5838,8 +5971,8 @@ select count(*) from sample s
                 ew = null;
             }
 
-            if(sw != null && ew != null && sw.Value != 0d)
-            {                
+            if (sw != null && ew != null && sw.Value != 0d)
+            {
                 double? delta = sw - ew;
                 double? percent = (delta / sw) * 100.0;
                 tbWaterPercent.Text = percent.Value.ToString("0.0#");
@@ -5851,7 +5984,7 @@ select count(*) from sample s
                 tbWaterPercent.Text = "";
                 tbFactor.Text = "";
             }
-        }        
+        }
 
         private void btnPrepAnalAddPrep_Click(object sender, EventArgs e)
         {
@@ -5871,7 +6004,7 @@ select count(*) from sample s
                 conn = DB.OpenConnection();
                 PopulatePrepAnal(conn, sample);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -5885,11 +6018,11 @@ select count(*) from sample s
 
         private void btnPrepAnalAddAnal_Click(object sender, EventArgs e)
         {
-            if(treePrepAnal.SelectedNode == null)
+            if (treePrepAnal.SelectedNode == null)
             {
                 MessageBox.Show("You must select a preparation first");
                 return;
-            }            
+            }
 
             FormPrepAnalAddAnal form = new FormPrepAnalAddAnal(sample, preparation);
             if (form.ShowDialog() != DialogResult.OK)
@@ -5915,7 +6048,7 @@ select count(*) from sample s
             finally
             {
                 conn?.Close();
-            }                
+            }
         }
 
         private void btnSampleAddSampleToOrder_Click(object sender, EventArgs e)
@@ -5949,11 +6082,11 @@ select count(*) from sample s
             tbSampleSamplingDateTo.Text = "";
 
             tbSampleSamplingDateFrom.Tag = null;
-            tbSampleSamplingDateFrom.Text = "";            
+            tbSampleSamplingDateFrom.Text = "";
         }
 
         private void btnSampleSamplingDateToClear_Click(object sender, EventArgs e)
-        {            
+        {
             tbSampleSamplingDateTo.Tag = null;
             tbSampleSamplingDateTo.Text = "";
         }
@@ -5965,11 +6098,11 @@ select count(*) from sample s
                 return;
 
             tbSampleSamplingDateTo.Tag = form.SelectedDateTime;
-            tbSampleSamplingDateTo.Text = form.SelectedDateTime.ToString(Utils.DateTimeFormatNorwegian);            
+            tbSampleSamplingDateTo.Text = form.SelectedDateTime.ToString(Utils.DateTimeFormatNorwegian);
         }
 
         private void btnSampleReferenceDateClear_Click(object sender, EventArgs e)
-        {            
+        {
             tbSampleReferenceDate.Tag = null;
             tbSampleReferenceDate.Text = "";
         }
@@ -5981,16 +6114,16 @@ select count(*) from sample s
                 return;
 
             tbSampleReferenceDate.Tag = form.SelectedDateTime;
-            tbSampleReferenceDate.Text = form.SelectedDateTime.ToString(Utils.DateTimeFormatNorwegian);            
+            tbSampleReferenceDate.Text = form.SelectedDateTime.ToString(Utils.DateTimeFormatNorwegian);
         }
 
         private void cboxSampleLaboratory_SelectedIndexChanged(object sender, EventArgs e)
         {
             sample.Dirty = true;
 
-            if (!Utils.IsValidGuid(cboxSampleLaboratory.SelectedValue))            
+            if (!Utils.IsValidGuid(cboxSampleLaboratory.SelectedValue))
                 lblSampleToolLaboratory.Text = "";
-            else            
+            else
                 lblSampleToolLaboratory.Text = "[Laboratory] " + cboxSampleLaboratory.Text;
         }
 
@@ -6007,7 +6140,7 @@ select count(*) from sample s
             FormSelectCustomer form = new FormSelectCustomer(InstanceStatus.Deleted);
             if (form.ShowDialog() != DialogResult.OK)
                 return;
-            
+
             assignment.CustomerContactName = form.SelectedCustomer.ContactName;
             assignment.CustomerContactEmail = form.SelectedCustomer.ContactEmail;
             assignment.CustomerContactPhone = form.SelectedCustomer.ContactPhone;
@@ -6050,7 +6183,7 @@ select count(*) from sample s
         private void miPersonEdit_Click(object sender, EventArgs e)
         {
             // edit person
-            if(gridSysPers.SelectedRows.Count < 1)
+            if (gridSysPers.SelectedRows.Count < 1)
             {
                 MessageBox.Show("You must select a person first");
                 return;
@@ -6129,9 +6262,9 @@ select count(*) from sample s
         }
 
         private void treeOrderContent_AfterSelect(object sender, TreeViewEventArgs e)
-        {            
+        {
             Guid orderSampleTypeId = Guid.Empty;
-            
+
             miOrderAddPrepMeth.Enabled = false;
             btnOrderAddPrepMeth.Enabled = false;
             miOrderAddAnalMeth.Enabled = false;
@@ -6146,7 +6279,7 @@ select count(*) from sample s
                     orderSampleTypeId = Guid.Parse(e.Node.Name);
                     break;
 
-                case 1:                    
+                case 1:
                     miOrderAddAnalMeth.Enabled = true;
                     btnOrderAddAnalMeth.Enabled = true;
 
@@ -6157,11 +6290,11 @@ select count(*) from sample s
                     orderSampleTypeId = Guid.Parse(e.Node.Parent.Parent.Name);
                     break;
             }
-        }        
+        }
 
         private void miTypeRelSampleTypesExportSampTypeList_Click(object sender, EventArgs e)
         {
-            SaveFileDialog dialog = new SaveFileDialog();            
+            SaveFileDialog dialog = new SaveFileDialog();
             dialog.Filter = "TXT files (*.txt)|*.txt";
             if (dialog.ShowDialog() != DialogResult.OK)
                 return;
@@ -6199,7 +6332,7 @@ select count(*) from sample s
                     return;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -6239,25 +6372,25 @@ select count(*) from sample s
             {
                 cell = gridPrepAnalResults.SelectedRows[0].Cells["Id"];
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
                 return;
             }
 
-            if(cell.Value == null)
+            if (cell.Value == null)
             {
                 Common.Log.Error("Analysis result cell is null");
                 MessageBox.Show("Analysis result cell is null");
                 return;
             }
 
-            Guid resultId = Guid.Parse(cell.Value.ToString());            
+            Guid resultId = Guid.Parse(cell.Value.ToString());
 
             FormPrepAnalResult form = new FormPrepAnalResult(analysis, resultId);
-            if (form.ShowDialog() != DialogResult.OK)            
-                return;            
+            if (form.ShowDialog() != DialogResult.OK)
+                return;
 
             PopulateAnalysisResults(analysis, false);
         }
@@ -6280,8 +6413,14 @@ select count(*) from sample s
             {
                 MessageBox.Show("You must save a unit first");
                 return;
-            }            
-            
+            }
+
+            if (String.IsNullOrEmpty(analysis.SpecterReference))
+            {
+                MessageBox.Show("You must save a spectrum reference first");
+                return;
+            }
+
             Dictionary<string, Guid> nuclides = null;
             SqlConnection conn = null;
             try
@@ -6295,7 +6434,7 @@ select count(*) from sample s
 
                 nuclides = DB.GetNuclideNamesForAnalysisMethod(conn, null, analysis.AnalysisMethodId);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -6305,12 +6444,12 @@ select count(*) from sample s
             {
                 conn?.Close();
             }
-            
-            foreach (AnalysisResult ar in analysis.Results)            
-                nuclides.Remove(ar.NuclideName.ToUpper());            
+
+            foreach (AnalysisResult ar in analysis.Results)
+                nuclides.Remove(ar.NuclideName.ToUpper());
 
             FormPrepAnalResult form = new FormPrepAnalResult(analysis, nuclides);
-            if (form.ShowDialog() != DialogResult.OK)            
+            if (form.ShowDialog() != DialogResult.OK)
                 return;
 
             conn = null;
@@ -6319,7 +6458,7 @@ select count(*) from sample s
                 conn = DB.OpenConnection();
                 PopulateAnalysis(conn, null, analysis, false);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -6359,17 +6498,17 @@ select count(*) from sample s
                 conn = DB.OpenConnection();
                 if (!PopulatePrepAnal(conn, sample))
                     return;
-            }   
-            catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
                 return;
-            }   
+            }
             finally
             {
                 conn?.Close();
-            }      
+            }
 
             tabs.SelectedTab = tabPrepAnal;
         }
@@ -6394,14 +6533,14 @@ select count(*) from sample s
 
                 btnSamplesClearFilters_Click(sender, e);
 
-                if (gridSamples.SelectedRows.Count == 1)                
+                if (gridSamples.SelectedRows.Count == 1)
                     selNum = Convert.ToInt32(gridSamples.SelectedRows[0].Cells["number"].Value);
 
                 if (snum == selNum)
                     miSamplesPrepAnal_Click(sender, e);
                 else
                     PopulateSamplesSingle(snum);
-                
+
                 e.Handled = true;
                 btnSamplesSearch.ForeColor = Color.Red;
             }
@@ -6421,14 +6560,17 @@ select count(*) from sample s
 		st.name as 'sample_type_name',	
 		sc.name as 'sample_component_name',        
 		pm.name + ' - ' + ps.name as 'project_name',
+        sta.name as 'station_name',
 		ss.name as 'sample_storage_name',
 		s.reference_date,
 		insta.name as 'instance_status_name',
+        s.update_date,
         (select name from cv_account where id = s.locked_id) as 'locked_name',
 		(select number from sample where id = s.transform_from_id) as 'split_from',
 		(select number from sample where id = s.transform_to_id) as 'merge_to',
 		(select convert(varchar(80), number) + ', ' as 'data()' from sample where transform_to_id = s.id for XML PATH('')) as 'merge_from'
 	from sample s 
+        left outer join station sta on sta.id = s.station_id
 		left outer join laboratory l on s.laboratory_id = l.id
 		left outer join sample_type st on s.sample_type_id = st.id
 		left outer join sample_storage ss on s.sample_storage_id = ss.id
@@ -6480,7 +6622,7 @@ select count(*) from sample s
                 }
 
                 query += " order by s.number desc";
-                
+
                 adapter.SelectCommand.CommandText = query;
                 adapter.SelectCommand.CommandType = CommandType.Text;
                 DataTable dt = new DataTable();
@@ -6496,16 +6638,19 @@ select count(*) from sample s
                 gridSamples.Columns["sample_type_name"].HeaderText = "Type";
                 gridSamples.Columns["sample_component_name"].HeaderText = "Component";
                 gridSamples.Columns["project_name"].HeaderText = "Project";
+                gridSamples.Columns["station_name"].HeaderText = "Station";
                 gridSamples.Columns["sample_storage_name"].HeaderText = "Storage";
                 gridSamples.Columns["reference_date"].HeaderText = "Ref.date";
                 gridSamples.Columns["instance_status_name"].HeaderText = "Status";
+                gridSamples.Columns["update_date"].HeaderText = "Upd.date";
                 gridSamples.Columns["locked_name"].HeaderText = "Locked by";
                 gridSamples.Columns["split_from"].HeaderText = "Split from";
                 gridSamples.Columns["merge_from"].HeaderText = "Merge from";
 
                 gridSamples.Columns["reference_date"].DefaultCellStyle.Format = Utils.DateFormatNorwegian;
+                gridSamples.Columns["update_date"].DefaultCellStyle.Format = Utils.DateFormatNorwegian;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -6540,7 +6685,7 @@ select count(*) from sample s
             cboxSamplesProjects.SelectedValue = Guid.Empty;
             cboxSamplesProjectsSub.SelectedValue = Guid.Empty;
             cboxSamplesOrders.SelectedValue = Guid.Empty;
-            cboxSamplesLaboratory.SelectedValue = Guid.Empty;            
+            cboxSamplesLaboratory.SelectedValue = Guid.Empty;
 
             string query = @"
 select distinct
@@ -6577,7 +6722,7 @@ where s.number = @sample_number
             {
                 conn = DB.OpenConnection();
 
-                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);                
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
 
                 adapter.SelectCommand.CommandText = query;
                 adapter.SelectCommand.CommandType = CommandType.Text;
@@ -6604,7 +6749,7 @@ where s.number = @sample_number
 
                 gridSamples.Columns["reference_date"].DefaultCellStyle.Format = Utils.DateFormatNorwegian;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -6619,7 +6764,7 @@ where s.number = @sample_number
         }
 
         private void btnSamplesClearFilters_Click(object sender, EventArgs e)
-        {            
+        {
             tbSamplesLookup.Text = "";
             cboxSamplesProjects.SelectedValue = Guid.Empty;
             cboxSamplesProjectsSub.SelectedValue = Guid.Empty;
@@ -6632,7 +6777,7 @@ where s.number = @sample_number
         private void PopulateOrders()
         {
             string query = "select ";
-            if(cboxOrdersTop.SelectedValue != null)            
+            if (cboxOrdersTop.SelectedValue != null)
                 query += "top " + cboxOrdersTop.SelectedValue + " ";
 
             query += @"
@@ -6645,7 +6790,17 @@ where s.number = @sample_number
 		a.customer_contact_name,
         a.customer_company_name,
 		a.approved_customer,
-		a.approved_laboratory,			
+		a.approved_laboratory,	
+        (select count(*) from 
+	sample s 
+	inner join sample_x_assignment_sample_type sxast on s.id = sxast.sample_id
+	inner join assignment_sample_type ast on ast.id = sxast.assignment_sample_type_id 
+	inner join assignment ass on ass.id = ast.assignment_id
+where s.instance_status_id = 1 and ass.id = a.id) as 'conn_samples',
+        (select sum(ast.sample_count) from 		
+	    assignment_sample_type ast
+	    inner join assignment ass on ass.id = ast.assignment_id
+        where ass.id = a.id) as 'order_span',
         wf.name as 'workflow_status',
         (select name from cv_account where id = a.locked_id) as 'locked_name'
 	from assignment a 		
@@ -6693,12 +6848,14 @@ where s.number = @sample_number
                 gridOrders.Columns["description"].HeaderText = "Description";
                 gridOrders.Columns["laboratory_name"].HeaderText = "Laboratory";
                 gridOrders.Columns["account_name"].HeaderText = "Responsible";
-                gridOrders.Columns["deadline"].HeaderText = "Deadline";                
+                gridOrders.Columns["deadline"].HeaderText = "Deadline";
                 gridOrders.Columns["customer_contact_name"].HeaderText = "Customer";
                 gridOrders.Columns["customer_company_name"].HeaderText = "Company";
                 gridOrders.Columns["approved_customer"].HeaderText = "Appr.Cust";
                 gridOrders.Columns["approved_laboratory"].HeaderText = "Appr.Lab";
-                gridOrders.Columns["workflow_status"].HeaderText = "Status";                
+                gridOrders.Columns["conn_samples"].HeaderText = "Conn. Samples";
+                gridOrders.Columns["order_span"].HeaderText = "Order span";
+                gridOrders.Columns["workflow_status"].HeaderText = "Status";
                 gridOrders.Columns["locked_name"].HeaderText = "Locked by";
 
                 gridOrders.Columns["deadline"].DefaultCellStyle.Format = Utils.DateFormatNorwegian;
@@ -6732,7 +6889,7 @@ where s.number = @sample_number
         }
 
         private void miOrdersClearAllFilters_Click(object sender, EventArgs e)
-        {            
+        {
             cboxOrdersLaboratory.SelectedValue = Guid.Empty;
             cboxOrdersYear.Text = "";
             cboxOrdersWorkflowStatus.SelectedValue = 0;
@@ -6740,14 +6897,14 @@ where s.number = @sample_number
         }
 
         private void btnOrderCreateReport_Click(object sender, EventArgs e)
-        {            
-            if(assignment.IsDirty())
+        {
+            if (assignment.IsDirty())
             {
                 MessageBox.Show("You must save changes first");
                 return;
             }
 
-            if(!Roles.HasAccess(Role.LaboratoryAdministrator))
+            if (!Roles.HasAccess(Role.LaboratoryAdministrator))
             {
                 MessageBox.Show("You don't have access to generate order reports");
                 return;
@@ -6759,7 +6916,7 @@ where s.number = @sample_number
                 return;
             }
 
-            FormReportAnalysisReport form = new FormReportAnalysisReport(assignment);
+            FormReportAnalysisReport form = new FormReportAnalysisReport(assignment, Common.Settings.ISOName);
             form.ShowDialog();
 
             if (form.HasNewVersion)
@@ -6784,23 +6941,23 @@ where s.number = @sample_number
                 {
                     conn?.Close();
                 }
-            }            
+            }
         }
 
         private void layoutPrepAnalAnal_Resize(object sender, EventArgs e)
         {
             cboxPrepAnalAnalUnitType.Width = panelPrepAnalAnalUnit.Width / 2;
-        }                                
+        }
 
         private void btnSysUsersAddRoles_Click(object sender, EventArgs e)
         {
-            if(!Roles.IsAdmin())
+            if (!Roles.IsAdmin())
             {
                 MessageBox.Show("You must log in as LIMSAdministrator to manage roles");
                 return;
             }
 
-            if(gridSysUsers.SelectedRows.Count < 1)
+            if (gridSysUsers.SelectedRows.Count < 1)
             {
                 MessageBox.Show("You must select a user first");
                 return;
@@ -6831,7 +6988,7 @@ where s.number = @sample_number
 
             Guid uid = Guid.Parse(gridSysUsers.SelectedRows[0].Cells["id"].Value.ToString());
 
-            if(Roles.IsAdmin() || uid == Common.UserId)
+            if (Roles.IsAdmin() || uid == Common.UserId)
             {
                 miResetPass.Enabled = true;
                 btnMetaUsersResetPass.Enabled = true;
@@ -6878,7 +7035,7 @@ where s.number = @sample_number
             {
                 conn = DB.OpenConnection();
                 SqlCommand cmd = new SqlCommand(query, conn);
-                foreach(Lemma<Guid, string> l in lbSysUsersRoles.SelectedItems)
+                foreach (Lemma<Guid, string> l in lbSysUsersRoles.SelectedItems)
                 {
                     cmd.Parameters.Clear();
                     cmd.Parameters.AddWithValue("@account_id", userId);
@@ -6901,7 +7058,7 @@ where s.number = @sample_number
 
             string user = gridSysUsers.SelectedRows[0].Cells["name"].Value.ToString();
             SetStatusMessage("Removed roles for user " + user);
-        }        
+        }
 
         private void tbSampleSamplingDateFrom_TextChanged(object sender, EventArgs e)
         {
@@ -6914,7 +7071,7 @@ where s.number = @sample_number
                 tbSampleSamplingDateTo.Enabled = false;
                 btnSampleSamplingDateTo.Enabled = false;
                 btnSampleSamplingDateToClear.Enabled = false;
-                
+
                 DateTime now = DateTime.Now;
                 tbSampleReferenceDate.Tag = now;
                 tbSampleReferenceDate.Text = now.ToString(Utils.DateTimeFormatNorwegian);
@@ -6926,7 +7083,7 @@ where s.number = @sample_number
             btnSampleSamplingDateToClear.Enabled = true;
 
             DateTime sdf = (DateTime)tbSampleSamplingDateFrom.Tag;
-            if(sdf.Date > DateTime.Now.Date)
+            if (sdf.Date > DateTime.Now.Date)
             {
                 MessageBox.Show("Sampling time from must be earlier than current time");
                 tbSampleSamplingDateFrom.Tag = null;
@@ -6935,12 +7092,12 @@ where s.number = @sample_number
             }
 
             if (tbSampleSamplingDateTo.Tag == null)
-            {            
+            {
                 tbSampleReferenceDate.Tag = sdf;
                 tbSampleReferenceDate.Text = sdf.ToString(Utils.DateTimeFormatNorwegian);
             }
             else
-            {                
+            {
                 DateTime sdt = (DateTime)tbSampleSamplingDateTo.Tag;
                 if (sdf > sdt)
                 {
@@ -6986,9 +7143,9 @@ where s.number = @sample_number
                 tbSampleSamplingDateTo.Text = "";
                 return;
             }
-            
+
             sdf = (DateTime)tbSampleSamplingDateFrom.Tag;
-            if(sdf > sdt)
+            if (sdf > sdt)
             {
                 MessageBox.Show("Sampling time to must be later than sampling date from");
                 tbSampleSamplingDateTo.Tag = null;
@@ -7036,9 +7193,9 @@ where s.number = @sample_number
         }
 
         private void tbMenuLookup_KeyPress(object sender, KeyPressEventArgs e)
-        {            
-            if (String.IsNullOrEmpty(tbMenuLookup.Text))            
-                return;            
+        {
+            if (String.IsNullOrEmpty(tbMenuLookup.Text))
+                return;
 
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
@@ -7050,9 +7207,9 @@ where s.number = @sample_number
                     return;
                 }
 
-                int snum = Convert.ToInt32(tbMenuLookup.Text);                
+                int snum = Convert.ToInt32(tbMenuLookup.Text);
                 tabs.SelectedTab = tabSamples;
-                PopulateSamplesSingle(snum);                
+                PopulateSamplesSingle(snum);
                 tbMenuLookup.Text = "";
                 e.Handled = true;
                 return;
@@ -7060,7 +7217,7 @@ where s.number = @sample_number
         }
 
         private void gridSamples_SelectionChanged(object sender, EventArgs e)
-        {            
+        {
             //ActiveControl = tbSamplesLookup;
         }
 
@@ -7098,13 +7255,13 @@ where s.number = @sample_number
             catch (Exception ex)
             {
                 Common.Log.Error(ex);
-                MessageBox.Show(ex.Message);             
+                MessageBox.Show(ex.Message);
             }
             finally
             {
                 conn?.Close();
             }
-        }        
+        }
 
         private void btnOrderScanAttachment_Click(object sender, EventArgs e)
         {
@@ -7131,7 +7288,7 @@ where s.number = @sample_number
             catch (Exception ex)
             {
                 Common.Log.Error(ex);
-                MessageBox.Show(ex.Message);             
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -7166,7 +7323,7 @@ where s.number = @sample_number
             catch (Exception ex)
             {
                 Common.Log.Error(ex);
-                MessageBox.Show(ex.Message);             
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -7201,7 +7358,7 @@ where s.number = @sample_number
             catch (Exception ex)
             {
                 Common.Log.Error(ex);
-                MessageBox.Show(ex.Message);             
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -7211,7 +7368,7 @@ where s.number = @sample_number
 
         private void btnProjectScanAttachment_Click(object sender, EventArgs e)
         {
-            if(gridProjectSub.SelectedRows.Count < 1)
+            if (gridProjectSub.SelectedRows.Count < 1)
             {
                 MessageBox.Show("No sub-project selected");
                 return;
@@ -7242,7 +7399,7 @@ where s.number = @sample_number
             catch (Exception ex)
             {
                 Common.Log.Error(ex);
-                MessageBox.Show(ex.Message);             
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -7289,6 +7446,10 @@ where s.number = @sample_number
                 return;
             }
 
+            DialogResult result = MessageBox.Show("Are you sure you want to create a new sample type at the top level?", "Confirmation", MessageBoxButtons.YesNo);
+            if (result != DialogResult.Yes)
+                return;
+
             FormSampleType form = new FormSampleType(treeSampleTypes, null, false);
 
             switch (form.ShowDialog())
@@ -7310,7 +7471,7 @@ where s.number = @sample_number
 
         private void miSamplesPrintSampleLabels_Click(object sender, EventArgs e)
         {
-            if(gridSamples.SelectedRows.Count < 1)
+            if (gridSamples.SelectedRows.Count < 1)
             {
                 MessageBox.Show("No samples selected");
                 return;
@@ -7366,12 +7527,12 @@ where s.number = @sample_number
                 string fileExt = Path.GetExtension(dialog.FileName);
                 byte[] content = File.ReadAllBytes(dialog.FileName);
 
-                if(content.Length > Common.Settings.MaxAttachmentSize)
+                if (content.Length > Common.Settings.MaxAttachmentSize)
                 {
                     MessageBox.Show("Attachment size is too big (" + content.Length + " bytes). Max size is " + Common.Settings.MaxAttachmentSize + " bytes");
                     return;
                 }
-            
+
                 conn = DB.OpenConnection();
                 DB.AddAttachment(conn, null, "sample", sample.Id, fileName, fileExt, content);
 
@@ -7409,7 +7570,7 @@ where s.number = @sample_number
                     MessageBox.Show("Attachment size is too big (" + content.Length + " bytes). Max size is " + Common.Settings.MaxAttachmentSize + " bytes");
                     return;
                 }
-                
+
                 conn = DB.OpenConnection();
                 DB.AddAttachment(conn, null, "assignment", assignment.Id, fileName, fileExt, content);
 
@@ -7420,7 +7581,7 @@ where s.number = @sample_number
             catch (Exception ex)
             {
                 Common.Log.Error(ex);
-                MessageBox.Show(ex.Message);             
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -7430,7 +7591,7 @@ where s.number = @sample_number
 
         private void btnProjectBrowseAttachment_Click(object sender, EventArgs e)
         {
-            if(gridProjectSub.SelectedRows.Count < 1)
+            if (gridProjectSub.SelectedRows.Count < 1)
             {
                 MessageBox.Show("No project selected");
                 return;
@@ -7455,7 +7616,7 @@ where s.number = @sample_number
                     MessageBox.Show("Attachment size is too big (" + content.Length + " bytes). Max size is " + Common.Settings.MaxAttachmentSize + " bytes");
                     return;
                 }
-            
+
                 conn = DB.OpenConnection();
                 DB.AddAttachment(conn, null, "project_sub", pid, fileName, fileExt, content);
 
@@ -7466,7 +7627,7 @@ where s.number = @sample_number
             catch (Exception ex)
             {
                 Common.Log.Error(ex);
-                MessageBox.Show(ex.Message);             
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -7482,7 +7643,7 @@ where s.number = @sample_number
                 return;
             }
 
-            if(treePrepAnal.SelectedNode.Level != 1)
+            if (treePrepAnal.SelectedNode.Level != 1)
             {
                 MessageBox.Show("No preparation selected");
                 return;
@@ -7507,7 +7668,7 @@ where s.number = @sample_number
                     MessageBox.Show("Attachment size is too big (" + content.Length + " bytes). Max size is " + Common.Settings.MaxAttachmentSize + " bytes");
                     return;
                 }
-            
+
                 conn = DB.OpenConnection();
                 DB.AddAttachment(conn, null, "preparation", pid, fileName, fileExt, content);
 
@@ -7559,7 +7720,7 @@ where s.number = @sample_number
                     MessageBox.Show("Attachment size is too big (" + content.Length + " bytes). Max size is " + Common.Settings.MaxAttachmentSize + " bytes");
                     return;
                 }
-            
+
                 conn = DB.OpenConnection();
                 DB.AddAttachment(conn, null, "analysis", aid, fileName, fileExt, content);
 
@@ -7580,7 +7741,7 @@ where s.number = @sample_number
 
         private void btnPrepAnalAnalDeleteAttachment_Click(object sender, EventArgs e)
         {
-            if(gridPrepAnalAnalAttachments.SelectedRows.Count < 1)
+            if (gridPrepAnalAnalAttachments.SelectedRows.Count < 1)
             {
                 MessageBox.Show("No attachment selected");
                 return;
@@ -7772,7 +7933,7 @@ where s.number = @sample_number
                 return;
             }
 
-            if(preparation.WorkflowStatusId != WorkflowStatus.Complete)
+            if (preparation.WorkflowStatusId != WorkflowStatus.Complete)
             {
                 MessageBox.Show("Preparation must be saved with complete status before printing a label");
                 return;
@@ -7799,12 +7960,12 @@ where s.number = @sample_number
             newXNode.Attributes.Append(attrCommonName);
             XmlAttribute attrLatinName = doc.CreateAttribute("name_latin");
             attrLatinName.InnerText = stm.NameLatin;
-            newXNode.Attributes.Append(attrLatinName);            
+            newXNode.Attributes.Append(attrLatinName);
 
-            using(SqlDataReader reader = DB.GetDataReader(conn, null, "select id, name from sample_component where sample_type_id = @stid", CommandType.Text, 
+            using (SqlDataReader reader = DB.GetDataReader(conn, null, "select id, name from sample_component where sample_type_id = @stid", CommandType.Text,
                 new SqlParameter("@stid", stm.Id)))
             {
-                while(reader.Read())
+                while (reader.Read())
                 {
                     XmlNode newCNode = doc.CreateElement("component");
                     XmlAttribute attrCompId = doc.CreateAttribute("id");
@@ -7834,7 +7995,7 @@ where s.number = @sample_number
             if (dialog.ShowDialog() != DialogResult.OK)
                 return;
 
-            SqlConnection connection = null;            
+            SqlConnection connection = null;
 
             try
             {
@@ -7854,7 +8015,7 @@ where s.number = @sample_number
 
                 doc.Save(dialog.FileName);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Common.Log.Error(ex);
                 MessageBox.Show(ex.Message);
@@ -7936,27 +8097,27 @@ where s.number = @sample_number
 
         private void cboxPrepAnalAnalUnit_SelectedIndexChanged(object sender, EventArgs e)
         {
-            analysis.Dirty = true;            
+            analysis.Dirty = true;
         }
 
         private void cboxPrepAnalAnalUnitType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            analysis.Dirty = true;            
+            analysis.Dirty = true;
         }
 
         private void tbPrepAnalAnalSpecRef_TextChanged(object sender, EventArgs e)
         {
-            analysis.Dirty = true;            
+            analysis.Dirty = true;
         }
 
         private void tbPrepAnalAnalNuclLib_TextChanged(object sender, EventArgs e)
         {
-            analysis.Dirty = true;            
+            analysis.Dirty = true;
         }
 
         private void tbPrepAnalAnalMDALib_TextChanged(object sender, EventArgs e)
         {
-            analysis.Dirty = true;            
+            analysis.Dirty = true;
         }
 
         private void tbPrepAnalAnalComment_TextChanged(object sender, EventArgs e)
@@ -7971,7 +8132,7 @@ where s.number = @sample_number
 
         private void tbPrepAnalPrepFillHeight_TextChanged(object sender, EventArgs e)
         {
-            preparation.Dirty = true;            
+            preparation.Dirty = true;
         }
 
         private void tbPrepAnalPrepAmount_TextChanged(object sender, EventArgs e)
@@ -8034,13 +8195,13 @@ where s.number = @sample_number
             }
 
             DialogResult r = MessageBox.Show("Are you sure you want to delete " + gridPrepAnalResults.SelectedRows.Count + " results from this analysis?", "Warning", MessageBoxButtons.YesNo);
-            if (r == DialogResult.No)                
+            if (r == DialogResult.No)
                 return;
 
             foreach (DataGridViewRow row in gridPrepAnalResults.SelectedRows)
-            {                
+            {
                 Guid id = Utils.MakeGuid(row.Cells["Id"].Value);
-                analysis.Results.RemoveAll(x => x.Id == id);            
+                analysis.Results.RemoveAll(x => x.Id == id);
             }
 
             SqlConnection conn = null;
@@ -8201,7 +8362,7 @@ where s.number = @sample_number
         }
 
         private void btnSamplesSearch_Click(object sender, EventArgs e)
-        {                                    
+        {
             PopulateSamples();
             btnSamplesSearch.ForeColor = SystemColors.ControlText;
         }
@@ -8280,7 +8441,7 @@ where s.number = @sample_number
         }
 
         private void ShowAuditLog(string table, Guid id, string title)
-        {            
+        {
             lblAuditLogTitle.Text = title;
 
             SqlConnection conn = null;
@@ -9151,20 +9312,21 @@ select count(*) from sample s
             finally
             {
                 conn?.Close();
-            }
-
-            FormSelectAstCount form = new FormSelectAstCount(tnode.Text, n);
-            if (form.ShowDialog() != DialogResult.OK)
-                return;
+            }            
 
             AssignmentSampleType ast = assignment.SampleTypes.Find(x => x.Id == astId);
             if(ast != null)
             {
+                FormSelectAstCount form = new FormSelectAstCount(tnode.Text, n, ast.ReturnToSender);
+                if (form.ShowDialog() != DialogResult.OK)
+                    return;
+
                 conn = null;
                 try
                 {
                     conn = DB.OpenConnection();
                     ast.SampleCount = form.SelectedCount;
+                    ast.ReturnToSender = form.ReturnToSender;
                     ast.Dirty = true;
                     PopulateOrderContent(conn, null, assignment);
                 }
@@ -9376,7 +9538,7 @@ select count(*) from sample s
                 query += "top " + cboxSearchMaxShown.SelectedValue + " ";
 
             query += @"
-s.number as 'Sample', st.name as 'Sample type', p.number as 'Preparation', pws.Name as 'P.status', a.number as 'Analysis', aws.Name as 'A.status', n.name as 'Nuclide', ar.activity as 'Activity', au.name as 'Unit', aut.name as 'Unit type', ar.activity_uncertainty_abs as 'Act.Unc.', ar.detection_limit as 'MDA', ar.accredited as 'Acc.'
+s.number as 'Sample', st.name as 'Sample type', s.reference_date as 'Ref.date', p.number as 'Preparation', pws.Name as 'P.status', a.number as 'Analysis', aws.Name as 'A.status', n.name as 'Nuclide', ar.activity as 'Activity', au.name as 'Unit', aut.name as 'Unit type', ar.activity_uncertainty_abs as 'Act.Unc.', ar.detection_limit as 'MDA', ar.accredited as 'Acc.'
 from analysis_result ar
     inner join analysis a on a.id = ar.analysis_id
     inner join preparation p on p.id = a.preparation_id
@@ -9478,6 +9640,7 @@ where ar.instance_status_id < 2
 
                 gridSearchResult.DataSource = dt;
 
+                gridSearchResult.Columns["Ref.date"].DefaultCellStyle.Format = Utils.DateTimeFormatNorwegian;
                 gridSearchResult.Columns["Activity"].DefaultCellStyle.Format = Utils.ScientificFormat;
                 gridSearchResult.Columns["Act.Unc."].DefaultCellStyle.Format = Utils.ScientificFormat;
                 gridSearchResult.Columns["MDA"].DefaultCellStyle.Format = Utils.ScientificFormat;
@@ -9976,8 +10139,68 @@ where ar.instance_status_id < 2
 
         private void miTypeRelSampleTypesCompRemove_Click(object sender, EventArgs e)
         {
-            // remove sample type component            
-            MessageBox.Show("Not implemented");
+            // remove sample type component                        
+            if (!Roles.HasAccess(Role.LaboratoryAdministrator))
+            {
+                MessageBox.Show("You don't have access to manage sample types");
+                return;
+            }
+
+            TreeNode sn = treeSampleTypes.SelectedNode;
+            Guid stid = Utils.MakeGuid(sn.Name);
+
+            if (lbSampleTypesComponents.SelectedItems.Count < 1)
+            {
+                MessageBox.Show("You must select a component first");
+                return;
+            }
+
+            Lemma<Guid, string> sampleComponent = lbSampleTypesComponents.SelectedItems[0] as Lemma<Guid, string>;
+
+            DialogResult res = MessageBox.Show("Are you sure you want to delete the sample component " + sampleComponent.Name + "?", "Confirmation", MessageBoxButtons.YesNo);
+            if (res != DialogResult.Yes)
+                return;
+
+            SqlConnection conn = null;
+            SqlTransaction trans = null;
+            try
+            {
+                conn = DB.OpenConnection();
+                trans = conn.BeginTransaction();
+
+                object o = DB.GetScalar(conn, trans, @"
+select count(*) from sample s 
+    inner join sample_component sc on s.sample_component_id = sc.id and sc.id = @scid", CommandType.Text, new SqlParameter("@scid", sampleComponent.Id));
+                if (o == null)
+                    throw new Exception("Unable to query sample_component from sample");
+                int count = (int)o;
+                if (count > 0)
+                {
+                    MessageBox.Show("Can not delete a sample component which is in use");
+                    return;
+                }
+
+                SqlCommand cmd = new SqlCommand("delete from sample component where id = @scid", conn, trans);                
+                cmd.Parameters.AddWithValue("@scid", sampleComponent.Id);
+                cmd.ExecuteNonQuery();                                
+
+                trans.Commit();
+
+                lbSampleTypesComponents.Items.Clear();
+                lbSampleTypesInheritedComponents.Items.Clear();
+
+                AddSampleTypeComponents(conn, null, stid, false, sn);
+            }
+            catch (Exception ex)
+            {
+                trans?.Rollback();
+                Common.Log.Error(ex);
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn?.Close();
+            }
         }        
 
         private void gridAuditLog_SelectionChanged(object sender, EventArgs e)
@@ -9992,13 +10215,12 @@ where ar.instance_status_id < 2
             SqlConnection conn = null;
 
             string source = String.Empty;
-            string json = String.Empty;
-            object o = null;
+            string json = String.Empty;            
 
             try
             {
                 conn = DB.OpenConnection();
-                using (SqlDataReader reader = DB.GetDataReader(conn, null, "select source_table, value from audit_log where id = @id", CommandType.Text, 
+                using (SqlDataReader reader = DB.GetDataReader(conn, null, "select source_table, value from audit_log where id = @id", CommandType.Text,
                     new SqlParameter("@id", id)))
                 {
                     if (!reader.HasRows)
@@ -10009,19 +10231,170 @@ where ar.instance_status_id < 2
                     json = Utils.Decompress((byte[])reader["value"]);
                 }
 
+                List<Guid> orderIds = new List<Guid>();
+                List<Guid> accountIds = new List<Guid>();
+                List<Guid> labIds = new List<Guid>();
+                List<Guid> samplerIds = new List<Guid>();                
+                List<Guid> sampleTypeIds = new List<Guid>();
+                List<Guid> sampleStorageIds = new List<Guid>();
+                List<Guid> sampleComponentIds = new List<Guid>();
+                List<Guid> samplingMethodIds = new List<Guid>();
+                List<Guid> stationIds = new List<Guid>();                
+                List<Guid> prepMethodIds = new List<Guid>();
+                List<Guid> prepGeomIds = new List<Guid>();
+                List<Guid> projSubIds = new List<Guid>();
+                List<Guid> analMethodIds = new List<Guid>();
+                string result;
+
                 switch (source)
                 {
                     case "assignment":
-                        o = JsonConvert.DeserializeObject<Assignment>(json);
+                        Assignment a = (Assignment)JsonConvert.DeserializeObject<Assignment>(json);
+                        orderIds.Add(a.Id);
+                        accountIds.Add(a.CreateId);
+                        accountIds.Add(a.UpdateId);
+                        accountIds.Add(a.AccountId);
+                        labIds.Add(a.LaboratoryId);
+                        foreach(AssignmentSampleType ast in a.SampleTypes)
+                        {
+                            accountIds.Add(ast.CreateId);
+                            accountIds.Add(ast.UpdateId);
+                            sampleTypeIds.Add(ast.SampleTypeId);
+                            sampleComponentIds.Add(ast.SampleComponentId);
+                            foreach(AssignmentPreparationMethod apm in ast.PreparationMethods)
+                            {
+                                accountIds.Add(apm.CreateId);
+                                accountIds.Add(apm.UpdateId);
+                                labIds.Add(apm.PreparationLaboratoryId);
+                                prepMethodIds.Add(apm.PreparationMethodId);
+                                foreach(AssignmentAnalysisMethod aam in apm.AnalysisMethods)
+                                {
+                                    accountIds.Add(aam.CreateId);
+                                    accountIds.Add(aam.UpdateId);
+                                    analMethodIds.Add(aam.AnalysisMethodId);
+                                }
+                            }
+                        }
+                        result = JsonConvert.SerializeObject(a, Newtonsoft.Json.Formatting.Indented);
                         break;
                     case "sample":
-                        o = JsonConvert.DeserializeObject<Sample>(json);
+                        Sample s = (Sample)JsonConvert.DeserializeObject<Sample>(json);
+                        accountIds.Add(s.CreateId);
+                        accountIds.Add(s.UpdateId);
+                        samplerIds.Add(s.SamplerId);
+                        labIds.Add(s.LaboratoryId);
+                        sampleStorageIds.Add(s.SampleStorageId);
+                        sampleTypeIds.Add(s.SampleTypeId);
+                        sampleComponentIds.Add(s.SampleComponentId);
+                        samplingMethodIds.Add(s.SamplingMethodId);
+                        stationIds.Add(s.StationId);
+                        projSubIds.Add(s.ProjectSubId);
+                        foreach(Preparation p in s.Preparations)
+                        {
+                            orderIds.Add(p.AssignmentId);
+                            accountIds.Add(p.CreateId);
+                            accountIds.Add(p.UpdateId);
+                            labIds.Add(p.LaboratoryId);
+                            prepMethodIds.Add(p.PreparationMethodId);
+                            prepGeomIds.Add(p.PreparationGeometryId);
+                            foreach(Analysis an in p.Analyses)
+                            {
+                                orderIds.Add(an.AssignmentId);
+                                accountIds.Add(an.CreateId);
+                                accountIds.Add(an.UpdateId);
+                                labIds.Add(an.LaboratoryId);                                
+                                analMethodIds.Add(an.AnalysisMethodId);
+                                foreach(AnalysisResult ar in an.Results)
+                                {
+                                    accountIds.Add(ar.CreateId);
+                                    accountIds.Add(ar.UpdateId);
+                                }
+                            }
+                        }
+                        result = JsonConvert.SerializeObject(s, Newtonsoft.Json.Formatting.Indented);
                         break;
-                    default:
-                        return;
+                    default: return;
                 }
 
-                tbAuditLogObject.Text = JsonConvert.SerializeObject(o, Newtonsoft.Json.Formatting.Indented);
+                foreach (Guid key in orderIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select name from assignment where id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in accountIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select p.name from account a inner join person p on p.id = a.person_id where a.id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in labIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select name from laboratory where id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in samplerIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select p.name from sampler s inner join person p on p.id = s.person_id where s.id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in sampleTypeIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select name from sample_type where id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in sampleStorageIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select name from sample_storage where id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in sampleComponentIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select name from sample_component where id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in samplingMethodIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select name from sampling_method where id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in stationIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select name from station where id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in prepMethodIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select name_short from preparation_method where id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in prepGeomIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select name from preparation_geometry where id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in analMethodIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select name_short from analysis_method where id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                foreach (Guid key in projSubIds.Distinct())
+                {
+                    string name = (string)DB.GetScalar(conn, null, "select pm.name + ' ' + ps.name from project_sub ps inner join project_main pm on pm.id = ps.project_main_id where ps.id = @id", CommandType.Text, new SqlParameter("@id", key));
+                    result = result.Replace(key.ToString(), name);
+                }
+
+                tbAuditLogObject.Text = result;
             }
             catch (Exception ex)
             {
@@ -11183,6 +11556,272 @@ insert into accreditation_term_x_sample_type_x_sample_component values(@accredit
             {
                 conn?.Close();
             }
+        }
+
+        private void storageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gridSamples.SelectedRows.Count < 1)
+            {
+                MessageBox.Show("You must select one or more samples first");
+                return;
+            }
+
+            if (SelectedSamplesLocked())
+            {
+                MessageBox.Show("Can not update now, one or more samples are locked");
+                return;
+            }
+
+            FormSelectAny form = new FormSelectAny("Select storage", "sample_storage");
+            if (form.ShowDialog() != DialogResult.OK)
+                return;
+
+            SqlConnection conn = null;
+            SqlTransaction trans = null;
+
+            try
+            {
+                conn = DB.OpenConnection();
+                trans = conn.BeginTransaction();
+
+                tabs.Enabled = false;
+                progressSamples.Visible = true;
+                progressSamples.Maximum = gridSamples.SelectedRows.Count;
+                progressSamples.Value = 0;
+
+                Sample s = new Sample();
+
+                foreach (DataGridViewRow row in gridSamples.SelectedRows)
+                {
+                    Guid sid = Utils.MakeGuid(row.Cells["id"].Value);
+                    s.LoadFromDB(conn, trans, sid);
+                    s.SampleStorageId = form.SelectedItem.Id;
+                    s.Dirty = true;
+                    s.StoreToDB(conn, trans);
+                    string json = JsonConvert.SerializeObject(s);
+                    DB.AddAuditMessage(conn, trans, "sample", s.Id, AuditOperationType.Update, json, "");
+
+                    progressSamples.Value++;
+                }
+
+                trans.Commit();
+
+                PopulateSamples();
+
+                SetStatusMessage("Updating projects successful");
+            }
+            catch (Exception ex)
+            {
+                trans?.Rollback();
+                Common.Log.Error(ex);
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn?.Close();
+                tabs.Enabled = true;
+                progressSamples.Visible = false;
+            }
+        }
+
+        private void miOrdersCopy_Click(object sender, EventArgs e)
+        {
+            // Copy selected order
+
+            if (gridOrders.SelectedRows.Count < 1)
+            {
+                MessageBox.Show("You must select an order first");
+                return;
+            }
+
+            Guid orderId = Utils.MakeGuid(gridOrders.SelectedRows[0].Cells["id"].Value);
+            string orderName = gridOrders.SelectedRows[0].Cells["name"].Value.ToString();                        
+
+            SqlConnection conn = null;
+            SqlTransaction trans = null;
+
+            try
+            {
+                conn = DB.OpenConnection();
+                trans = conn.BeginTransaction();
+
+                Guid labId = Assignment.GetLaboratoryId(conn, trans, orderId);
+                if(labId != Common.LabId)
+                {
+                    MessageBox.Show("You can not copy an order from a different laboratory");
+                    return;
+                }
+
+                // Load existing order
+                Assignment a = new Assignment();
+                a.LoadFromDB(conn, trans, orderId);
+
+                FormOrderCopy form = new FormOrderCopy(a);
+                if (form.ShowDialog() != DialogResult.OK)
+                {
+                    trans?.Rollback();
+                    return;
+                }
+
+                // Generate new order name
+                string labPrefix = DB.GetOrderPrefix(conn, trans, Common.LabId);
+                int orderCount = DB.GetNextOrderCount(conn, trans, Common.LabId);
+                string newOrderName = labPrefix + "-" + DateTime.Now.ToString("yyyy") + "-" + orderCount;                                    
+
+                DateTime currDate = DateTime.Now;
+
+                // Copy values
+                Assignment a2 = new Assignment();
+                a2.Name = newOrderName;
+                a2.LaboratoryId = Common.LabId;
+                a2.AccountId = a.AccountId;
+                a2.Deadline = a.Deadline;
+                a2.RequestedSigmaAct = a.RequestedSigmaAct;
+                a2.RequestedSigmaMDA = a.RequestedSigmaMDA;
+                a2.CustomerCompanyName = a.CustomerCompanyName;
+                a2.CustomerCompanyEmail = a.CustomerCompanyEmail;
+                a2.CustomerCompanyPhone = a.CustomerCompanyPhone;
+                a2.CustomerCompanyAddress = a.CustomerCompanyAddress;
+                a2.CustomerContactName = a.CustomerContactName;
+                a2.CustomerContactEmail = a.CustomerContactEmail;
+                a2.CustomerContactPhone = a.CustomerContactPhone;
+                a2.CustomerContactAddress = a.CustomerContactAddress;
+                a2.Description = a.Description;
+                a2.ContentComment = a.ContentComment;                
+                a2.WorkflowStatusId = WorkflowStatus.Construction;
+                a2.LastWorkflowStatusDate = currDate;
+                a2.LastWorkflowStatusBy = Common.Username;
+                a2.InstanceStatusId = InstanceStatus.Active;
+                a2.CreateDate = currDate;
+                a2.CreateId = Common.UserId;
+                a2.UpdateDate = currDate;
+                a2.UpdateId = Common.UserId;                
+
+                // Copy samples/preps/analyses
+
+                foreach (AssignmentSampleType ast in a.SampleTypes)
+                {
+                    AssignmentSampleType nast = new AssignmentSampleType();
+                    nast.AssignmentId = a2.Id;
+                    nast.SampleTypeId = ast.SampleTypeId;
+                    nast.SampleComponentId = ast.SampleComponentId;
+                    nast.SampleCount = ast.SampleCount;
+                    nast.CreateDate = currDate;
+                    nast.CreateId = Common.UserId;
+                    nast.UpdateDate = currDate;
+                    nast.UpdateId = Common.UserId;
+                    a2.SampleTypes.Add(nast);
+
+                    foreach(AssignmentPreparationMethod apm in ast.PreparationMethods)
+                    {
+                        AssignmentPreparationMethod napm = new AssignmentPreparationMethod();
+                        napm.AssignmentSampleTypeId = nast.Id;
+                        napm.PreparationMethodId = apm.PreparationMethodId;
+                        napm.PreparationMethodCount = apm.PreparationMethodCount;
+                        napm.PreparationLaboratoryId = Common.LabId;
+                        napm.CreateDate = currDate;
+                        napm.CreateId = Common.UserId;
+                        napm.UpdateDate = currDate;
+                        napm.UpdateId = Common.UserId;
+                        nast.PreparationMethods.Add(napm);
+
+                        foreach(AssignmentAnalysisMethod aam in apm.AnalysisMethods)
+                        {
+                            AssignmentAnalysisMethod naam = new AssignmentAnalysisMethod();
+                            naam.AssignmentPreparationMethodId = napm.Id;
+                            naam.AnalysisMethodId = aam.AnalysisMethodId;
+                            naam.AnalysisMethodCount = aam.AnalysisMethodCount;
+                            naam.CreateDate = currDate;
+                            naam.CreateId = Common.UserId;
+                            naam.UpdateDate = currDate;
+                            naam.UpdateId = Common.UserId;
+                            napm.AnalysisMethods.Add(naam);
+                        }
+                    }
+                }
+
+                a2.StoreToDB(conn, trans);
+
+                string json = JsonConvert.SerializeObject(a2);
+                DB.AddAuditMessage(conn, trans, "assignment", assignment.Id, AuditOperationType.Insert, json, "");
+
+                trans.Commit();
+
+                PopulateOrders();
+
+                SetStatusMessage("Order " + orderName + " copied to " + a2.Name);
+            }            
+            catch (Exception ex)
+            {
+                trans?.Rollback();
+                Common.Log.Error(ex);
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn?.Close();                
+            }
+        }
+
+        private void miSamplesView_Click(object sender, EventArgs e)
+        {            
+            if (gridSamples.SelectedRows.Count != 1)
+            {
+                MessageBox.Show("You must select a single sample first");
+                return;
+            }
+
+            try
+            {
+                Guid sid = Utils.MakeGuid(gridSamples.SelectedRows[0].Cells["id"].Value);
+                
+                FormSampleView form = new FormSampleView(sid);
+                if (form.ShowDialog() != DialogResult.OK)
+                    return;
+            }
+            catch (Exception ex)
+            {                
+                Common.Log.Error(ex);
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnPrepAnalSampleView_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                TreeNode sn = treePrepAnal.SelectedNode;
+                TreeNode n = sn;
+                while (n.Parent != null)
+                    n = n.Parent;
+
+                Guid sid = Guid.Parse(n.Name);
+
+                FormSampleView form = new FormSampleView(sid);
+                if (form.ShowDialog() != DialogResult.OK)
+                    return;
+            }
+            catch (Exception ex)
+            {
+                Common.Log.Error(ex);
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void miUpdateMyPassword_Click(object sender, EventArgs e)
+        {            
+            FormResetPassword form = new FormResetPassword(Common.UserId, Common.Username);
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                SetStatusMessage("Password updated for user " + Common.Username, StatusMessageType.Success);
+            }
+        }
+
+        private void btnReportISOSave_Click(object sender, EventArgs e)
+        {
+            // Set ISO name
+            Common.Settings.ISOName = tbReportISO.Text.Trim();
+            SaveSettings(DSAEnvironment.SettingsFilename);
         }
     }
 }

@@ -108,6 +108,36 @@ namespace DSA_lims
             return !DB.IsValidField(o) ? Guid.Empty : Guid.Parse(o.ToString());
         }
 
+        public string GetCreatorName(SqlConnection conn, SqlTransaction trans)
+        {
+            string query = @"
+select per.name from person per 
+    inner join account acc on acc.person_id = per.id 
+    inner join assignment ass on ass.create_id = acc.id
+and ass.id = @id";
+
+            object o = DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@id", Id));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }
+
+        public string GetUpdatorName(SqlConnection conn, SqlTransaction trans)
+        {
+            string query = @"
+select per.name from person per 
+    inner join account acc on acc.person_id = per.id 
+    inner join assignment ass on ass.update_id = acc.id
+and ass.id = @id";
+
+            object o = DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@id", Id));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }
+
         public string LaboratoryName(SqlConnection conn, SqlTransaction trans)
         {
             object o = DB.GetScalar(conn, trans, "select name from laboratory where id = @lid", CommandType.Text, new SqlParameter("@lid", LaboratoryId));

@@ -283,7 +283,37 @@ where a.instance_status_id = 1 and a.specter_reference = @specref and a.id not i
                     cmd.ExecuteNonQuery();
                 }
             }
-        }        
+        }
+
+        public string GetCreatorName(SqlConnection conn, SqlTransaction trans)
+        {
+            string query = @"
+select per.name from person per 
+    inner join account acc on acc.person_id = per.id 
+    inner join analysis anal on anal.create_id = acc.id
+and anal.id = @id";
+
+            object o = DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@id", Id));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }
+
+        public string GetUpdatorName(SqlConnection conn, SqlTransaction trans)
+        {
+            string query = @"
+select per.name from person per 
+    inner join account acc on acc.person_id = per.id 
+    inner join analysis anal on anal.update_id = acc.id
+and anal.id = @id";
+
+            object o = DB.GetScalar(conn, trans, query, CommandType.Text, new SqlParameter("@id", Id));
+            if (!DB.IsValidField(o))
+                return "";
+
+            return o.ToString();
+        }
 
         public bool IsClosed(SqlConnection conn, SqlTransaction trans)
         {

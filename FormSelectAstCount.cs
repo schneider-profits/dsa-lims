@@ -28,15 +28,18 @@ namespace DSA_lims
     {
         private string mAstInfo;
         private int mConnectedSamples, mSelectedCount;
+        private bool mReturnToSender;
 
         public int SelectedCount { get { return mSelectedCount; } }
+        public bool ReturnToSender { get { return mReturnToSender; } }
 
-        public FormSelectAstCount(string astInfo, int connectedSamples)
+        public FormSelectAstCount(string astInfo, int connectedSamples, bool returnToSender)
         {
             InitializeComponent();
 
             mAstInfo = astInfo;            
             mConnectedSamples = connectedSamples;
+            cbReturnToSender.Checked = returnToSender;
 
             tbCount.KeyPress += CustomEvents.Integer_KeyPress;
         }
@@ -78,6 +81,8 @@ namespace DSA_lims
                 MessageBox.Show("Can not assign " + mSelectedCount + " samples. There is currently " + mConnectedSamples + " samples connected to this sample type");
                 return;
             }
+
+            mReturnToSender = cbReturnToSender.Checked;
 
             DialogResult = DialogResult.OK;
             Close();

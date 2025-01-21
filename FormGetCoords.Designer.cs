@@ -34,8 +34,11 @@
             this.btnOk = new System.Windows.Forms.Button();
             this.panelGMap = new System.Windows.Forms.Panel();
             this.tools = new System.Windows.Forms.ToolStrip();
-            this.cboxProviders = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.cboxProviders = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.tbSearchLocation = new System.Windows.Forms.ToolStripTextBox();
+            this.btnSearchLocation = new System.Windows.Forms.ToolStripButton();
             this.panel2.SuspendLayout();
             this.tools.SuspendLayout();
             this.SuspendLayout();
@@ -85,12 +88,21 @@
             this.tools.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.tools.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
-            this.cboxProviders});
+            this.cboxProviders,
+            this.toolStripLabel2,
+            this.tbSearchLocation,
+            this.btnSearchLocation});
             this.tools.Location = new System.Drawing.Point(0, 0);
             this.tools.Name = "tools";
             this.tools.Size = new System.Drawing.Size(692, 25);
             this.tools.TabIndex = 10;
             this.tools.Text = "toolStrip1";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(81, 22);
+            this.toolStripLabel1.Text = "Map provider:";
             // 
             // cboxProviders
             // 
@@ -99,11 +111,28 @@
             this.cboxProviders.Size = new System.Drawing.Size(220, 25);
             this.cboxProviders.SelectedIndexChanged += new System.EventHandler(this.cboxProviders_SelectedIndexChanged);
             // 
-            // toolStripLabel1
+            // toolStripLabel2
             // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(81, 22);
-            this.toolStripLabel1.Text = "Map provider:";
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(45, 22);
+            this.toolStripLabel2.Text = "Search:";
+            // 
+            // tbSearchLocation
+            // 
+            this.tbSearchLocation.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbSearchLocation.Name = "tbSearchLocation";
+            this.tbSearchLocation.Size = new System.Drawing.Size(160, 25);
+            this.tbSearchLocation.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSearchLocation_KeyPress);
+            // 
+            // btnSearchLocation
+            // 
+            this.btnSearchLocation.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSearchLocation.Image = global::DSA_lims.Properties.Resources.search;
+            this.btnSearchLocation.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSearchLocation.Name = "btnSearchLocation";
+            this.btnSearchLocation.Size = new System.Drawing.Size(23, 22);
+            this.btnSearchLocation.Text = "Go";
+            this.btnSearchLocation.Click += new System.EventHandler(this.btnSearchLocation_Click);
             // 
             // FormGetCoords
             // 
@@ -138,5 +167,8 @@
         private System.Windows.Forms.ToolStrip tools;
         private System.Windows.Forms.ToolStripComboBox cboxProviders;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripTextBox tbSearchLocation;
+        private System.Windows.Forms.ToolStripButton btnSearchLocation;
     }
 }

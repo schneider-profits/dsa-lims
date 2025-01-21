@@ -30,6 +30,7 @@ namespace DSA_lims
     public partial class FormSampleComponent : Form
     {
         private Dictionary<string, object> p = new Dictionary<string, object>();
+        private List<string> InheritedSampleTypes = null;
 
         public Guid SampleComponentId
         {
@@ -41,11 +42,12 @@ namespace DSA_lims
             get { return p.ContainsKey("name") ? p["name"].ToString() : String.Empty; }
         }
 
-        public FormSampleComponent(Guid sampleTypeId, string sampleTypeName)
+        public FormSampleComponent(Guid sampleTypeId, string sampleTypeName, List<string> inheritedSampleTypes)
         {
             InitializeComponent();
             tbSampleType.Text = sampleTypeName;
-            p["sample_type_id"] = sampleTypeId;            
+            p["sample_type_id"] = sampleTypeId;
+            InheritedSampleTypes = inheritedSampleTypes;
         }
 
         public FormSampleComponent(Guid sampleTypeId, string sampleTypeName, Guid sampleComponentId)
@@ -113,6 +115,18 @@ namespace DSA_lims
             }
 
             p["name"] = tbName.Text.Trim();
+
+            if(InheritedSampleTypes != null)
+            {
+                foreach (string iname in InheritedSampleTypes)
+                {
+                    if (iname.Trim().ToLower() == tbName.Text.Trim().ToLower())
+                    {
+                        MessageBox.Show("Component " + p["name"] + " is already inherited");
+                        return;
+                    }                    
+                }
+            }            
 
             SqlConnection connection = null;
             SqlTransaction transaction = null;

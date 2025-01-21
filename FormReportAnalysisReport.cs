@@ -36,22 +36,49 @@ namespace DSA_lims
         byte[] mContent = null;
         bool mHasNewVersion;
         Assignment mAssignment = null;
+        string mISOName;
 
         public byte[] ReportData { get { return mContent; } }
 
         public bool HasNewVersion { get { return mHasNewVersion; } }
 
-        public FormReportAnalysisReport(Assignment assignment)
+        public FormReportAnalysisReport(Assignment assignment, string ISOName)
         {
             InitializeComponent();
 
-            mAssignment = assignment;
+            mAssignment = assignment;        
+            mISOName = ISOName;
             mHasNewVersion = false;
         }
 
         private void FormReportViewer_Load(object sender, EventArgs e)
         {
-            DataTable1TableAdapter.Fill(DSOrderReport.DataTable1, mAssignment.Name);
+            string strActSig, strMdaSig;
+            if(mAssignment.RequestedSigmaAct == 1)
+                strActSig = "ca. 68.3 % (tilsvarer k = 1)";
+            else if (mAssignment.RequestedSigmaAct == 1.96)
+                strActSig = "ca. 95 % (tilsvarer k = 1.96)";
+            else if(mAssignment.RequestedSigmaAct == 2 || mAssignment.RequestedSigmaAct == 0)
+                strActSig = "ca. 95.5 % (tilsvarer k = 2)";
+            else strActSig = "ca. 99.9 % (tilsvarer k = 3)";
+
+            if (mAssignment.RequestedSigmaMDA == 1)
+                strMdaSig = "ca. 84.1 % (tilsvarer k = 1)";
+            else if (mAssignment.RequestedSigmaMDA == 1.645 || mAssignment.RequestedSigmaMDA == 0)
+                strMdaSig = "ca. 95 % (tilsvarer k = 1.645)";
+            else if (mAssignment.RequestedSigmaMDA == 2)
+                strMdaSig = "ca. 97.2 % (tilsvarer k = 2)";
+            else strMdaSig = "ca. 99.95 % (tilsvarer k = 3)";
+
+            ReportParameter param1 = new ReportParameter("actsig", strActSig);
+            ReportParameter param2 = new ReportParameter("mdasig", strMdaSig);
+            reportViewer.LocalReport.SetParameters(param1);
+            reportViewer.LocalReport.SetParameters(param2);
+
+            ReportParameter param3 = new ReportParameter("isoname", mISOName);
+            reportViewer.LocalReport.SetParameters(param3);
+
+            DataTable1TableAdapter.Fill(DSOrderReport.DataTable1, (float)mAssignment.RequestedSigmaAct, (float)mAssignment.RequestedSigmaMDA, mAssignment.Name);
             DataTable2TableAdapter.Fill(DSOrderReport.DataTable2, mAssignment.Name);
 
             reportViewer.LocalReport.DataSources.Clear();
@@ -96,7 +123,7 @@ namespace DSA_lims
                 mAssignment.Dirty = true;
                 mAssignment.StoreToDB(conn, null);
 
-                DataTable1TableAdapter.Fill(DSOrderReport.DataTable1, mAssignment.Name);
+                DataTable1TableAdapter.Fill(DSOrderReport.DataTable1, (float)mAssignment.RequestedSigmaAct, (float)mAssignment.RequestedSigmaMDA, mAssignment.Name);
                 DataTable2TableAdapter.Fill(DSOrderReport.DataTable2, mAssignment.Name);
 
                 reportViewer.LocalReport.DataSources.Clear();
@@ -107,7 +134,11 @@ namespace DSA_lims
                 reportViewer.LocalReport.Refresh();
                 reportViewer.RefreshReport();
 
-                mContent = reportViewer.LocalReport.Render("PDF", "");
+                var deviceInfo = @"<DeviceInfo>
+                    <EmbedFonts>None</EmbedFonts>
+                   </DeviceInfo>";
+
+                mContent = reportViewer.LocalReport.Render("PDF", deviceInfo);
 
                 mHasNewVersion = true;
                 btnCreateVersion.Enabled = false;
