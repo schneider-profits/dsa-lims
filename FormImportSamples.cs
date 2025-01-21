@@ -34,7 +34,7 @@ using Newtonsoft.Json;
 namespace DSA_lims
 {
     public partial class FormImportSamples : Form
-    {
+    {        
         private CultureInfo ciNO = new CultureInfo("nb-NO");
 
         private TreeView mTreeSampleTypes = null;
@@ -56,6 +56,8 @@ namespace DSA_lims
         public FormImportSamples(TreeView treeSampleTypes)
         {
             InitializeComponent();
+            
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
 
             mTreeSampleTypes = treeSampleTypes;
             lblStatus.Text = "";

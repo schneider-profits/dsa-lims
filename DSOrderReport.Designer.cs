@@ -2947,33 +2947,34 @@ namespace DSA_lims.DSOrderReportTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        \n\tassignment.name, \n\tsample_type.name AS stname, \n\tsample_type.path" +
-                " AS stpath, \n\tanalysis_method.name_short AS amname, \n\tanalysis_result.activity, " +
-                "\n\t(analysis_result.activity_uncertainty_abs / 2.0) * @sigma as activity_uncertai" +
-                "nty_abs, \n\tnuclide.name AS nuclide, \n\tCONVERT(nvarchar(80), sample.number) + \'/\'" +
-                " + CONVERT(nvarchar(80), preparation.number) + \'/\' + CONVERT(nvarchar(80), analy" +
-                "sis.number) AS number, \n\tanalysis_result.activity_approved, \n\t(analysis_result.d" +
-                "etection_limit / 1.645) * @mda as detection_limit, \n\tanalysis_result.detection_l" +
-                "imit_approved, \n\tanalysis_result.accredited, \n\tsample.reference_date, \n\tsample.e" +
-                "xternal_id, \n\tactivity_unit.name AS auname, \n\tactivity_unit_type.name_short AS a" +
-                "utnameshort, \n\tactivity_unit_type.name AS autname, \n\tanalysis.workflow_status_id" +
-                ", \n\tactivity_unit_type.name_report AS autnamereport, \n\tpreparation_method.name_s" +
-                "hort AS prepmethshort\nFROM            preparation_method INNER JOIN\n            " +
-                "             sample_type INNER JOIN\n                         sample ON sample_ty" +
-                "pe.id = sample.sample_type_id INNER JOIN\n                         preparation ON" +
-                " sample.id = preparation.sample_id ON preparation_method.id = preparation.prepar" +
-                "ation_method_id FULL OUTER JOIN\n                         analysis_method INNER J" +
-                "OIN\n                         assignment INNER JOIN\n                         anal" +
-                "ysis ON assignment.id = analysis.assignment_id AND analysis.workflow_status_id =" +
-                " 2 ON analysis_method.id = analysis.analysis_method_id LEFT OUTER JOIN\n         " +
-                "                activity_unit_type ON analysis.activity_unit_type_id = activity_" +
-                "unit_type.id LEFT OUTER JOIN\n                         activity_unit ON analysis." +
-                "activity_unit_id = activity_unit.id ON preparation.id = analysis.preparation_id " +
-                "FULL OUTER JOIN\n                         nuclide RIGHT OUTER JOIN\n              " +
-                "           analysis_result ON nuclide.id = analysis_result.nuclide_id ON analysi" +
-                "s.id = analysis_result.analysis_id AND analysis_result.reportable = 1\nWHERE     " +
-                "   (assignment.name = @AID) AND (preparation.instance_status_id = 1) AND (analys" +
-                "is.instance_status_id = 1) AND (analysis_result.instance_status_id = 1)";
+            this._commandCollection[0].CommandText = "SELECT        \r\n\tassignment.name, \r\n\tsample_type.name AS stname, \r\n\tsample_type.p" +
+                "ath AS stpath, \r\n\tanalysis_method.name_short AS amname, \r\n\tanalysis_result.activ" +
+                "ity, \r\n\t(analysis_result.activity_uncertainty_abs / 2.0) * @sigma as activity_un" +
+                "certainty_abs, \r\n\tnuclide.name AS nuclide, \r\n\tCONVERT(nvarchar(80), sample.numbe" +
+                "r) + \'/\' + CONVERT(nvarchar(80), preparation.number) + \'/\' + CONVERT(nvarchar(80" +
+                "), analysis.number) AS number, \r\n\tanalysis_result.activity_approved, \r\n\t(analysi" +
+                "s_result.detection_limit / 1.645) * @mda as detection_limit, \r\n\tanalysis_result." +
+                "detection_limit_approved, \r\n\tanalysis_result.accredited, \r\n\tsample.reference_dat" +
+                "e, \r\n\tsample.external_id, \r\n\tactivity_unit.name AS auname, \r\n\tactivity_unit_type" +
+                ".name_short AS autnameshort, \r\n\tactivity_unit_type.name AS autname, \r\n\tanalysis." +
+                "workflow_status_id, \r\n\tactivity_unit_type.name_report AS autnamereport, \r\n\tprepa" +
+                "ration_method.name_short AS prepmethshort\r\nFROM            preparation_method IN" +
+                "NER JOIN\r\n                         sample_type INNER JOIN\r\n                     " +
+                "    sample ON sample_type.id = sample.sample_type_id INNER JOIN\r\n               " +
+                "          preparation ON sample.id = preparation.sample_id ON preparation_method" +
+                ".id = preparation.preparation_method_id FULL OUTER JOIN\r\n                       " +
+                "  analysis_method INNER JOIN\r\n                         assignment INNER JOIN\r\n  " +
+                "                       analysis ON assignment.id = analysis.assignment_id AND an" +
+                "alysis.workflow_status_id = 2 ON analysis_method.id = analysis.analysis_method_i" +
+                "d LEFT OUTER JOIN\r\n                         activity_unit_type ON analysis.activ" +
+                "ity_unit_type_id = activity_unit_type.id LEFT OUTER JOIN\r\n                      " +
+                "   activity_unit ON analysis.activity_unit_id = activity_unit.id ON preparation." +
+                "id = analysis.preparation_id FULL OUTER JOIN\r\n                         nuclide R" +
+                "IGHT OUTER JOIN\r\n                         analysis_result ON nuclide.id = analys" +
+                "is_result.nuclide_id ON analysis.id = analysis_result.analysis_id AND analysis_r" +
+                "esult.reportable = 1\r\nWHERE        (assignment.name = @AID) AND (preparation.ins" +
+                "tance_status_id = 1) AND (analysis.instance_status_id = 1) AND (analysis_result." +
+                "instance_status_id = 1)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@sigma", global::System.Data.SqlDbType.Real, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mda", global::System.Data.SqlDbType.Real, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3186,25 +3187,25 @@ namespace DSA_lims.DSOrderReportTableAdapters {
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        assignment.name AS assname, laboratory.name AS labname, assignment." +
                 "analysis_report_version AS assversion, cv_account_1.name AS respname, assignment" +
-                ".customer_company_name AS compname, \n                         assignment.custome" +
-                "r_company_email AS compemail, assignment.customer_company_phone AS compphone, as" +
-                "signment.customer_company_address AS compaddress, \n                         assi" +
-                "gnment.customer_contact_name AS contname, assignment.customer_contact_email AS c" +
-                "ontemail, assignment.customer_contact_phone AS contphone, assignment.customer_co" +
-                "ntact_address AS contaddress,\n                          assignment.create_date A" +
-                "S asscreatedate, laboratory.address AS labaddress, laboratory.email AS labemail," +
-                " laboratory.phone AS labphone, cv_account_1.email AS respemail, cv_account_1.pho" +
-                "ne AS respphone, \n                         cv_account_1.address AS respaddress, " +
-                "assignment.last_workflow_status_date AS asswsdate, assignment.report_comment AS " +
-                "assreportcomment, assignment.audit_comment AS assauditcomment, \n                " +
-                "         laboratory.laboratory_logo, laboratory.accredited_logo, assignment.dead" +
-                "line,\n                             (SELECT        name\n                         " +
-                "      FROM            cv_account\n                               WHERE        (us" +
-                "ername = assignment.last_workflow_status_by)) AS asswsuser\nFROM            assig" +
-                "nment INNER JOIN\n                         cv_account AS cv_account_1 ON assignme" +
-                "nt.account_id = cv_account_1.id INNER JOIN\n                         laboratory O" +
-                "N assignment.laboratory_id = laboratory.id\nWHERE        (assignment.name = @anam" +
-                "e)";
+                ".customer_company_name AS compname, \r\n                         assignment.custom" +
+                "er_company_email AS compemail, assignment.customer_company_phone AS compphone, a" +
+                "ssignment.customer_company_address AS compaddress, \r\n                         as" +
+                "signment.customer_contact_name AS contname, assignment.customer_contact_email AS" +
+                " contemail, assignment.customer_contact_phone AS contphone, assignment.customer_" +
+                "contact_address AS contaddress,\r\n                          assignment.create_dat" +
+                "e AS asscreatedate, laboratory.address AS labaddress, laboratory.email AS labema" +
+                "il, laboratory.phone AS labphone, cv_account_1.email AS respemail, cv_account_1." +
+                "phone AS respphone, \r\n                         cv_account_1.address AS respaddre" +
+                "ss, assignment.last_workflow_status_date AS asswsdate, assignment.report_comment" +
+                " AS assreportcomment, assignment.audit_comment AS assauditcomment, \r\n           " +
+                "              laboratory.laboratory_logo, laboratory.accredited_logo, assignment" +
+                ".deadline,\r\n                             (SELECT        name\r\n                  " +
+                "             FROM            cv_account\r\n                               WHERE   " +
+                "     (username = assignment.last_workflow_status_by)) AS asswsuser\r\nFROM        " +
+                "    assignment INNER JOIN\r\n                         cv_account AS cv_account_1 O" +
+                "N assignment.account_id = cv_account_1.id INNER JOIN\r\n                         l" +
+                "aboratory ON assignment.laboratory_id = laboratory.id\r\nWHERE        (assignment." +
+                "name = @aname)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@aname", global::System.Data.SqlDbType.NVarChar, 80, global::System.Data.ParameterDirection.Input, 0, 0, "assname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }

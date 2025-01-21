@@ -1439,7 +1439,7 @@
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menu.Size = new System.Drawing.Size(1390, 24);
+            this.menu.Size = new System.Drawing.Size(1390, 28);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -1450,25 +1450,25 @@
             this.toolStripSeparator4,
             this.miExit});
             this.miFile.Name = "miFile";
-            this.miFile.Size = new System.Drawing.Size(37, 20);
+            this.miFile.Size = new System.Drawing.Size(46, 24);
             this.miFile.Text = "&File";
             // 
             // miLogout
             // 
             this.miLogout.Name = "miLogout";
-            this.miLogout.Size = new System.Drawing.Size(112, 22);
+            this.miLogout.Size = new System.Drawing.Size(139, 26);
             this.miLogout.Text = "&Logout";
             this.miLogout.Click += new System.EventHandler(this.miLogout_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(109, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(136, 6);
             // 
             // miExit
             // 
             this.miExit.Name = "miExit";
-            this.miExit.Size = new System.Drawing.Size(112, 22);
+            this.miExit.Size = new System.Drawing.Size(139, 26);
             this.miExit.Text = "E&xit";
             this.miExit.Click += new System.EventHandler(this.miExit_Click);
             // 
@@ -1486,81 +1486,81 @@
             this.miSearchView,
             this.miUpdateMyPassword});
             this.miEdit.Name = "miEdit";
-            this.miEdit.Size = new System.Drawing.Size(39, 20);
+            this.miEdit.Size = new System.Drawing.Size(49, 24);
             this.miEdit.Text = "&Edit";
             // 
             // miMainMenuView
             // 
             this.miMainMenuView.Name = "miMainMenuView";
-            this.miMainMenuView.Size = new System.Drawing.Size(185, 22);
+            this.miMainMenuView.Size = new System.Drawing.Size(232, 26);
             this.miMainMenuView.Text = "Ma&in menu";
             this.miMainMenuView.Click += new System.EventHandler(this.miMainMenuView_Click);
             // 
             // miBack
             // 
             this.miBack.Name = "miBack";
-            this.miBack.Size = new System.Drawing.Size(185, 22);
+            this.miBack.Size = new System.Drawing.Size(232, 26);
             this.miBack.Text = "&Back";
             this.miBack.Click += new System.EventHandler(this.miBack_Click);
             // 
             // toolStripSeparator25
             // 
             this.toolStripSeparator25.Name = "toolStripSeparator25";
-            this.toolStripSeparator25.Size = new System.Drawing.Size(182, 6);
+            this.toolStripSeparator25.Size = new System.Drawing.Size(229, 6);
             // 
             // miProjectsView
             // 
             this.miProjectsView.Name = "miProjectsView";
-            this.miProjectsView.Size = new System.Drawing.Size(185, 22);
+            this.miProjectsView.Size = new System.Drawing.Size(232, 26);
             this.miProjectsView.Text = "&Projects";
             this.miProjectsView.Click += new System.EventHandler(this.miProjectsView_Click);
             // 
             // miCustomersView
             // 
             this.miCustomersView.Name = "miCustomersView";
-            this.miCustomersView.Size = new System.Drawing.Size(185, 22);
+            this.miCustomersView.Size = new System.Drawing.Size(232, 26);
             this.miCustomersView.Text = "&Customers";
             this.miCustomersView.Click += new System.EventHandler(this.miCustomersView_Click);
             // 
             // miTypeRelationsView
             // 
             this.miTypeRelationsView.Name = "miTypeRelationsView";
-            this.miTypeRelationsView.Size = new System.Drawing.Size(185, 22);
+            this.miTypeRelationsView.Size = new System.Drawing.Size(232, 26);
             this.miTypeRelationsView.Text = "&Types/Methods";
             this.miTypeRelationsView.Click += new System.EventHandler(this.miTypeRelationsView_Click);
             // 
             // miMetadataView
             // 
             this.miMetadataView.Name = "miMetadataView";
-            this.miMetadataView.Size = new System.Drawing.Size(185, 22);
+            this.miMetadataView.Size = new System.Drawing.Size(232, 26);
             this.miMetadataView.Text = "M&etadata";
             this.miMetadataView.Click += new System.EventHandler(this.miMetadataView_Click);
             // 
             // miSystemDataView
             // 
             this.miSystemDataView.Name = "miSystemDataView";
-            this.miSystemDataView.Size = new System.Drawing.Size(185, 22);
+            this.miSystemDataView.Size = new System.Drawing.Size(232, 26);
             this.miSystemDataView.Text = "&System data";
             this.miSystemDataView.Click += new System.EventHandler(this.miSystemDataView_Click);
             // 
             // miSearchView
             // 
             this.miSearchView.Name = "miSearchView";
-            this.miSearchView.Size = new System.Drawing.Size(185, 22);
+            this.miSearchView.Size = new System.Drawing.Size(232, 26);
             this.miSearchView.Text = "R&esults/Statistics";
             this.miSearchView.Click += new System.EventHandler(this.miSearchView_Click);
             // 
             // miUpdateMyPassword
             // 
             this.miUpdateMyPassword.Name = "miUpdateMyPassword";
-            this.miUpdateMyPassword.Size = new System.Drawing.Size(185, 22);
+            this.miUpdateMyPassword.Size = new System.Drawing.Size(232, 26);
             this.miUpdateMyPassword.Text = "&Update my password";
             this.miUpdateMyPassword.Click += new System.EventHandler(this.miUpdateMyPassword_Click);
             // 
             // miSample
             // 
             this.miSample.Name = "miSample";
-            this.miSample.Size = new System.Drawing.Size(58, 20);
+            this.miSample.Size = new System.Drawing.Size(73, 24);
             this.miSample.Text = "S&ample";
             // 
             // miOrder
@@ -1578,51 +1578,51 @@
             this.miOrderSave,
             this.miOrderDiscard});
             this.miOrder.Name = "miOrder";
-            this.miOrder.Size = new System.Drawing.Size(49, 20);
+            this.miOrder.Size = new System.Drawing.Size(61, 24);
             this.miOrder.Text = "&Order";
             // 
             // miOrderShowDefAsPDF
             // 
             this.miOrderShowDefAsPDF.Name = "miOrderShowDefAsPDF";
-            this.miOrderShowDefAsPDF.Size = new System.Drawing.Size(226, 22);
+            this.miOrderShowDefAsPDF.Size = new System.Drawing.Size(284, 26);
             this.miOrderShowDefAsPDF.Text = "Show order definition as PDF";
             this.miOrderShowDefAsPDF.Click += new System.EventHandler(this.miOrderShowDefAsPDF_Click);
             // 
             // toolStripSeparator76
             // 
             this.toolStripSeparator76.Name = "toolStripSeparator76";
-            this.toolStripSeparator76.Size = new System.Drawing.Size(223, 6);
+            this.toolStripSeparator76.Size = new System.Drawing.Size(281, 6);
             // 
             // miOrderAddSampleType
             // 
             this.miOrderAddSampleType.Name = "miOrderAddSampleType";
-            this.miOrderAddSampleType.Size = new System.Drawing.Size(226, 22);
+            this.miOrderAddSampleType.Size = new System.Drawing.Size(284, 26);
             this.miOrderAddSampleType.Text = "&Add sample type";
             this.miOrderAddSampleType.Click += new System.EventHandler(this.miOrderAddSampleType_Click);
             // 
             // miOrderEditSampleType
             // 
             this.miOrderEditSampleType.Name = "miOrderEditSampleType";
-            this.miOrderEditSampleType.Size = new System.Drawing.Size(226, 22);
+            this.miOrderEditSampleType.Size = new System.Drawing.Size(284, 26);
             this.miOrderEditSampleType.Text = "Edit sample type";
             // 
             // miOrderRemSampleType
             // 
             this.miOrderRemSampleType.Name = "miOrderRemSampleType";
-            this.miOrderRemSampleType.Size = new System.Drawing.Size(226, 22);
+            this.miOrderRemSampleType.Size = new System.Drawing.Size(284, 26);
             this.miOrderRemSampleType.Text = "&Remove sample type";
             this.miOrderRemSampleType.Click += new System.EventHandler(this.miOrderRemSampleType_Click);
             // 
             // toolStripSeparator66
             // 
             this.toolStripSeparator66.Name = "toolStripSeparator66";
-            this.toolStripSeparator66.Size = new System.Drawing.Size(223, 6);
+            this.toolStripSeparator66.Size = new System.Drawing.Size(281, 6);
             // 
             // miOrderAddPrepMeth
             // 
             this.miOrderAddPrepMeth.Enabled = false;
             this.miOrderAddPrepMeth.Name = "miOrderAddPrepMeth";
-            this.miOrderAddPrepMeth.Size = new System.Drawing.Size(226, 22);
+            this.miOrderAddPrepMeth.Size = new System.Drawing.Size(284, 26);
             this.miOrderAddPrepMeth.Text = "Add &preparation method";
             this.miOrderAddPrepMeth.Click += new System.EventHandler(this.miOrderAddPrepMeth_Click);
             // 
@@ -1630,33 +1630,33 @@
             // 
             this.miOrderAddAnalMeth.Enabled = false;
             this.miOrderAddAnalMeth.Name = "miOrderAddAnalMeth";
-            this.miOrderAddAnalMeth.Size = new System.Drawing.Size(226, 22);
+            this.miOrderAddAnalMeth.Size = new System.Drawing.Size(284, 26);
             this.miOrderAddAnalMeth.Text = "Add &analysis method";
             this.miOrderAddAnalMeth.Click += new System.EventHandler(this.miOrderAddAnalMeth_Click);
             // 
             // toolStripSeparator68
             // 
             this.toolStripSeparator68.Name = "toolStripSeparator68";
-            this.toolStripSeparator68.Size = new System.Drawing.Size(223, 6);
+            this.toolStripSeparator68.Size = new System.Drawing.Size(281, 6);
             // 
             // miOrderSave
             // 
             this.miOrderSave.Name = "miOrderSave";
-            this.miOrderSave.Size = new System.Drawing.Size(226, 22);
+            this.miOrderSave.Size = new System.Drawing.Size(284, 26);
             this.miOrderSave.Text = "&Save order";
             this.miOrderSave.Click += new System.EventHandler(this.miOrderSave_Click);
             // 
             // miOrderDiscard
             // 
             this.miOrderDiscard.Name = "miOrderDiscard";
-            this.miOrderDiscard.Size = new System.Drawing.Size(226, 22);
+            this.miOrderDiscard.Size = new System.Drawing.Size(284, 26);
             this.miOrderDiscard.Text = "&Discard changes";
             this.miOrderDiscard.Click += new System.EventHandler(this.miOrderDiscard_Click);
             // 
             // miSearch
             // 
             this.miSearch.Name = "miSearch";
-            this.miSearch.Size = new System.Drawing.Size(107, 20);
+            this.miSearch.Size = new System.Drawing.Size(133, 24);
             this.miSearch.Text = "&Results/Statistics";
             // 
             // miMeta
@@ -1669,7 +1669,7 @@
             this.miSamplingMethods,
             this.miCompanies});
             this.miMeta.Name = "miMeta";
-            this.miMeta.Size = new System.Drawing.Size(69, 20);
+            this.miMeta.Size = new System.Drawing.Size(87, 24);
             this.miMeta.Text = "&Metadata";
             // 
             // miStations
@@ -1679,27 +1679,27 @@
             this.miEditStation,
             this.miDeleteStation});
             this.miStations.Name = "miStations";
-            this.miStations.Size = new System.Drawing.Size(174, 22);
+            this.miStations.Size = new System.Drawing.Size(217, 26);
             this.miStations.Text = "&Stations";
             // 
             // miNewStation
             // 
             this.miNewStation.Name = "miNewStation";
-            this.miNewStation.Size = new System.Drawing.Size(146, 22);
+            this.miNewStation.Size = new System.Drawing.Size(185, 26);
             this.miNewStation.Text = "&New station";
             this.miNewStation.Click += new System.EventHandler(this.miNewStation_Click);
             // 
             // miEditStation
             // 
             this.miEditStation.Name = "miEditStation";
-            this.miEditStation.Size = new System.Drawing.Size(146, 22);
+            this.miEditStation.Size = new System.Drawing.Size(185, 26);
             this.miEditStation.Text = "&Edit station";
             this.miEditStation.Click += new System.EventHandler(this.miEditStation_Click);
             // 
             // miDeleteStation
             // 
             this.miDeleteStation.Name = "miDeleteStation";
-            this.miDeleteStation.Size = new System.Drawing.Size(146, 22);
+            this.miDeleteStation.Size = new System.Drawing.Size(185, 26);
             this.miDeleteStation.Text = "&Delete station";
             this.miDeleteStation.Click += new System.EventHandler(this.miDeleteStation_Click);
             // 
@@ -1710,34 +1710,34 @@
             this.miEditSampleStorage,
             this.miDeleteSampleStorage});
             this.miSampleStorage.Name = "miSampleStorage";
-            this.miSampleStorage.Size = new System.Drawing.Size(174, 22);
+            this.miSampleStorage.Size = new System.Drawing.Size(217, 26);
             this.miSampleStorage.Text = "S&ample storage";
             // 
             // miNewSampleStorage
             // 
             this.miNewSampleStorage.Name = "miNewSampleStorage";
-            this.miNewSampleStorage.Size = new System.Drawing.Size(190, 22);
+            this.miNewSampleStorage.Size = new System.Drawing.Size(242, 26);
             this.miNewSampleStorage.Text = "&New sample stoarge";
             this.miNewSampleStorage.Click += new System.EventHandler(this.miNewSampleStorage_Click);
             // 
             // miEditSampleStorage
             // 
             this.miEditSampleStorage.Name = "miEditSampleStorage";
-            this.miEditSampleStorage.Size = new System.Drawing.Size(190, 22);
+            this.miEditSampleStorage.Size = new System.Drawing.Size(242, 26);
             this.miEditSampleStorage.Text = "&Edit sample storage";
             this.miEditSampleStorage.Click += new System.EventHandler(this.miEditSampleStorage_Click);
             // 
             // miDeleteSampleStorage
             // 
             this.miDeleteSampleStorage.Name = "miDeleteSampleStorage";
-            this.miDeleteSampleStorage.Size = new System.Drawing.Size(190, 22);
+            this.miDeleteSampleStorage.Size = new System.Drawing.Size(242, 26);
             this.miDeleteSampleStorage.Text = "&Delete sample storage";
             this.miDeleteSampleStorage.Click += new System.EventHandler(this.miDeleteSampleStorage_Click);
             // 
             // miUnits
             // 
             this.miUnits.Name = "miUnits";
-            this.miUnits.Size = new System.Drawing.Size(174, 22);
+            this.miUnits.Size = new System.Drawing.Size(217, 26);
             this.miUnits.Text = "&Units";
             // 
             // miSamplers
@@ -1747,27 +1747,27 @@
             this.miSamplerEdit,
             this.miSamplerDelete});
             this.miSamplers.Name = "miSamplers";
-            this.miSamplers.Size = new System.Drawing.Size(174, 22);
+            this.miSamplers.Size = new System.Drawing.Size(217, 26);
             this.miSamplers.Text = "Sa&mplers";
             // 
             // miSamplerNew
             // 
             this.miSamplerNew.Name = "miSamplerNew";
-            this.miSamplerNew.Size = new System.Drawing.Size(152, 22);
+            this.miSamplerNew.Size = new System.Drawing.Size(193, 26);
             this.miSamplerNew.Text = "&New sampler";
             this.miSamplerNew.Click += new System.EventHandler(this.miSamplerNew_Click);
             // 
             // miSamplerEdit
             // 
             this.miSamplerEdit.Name = "miSamplerEdit";
-            this.miSamplerEdit.Size = new System.Drawing.Size(152, 22);
+            this.miSamplerEdit.Size = new System.Drawing.Size(193, 26);
             this.miSamplerEdit.Text = "&Edit sampler";
             this.miSamplerEdit.Click += new System.EventHandler(this.miSamplerEdit_Click);
             // 
             // miSamplerDelete
             // 
             this.miSamplerDelete.Name = "miSamplerDelete";
-            this.miSamplerDelete.Size = new System.Drawing.Size(152, 22);
+            this.miSamplerDelete.Size = new System.Drawing.Size(193, 26);
             this.miSamplerDelete.Text = "&Delete sampler";
             this.miSamplerDelete.Click += new System.EventHandler(this.miSamplerDelete_Click);
             // 
@@ -1778,27 +1778,27 @@
             this.miSamplingMethodEdit,
             this.miSamplingMethodDelete});
             this.miSamplingMethods.Name = "miSamplingMethods";
-            this.miSamplingMethods.Size = new System.Drawing.Size(174, 22);
+            this.miSamplingMethods.Size = new System.Drawing.Size(217, 26);
             this.miSamplingMethods.Text = "Sam&pling methods";
             // 
             // miSamplingMethodNew
             // 
             this.miSamplingMethodNew.Name = "miSamplingMethodNew";
-            this.miSamplingMethodNew.Size = new System.Drawing.Size(204, 22);
+            this.miSamplingMethodNew.Size = new System.Drawing.Size(257, 26);
             this.miSamplingMethodNew.Text = "&New sampling method";
             this.miSamplingMethodNew.Click += new System.EventHandler(this.miSamplingMethodNew_Click);
             // 
             // miSamplingMethodEdit
             // 
             this.miSamplingMethodEdit.Name = "miSamplingMethodEdit";
-            this.miSamplingMethodEdit.Size = new System.Drawing.Size(204, 22);
+            this.miSamplingMethodEdit.Size = new System.Drawing.Size(257, 26);
             this.miSamplingMethodEdit.Text = "&Edit sampling method";
             this.miSamplingMethodEdit.Click += new System.EventHandler(this.miSamplingMethodEdit_Click);
             // 
             // miSamplingMethodDelete
             // 
             this.miSamplingMethodDelete.Name = "miSamplingMethodDelete";
-            this.miSamplingMethodDelete.Size = new System.Drawing.Size(204, 22);
+            this.miSamplingMethodDelete.Size = new System.Drawing.Size(257, 26);
             this.miSamplingMethodDelete.Text = "&Delete sampling method";
             this.miSamplingMethodDelete.Click += new System.EventHandler(this.miSamplingMethodDelete_Click);
             // 
@@ -1809,27 +1809,27 @@
             this.miCompanyEdit,
             this.miCompanyDelete});
             this.miCompanies.Name = "miCompanies";
-            this.miCompanies.Size = new System.Drawing.Size(174, 22);
+            this.miCompanies.Size = new System.Drawing.Size(217, 26);
             this.miCompanies.Text = "Companies";
             // 
             // miCompanyNew
             // 
             this.miCompanyNew.Name = "miCompanyNew";
-            this.miCompanyNew.Size = new System.Drawing.Size(160, 22);
+            this.miCompanyNew.Size = new System.Drawing.Size(201, 26);
             this.miCompanyNew.Text = "New company";
             this.miCompanyNew.Click += new System.EventHandler(this.miCompanyNew_Click);
             // 
             // miCompanyEdit
             // 
             this.miCompanyEdit.Name = "miCompanyEdit";
-            this.miCompanyEdit.Size = new System.Drawing.Size(160, 22);
+            this.miCompanyEdit.Size = new System.Drawing.Size(201, 26);
             this.miCompanyEdit.Text = "Edit company";
             this.miCompanyEdit.Click += new System.EventHandler(this.miCompanyEdit_Click);
             // 
             // miCompanyDelete
             // 
             this.miCompanyDelete.Name = "miCompanyDelete";
-            this.miCompanyDelete.Size = new System.Drawing.Size(160, 22);
+            this.miCompanyDelete.Size = new System.Drawing.Size(201, 26);
             this.miCompanyDelete.Text = "Delete company";
             this.miCompanyDelete.Click += new System.EventHandler(this.miCompanyDelete_Click);
             // 
@@ -1846,65 +1846,65 @@
             this.miOrdersShowAuditLog,
             this.miOrdersUnlock});
             this.miOrders.Name = "miOrders";
-            this.miOrders.Size = new System.Drawing.Size(54, 20);
+            this.miOrders.Size = new System.Drawing.Size(67, 24);
             this.miOrders.Text = "Or&ders";
             // 
             // miOrdersNew
             // 
             this.miOrdersNew.Name = "miOrdersNew";
-            this.miOrdersNew.Size = new System.Drawing.Size(153, 22);
+            this.miOrdersNew.Size = new System.Drawing.Size(192, 26);
             this.miOrdersNew.Text = "&New order";
             this.miOrdersNew.Click += new System.EventHandler(this.miOrdersNew_Click);
             // 
             // miOrdersEdit
             // 
             this.miOrdersEdit.Name = "miOrdersEdit";
-            this.miOrdersEdit.Size = new System.Drawing.Size(153, 22);
+            this.miOrdersEdit.Size = new System.Drawing.Size(192, 26);
             this.miOrdersEdit.Text = "&Edit order";
             this.miOrdersEdit.Click += new System.EventHandler(this.miOrdersEdit_Click);
             // 
             // miOrdersCopy
             // 
             this.miOrdersCopy.Name = "miOrdersCopy";
-            this.miOrdersCopy.Size = new System.Drawing.Size(153, 22);
+            this.miOrdersCopy.Size = new System.Drawing.Size(192, 26);
             this.miOrdersCopy.Text = "C&opy order";
             this.miOrdersCopy.Click += new System.EventHandler(this.miOrdersCopy_Click);
             // 
             // miOrdersDelete
             // 
             this.miOrdersDelete.Name = "miOrdersDelete";
-            this.miOrdersDelete.Size = new System.Drawing.Size(153, 22);
+            this.miOrdersDelete.Size = new System.Drawing.Size(192, 26);
             this.miOrdersDelete.Text = "&Delete order";
             this.miOrdersDelete.Click += new System.EventHandler(this.miOrdersDelete_Click);
             // 
             // toolStripSeparator65
             // 
             this.toolStripSeparator65.Name = "toolStripSeparator65";
-            this.toolStripSeparator65.Size = new System.Drawing.Size(150, 6);
+            this.toolStripSeparator65.Size = new System.Drawing.Size(189, 6);
             // 
             // miOrdersClearAllFilters
             // 
             this.miOrdersClearAllFilters.Name = "miOrdersClearAllFilters";
-            this.miOrdersClearAllFilters.Size = new System.Drawing.Size(153, 22);
+            this.miOrdersClearAllFilters.Size = new System.Drawing.Size(192, 26);
             this.miOrdersClearAllFilters.Text = "&Clear all filters";
             this.miOrdersClearAllFilters.Click += new System.EventHandler(this.miOrdersClearAllFilters_Click);
             // 
             // toolStripSeparator72
             // 
             this.toolStripSeparator72.Name = "toolStripSeparator72";
-            this.toolStripSeparator72.Size = new System.Drawing.Size(150, 6);
+            this.toolStripSeparator72.Size = new System.Drawing.Size(189, 6);
             // 
             // miOrdersShowAuditLog
             // 
             this.miOrdersShowAuditLog.Name = "miOrdersShowAuditLog";
-            this.miOrdersShowAuditLog.Size = new System.Drawing.Size(153, 22);
+            this.miOrdersShowAuditLog.Size = new System.Drawing.Size(192, 26);
             this.miOrdersShowAuditLog.Text = "Show audit log";
             this.miOrdersShowAuditLog.Click += new System.EventHandler(this.miOrdersShowAuditLog_Click);
             // 
             // miOrdersUnlock
             // 
             this.miOrdersUnlock.Name = "miOrdersUnlock";
-            this.miOrdersUnlock.Size = new System.Drawing.Size(153, 22);
+            this.miOrdersUnlock.Size = new System.Drawing.Size(192, 26);
             this.miOrdersUnlock.Text = "&Unlock";
             this.miOrdersUnlock.Click += new System.EventHandler(this.miOrdersUnlock_Click);
             // 
@@ -1929,34 +1929,34 @@
             this.toolStripSeparator70,
             this.miSamplesUnlock});
             this.miSamples.Name = "miSamples";
-            this.miSamples.Size = new System.Drawing.Size(63, 20);
+            this.miSamples.Size = new System.Drawing.Size(79, 24);
             this.miSamples.Text = "Sa&mples";
             // 
             // miSamplesNew
             // 
             this.miSamplesNew.Name = "miSamplesNew";
-            this.miSamplesNew.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesNew.Size = new System.Drawing.Size(280, 26);
             this.miSamplesNew.Text = "&New";
             this.miSamplesNew.Click += new System.EventHandler(this.miSamplesNew_Click);
             // 
             // miSamplesEdit
             // 
             this.miSamplesEdit.Name = "miSamplesEdit";
-            this.miSamplesEdit.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesEdit.Size = new System.Drawing.Size(280, 26);
             this.miSamplesEdit.Text = "&Edit";
             this.miSamplesEdit.Click += new System.EventHandler(this.miSamplesEdit_Click);
             // 
             // miSamplesCopy
             // 
             this.miSamplesCopy.Name = "miSamplesCopy";
-            this.miSamplesCopy.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesCopy.Size = new System.Drawing.Size(280, 26);
             this.miSamplesCopy.Text = "&Copy";
             this.miSamplesCopy.Click += new System.EventHandler(this.miSamplesCopy_Click);
             // 
             // miSamplesView
             // 
             this.miSamplesView.Name = "miSamplesView";
-            this.miSamplesView.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesView.Size = new System.Drawing.Size(280, 26);
             this.miSamplesView.Text = "&View";
             this.miSamplesView.Click += new System.EventHandler(this.miSamplesView_Click);
             // 
@@ -1966,46 +1966,46 @@
             this.miSamplesImportExisting,
             this.miSamplesImportGetExcelTemplate});
             this.miSamplesImport.Name = "miSamplesImport";
-            this.miSamplesImport.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesImport.Size = new System.Drawing.Size(280, 26);
             this.miSamplesImport.Text = "&Import...";
             // 
             // miSamplesImportExisting
             // 
             this.miSamplesImportExisting.Name = "miSamplesImportExisting";
-            this.miSamplesImportExisting.Size = new System.Drawing.Size(209, 22);
+            this.miSamplesImportExisting.Size = new System.Drawing.Size(263, 26);
             this.miSamplesImportExisting.Text = "&Import existing file";
             this.miSamplesImportExisting.Click += new System.EventHandler(this.miSamplesImportTemplate_Click);
             // 
             // miSamplesImportGetExcelTemplate
             // 
             this.miSamplesImportGetExcelTemplate.Name = "miSamplesImportGetExcelTemplate";
-            this.miSamplesImportGetExcelTemplate.Size = new System.Drawing.Size(209, 22);
+            this.miSamplesImportGetExcelTemplate.Size = new System.Drawing.Size(263, 26);
             this.miSamplesImportGetExcelTemplate.Text = "Get empty Excel &template";
             this.miSamplesImportGetExcelTemplate.Click += new System.EventHandler(this.miSamplesImportGetExcelTemplate_Click);
             // 
             // toolStripSeparator48
             // 
             this.toolStripSeparator48.Name = "toolStripSeparator48";
-            this.toolStripSeparator48.Size = new System.Drawing.Size(219, 6);
+            this.toolStripSeparator48.Size = new System.Drawing.Size(277, 6);
             // 
             // miSamplesSplit
             // 
             this.miSamplesSplit.Name = "miSamplesSplit";
-            this.miSamplesSplit.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesSplit.Size = new System.Drawing.Size(280, 26);
             this.miSamplesSplit.Text = "&Split";
             this.miSamplesSplit.Click += new System.EventHandler(this.miSamplesSplit_Click);
             // 
             // miSamplesMerge
             // 
             this.miSamplesMerge.Name = "miSamplesMerge";
-            this.miSamplesMerge.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesMerge.Size = new System.Drawing.Size(280, 26);
             this.miSamplesMerge.Text = "&Merge";
             this.miSamplesMerge.Click += new System.EventHandler(this.miSamplesMerge_Click);
             // 
             // toolStripSeparator49
             // 
             this.toolStripSeparator49.Name = "toolStripSeparator49";
-            this.toolStripSeparator49.Size = new System.Drawing.Size(219, 6);
+            this.toolStripSeparator49.Size = new System.Drawing.Size(277, 6);
             // 
             // miSamplesSet
             // 
@@ -2016,55 +2016,55 @@
             this.miSamplesSetExcempt,
             this.miSamplesSetInstanceStatus});
             this.miSamplesSet.Name = "miSamplesSet";
-            this.miSamplesSet.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesSet.Size = new System.Drawing.Size(280, 26);
             this.miSamplesSet.Text = "&Set...";
             // 
             // miSamplesSetProject
             // 
             this.miSamplesSetProject.Name = "miSamplesSetProject";
-            this.miSamplesSetProject.Size = new System.Drawing.Size(185, 22);
+            this.miSamplesSetProject.Size = new System.Drawing.Size(230, 26);
             this.miSamplesSetProject.Text = "&Project";
             this.miSamplesSetProject.Click += new System.EventHandler(this.miSamplesSetProject_Click);
             // 
             // miSamplesSetSampler
             // 
             this.miSamplesSetSampler.Name = "miSamplesSetSampler";
-            this.miSamplesSetSampler.Size = new System.Drawing.Size(185, 22);
+            this.miSamplesSetSampler.Size = new System.Drawing.Size(230, 26);
             this.miSamplesSetSampler.Text = "&Sampler";
             this.miSamplesSetSampler.Click += new System.EventHandler(this.miSamplesSetSampler_Click);
             // 
             // miSamplesSetSamplingMethod
             // 
             this.miSamplesSetSamplingMethod.Name = "miSamplesSetSamplingMethod";
-            this.miSamplesSetSamplingMethod.Size = new System.Drawing.Size(185, 22);
+            this.miSamplesSetSamplingMethod.Size = new System.Drawing.Size(230, 26);
             this.miSamplesSetSamplingMethod.Text = "Sampling &method";
             this.miSamplesSetSamplingMethod.Click += new System.EventHandler(this.miSamplesSetSamplingMethod_Click);
             // 
             // miSamplesSetExcempt
             // 
             this.miSamplesSetExcempt.Name = "miSamplesSetExcempt";
-            this.miSamplesSetExcempt.Size = new System.Drawing.Size(185, 22);
+            this.miSamplesSetExcempt.Size = new System.Drawing.Size(230, 26);
             this.miSamplesSetExcempt.Text = "&Excempt from public";
             this.miSamplesSetExcempt.Click += new System.EventHandler(this.miSamplesSetExcempt_Click);
             // 
             // miSamplesSetInstanceStatus
             // 
             this.miSamplesSetInstanceStatus.Name = "miSamplesSetInstanceStatus";
-            this.miSamplesSetInstanceStatus.Size = new System.Drawing.Size(185, 22);
+            this.miSamplesSetInstanceStatus.Size = new System.Drawing.Size(230, 26);
             this.miSamplesSetInstanceStatus.Text = "Instance status";
             this.miSamplesSetInstanceStatus.Click += new System.EventHandler(this.miSamplesSetInstanceStatus_Click);
             // 
             // miSamplesSetOrder
             // 
             this.miSamplesSetOrder.Name = "miSamplesSetOrder";
-            this.miSamplesSetOrder.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesSetOrder.Size = new System.Drawing.Size(280, 26);
             this.miSamplesSetOrder.Text = "Add to &order";
             this.miSamplesSetOrder.Click += new System.EventHandler(this.miSamplesSetOrder_Click);
             // 
             // miSamplesPrepAnal
             // 
             this.miSamplesPrepAnal.Name = "miSamplesPrepAnal";
-            this.miSamplesPrepAnal.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesPrepAnal.Size = new System.Drawing.Size(280, 26);
             this.miSamplesPrepAnal.Text = "&Preparations and Analyses";
             this.miSamplesPrepAnal.Click += new System.EventHandler(this.miSamplesPrepAnal_Click);
             // 
@@ -2073,38 +2073,38 @@
             this.printToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miSamplesPrintSampleLabels});
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(280, 26);
             this.printToolStripMenuItem.Text = "P&rint...";
             // 
             // miSamplesPrintSampleLabels
             // 
             this.miSamplesPrintSampleLabels.Name = "miSamplesPrintSampleLabels";
-            this.miSamplesPrintSampleLabels.Size = new System.Drawing.Size(146, 22);
+            this.miSamplesPrintSampleLabels.Size = new System.Drawing.Size(185, 26);
             this.miSamplesPrintSampleLabels.Text = "Sample labels";
             this.miSamplesPrintSampleLabels.Click += new System.EventHandler(this.miSamplesPrintSampleLabels_Click);
             // 
             // miSamplesShowAuditLog
             // 
             this.miSamplesShowAuditLog.Name = "miSamplesShowAuditLog";
-            this.miSamplesShowAuditLog.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesShowAuditLog.Size = new System.Drawing.Size(280, 26);
             this.miSamplesShowAuditLog.Text = "Show &audit log";
             this.miSamplesShowAuditLog.Click += new System.EventHandler(this.miSamplesShowAuditLog_Click);
             // 
             // miSamplesGetTemplate
             // 
             this.miSamplesGetTemplate.Name = "miSamplesGetTemplate";
-            this.miSamplesGetTemplate.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesGetTemplate.Size = new System.Drawing.Size(280, 26);
             this.miSamplesGetTemplate.Text = "Get sample import &template";
             // 
             // toolStripSeparator70
             // 
             this.toolStripSeparator70.Name = "toolStripSeparator70";
-            this.toolStripSeparator70.Size = new System.Drawing.Size(219, 6);
+            this.toolStripSeparator70.Size = new System.Drawing.Size(277, 6);
             // 
             // miSamplesUnlock
             // 
             this.miSamplesUnlock.Name = "miSamplesUnlock";
-            this.miSamplesUnlock.Size = new System.Drawing.Size(222, 22);
+            this.miSamplesUnlock.Size = new System.Drawing.Size(280, 26);
             this.miSamplesUnlock.Text = "&Unlock";
             this.miSamplesUnlock.Click += new System.EventHandler(this.miSamplesUnlock_Click);
             // 
@@ -2119,53 +2119,53 @@
             this.miProjectsSubEdit,
             this.miProjectsSubDelete});
             this.miProjects.Name = "miProjects";
-            this.miProjects.Size = new System.Drawing.Size(61, 20);
+            this.miProjects.Size = new System.Drawing.Size(75, 24);
             this.miProjects.Text = "&Projects";
             // 
             // miProjectsNew
             // 
             this.miProjectsNew.Name = "miProjectsNew";
-            this.miProjectsNew.Size = new System.Drawing.Size(177, 22);
+            this.miProjectsNew.Size = new System.Drawing.Size(224, 26);
             this.miProjectsNew.Text = "&New main project";
             this.miProjectsNew.Click += new System.EventHandler(this.miProjectsNew_Click);
             // 
             // miProjectsEdit
             // 
             this.miProjectsEdit.Name = "miProjectsEdit";
-            this.miProjectsEdit.Size = new System.Drawing.Size(177, 22);
+            this.miProjectsEdit.Size = new System.Drawing.Size(224, 26);
             this.miProjectsEdit.Text = "&Edit main project";
             this.miProjectsEdit.Click += new System.EventHandler(this.miProjectsEdit_Click);
             // 
             // miProjectsDelete
             // 
             this.miProjectsDelete.Name = "miProjectsDelete";
-            this.miProjectsDelete.Size = new System.Drawing.Size(177, 22);
+            this.miProjectsDelete.Size = new System.Drawing.Size(224, 26);
             this.miProjectsDelete.Text = "&Delete main project";
             this.miProjectsDelete.Click += new System.EventHandler(this.miProjectsDelete_Click);
             // 
             // toolStripSeparator52
             // 
             this.toolStripSeparator52.Name = "toolStripSeparator52";
-            this.toolStripSeparator52.Size = new System.Drawing.Size(174, 6);
+            this.toolStripSeparator52.Size = new System.Drawing.Size(221, 6);
             // 
             // miProjectsSubNew
             // 
             this.miProjectsSubNew.Name = "miProjectsSubNew";
-            this.miProjectsSubNew.Size = new System.Drawing.Size(177, 22);
+            this.miProjectsSubNew.Size = new System.Drawing.Size(224, 26);
             this.miProjectsSubNew.Text = "New &sub project";
             this.miProjectsSubNew.Click += new System.EventHandler(this.miProjectsSubNew_Click);
             // 
             // miProjectsSubEdit
             // 
             this.miProjectsSubEdit.Name = "miProjectsSubEdit";
-            this.miProjectsSubEdit.Size = new System.Drawing.Size(177, 22);
+            this.miProjectsSubEdit.Size = new System.Drawing.Size(224, 26);
             this.miProjectsSubEdit.Text = "Edit s&ub project";
             this.miProjectsSubEdit.Click += new System.EventHandler(this.miProjectsSubEdit_Click);
             // 
             // miProjectsSubDelete
             // 
             this.miProjectsSubDelete.Name = "miProjectsSubDelete";
-            this.miProjectsSubDelete.Size = new System.Drawing.Size(177, 22);
+            this.miProjectsSubDelete.Size = new System.Drawing.Size(224, 26);
             this.miProjectsSubDelete.Text = "Delete su&b project";
             this.miProjectsSubDelete.Click += new System.EventHandler(this.miProjectsSubDelete_Click);
             // 
@@ -2176,27 +2176,27 @@
             this.miCustomersEdit,
             this.miCustomersDelete});
             this.miCustomers.Name = "miCustomers";
-            this.miCustomers.Size = new System.Drawing.Size(76, 20);
+            this.miCustomers.Size = new System.Drawing.Size(92, 24);
             this.miCustomers.Text = "&Customers";
             // 
             // miCustomersNew
             // 
             this.miCustomersNew.Name = "miCustomersNew";
-            this.miCustomersNew.Size = new System.Drawing.Size(160, 22);
+            this.miCustomersNew.Size = new System.Drawing.Size(201, 26);
             this.miCustomersNew.Text = "&New customer";
             this.miCustomersNew.Click += new System.EventHandler(this.miCustomersNew_Click);
             // 
             // miCustomersEdit
             // 
             this.miCustomersEdit.Name = "miCustomersEdit";
-            this.miCustomersEdit.Size = new System.Drawing.Size(160, 22);
+            this.miCustomersEdit.Size = new System.Drawing.Size(201, 26);
             this.miCustomersEdit.Text = "&Edit customer";
             this.miCustomersEdit.Click += new System.EventHandler(this.miCustomersEdit_Click);
             // 
             // miCustomersDelete
             // 
             this.miCustomersDelete.Name = "miCustomersDelete";
-            this.miCustomersDelete.Size = new System.Drawing.Size(160, 22);
+            this.miCustomersDelete.Size = new System.Drawing.Size(201, 26);
             this.miCustomersDelete.Text = "&Delete customer";
             this.miCustomersDelete.Click += new System.EventHandler(this.miCustomersDelete_Click);
             // 
@@ -2207,7 +2207,7 @@
             this.miPreparationMethods,
             this.miAnalysisMethods});
             this.miTypeRelations.Name = "miTypeRelations";
-            this.miTypeRelations.Size = new System.Drawing.Size(100, 20);
+            this.miTypeRelations.Size = new System.Drawing.Size(124, 24);
             this.miTypeRelations.Text = "&Types/Methods";
             // 
             // miTypeRelSampleTypes
@@ -2223,41 +2223,41 @@
             this.toolStripSeparator69,
             this.miTypeRelSampleTypesExport});
             this.miTypeRelSampleTypes.Name = "miTypeRelSampleTypes";
-            this.miTypeRelSampleTypes.Size = new System.Drawing.Size(185, 22);
+            this.miTypeRelSampleTypes.Size = new System.Drawing.Size(231, 26);
             this.miTypeRelSampleTypes.Text = "&Sample types";
             // 
             // miTypeRelSampleTypesNewRoot
             // 
             this.miTypeRelSampleTypesNewRoot.Name = "miTypeRelSampleTypesNewRoot";
-            this.miTypeRelSampleTypesNewRoot.Size = new System.Drawing.Size(190, 22);
+            this.miTypeRelSampleTypesNewRoot.Size = new System.Drawing.Size(239, 26);
             this.miTypeRelSampleTypesNewRoot.Text = "New &root sample type";
             this.miTypeRelSampleTypesNewRoot.Click += new System.EventHandler(this.miTypeRelSampleTypesNewRoot_Click);
             // 
             // miTypeRelSampleTypesNew
             // 
             this.miTypeRelSampleTypesNew.Name = "miTypeRelSampleTypesNew";
-            this.miTypeRelSampleTypesNew.Size = new System.Drawing.Size(190, 22);
+            this.miTypeRelSampleTypesNew.Size = new System.Drawing.Size(239, 26);
             this.miTypeRelSampleTypesNew.Text = "&New sample type";
             this.miTypeRelSampleTypesNew.Click += new System.EventHandler(this.miSampleTypesNew_Click);
             // 
             // miTypeRelSampleTypesEdit
             // 
             this.miTypeRelSampleTypesEdit.Name = "miTypeRelSampleTypesEdit";
-            this.miTypeRelSampleTypesEdit.Size = new System.Drawing.Size(190, 22);
+            this.miTypeRelSampleTypesEdit.Size = new System.Drawing.Size(239, 26);
             this.miTypeRelSampleTypesEdit.Text = "&Edit sample type";
             this.miTypeRelSampleTypesEdit.Click += new System.EventHandler(this.miSampleTypesEdit_Click);
             // 
             // miTypeRelSampleTypesDelete
             // 
             this.miTypeRelSampleTypesDelete.Name = "miTypeRelSampleTypesDelete";
-            this.miTypeRelSampleTypesDelete.Size = new System.Drawing.Size(190, 22);
+            this.miTypeRelSampleTypesDelete.Size = new System.Drawing.Size(239, 26);
             this.miTypeRelSampleTypesDelete.Text = "&Delete sample type";
             this.miTypeRelSampleTypesDelete.Click += new System.EventHandler(this.miSampleTypesDelete_Click);
             // 
             // toolStripSeparator61
             // 
             this.toolStripSeparator61.Name = "toolStripSeparator61";
-            this.toolStripSeparator61.Size = new System.Drawing.Size(187, 6);
+            this.toolStripSeparator61.Size = new System.Drawing.Size(236, 6);
             // 
             // miTypeRelSampleTypesComps
             // 
@@ -2266,27 +2266,27 @@
             this.miTypeRelSampleTypesCompEdit,
             this.miTypeRelSampleTypesCompRemove});
             this.miTypeRelSampleTypesComps.Name = "miTypeRelSampleTypesComps";
-            this.miTypeRelSampleTypesComps.Size = new System.Drawing.Size(190, 22);
+            this.miTypeRelSampleTypesComps.Size = new System.Drawing.Size(239, 26);
             this.miTypeRelSampleTypesComps.Text = "&Components";
             // 
             // miTypeRelSampleTypesCompNew
             // 
             this.miTypeRelSampleTypesCompNew.Name = "miTypeRelSampleTypesCompNew";
-            this.miTypeRelSampleTypesCompNew.Size = new System.Drawing.Size(182, 22);
+            this.miTypeRelSampleTypesCompNew.Size = new System.Drawing.Size(226, 26);
             this.miTypeRelSampleTypesCompNew.Text = "&New component";
             this.miTypeRelSampleTypesCompNew.Click += new System.EventHandler(this.miTypeRelSampleTypesCompNew_Click);
             // 
             // miTypeRelSampleTypesCompEdit
             // 
             this.miTypeRelSampleTypesCompEdit.Name = "miTypeRelSampleTypesCompEdit";
-            this.miTypeRelSampleTypesCompEdit.Size = new System.Drawing.Size(182, 22);
+            this.miTypeRelSampleTypesCompEdit.Size = new System.Drawing.Size(226, 26);
             this.miTypeRelSampleTypesCompEdit.Text = "&Edit component";
             this.miTypeRelSampleTypesCompEdit.Click += new System.EventHandler(this.miTypeRelSampleTypesCompEdit_Click);
             // 
             // miTypeRelSampleTypesCompRemove
             // 
             this.miTypeRelSampleTypesCompRemove.Name = "miTypeRelSampleTypesCompRemove";
-            this.miTypeRelSampleTypesCompRemove.Size = new System.Drawing.Size(182, 22);
+            this.miTypeRelSampleTypesCompRemove.Size = new System.Drawing.Size(226, 26);
             this.miTypeRelSampleTypesCompRemove.Text = "Remove component";
             this.miTypeRelSampleTypesCompRemove.Click += new System.EventHandler(this.miTypeRelSampleTypesCompRemove_Click);
             // 
@@ -2296,27 +2296,27 @@
             this.miTypeRelSampleTypesPrepMethAdd,
             this.miTypeRelSampleTypesPrepMethRemove});
             this.miTypeRelSampleTypesPrepMeth.Name = "miTypeRelSampleTypesPrepMeth";
-            this.miTypeRelSampleTypesPrepMeth.Size = new System.Drawing.Size(190, 22);
+            this.miTypeRelSampleTypesPrepMeth.Size = new System.Drawing.Size(239, 26);
             this.miTypeRelSampleTypesPrepMeth.Text = "&Preparation methods";
             // 
             // miTypeRelSampleTypesPrepMethAdd
             // 
             this.miTypeRelSampleTypesPrepMethAdd.Name = "miTypeRelSampleTypesPrepMethAdd";
-            this.miTypeRelSampleTypesPrepMethAdd.Size = new System.Drawing.Size(213, 22);
+            this.miTypeRelSampleTypesPrepMethAdd.Size = new System.Drawing.Size(267, 26);
             this.miTypeRelSampleTypesPrepMethAdd.Text = "&Add to sample type";
             this.miTypeRelSampleTypesPrepMethAdd.Click += new System.EventHandler(this.miAddPrepMethToSampType_Click);
             // 
             // miTypeRelSampleTypesPrepMethRemove
             // 
             this.miTypeRelSampleTypesPrepMethRemove.Name = "miTypeRelSampleTypesPrepMethRemove";
-            this.miTypeRelSampleTypesPrepMethRemove.Size = new System.Drawing.Size(213, 22);
+            this.miTypeRelSampleTypesPrepMethRemove.Size = new System.Drawing.Size(267, 26);
             this.miTypeRelSampleTypesPrepMethRemove.Text = "Remove from sample type";
             this.miTypeRelSampleTypesPrepMethRemove.Click += new System.EventHandler(this.miTypeRelSampleTypesPrepMethRemove_Click);
             // 
             // toolStripSeparator69
             // 
             this.toolStripSeparator69.Name = "toolStripSeparator69";
-            this.toolStripSeparator69.Size = new System.Drawing.Size(187, 6);
+            this.toolStripSeparator69.Size = new System.Drawing.Size(236, 6);
             // 
             // miTypeRelSampleTypesExport
             // 
@@ -2325,27 +2325,27 @@
             this.miTypeRelSampleTypesExportSampTypeXML,
             this.miTypeRelSampleTypesExportSampID});
             this.miTypeRelSampleTypesExport.Name = "miTypeRelSampleTypesExport";
-            this.miTypeRelSampleTypesExport.Size = new System.Drawing.Size(190, 22);
+            this.miTypeRelSampleTypesExport.Size = new System.Drawing.Size(239, 26);
             this.miTypeRelSampleTypesExport.Text = "Export...";
             // 
             // miTypeRelSampleTypesExportSampTypeList
             // 
             this.miTypeRelSampleTypesExportSampTypeList.Name = "miTypeRelSampleTypesExportSampTypeList";
-            this.miTypeRelSampleTypesExportSampTypeList.Size = new System.Drawing.Size(195, 22);
+            this.miTypeRelSampleTypesExportSampTypeList.Size = new System.Drawing.Size(246, 26);
             this.miTypeRelSampleTypesExportSampTypeList.Text = "Simple sample type list";
             this.miTypeRelSampleTypesExportSampTypeList.Click += new System.EventHandler(this.miTypeRelSampleTypesExportSampTypeList_Click);
             // 
             // miTypeRelSampleTypesExportSampTypeXML
             // 
             this.miTypeRelSampleTypesExportSampTypeXML.Name = "miTypeRelSampleTypesExportSampTypeXML";
-            this.miTypeRelSampleTypesExportSampTypeXML.Size = new System.Drawing.Size(195, 22);
+            this.miTypeRelSampleTypesExportSampTypeXML.Size = new System.Drawing.Size(246, 26);
             this.miTypeRelSampleTypesExportSampTypeXML.Text = "Sample types (XML)";
             this.miTypeRelSampleTypesExportSampTypeXML.Click += new System.EventHandler(this.miTypeRelSampleTypesExportSampTypeXML_Click);
             // 
             // miTypeRelSampleTypesExportSampID
             // 
             this.miTypeRelSampleTypesExportSampID.Name = "miTypeRelSampleTypesExportSampID";
-            this.miTypeRelSampleTypesExportSampID.Size = new System.Drawing.Size(195, 22);
+            this.miTypeRelSampleTypesExportSampID.Size = new System.Drawing.Size(246, 26);
             this.miTypeRelSampleTypesExportSampID.Text = "Current sample ID";
             this.miTypeRelSampleTypesExportSampID.Click += new System.EventHandler(this.miTypeRelSampleTypesExportSampID_Click);
             // 
@@ -2359,46 +2359,46 @@
             this.miTypeRelPrepMethAddAnalMeth,
             this.miTypeRelPrepMethRemAnalMeth});
             this.miPreparationMethods.Name = "miPreparationMethods";
-            this.miPreparationMethods.Size = new System.Drawing.Size(185, 22);
+            this.miPreparationMethods.Size = new System.Drawing.Size(231, 26);
             this.miPreparationMethods.Text = "&Preparation methods";
             // 
             // miPreparationMethodsNew
             // 
             this.miPreparationMethodsNew.Name = "miPreparationMethodsNew";
-            this.miPreparationMethodsNew.Size = new System.Drawing.Size(270, 22);
+            this.miPreparationMethodsNew.Size = new System.Drawing.Size(336, 26);
             this.miPreparationMethodsNew.Text = "&New preparation method";
             this.miPreparationMethodsNew.Click += new System.EventHandler(this.miPreparationMethodsNew_Click);
             // 
             // miPreparationMethodEdit
             // 
             this.miPreparationMethodEdit.Name = "miPreparationMethodEdit";
-            this.miPreparationMethodEdit.Size = new System.Drawing.Size(270, 22);
+            this.miPreparationMethodEdit.Size = new System.Drawing.Size(336, 26);
             this.miPreparationMethodEdit.Text = "&Edit preparation method";
             this.miPreparationMethodEdit.Click += new System.EventHandler(this.miPreparationMethodEdit_Click);
             // 
             // miPreparationMethodDelete
             // 
             this.miPreparationMethodDelete.Name = "miPreparationMethodDelete";
-            this.miPreparationMethodDelete.Size = new System.Drawing.Size(270, 22);
+            this.miPreparationMethodDelete.Size = new System.Drawing.Size(336, 26);
             this.miPreparationMethodDelete.Text = "&Delete preparation method";
             this.miPreparationMethodDelete.Click += new System.EventHandler(this.miPreparationMethodDelete_Click);
             // 
             // toolStripSeparator62
             // 
             this.toolStripSeparator62.Name = "toolStripSeparator62";
-            this.toolStripSeparator62.Size = new System.Drawing.Size(267, 6);
+            this.toolStripSeparator62.Size = new System.Drawing.Size(333, 6);
             // 
             // miTypeRelPrepMethAddAnalMeth
             // 
             this.miTypeRelPrepMethAddAnalMeth.Name = "miTypeRelPrepMethAddAnalMeth";
-            this.miTypeRelPrepMethAddAnalMeth.Size = new System.Drawing.Size(270, 22);
+            this.miTypeRelPrepMethAddAnalMeth.Size = new System.Drawing.Size(336, 26);
             this.miTypeRelPrepMethAddAnalMeth.Text = "&Add connected analysis methods";
             this.miTypeRelPrepMethAddAnalMeth.Click += new System.EventHandler(this.miTypeRelPrepMethAddAnalMeth_Click);
             // 
             // miTypeRelPrepMethRemAnalMeth
             // 
             this.miTypeRelPrepMethRemAnalMeth.Name = "miTypeRelPrepMethRemAnalMeth";
-            this.miTypeRelPrepMethRemAnalMeth.Size = new System.Drawing.Size(270, 22);
+            this.miTypeRelPrepMethRemAnalMeth.Size = new System.Drawing.Size(336, 26);
             this.miTypeRelPrepMethRemAnalMeth.Text = "&Remove connected analysis methods";
             this.miTypeRelPrepMethRemAnalMeth.Click += new System.EventHandler(this.miTypeRelPrepMethRemAnalMeth_Click);
             // 
@@ -2412,46 +2412,46 @@
             this.miAnalysisMethodsAddNuclide,
             this.miAnalysisMethodsRemNuclide});
             this.miAnalysisMethods.Name = "miAnalysisMethods";
-            this.miAnalysisMethods.Size = new System.Drawing.Size(185, 22);
+            this.miAnalysisMethods.Size = new System.Drawing.Size(231, 26);
             this.miAnalysisMethods.Text = "&Analysis methods";
             // 
             // miAnalysisMethodsNew
             // 
             this.miAnalysisMethodsNew.Name = "miAnalysisMethodsNew";
-            this.miAnalysisMethodsNew.Size = new System.Drawing.Size(223, 22);
+            this.miAnalysisMethodsNew.Size = new System.Drawing.Size(277, 26);
             this.miAnalysisMethodsNew.Text = "&New analysis method";
             this.miAnalysisMethodsNew.Click += new System.EventHandler(this.miAnalysisMethodsNew_Click);
             // 
             // miAnalysisMethodsEdit
             // 
             this.miAnalysisMethodsEdit.Name = "miAnalysisMethodsEdit";
-            this.miAnalysisMethodsEdit.Size = new System.Drawing.Size(223, 22);
+            this.miAnalysisMethodsEdit.Size = new System.Drawing.Size(277, 26);
             this.miAnalysisMethodsEdit.Text = "&Edit analysis method";
             this.miAnalysisMethodsEdit.Click += new System.EventHandler(this.miAnalysisMethodsEdit_Click);
             // 
             // miAnalysisMethodsDelete
             // 
             this.miAnalysisMethodsDelete.Name = "miAnalysisMethodsDelete";
-            this.miAnalysisMethodsDelete.Size = new System.Drawing.Size(223, 22);
+            this.miAnalysisMethodsDelete.Size = new System.Drawing.Size(277, 26);
             this.miAnalysisMethodsDelete.Text = "&Delete analysis method";
             this.miAnalysisMethodsDelete.Click += new System.EventHandler(this.miAnalysisMethodsDelete_Click);
             // 
             // toolStripSeparator58
             // 
             this.toolStripSeparator58.Name = "toolStripSeparator58";
-            this.toolStripSeparator58.Size = new System.Drawing.Size(220, 6);
+            this.toolStripSeparator58.Size = new System.Drawing.Size(274, 6);
             // 
             // miAnalysisMethodsAddNuclide
             // 
             this.miAnalysisMethodsAddNuclide.Name = "miAnalysisMethodsAddNuclide";
-            this.miAnalysisMethodsAddNuclide.Size = new System.Drawing.Size(223, 22);
+            this.miAnalysisMethodsAddNuclide.Size = new System.Drawing.Size(277, 26);
             this.miAnalysisMethodsAddNuclide.Text = "&Add connected nuclides";
             this.miAnalysisMethodsAddNuclide.Click += new System.EventHandler(this.miAnalysisMethodsAddNuclide_Click);
             // 
             // miAnalysisMethodsRemNuclide
             // 
             this.miAnalysisMethodsRemNuclide.Name = "miAnalysisMethodsRemNuclide";
-            this.miAnalysisMethodsRemNuclide.Size = new System.Drawing.Size(223, 22);
+            this.miAnalysisMethodsRemNuclide.Size = new System.Drawing.Size(277, 26);
             this.miAnalysisMethodsRemNuclide.Text = "&Remove connected nuclides";
             this.miAnalysisMethodsRemNuclide.Click += new System.EventHandler(this.miAnalysisMethodsRemNuclide_Click);
             // 
@@ -2466,7 +2466,7 @@
             this.miGeometries,
             this.miPersonalia});
             this.miSys.Name = "miSys";
-            this.miSys.Size = new System.Drawing.Size(59, 20);
+            this.miSys.Size = new System.Drawing.Size(74, 24);
             this.miSys.Text = "&Sysdata";
             // 
             // miLaboratories
@@ -2476,27 +2476,27 @@
             this.miEditLaboratory,
             this.miDeleteLaboratory});
             this.miLaboratories.Name = "miLaboratories";
-            this.miLaboratories.Size = new System.Drawing.Size(173, 22);
+            this.miLaboratories.Size = new System.Drawing.Size(216, 26);
             this.miLaboratories.Text = "&Laboratories";
             // 
             // miNewLaboratory
             // 
             this.miNewLaboratory.Name = "miNewLaboratory";
-            this.miNewLaboratory.Size = new System.Drawing.Size(164, 22);
+            this.miNewLaboratory.Size = new System.Drawing.Size(209, 26);
             this.miNewLaboratory.Text = "&New laboratory";
             this.miNewLaboratory.Click += new System.EventHandler(this.miNewLaboratory_Click);
             // 
             // miEditLaboratory
             // 
             this.miEditLaboratory.Name = "miEditLaboratory";
-            this.miEditLaboratory.Size = new System.Drawing.Size(164, 22);
+            this.miEditLaboratory.Size = new System.Drawing.Size(209, 26);
             this.miEditLaboratory.Text = "&Edit laboratory";
             this.miEditLaboratory.Click += new System.EventHandler(this.miEditLaboratory_Click);
             // 
             // miDeleteLaboratory
             // 
             this.miDeleteLaboratory.Name = "miDeleteLaboratory";
-            this.miDeleteLaboratory.Size = new System.Drawing.Size(164, 22);
+            this.miDeleteLaboratory.Size = new System.Drawing.Size(209, 26);
             this.miDeleteLaboratory.Text = "&Delete laboratory";
             this.miDeleteLaboratory.Click += new System.EventHandler(this.miDeleteLaboratory_Click);
             // 
@@ -2508,27 +2508,27 @@
             this.miDeleteUser,
             this.miResetPass});
             this.miUsers.Name = "miUsers";
-            this.miUsers.Size = new System.Drawing.Size(173, 22);
+            this.miUsers.Size = new System.Drawing.Size(216, 26);
             this.miUsers.Text = "&Users";
             // 
             // miNewUser
             // 
             this.miNewUser.Name = "miNewUser";
-            this.miNewUser.Size = new System.Drawing.Size(155, 22);
+            this.miNewUser.Size = new System.Drawing.Size(195, 26);
             this.miNewUser.Text = "&New user";
             this.miNewUser.Click += new System.EventHandler(this.miNewUser_Click);
             // 
             // miEditUser
             // 
             this.miEditUser.Name = "miEditUser";
-            this.miEditUser.Size = new System.Drawing.Size(155, 22);
+            this.miEditUser.Size = new System.Drawing.Size(195, 26);
             this.miEditUser.Text = "&Edit user";
             this.miEditUser.Click += new System.EventHandler(this.miEditUser_Click);
             // 
             // miDeleteUser
             // 
             this.miDeleteUser.Name = "miDeleteUser";
-            this.miDeleteUser.Size = new System.Drawing.Size(155, 22);
+            this.miDeleteUser.Size = new System.Drawing.Size(195, 26);
             this.miDeleteUser.Text = "&Delete user";
             this.miDeleteUser.Click += new System.EventHandler(this.miDeleteUser_Click);
             // 
@@ -2536,7 +2536,7 @@
             // 
             this.miResetPass.Enabled = false;
             this.miResetPass.Name = "miResetPass";
-            this.miResetPass.Size = new System.Drawing.Size(155, 22);
+            this.miResetPass.Size = new System.Drawing.Size(195, 26);
             this.miResetPass.Text = "&Reset password";
             this.miResetPass.Click += new System.EventHandler(this.miResetPass_Click);
             // 
@@ -2549,46 +2549,46 @@
             this.toolStripSeparator1,
             this.miNuclidesExport});
             this.miNuclides.Name = "miNuclides";
-            this.miNuclides.Size = new System.Drawing.Size(173, 22);
+            this.miNuclides.Size = new System.Drawing.Size(216, 26);
             this.miNuclides.Text = "&Nuclides";
             // 
             // miNuclidesNew
             // 
             this.miNuclidesNew.Name = "miNuclidesNew";
-            this.miNuclidesNew.Size = new System.Drawing.Size(149, 22);
+            this.miNuclidesNew.Size = new System.Drawing.Size(188, 26);
             this.miNuclidesNew.Text = "&New nuclide";
             this.miNuclidesNew.Click += new System.EventHandler(this.miNuclidesNew_Click);
             // 
             // miNuclidesEdit
             // 
             this.miNuclidesEdit.Name = "miNuclidesEdit";
-            this.miNuclidesEdit.Size = new System.Drawing.Size(149, 22);
+            this.miNuclidesEdit.Size = new System.Drawing.Size(188, 26);
             this.miNuclidesEdit.Text = "&Edit nuclide";
             this.miNuclidesEdit.Click += new System.EventHandler(this.miNuclidesEdit_Click);
             // 
             // miNuclidesDelete
             // 
             this.miNuclidesDelete.Name = "miNuclidesDelete";
-            this.miNuclidesDelete.Size = new System.Drawing.Size(149, 22);
+            this.miNuclidesDelete.Size = new System.Drawing.Size(188, 26);
             this.miNuclidesDelete.Text = "&Delete nuclide";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(146, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(185, 6);
             // 
             // miNuclidesExport
             // 
             this.miNuclidesExport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miNuclidesExportNuclidesXML});
             this.miNuclidesExport.Name = "miNuclidesExport";
-            this.miNuclidesExport.Size = new System.Drawing.Size(149, 22);
+            this.miNuclidesExport.Size = new System.Drawing.Size(188, 26);
             this.miNuclidesExport.Text = "Export...";
             // 
             // miNuclidesExportNuclidesXML
             // 
             this.miNuclidesExportNuclidesXML.Name = "miNuclidesExportNuclidesXML";
-            this.miNuclidesExportNuclidesXML.Size = new System.Drawing.Size(155, 22);
+            this.miNuclidesExportNuclidesXML.Size = new System.Drawing.Size(192, 26);
             this.miNuclidesExportNuclidesXML.Text = "Nuclides (XML)";
             this.miNuclidesExportNuclidesXML.Click += new System.EventHandler(this.miNuclidesExportNuclidesXML_Click);
             // 
@@ -2603,53 +2603,53 @@
             this.miEditMunicipality,
             this.miDeleteMunicipality});
             this.miMunicipalities.Name = "miMunicipalities";
-            this.miMunicipalities.Size = new System.Drawing.Size(173, 22);
+            this.miMunicipalities.Size = new System.Drawing.Size(216, 26);
             this.miMunicipalities.Text = "&Municipalities";
             // 
             // miNewCounty
             // 
             this.miNewCounty.Name = "miNewCounty";
-            this.miNewCounty.Size = new System.Drawing.Size(176, 22);
+            this.miNewCounty.Size = new System.Drawing.Size(221, 26);
             this.miNewCounty.Text = "&New county";
             this.miNewCounty.Click += new System.EventHandler(this.miNewCounty_Click);
             // 
             // miEditCounty
             // 
             this.miEditCounty.Name = "miEditCounty";
-            this.miEditCounty.Size = new System.Drawing.Size(176, 22);
+            this.miEditCounty.Size = new System.Drawing.Size(221, 26);
             this.miEditCounty.Text = "&Edit county";
             this.miEditCounty.Click += new System.EventHandler(this.miEditCounty_Click);
             // 
             // miDeleteCounty
             // 
             this.miDeleteCounty.Name = "miDeleteCounty";
-            this.miDeleteCounty.Size = new System.Drawing.Size(176, 22);
+            this.miDeleteCounty.Size = new System.Drawing.Size(221, 26);
             this.miDeleteCounty.Text = "&Delete county";
             this.miDeleteCounty.Click += new System.EventHandler(this.miDeleteCounty_Click);
             // 
             // toolStripSeparator50
             // 
             this.toolStripSeparator50.Name = "toolStripSeparator50";
-            this.toolStripSeparator50.Size = new System.Drawing.Size(173, 6);
+            this.toolStripSeparator50.Size = new System.Drawing.Size(218, 6);
             // 
             // miNewMunicipality
             // 
             this.miNewMunicipality.Name = "miNewMunicipality";
-            this.miNewMunicipality.Size = new System.Drawing.Size(176, 22);
+            this.miNewMunicipality.Size = new System.Drawing.Size(221, 26);
             this.miNewMunicipality.Text = "New &municipality";
             this.miNewMunicipality.Click += new System.EventHandler(this.miNewMunicipality_Click);
             // 
             // miEditMunicipality
             // 
             this.miEditMunicipality.Name = "miEditMunicipality";
-            this.miEditMunicipality.Size = new System.Drawing.Size(176, 22);
+            this.miEditMunicipality.Size = new System.Drawing.Size(221, 26);
             this.miEditMunicipality.Text = "Edit m&unicipality";
             this.miEditMunicipality.Click += new System.EventHandler(this.miEditMunicipality_Click);
             // 
             // miDeleteMunicipality
             // 
             this.miDeleteMunicipality.Name = "miDeleteMunicipality";
-            this.miDeleteMunicipality.Size = new System.Drawing.Size(176, 22);
+            this.miDeleteMunicipality.Size = new System.Drawing.Size(221, 26);
             this.miDeleteMunicipality.Text = "Delete mun&icipality";
             this.miDeleteMunicipality.Click += new System.EventHandler(this.miDeleteMunicipality_Click);
             // 
@@ -2659,20 +2659,20 @@
             this.miSysAccTermNew,
             this.miSysAccTermEdit});
             this.miAccreditationTerms.Name = "miAccreditationTerms";
-            this.miAccreditationTerms.Size = new System.Drawing.Size(173, 22);
+            this.miAccreditationTerms.Size = new System.Drawing.Size(216, 26);
             this.miAccreditationTerms.Text = "&Accreditation term";
             // 
             // miSysAccTermNew
             // 
             this.miSysAccTermNew.Name = "miSysAccTermNew";
-            this.miSysAccTermNew.Size = new System.Drawing.Size(126, 22);
+            this.miSysAccTermNew.Size = new System.Drawing.Size(157, 26);
             this.miSysAccTermNew.Text = "New term";
             this.miSysAccTermNew.Click += new System.EventHandler(this.miSysAccTermNew_Click);
             // 
             // miSysAccTermEdit
             // 
             this.miSysAccTermEdit.Name = "miSysAccTermEdit";
-            this.miSysAccTermEdit.Size = new System.Drawing.Size(126, 22);
+            this.miSysAccTermEdit.Size = new System.Drawing.Size(157, 26);
             this.miSysAccTermEdit.Text = "Edit term";
             this.miSysAccTermEdit.Click += new System.EventHandler(this.miSysAccTermEdit_Click);
             // 
@@ -2683,27 +2683,27 @@
             this.miEditGeometry,
             this.miDeleteGeometry});
             this.miGeometries.Name = "miGeometries";
-            this.miGeometries.Size = new System.Drawing.Size(173, 22);
+            this.miGeometries.Size = new System.Drawing.Size(216, 26);
             this.miGeometries.Text = "&Geometries";
             // 
             // miNewGeometry
             // 
             this.miNewGeometry.Name = "miNewGeometry";
-            this.miNewGeometry.Size = new System.Drawing.Size(161, 22);
+            this.miNewGeometry.Size = new System.Drawing.Size(204, 26);
             this.miNewGeometry.Text = "&New geometry";
             this.miNewGeometry.Click += new System.EventHandler(this.miNewGeometry_Click);
             // 
             // miEditGeometry
             // 
             this.miEditGeometry.Name = "miEditGeometry";
-            this.miEditGeometry.Size = new System.Drawing.Size(161, 22);
+            this.miEditGeometry.Size = new System.Drawing.Size(204, 26);
             this.miEditGeometry.Text = "&Edit geometry";
             this.miEditGeometry.Click += new System.EventHandler(this.miEditGeometry_Click);
             // 
             // miDeleteGeometry
             // 
             this.miDeleteGeometry.Name = "miDeleteGeometry";
-            this.miDeleteGeometry.Size = new System.Drawing.Size(161, 22);
+            this.miDeleteGeometry.Size = new System.Drawing.Size(204, 26);
             this.miDeleteGeometry.Text = "&Delete geometry";
             this.miDeleteGeometry.Click += new System.EventHandler(this.miDeleteGeometry_Click);
             // 
@@ -2714,27 +2714,27 @@
             this.miPersonEdit,
             this.miPersonDelete});
             this.miPersonalia.Name = "miPersonalia";
-            this.miPersonalia.Size = new System.Drawing.Size(173, 22);
+            this.miPersonalia.Size = new System.Drawing.Size(216, 26);
             this.miPersonalia.Text = "Personalia";
             // 
             // miPersonNew
             // 
             this.miPersonNew.Name = "miPersonNew";
-            this.miPersonNew.Size = new System.Drawing.Size(146, 22);
+            this.miPersonNew.Size = new System.Drawing.Size(185, 26);
             this.miPersonNew.Text = "New person";
             this.miPersonNew.Click += new System.EventHandler(this.miPersonNew_Click);
             // 
             // miPersonEdit
             // 
             this.miPersonEdit.Name = "miPersonEdit";
-            this.miPersonEdit.Size = new System.Drawing.Size(146, 22);
+            this.miPersonEdit.Size = new System.Drawing.Size(185, 26);
             this.miPersonEdit.Text = "Edit person";
             this.miPersonEdit.Click += new System.EventHandler(this.miPersonEdit_Click);
             // 
             // miPersonDelete
             // 
             this.miPersonDelete.Name = "miPersonDelete";
-            this.miPersonDelete.Size = new System.Drawing.Size(146, 22);
+            this.miPersonDelete.Size = new System.Drawing.Size(185, 26);
             this.miPersonDelete.Text = "Delete person";
             this.miPersonDelete.Click += new System.EventHandler(this.miPersonDelete_Click);
             // 
@@ -2745,27 +2745,27 @@
             this.miLogView,
             this.miAbout});
             this.miHelp.Name = "miHelp";
-            this.miHelp.Size = new System.Drawing.Size(44, 20);
+            this.miHelp.Size = new System.Drawing.Size(55, 24);
             this.miHelp.Text = "&Help";
             // 
             // miManual
             // 
             this.miManual.Name = "miManual";
-            this.miManual.Size = new System.Drawing.Size(114, 22);
+            this.miManual.Size = new System.Drawing.Size(141, 26);
             this.miManual.Text = "Manual";
             this.miManual.Click += new System.EventHandler(this.miManual_Click);
             // 
             // miLogView
             // 
             this.miLogView.Name = "miLogView";
-            this.miLogView.Size = new System.Drawing.Size(114, 22);
+            this.miLogView.Size = new System.Drawing.Size(141, 26);
             this.miLogView.Text = "&Log";
             this.miLogView.Click += new System.EventHandler(this.miLogView_Click);
             // 
             // miAbout
             // 
             this.miAbout.Name = "miAbout";
-            this.miAbout.Size = new System.Drawing.Size(114, 22);
+            this.miAbout.Size = new System.Drawing.Size(141, 26);
             this.miAbout.Text = "&About";
             this.miAbout.Click += new System.EventHandler(this.miAbout_Click);
             // 
@@ -2776,10 +2776,10 @@
             this.progressSamples,
             this.lblStatus,
             this.lblCurrentUser});
-            this.status.Location = new System.Drawing.Point(0, 857);
+            this.status.Location = new System.Drawing.Point(0, 853);
             this.status.Name = "status";
             this.status.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.status.Size = new System.Drawing.Size(1390, 22);
+            this.status.Size = new System.Drawing.Size(1390, 26);
             this.status.TabIndex = 1;
             this.status.Text = "statusStrip1";
             // 
@@ -2793,14 +2793,14 @@
             // 
             this.lblStatus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(68, 17);
+            this.lblStatus.Size = new System.Drawing.Size(86, 20);
             this.lblStatus.Text = "<lblStatus>";
             // 
             // lblCurrentUser
             // 
             this.lblCurrentUser.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.lblCurrentUser.Name = "lblCurrentUser";
-            this.lblCurrentUser.Size = new System.Drawing.Size(1305, 17);
+            this.lblCurrentUser.Size = new System.Drawing.Size(1287, 20);
             this.lblCurrentUser.Spring = true;
             this.lblCurrentUser.Text = "<lblCurrentUser>";
             this.lblCurrentUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2820,10 +2820,10 @@
             this.tabs.Controls.Add(this.tabSysdata);
             this.tabs.Controls.Add(this.tabPrepAnal);
             this.tabs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabs.Location = new System.Drawing.Point(0, 55);
+            this.tabs.Location = new System.Drawing.Point(0, 59);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
-            this.tabs.Size = new System.Drawing.Size(1390, 802);
+            this.tabs.Size = new System.Drawing.Size(1390, 794);
             this.tabs.TabIndex = 3;
             this.tabs.SelectedIndexChanged += new System.EventHandler(this.tabs_SelectedIndexChanged);
             this.tabs.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabs_Selecting);
@@ -2833,10 +2833,10 @@
             // 
             this.tabMenu.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabMenu.Controls.Add(this.layoutMenu);
-            this.tabMenu.Location = new System.Drawing.Point(4, 24);
+            this.tabMenu.Location = new System.Drawing.Point(4, 27);
             this.tabMenu.Name = "tabMenu";
             this.tabMenu.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMenu.Size = new System.Drawing.Size(1382, 774);
+            this.tabMenu.Size = new System.Drawing.Size(1382, 763);
             this.tabMenu.TabIndex = 0;
             this.tabMenu.Text = "Menu";
             // 
@@ -2867,7 +2867,7 @@
             this.layoutMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.layoutMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.layoutMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.layoutMenu.Size = new System.Drawing.Size(1376, 768);
+            this.layoutMenu.Size = new System.Drawing.Size(1376, 757);
             this.layoutMenu.TabIndex = 5;
             // 
             // btnMenuSearch
@@ -2878,10 +2878,10 @@
             this.btnMenuSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuSearch.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.btnMenuSearch.Image = global::DSA_lims.Properties.Resources.search_gray;
-            this.btnMenuSearch.Location = new System.Drawing.Point(1033, 401);
+            this.btnMenuSearch.Location = new System.Drawing.Point(1033, 395);
             this.btnMenuSearch.Margin = new System.Windows.Forms.Padding(1);
             this.btnMenuSearch.Name = "btnMenuSearch";
-            this.btnMenuSearch.Size = new System.Drawing.Size(342, 366);
+            this.btnMenuSearch.Size = new System.Drawing.Size(342, 361);
             this.btnMenuSearch.TabIndex = 7;
             this.btnMenuSearch.Text = "Results / Statistics";
             this.btnMenuSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -2896,10 +2896,10 @@
             this.btnMenuMetadata.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuMetadata.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.btnMenuMetadata.Image = global::DSA_lims.Properties.Resources.new_batch_gray;
-            this.btnMenuMetadata.Location = new System.Drawing.Point(689, 401);
+            this.btnMenuMetadata.Location = new System.Drawing.Point(689, 395);
             this.btnMenuMetadata.Margin = new System.Windows.Forms.Padding(1);
             this.btnMenuMetadata.Name = "btnMenuMetadata";
-            this.btnMenuMetadata.Size = new System.Drawing.Size(342, 366);
+            this.btnMenuMetadata.Size = new System.Drawing.Size(342, 361);
             this.btnMenuMetadata.TabIndex = 6;
             this.btnMenuMetadata.Text = "Metadata";
             this.btnMenuMetadata.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -2914,10 +2914,10 @@
             this.btnMenuCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuCustomer.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.btnMenuCustomer.Image = global::DSA_lims.Properties.Resources.users_gray;
-            this.btnMenuCustomer.Location = new System.Drawing.Point(345, 401);
+            this.btnMenuCustomer.Location = new System.Drawing.Point(345, 395);
             this.btnMenuCustomer.Margin = new System.Windows.Forms.Padding(1);
             this.btnMenuCustomer.Name = "btnMenuCustomer";
-            this.btnMenuCustomer.Size = new System.Drawing.Size(342, 366);
+            this.btnMenuCustomer.Size = new System.Drawing.Size(342, 361);
             this.btnMenuCustomer.TabIndex = 5;
             this.btnMenuCustomer.Text = "Customers";
             this.btnMenuCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -2933,10 +2933,10 @@
             this.btnMenuProjects.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.btnMenuProjects.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMenuProjects.Image = global::DSA_lims.Properties.Resources.projects_gray;
-            this.btnMenuProjects.Location = new System.Drawing.Point(1, 401);
+            this.btnMenuProjects.Location = new System.Drawing.Point(1, 395);
             this.btnMenuProjects.Margin = new System.Windows.Forms.Padding(1);
             this.btnMenuProjects.Name = "btnMenuProjects";
-            this.btnMenuProjects.Size = new System.Drawing.Size(342, 366);
+            this.btnMenuProjects.Size = new System.Drawing.Size(342, 361);
             this.btnMenuProjects.TabIndex = 4;
             this.btnMenuProjects.Text = "Projects";
             this.btnMenuProjects.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -2955,7 +2955,7 @@
             this.btnMenuNewSample.Location = new System.Drawing.Point(1, 33);
             this.btnMenuNewSample.Margin = new System.Windows.Forms.Padding(1);
             this.btnMenuNewSample.Name = "btnMenuNewSample";
-            this.btnMenuNewSample.Size = new System.Drawing.Size(342, 366);
+            this.btnMenuNewSample.Size = new System.Drawing.Size(342, 360);
             this.btnMenuNewSample.TabIndex = 0;
             this.btnMenuNewSample.Text = "New sample";
             this.btnMenuNewSample.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -2974,7 +2974,7 @@
             this.btnMenuSamples.Location = new System.Drawing.Point(345, 33);
             this.btnMenuSamples.Margin = new System.Windows.Forms.Padding(1);
             this.btnMenuSamples.Name = "btnMenuSamples";
-            this.btnMenuSamples.Size = new System.Drawing.Size(342, 366);
+            this.btnMenuSamples.Size = new System.Drawing.Size(342, 360);
             this.btnMenuSamples.TabIndex = 1;
             this.btnMenuSamples.Text = "Samples";
             this.btnMenuSamples.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -3000,10 +3000,10 @@
             this.tbMenuLookup.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbMenuLookup.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tbMenuLookup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMenuLookup.Location = new System.Drawing.Point(347, 10);
+            this.tbMenuLookup.Location = new System.Drawing.Point(347, 6);
             this.tbMenuLookup.MaxLength = 10;
             this.tbMenuLookup.Name = "tbMenuLookup";
-            this.tbMenuLookup.Size = new System.Drawing.Size(338, 19);
+            this.tbMenuLookup.Size = new System.Drawing.Size(338, 23);
             this.tbMenuLookup.TabIndex = 5;
             this.tbMenuLookup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbMenuLookup_KeyPress);
             // 
@@ -3032,7 +3032,7 @@
             this.btnMenuNewOrder.Location = new System.Drawing.Point(689, 33);
             this.btnMenuNewOrder.Margin = new System.Windows.Forms.Padding(1);
             this.btnMenuNewOrder.Name = "btnMenuNewOrder";
-            this.btnMenuNewOrder.Size = new System.Drawing.Size(342, 366);
+            this.btnMenuNewOrder.Size = new System.Drawing.Size(342, 360);
             this.btnMenuNewOrder.TabIndex = 2;
             this.btnMenuNewOrder.Text = "New order";
             this.btnMenuNewOrder.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -3051,7 +3051,7 @@
             this.btnOrders.Location = new System.Drawing.Point(1033, 33);
             this.btnOrders.Margin = new System.Windows.Forms.Padding(1);
             this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Size = new System.Drawing.Size(342, 366);
+            this.btnOrders.Size = new System.Drawing.Size(342, 360);
             this.btnOrders.TabIndex = 3;
             this.btnOrders.Text = "Orders";
             this.btnOrders.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -3064,9 +3064,9 @@
             this.tabSample.Controls.Add(this.tabsSample);
             this.tabSample.Controls.Add(this.panel36);
             this.tabSample.Controls.Add(this.toolsSample);
-            this.tabSample.Location = new System.Drawing.Point(4, 24);
+            this.tabSample.Location = new System.Drawing.Point(4, 27);
             this.tabSample.Name = "tabSample";
-            this.tabSample.Size = new System.Drawing.Size(1382, 766);
+            this.tabSample.Size = new System.Drawing.Size(1382, 771);
             this.tabSample.TabIndex = 1;
             this.tabSample.Text = "Sample";
             // 
@@ -3079,7 +3079,7 @@
             this.tabsSample.Location = new System.Drawing.Point(0, 25);
             this.tabsSample.Name = "tabsSample";
             this.tabsSample.SelectedIndex = 0;
-            this.tabsSample.Size = new System.Drawing.Size(1382, 715);
+            this.tabsSample.Size = new System.Drawing.Size(1382, 720);
             this.tabsSample.TabIndex = 1;
             this.tabsSample.SelectedIndexChanged += new System.EventHandler(this.tabsSample_SelectedIndexChanged);
             // 
@@ -3090,9 +3090,9 @@
             this.tabSamplesInfo.Controls.Add(this.toolStrip11);
             this.tabSamplesInfo.Controls.Add(this.panel21);
             this.tabSamplesInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.tabSamplesInfo.Location = new System.Drawing.Point(4, 24);
+            this.tabSamplesInfo.Location = new System.Drawing.Point(4, 27);
             this.tabSamplesInfo.Name = "tabSamplesInfo";
-            this.tabSamplesInfo.Size = new System.Drawing.Size(1374, 687);
+            this.tabSamplesInfo.Size = new System.Drawing.Size(1374, 689);
             this.tabSamplesInfo.TabIndex = 0;
             this.tabSamplesInfo.Text = "Sample Info";
             // 
@@ -3162,7 +3162,7 @@
             this.layoutSample.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.layoutSample.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.layoutSample.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.layoutSample.Size = new System.Drawing.Size(1079, 656);
+            this.layoutSample.Size = new System.Drawing.Size(1079, 658);
             this.layoutSample.TabIndex = 0;
             // 
             // label8
@@ -3185,7 +3185,7 @@
             this.cboxSampleSampleComponent.FormattingEnabled = true;
             this.cboxSampleSampleComponent.Location = new System.Drawing.Point(153, 43);
             this.cboxSampleSampleComponent.Name = "cboxSampleSampleComponent";
-            this.cboxSampleSampleComponent.Size = new System.Drawing.Size(458, 21);
+            this.cboxSampleSampleComponent.Size = new System.Drawing.Size(458, 25);
             this.cboxSampleSampleComponent.TabIndex = 1;
             this.cboxSampleSampleComponent.ValueMember = "Id";
             this.cboxSampleSampleComponent.SelectedIndexChanged += new System.EventHandler(this.cboxSampleSampleComponent_SelectedIndexChanged);
@@ -3210,7 +3210,7 @@
             this.cboxSampleSampleType.FormattingEnabled = true;
             this.cboxSampleSampleType.Location = new System.Drawing.Point(0, 0);
             this.cboxSampleSampleType.Name = "cboxSampleSampleType";
-            this.cboxSampleSampleType.Size = new System.Drawing.Size(899, 21);
+            this.cboxSampleSampleType.Size = new System.Drawing.Size(899, 25);
             this.cboxSampleSampleType.TabIndex = 0;
             this.cboxSampleSampleType.ValueMember = "Id";
             this.cboxSampleSampleType.SelectedIndexChanged += new System.EventHandler(this.cboxSampleSampleType_SelectedIndexChanged);
@@ -3235,7 +3235,7 @@
             this.cboxSampleProject.FormattingEnabled = true;
             this.cboxSampleProject.Location = new System.Drawing.Point(153, 103);
             this.cboxSampleProject.Name = "cboxSampleProject";
-            this.cboxSampleProject.Size = new System.Drawing.Size(458, 21);
+            this.cboxSampleProject.Size = new System.Drawing.Size(458, 25);
             this.cboxSampleProject.TabIndex = 4;
             this.cboxSampleProject.ValueMember = "Id";
             this.cboxSampleProject.SelectedIndexChanged += new System.EventHandler(this.cboxSampleProject_SelectedIndexChanged);
@@ -3259,7 +3259,7 @@
             this.cboxSampleInfoSampler.FormattingEnabled = true;
             this.cboxSampleInfoSampler.Location = new System.Drawing.Point(153, 133);
             this.cboxSampleInfoSampler.Name = "cboxSampleInfoSampler";
-            this.cboxSampleInfoSampler.Size = new System.Drawing.Size(458, 21);
+            this.cboxSampleInfoSampler.Size = new System.Drawing.Size(458, 25);
             this.cboxSampleInfoSampler.TabIndex = 6;
             this.cboxSampleInfoSampler.ValueMember = "Id";
             this.cboxSampleInfoSampler.SelectedIndexChanged += new System.EventHandler(this.cboxSampleInfoSampler_SelectedIndexChanged);
@@ -3283,7 +3283,7 @@
             this.cboxSampleInfoStations.FormattingEnabled = true;
             this.cboxSampleInfoStations.Location = new System.Drawing.Point(153, 163);
             this.cboxSampleInfoStations.Name = "cboxSampleInfoStations";
-            this.cboxSampleInfoStations.Size = new System.Drawing.Size(458, 21);
+            this.cboxSampleInfoStations.Size = new System.Drawing.Size(458, 25);
             this.cboxSampleInfoStations.TabIndex = 8;
             this.cboxSampleInfoStations.ValueMember = "Id";
             this.cboxSampleInfoStations.SelectedIndexChanged += new System.EventHandler(this.cboxSampleInfoStations_SelectedIndexChanged);
@@ -3318,7 +3318,7 @@
             this.cboxSampleCounties.FormattingEnabled = true;
             this.cboxSampleCounties.Location = new System.Drawing.Point(153, 223);
             this.cboxSampleCounties.Name = "cboxSampleCounties";
-            this.cboxSampleCounties.Size = new System.Drawing.Size(458, 21);
+            this.cboxSampleCounties.Size = new System.Drawing.Size(458, 25);
             this.cboxSampleCounties.TabIndex = 12;
             this.cboxSampleCounties.ValueMember = "Id";
             this.cboxSampleCounties.SelectedIndexChanged += new System.EventHandler(this.cboxSampleCounties_SelectedIndexChanged);
@@ -3342,7 +3342,7 @@
             this.cboxSampleInfoLocationTypes.FormattingEnabled = true;
             this.cboxSampleInfoLocationTypes.Location = new System.Drawing.Point(153, 253);
             this.cboxSampleInfoLocationTypes.Name = "cboxSampleInfoLocationTypes";
-            this.cboxSampleInfoLocationTypes.Size = new System.Drawing.Size(458, 21);
+            this.cboxSampleInfoLocationTypes.Size = new System.Drawing.Size(458, 25);
             this.cboxSampleInfoLocationTypes.TabIndex = 14;
             this.cboxSampleInfoLocationTypes.ValueMember = "Id";
             this.cboxSampleInfoLocationTypes.SelectedIndexChanged += new System.EventHandler(this.cboxSampleInfoLocationTypes_SelectedIndexChanged);
@@ -3366,7 +3366,7 @@
             this.cboxSampleLaboratory.FormattingEnabled = true;
             this.cboxSampleLaboratory.Location = new System.Drawing.Point(153, 373);
             this.cboxSampleLaboratory.Name = "cboxSampleLaboratory";
-            this.cboxSampleLaboratory.Size = new System.Drawing.Size(458, 21);
+            this.cboxSampleLaboratory.Size = new System.Drawing.Size(458, 25);
             this.cboxSampleLaboratory.TabIndex = 19;
             this.cboxSampleLaboratory.ValueMember = "Id";
             this.cboxSampleLaboratory.SelectedIndexChanged += new System.EventHandler(this.cboxSampleLaboratory_SelectedIndexChanged);
@@ -3379,7 +3379,7 @@
             this.cboxSampleSubProject.FormattingEnabled = true;
             this.cboxSampleSubProject.Location = new System.Drawing.Point(617, 103);
             this.cboxSampleSubProject.Name = "cboxSampleSubProject";
-            this.cboxSampleSubProject.Size = new System.Drawing.Size(459, 21);
+            this.cboxSampleSubProject.Size = new System.Drawing.Size(459, 25);
             this.cboxSampleSubProject.TabIndex = 5;
             this.cboxSampleSubProject.ValueMember = "Id";
             this.cboxSampleSubProject.SelectedIndexChanged += new System.EventHandler(this.cboxSampleSubProject_SelectedIndexChanged);
@@ -3392,7 +3392,7 @@
             this.cboxSampleInfoSamplingMeth.FormattingEnabled = true;
             this.cboxSampleInfoSamplingMeth.Location = new System.Drawing.Point(617, 133);
             this.cboxSampleInfoSamplingMeth.Name = "cboxSampleInfoSamplingMeth";
-            this.cboxSampleInfoSamplingMeth.Size = new System.Drawing.Size(459, 21);
+            this.cboxSampleInfoSamplingMeth.Size = new System.Drawing.Size(459, 25);
             this.cboxSampleInfoSamplingMeth.TabIndex = 7;
             this.cboxSampleInfoSamplingMeth.ValueMember = "Id";
             this.cboxSampleInfoSamplingMeth.SelectedIndexChanged += new System.EventHandler(this.cboxSampleInfoSamplingMeth_SelectedIndexChanged);
@@ -3405,7 +3405,7 @@
             this.cboxSampleMunicipalities.FormattingEnabled = true;
             this.cboxSampleMunicipalities.Location = new System.Drawing.Point(617, 223);
             this.cboxSampleMunicipalities.Name = "cboxSampleMunicipalities";
-            this.cboxSampleMunicipalities.Size = new System.Drawing.Size(459, 21);
+            this.cboxSampleMunicipalities.Size = new System.Drawing.Size(459, 25);
             this.cboxSampleMunicipalities.TabIndex = 13;
             this.cboxSampleMunicipalities.ValueMember = "Id";
             this.cboxSampleMunicipalities.SelectedIndexChanged += new System.EventHandler(this.cboxSampleMunicipalities_SelectedIndexChanged);
@@ -3416,7 +3416,7 @@
             this.tbSampleLocation.Location = new System.Drawing.Point(617, 253);
             this.tbSampleLocation.MaxLength = 128;
             this.tbSampleLocation.Name = "tbSampleLocation";
-            this.tbSampleLocation.Size = new System.Drawing.Size(459, 20);
+            this.tbSampleLocation.Size = new System.Drawing.Size(459, 23);
             this.tbSampleLocation.TabIndex = 15;
             this.tbSampleLocation.TextChanged += new System.EventHandler(this.tbSampleLocation_TextChanged);
             // 
@@ -3439,7 +3439,7 @@
             this.tbSampleInfoLongitude.Location = new System.Drawing.Point(187, 0);
             this.tbSampleInfoLongitude.MaxLength = 40;
             this.tbSampleInfoLongitude.Name = "tbSampleInfoLongitude";
-            this.tbSampleInfoLongitude.Size = new System.Drawing.Size(538, 20);
+            this.tbSampleInfoLongitude.Size = new System.Drawing.Size(538, 23);
             this.tbSampleInfoLongitude.TabIndex = 10;
             this.tbSampleInfoLongitude.TextChanged += new System.EventHandler(this.tbSampleInfoLongitude_TextChanged);
             // 
@@ -3449,7 +3449,7 @@
             this.tbSampleInfoAltitude.Location = new System.Drawing.Point(725, 0);
             this.tbSampleInfoAltitude.MaxLength = 32;
             this.tbSampleInfoAltitude.Name = "tbSampleInfoAltitude";
-            this.tbSampleInfoAltitude.Size = new System.Drawing.Size(198, 20);
+            this.tbSampleInfoAltitude.Size = new System.Drawing.Size(198, 23);
             this.tbSampleInfoAltitude.TabIndex = 11;
             this.tbSampleInfoAltitude.TextChanged += new System.EventHandler(this.tbSampleInfoAltitude_TextChanged);
             // 
@@ -3459,7 +3459,7 @@
             this.tbSampleInfoLatitude.Location = new System.Drawing.Point(0, 0);
             this.tbSampleInfoLatitude.MaxLength = 40;
             this.tbSampleInfoLatitude.Name = "tbSampleInfoLatitude";
-            this.tbSampleInfoLatitude.Size = new System.Drawing.Size(187, 20);
+            this.tbSampleInfoLatitude.Size = new System.Drawing.Size(187, 23);
             this.tbSampleInfoLatitude.TabIndex = 9;
             this.tbSampleInfoLatitude.TextChanged += new System.EventHandler(this.tbSampleInfoLatitude_TextChanged);
             // 
@@ -3481,7 +3481,7 @@
             this.cboxSampleSampleStorage.FormattingEnabled = true;
             this.cboxSampleSampleStorage.Location = new System.Drawing.Point(153, 403);
             this.cboxSampleSampleStorage.Name = "cboxSampleSampleStorage";
-            this.cboxSampleSampleStorage.Size = new System.Drawing.Size(458, 21);
+            this.cboxSampleSampleStorage.Size = new System.Drawing.Size(458, 25);
             this.cboxSampleSampleStorage.TabIndex = 20;
             this.cboxSampleSampleStorage.ValueMember = "Id";
             this.cboxSampleSampleStorage.SelectedIndexChanged += new System.EventHandler(this.cboxSampleSampleStorage_SelectedIndexChanged);
@@ -3502,7 +3502,7 @@
             this.tbSampleExId.Location = new System.Drawing.Point(153, 73);
             this.tbSampleExId.MaxLength = 128;
             this.tbSampleExId.Name = "tbSampleExId";
-            this.tbSampleExId.Size = new System.Drawing.Size(458, 20);
+            this.tbSampleExId.Size = new System.Drawing.Size(458, 23);
             this.tbSampleExId.TabIndex = 2;
             this.tbSampleExId.TextChanged += new System.EventHandler(this.tbSampleExId_TextChanged);
             // 
@@ -3520,7 +3520,7 @@
             // 
             this.label7.Dock = System.Windows.Forms.DockStyle.Right;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(24, 0);
+            this.label7.Location = new System.Drawing.Point(22, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(106, 24);
             this.label7.TabIndex = 0;
@@ -3533,9 +3533,9 @@
             this.label17.Dock = System.Windows.Forms.DockStyle.Right;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Location = new System.Drawing.Point(130, 0);
+            this.label17.Location = new System.Drawing.Point(128, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(14, 17);
+            this.label17.Size = new System.Drawing.Size(16, 20);
             this.label17.TabIndex = 1;
             this.label17.Text = "*";
             // 
@@ -3552,7 +3552,7 @@
             // label14
             // 
             this.label14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label14.Location = new System.Drawing.Point(24, 0);
+            this.label14.Location = new System.Drawing.Point(22, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(106, 24);
             this.label14.TabIndex = 35;
@@ -3565,9 +3565,9 @@
             this.label20.Dock = System.Windows.Forms.DockStyle.Right;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label20.ForeColor = System.Drawing.Color.Red;
-            this.label20.Location = new System.Drawing.Point(130, 0);
+            this.label20.Location = new System.Drawing.Point(128, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(14, 17);
+            this.label20.Size = new System.Drawing.Size(16, 20);
             this.label20.TabIndex = 0;
             this.label20.Text = "*";
             // 
@@ -3586,7 +3586,7 @@
             this.label63.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label63.Location = new System.Drawing.Point(0, 0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(130, 24);
+            this.label63.Size = new System.Drawing.Size(128, 24);
             this.label63.TabIndex = 41;
             this.label63.Text = "Laboratory";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -3597,9 +3597,9 @@
             this.label21.Dock = System.Windows.Forms.DockStyle.Right;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(130, 0);
+            this.label21.Location = new System.Drawing.Point(128, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(14, 17);
+            this.label21.Size = new System.Drawing.Size(16, 20);
             this.label21.TabIndex = 0;
             this.label21.Text = "*";
             // 
@@ -3621,7 +3621,7 @@
             this.cboxSampleInstanceStatus.FormattingEnabled = true;
             this.cboxSampleInstanceStatus.Location = new System.Drawing.Point(153, 433);
             this.cboxSampleInstanceStatus.Name = "cboxSampleInstanceStatus";
-            this.cboxSampleInstanceStatus.Size = new System.Drawing.Size(458, 21);
+            this.cboxSampleInstanceStatus.Size = new System.Drawing.Size(458, 25);
             this.cboxSampleInstanceStatus.TabIndex = 21;
             this.cboxSampleInstanceStatus.ValueMember = "Id";
             this.cboxSampleInstanceStatus.SelectedIndexChanged += new System.EventHandler(this.cboxSampleInstanceStatus_SelectedIndexChanged);
@@ -3653,7 +3653,7 @@
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Location = new System.Drawing.Point(0, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(130, 24);
+            this.label12.Size = new System.Drawing.Size(128, 24);
             this.label12.TabIndex = 0;
             this.label12.Text = "Reference time";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -3664,9 +3664,9 @@
             this.label25.Dock = System.Windows.Forms.DockStyle.Right;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label25.ForeColor = System.Drawing.Color.Red;
-            this.label25.Location = new System.Drawing.Point(130, 0);
+            this.label25.Location = new System.Drawing.Point(128, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(14, 17);
+            this.label25.Size = new System.Drawing.Size(16, 20);
             this.label25.TabIndex = 0;
             this.label25.Text = "*";
             // 
@@ -3688,7 +3688,7 @@
             this.tbSampleSamplingDateFrom.Location = new System.Drawing.Point(0, 0);
             this.tbSampleSamplingDateFrom.Name = "tbSampleSamplingDateFrom";
             this.tbSampleSamplingDateFrom.ReadOnly = true;
-            this.tbSampleSamplingDateFrom.Size = new System.Drawing.Size(410, 21);
+            this.tbSampleSamplingDateFrom.Size = new System.Drawing.Size(410, 24);
             this.tbSampleSamplingDateFrom.TabIndex = 16;
             this.tbSampleSamplingDateFrom.TextChanged += new System.EventHandler(this.tbSampleSamplingDateFrom_TextChanged);
             // 
@@ -3736,7 +3736,7 @@
             this.tbSampleSamplingDateTo.Location = new System.Drawing.Point(0, 0);
             this.tbSampleSamplingDateTo.Name = "tbSampleSamplingDateTo";
             this.tbSampleSamplingDateTo.ReadOnly = true;
-            this.tbSampleSamplingDateTo.Size = new System.Drawing.Size(410, 21);
+            this.tbSampleSamplingDateTo.Size = new System.Drawing.Size(410, 24);
             this.tbSampleSamplingDateTo.TabIndex = 17;
             this.tbSampleSamplingDateTo.TextChanged += new System.EventHandler(this.tbSampleSamplingDateTo_TextChanged);
             // 
@@ -3794,7 +3794,7 @@
             this.tbSampleReferenceDate.Location = new System.Drawing.Point(0, 0);
             this.tbSampleReferenceDate.Name = "tbSampleReferenceDate";
             this.tbSampleReferenceDate.ReadOnly = true;
-            this.tbSampleReferenceDate.Size = new System.Drawing.Size(410, 21);
+            this.tbSampleReferenceDate.Size = new System.Drawing.Size(410, 24);
             this.tbSampleReferenceDate.TabIndex = 18;
             this.tbSampleReferenceDate.TextChanged += new System.EventHandler(this.tbSampleReferenceDate_TextChanged);
             // 
@@ -3875,7 +3875,7 @@
             this.btnSampleAddSampleToOrder.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSampleAddSampleToOrder.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSampleAddSampleToOrder.Name = "btnSampleAddSampleToOrder";
-            this.btnSampleAddSampleToOrder.Size = new System.Drawing.Size(143, 28);
+            this.btnSampleAddSampleToOrder.Size = new System.Drawing.Size(175, 28);
             this.btnSampleAddSampleToOrder.Text = "Add sample to order";
             this.btnSampleAddSampleToOrder.Click += new System.EventHandler(this.btnSampleAddSampleToOrder_Click);
             // 
@@ -3884,7 +3884,7 @@
             this.btnSampleGoToPrepAnal.Image = global::DSA_lims.Properties.Resources.right;
             this.btnSampleGoToPrepAnal.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSampleGoToPrepAnal.Name = "btnSampleGoToPrepAnal";
-            this.btnSampleGoToPrepAnal.Size = new System.Drawing.Size(203, 28);
+            this.btnSampleGoToPrepAnal.Size = new System.Drawing.Size(250, 28);
             this.btnSampleGoToPrepAnal.Text = "Go to preparations and analyses";
             this.btnSampleGoToPrepAnal.Click += new System.EventHandler(this.btnSampleGoToPrepAnal_Click);
             // 
@@ -3894,7 +3894,7 @@
             this.btnSamplePrintSampleLabel.Image = global::DSA_lims.Properties.Resources.printer;
             this.btnSamplePrintSampleLabel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSamplePrintSampleLabel.Name = "btnSamplePrintSampleLabel";
-            this.btnSamplePrintSampleLabel.Size = new System.Drawing.Size(129, 28);
+            this.btnSamplePrintSampleLabel.Size = new System.Drawing.Size(156, 28);
             this.btnSamplePrintSampleLabel.Text = "Print sample label";
             this.btnSamplePrintSampleLabel.Click += new System.EventHandler(this.btnSamplePrintSampleLabel_Click);
             // 
@@ -3904,7 +3904,7 @@
             this.panel21.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel21.Location = new System.Drawing.Point(1079, 0);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(295, 687);
+            this.panel21.Size = new System.Drawing.Size(295, 689);
             this.panel21.TabIndex = 1;
             // 
             // panelSamplesAttachments
@@ -3914,7 +3914,7 @@
             this.panelSamplesAttachments.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelSamplesAttachments.Location = new System.Drawing.Point(0, 0);
             this.panelSamplesAttachments.Name = "panelSamplesAttachments";
-            this.panelSamplesAttachments.Size = new System.Drawing.Size(295, 687);
+            this.panelSamplesAttachments.Size = new System.Drawing.Size(295, 689);
             this.panelSamplesAttachments.TabIndex = 0;
             // 
             // gridSampleAttachments
@@ -3935,7 +3935,7 @@
             this.gridSampleAttachments.RowHeadersVisible = false;
             this.gridSampleAttachments.RowHeadersWidth = 62;
             this.gridSampleAttachments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSampleAttachments.Size = new System.Drawing.Size(295, 656);
+            this.gridSampleAttachments.Size = new System.Drawing.Size(295, 658);
             this.gridSampleAttachments.TabIndex = 1;
             this.gridSampleAttachments.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridAttachments_CellDoubleClick);
             // 
@@ -3959,7 +3959,7 @@
             // 
             this.toolStripLabel18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel18.Name = "toolStripLabel18";
-            this.toolStripLabel18.Size = new System.Drawing.Size(79, 28);
+            this.toolStripLabel18.Size = new System.Drawing.Size(100, 28);
             this.toolStripLabel18.Text = "Attachments";
             // 
             // toolStripSeparator46
@@ -3972,7 +3972,7 @@
             this.btnSampleScanAttachment.Image = global::DSA_lims.Properties.Resources.scan;
             this.btnSampleScanAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSampleScanAttachment.Name = "btnSampleScanAttachment";
-            this.btnSampleScanAttachment.Size = new System.Drawing.Size(60, 28);
+            this.btnSampleScanAttachment.Size = new System.Drawing.Size(68, 28);
             this.btnSampleScanAttachment.Text = "Scan";
             this.btnSampleScanAttachment.Click += new System.EventHandler(this.btnSampleScanAttachment_Click);
             // 
@@ -3981,7 +3981,7 @@
             this.btnSampleBrowseAttachment.Image = global::DSA_lims.Properties.Resources.projects;
             this.btnSampleBrowseAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSampleBrowseAttachment.Name = "btnSampleBrowseAttachment";
-            this.btnSampleBrowseAttachment.Size = new System.Drawing.Size(73, 28);
+            this.btnSampleBrowseAttachment.Size = new System.Drawing.Size(85, 28);
             this.btnSampleBrowseAttachment.Text = "Browse";
             this.btnSampleBrowseAttachment.Click += new System.EventHandler(this.btnSampleBrowseAttachment_Click);
             // 
@@ -3990,7 +3990,7 @@
             this.btnSampleDeleteAttachment.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnSampleDeleteAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSampleDeleteAttachment.Name = "btnSampleDeleteAttachment";
-            this.btnSampleDeleteAttachment.Size = new System.Drawing.Size(68, 28);
+            this.btnSampleDeleteAttachment.Size = new System.Drawing.Size(81, 28);
             this.btnSampleDeleteAttachment.Text = "Delete";
             this.btnSampleDeleteAttachment.Click += new System.EventHandler(this.btnSampleDeleteAttachment_Click);
             // 
@@ -3999,9 +3999,9 @@
             this.tabSamplesParams.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSamplesParams.Controls.Add(this.gridSampleParameters);
             this.tabSamplesParams.Controls.Add(this.toolStrip6);
-            this.tabSamplesParams.Location = new System.Drawing.Point(4, 24);
+            this.tabSamplesParams.Location = new System.Drawing.Point(4, 27);
             this.tabSamplesParams.Name = "tabSamplesParams";
-            this.tabSamplesParams.Size = new System.Drawing.Size(1374, 682);
+            this.tabSamplesParams.Size = new System.Drawing.Size(1374, 692);
             this.tabSamplesParams.TabIndex = 1;
             this.tabSamplesParams.Text = "Parameters";
             // 
@@ -4021,7 +4021,7 @@
             this.gridSampleParameters.RowHeadersVisible = false;
             this.gridSampleParameters.RowHeadersWidth = 62;
             this.gridSampleParameters.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSampleParameters.Size = new System.Drawing.Size(1374, 651);
+            this.gridSampleParameters.Size = new System.Drawing.Size(1374, 661);
             this.gridSampleParameters.TabIndex = 1;
             // 
             // toolStrip6
@@ -4044,7 +4044,7 @@
             // 
             this.toolStripLabel9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel9.Name = "toolStripLabel9";
-            this.toolStripLabel9.Size = new System.Drawing.Size(121, 28);
+            this.toolStripLabel9.Size = new System.Drawing.Size(153, 28);
             this.toolStripLabel9.Text = "Optional parameters";
             // 
             // toolStripSeparator24
@@ -4057,7 +4057,7 @@
             this.btnSampleParamAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSampleParamAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSampleParamAdd.Name = "btnSampleParamAdd";
-            this.btnSampleParamAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnSampleParamAdd.Size = new System.Drawing.Size(65, 28);
             this.btnSampleParamAdd.Text = "Add";
             this.btnSampleParamAdd.Click += new System.EventHandler(this.btnSampleParamAdd_Click);
             // 
@@ -4066,7 +4066,7 @@
             this.btnSampleParamEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnSampleParamEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSampleParamEdit.Name = "btnSampleParamEdit";
-            this.btnSampleParamEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnSampleParamEdit.Size = new System.Drawing.Size(63, 28);
             this.btnSampleParamEdit.Text = "Edit";
             this.btnSampleParamEdit.Click += new System.EventHandler(this.btnSampleParamEdit_Click);
             // 
@@ -4075,7 +4075,7 @@
             this.btnSampleParamRemove.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnSampleParamRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSampleParamRemove.Name = "btnSampleParamRemove";
-            this.btnSampleParamRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnSampleParamRemove.Size = new System.Drawing.Size(91, 28);
             this.btnSampleParamRemove.Text = "Remove";
             this.btnSampleParamRemove.Click += new System.EventHandler(this.btnSampleParamRemove_Click);
             // 
@@ -4084,7 +4084,7 @@
             this.panel36.Controls.Add(this.btnSampleDiscard);
             this.panel36.Controls.Add(this.btnSampleUpdate);
             this.panel36.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel36.Location = new System.Drawing.Point(0, 740);
+            this.panel36.Location = new System.Drawing.Point(0, 745);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(1382, 26);
             this.panel36.TabIndex = 6;
@@ -4134,49 +4134,49 @@
             // 
             this.lblSampleToolId.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             this.lblSampleToolId.Name = "lblSampleToolId";
-            this.lblSampleToolId.Size = new System.Drawing.Size(35, 22);
+            this.lblSampleToolId.Size = new System.Drawing.Size(40, 22);
             this.lblSampleToolId.Text = "<Id>";
             // 
             // lblSampleToolExId
             // 
             this.lblSampleToolExId.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             this.lblSampleToolExId.Name = "lblSampleToolExId";
-            this.lblSampleToolExId.Size = new System.Drawing.Size(56, 22);
+            this.lblSampleToolExId.Size = new System.Drawing.Size(64, 22);
             this.lblSampleToolExId.Text = "<Ex.Id>";
             // 
             // lblSampleToolProject
             // 
             this.lblSampleToolProject.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             this.lblSampleToolProject.Name = "lblSampleToolProject";
-            this.lblSampleToolProject.Size = new System.Drawing.Size(70, 22);
+            this.lblSampleToolProject.Size = new System.Drawing.Size(80, 22);
             this.lblSampleToolProject.Text = "<Project>";
             // 
             // lblSampleToolSubProject
             // 
             this.lblSampleToolSubProject.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             this.lblSampleToolSubProject.Name = "lblSampleToolSubProject";
-            this.lblSampleToolSubProject.Size = new System.Drawing.Size(98, 22);
+            this.lblSampleToolSubProject.Size = new System.Drawing.Size(112, 22);
             this.lblSampleToolSubProject.Text = "<Sub-Project>";
             // 
             // lblSampleToolLaboratory
             // 
             this.lblSampleToolLaboratory.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             this.lblSampleToolLaboratory.Name = "lblSampleToolLaboratory";
-            this.lblSampleToolLaboratory.Size = new System.Drawing.Size(91, 22);
+            this.lblSampleToolLaboratory.Size = new System.Drawing.Size(104, 22);
             this.lblSampleToolLaboratory.Text = "<Laboratory>";
             // 
             // lblSampleToolCreator
             // 
             this.lblSampleToolCreator.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             this.lblSampleToolCreator.Name = "lblSampleToolCreator";
-            this.lblSampleToolCreator.Size = new System.Drawing.Size(70, 22);
+            this.lblSampleToolCreator.Size = new System.Drawing.Size(80, 22);
             this.lblSampleToolCreator.Text = "<Creator>";
             // 
             // lblSampleToolUpdator
             // 
             this.lblSampleToolUpdator.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             this.lblSampleToolUpdator.Name = "lblSampleToolUpdator";
-            this.lblSampleToolUpdator.Size = new System.Drawing.Size(70, 22);
+            this.lblSampleToolUpdator.Size = new System.Drawing.Size(80, 22);
             this.lblSampleToolUpdator.Text = "<Updator>";
             // 
             // tabOrder
@@ -4185,9 +4185,9 @@
             this.tabOrder.Controls.Add(this.tabsOrder);
             this.tabOrder.Controls.Add(this.panel15);
             this.tabOrder.Controls.Add(this.toolStrip24);
-            this.tabOrder.Location = new System.Drawing.Point(4, 24);
+            this.tabOrder.Location = new System.Drawing.Point(4, 27);
             this.tabOrder.Name = "tabOrder";
-            this.tabOrder.Size = new System.Drawing.Size(1382, 774);
+            this.tabOrder.Size = new System.Drawing.Size(1382, 771);
             this.tabOrder.TabIndex = 2;
             this.tabOrder.Text = "Order";
             // 
@@ -4200,16 +4200,16 @@
             this.tabsOrder.Location = new System.Drawing.Point(0, 25);
             this.tabsOrder.Name = "tabsOrder";
             this.tabsOrder.SelectedIndex = 0;
-            this.tabsOrder.Size = new System.Drawing.Size(1382, 723);
+            this.tabsOrder.Size = new System.Drawing.Size(1382, 720);
             this.tabsOrder.TabIndex = 7;
             // 
             // tabOrderInfo
             // 
             this.tabOrderInfo.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabOrderInfo.Controls.Add(this.splitContainer7);
-            this.tabOrderInfo.Location = new System.Drawing.Point(4, 24);
+            this.tabOrderInfo.Location = new System.Drawing.Point(4, 27);
             this.tabOrderInfo.Name = "tabOrderInfo";
-            this.tabOrderInfo.Size = new System.Drawing.Size(1374, 695);
+            this.tabOrderInfo.Size = new System.Drawing.Size(1374, 689);
             this.tabOrderInfo.TabIndex = 0;
             this.tabOrderInfo.Text = "Order Info";
             // 
@@ -4230,7 +4230,7 @@
             // 
             this.splitContainer7.Panel2.Controls.Add(this.treeOrderContent);
             this.splitContainer7.Panel2.Controls.Add(this.toolsOrderContent);
-            this.splitContainer7.Size = new System.Drawing.Size(1374, 695);
+            this.splitContainer7.Size = new System.Drawing.Size(1374, 689);
             this.splitContainer7.SplitterDistance = 389;
             this.splitContainer7.SplitterWidth = 5;
             this.splitContainer7.TabIndex = 0;
@@ -4242,7 +4242,7 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(0, 398);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(389, 297);
+            this.panel12.Size = new System.Drawing.Size(389, 291);
             this.panel12.TabIndex = 1;
             // 
             // gridOrderAttachments
@@ -4263,7 +4263,7 @@
             this.gridOrderAttachments.RowHeadersVisible = false;
             this.gridOrderAttachments.RowHeadersWidth = 62;
             this.gridOrderAttachments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridOrderAttachments.Size = new System.Drawing.Size(389, 266);
+            this.gridOrderAttachments.Size = new System.Drawing.Size(389, 260);
             this.gridOrderAttachments.TabIndex = 1;
             this.gridOrderAttachments.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridAttachments_CellDoubleClick);
             // 
@@ -4287,7 +4287,7 @@
             // 
             this.toolStripLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(79, 28);
+            this.toolStripLabel4.Size = new System.Drawing.Size(100, 28);
             this.toolStripLabel4.Text = "Attachments";
             // 
             // toolStripSeparator29
@@ -4300,7 +4300,7 @@
             this.btnOrderScanAttachment.Image = global::DSA_lims.Properties.Resources.scan;
             this.btnOrderScanAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrderScanAttachment.Name = "btnOrderScanAttachment";
-            this.btnOrderScanAttachment.Size = new System.Drawing.Size(60, 28);
+            this.btnOrderScanAttachment.Size = new System.Drawing.Size(68, 28);
             this.btnOrderScanAttachment.Text = "Scan";
             this.btnOrderScanAttachment.Click += new System.EventHandler(this.btnOrderScanAttachment_Click);
             // 
@@ -4309,7 +4309,7 @@
             this.btnOrderBrowseAttachment.Image = global::DSA_lims.Properties.Resources.projects;
             this.btnOrderBrowseAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrderBrowseAttachment.Name = "btnOrderBrowseAttachment";
-            this.btnOrderBrowseAttachment.Size = new System.Drawing.Size(73, 28);
+            this.btnOrderBrowseAttachment.Size = new System.Drawing.Size(85, 28);
             this.btnOrderBrowseAttachment.Text = "Browse";
             this.btnOrderBrowseAttachment.Click += new System.EventHandler(this.btnOrderBrowseAttachment_Click);
             // 
@@ -4318,7 +4318,7 @@
             this.btnOrderDeleteAttachment.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnOrderDeleteAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrderDeleteAttachment.Name = "btnOrderDeleteAttachment";
-            this.btnOrderDeleteAttachment.Size = new System.Drawing.Size(68, 28);
+            this.btnOrderDeleteAttachment.Size = new System.Drawing.Size(81, 28);
             this.btnOrderDeleteAttachment.Text = "Delete";
             this.btnOrderDeleteAttachment.Click += new System.EventHandler(this.btnOrderDeleteAttachment_Click);
             // 
@@ -4410,7 +4410,7 @@
             this.cboxOrderResponsible.FormattingEnabled = true;
             this.cboxOrderResponsible.Location = new System.Drawing.Point(123, 93);
             this.cboxOrderResponsible.Name = "cboxOrderResponsible";
-            this.cboxOrderResponsible.Size = new System.Drawing.Size(263, 23);
+            this.cboxOrderResponsible.Size = new System.Drawing.Size(263, 26);
             this.cboxOrderResponsible.TabIndex = 2;
             this.cboxOrderResponsible.ValueMember = "Id";
             this.cboxOrderResponsible.SelectedIndexChanged += new System.EventHandler(this.cboxOrderResponsible_SelectedIndexChanged);
@@ -4424,7 +4424,7 @@
             this.cboxOrderLaboratory.FormattingEnabled = true;
             this.cboxOrderLaboratory.Location = new System.Drawing.Point(123, 63);
             this.cboxOrderLaboratory.Name = "cboxOrderLaboratory";
-            this.cboxOrderLaboratory.Size = new System.Drawing.Size(263, 23);
+            this.cboxOrderLaboratory.Size = new System.Drawing.Size(263, 26);
             this.cboxOrderLaboratory.TabIndex = 1;
             this.cboxOrderLaboratory.ValueMember = "Id";
             this.cboxOrderLaboratory.SelectedIndexChanged += new System.EventHandler(this.cboxOrderLaboratory_SelectedIndexChanged);
@@ -4442,7 +4442,7 @@
             "3"});
             this.cboxOrderRequestedSigma.Location = new System.Drawing.Point(123, 183);
             this.cboxOrderRequestedSigma.Name = "cboxOrderRequestedSigma";
-            this.cboxOrderRequestedSigma.Size = new System.Drawing.Size(263, 23);
+            this.cboxOrderRequestedSigma.Size = new System.Drawing.Size(263, 26);
             this.cboxOrderRequestedSigma.TabIndex = 4;
             this.cboxOrderRequestedSigma.ValueMember = "Id";
             this.cboxOrderRequestedSigma.SelectedIndexChanged += new System.EventHandler(this.cboxOrderRequestedSigma_SelectedIndexChanged);
@@ -4463,7 +4463,7 @@
             this.tbOrderName.Location = new System.Drawing.Point(123, 3);
             this.tbOrderName.Name = "tbOrderName";
             this.tbOrderName.ReadOnly = true;
-            this.tbOrderName.Size = new System.Drawing.Size(263, 21);
+            this.tbOrderName.Size = new System.Drawing.Size(263, 24);
             this.tbOrderName.TabIndex = 0;
             // 
             // panel30
@@ -4484,7 +4484,7 @@
             this.tbOrderDeadline.Location = new System.Drawing.Point(0, 0);
             this.tbOrderDeadline.Name = "tbOrderDeadline";
             this.tbOrderDeadline.ReadOnly = true;
-            this.tbOrderDeadline.Size = new System.Drawing.Size(215, 21);
+            this.tbOrderDeadline.Size = new System.Drawing.Size(215, 24);
             this.tbOrderDeadline.TabIndex = 1;
             // 
             // btnOrderClearDeadline
@@ -4562,7 +4562,7 @@
             this.tbOrderCustomer.Location = new System.Drawing.Point(0, 0);
             this.tbOrderCustomer.Name = "tbOrderCustomer";
             this.tbOrderCustomer.ReadOnly = true;
-            this.tbOrderCustomer.Size = new System.Drawing.Size(239, 21);
+            this.tbOrderCustomer.Size = new System.Drawing.Size(239, 24);
             this.tbOrderCustomer.TabIndex = 3;
             // 
             // btnOrderSelectCustomer
@@ -4595,7 +4595,7 @@
             this.cboxOrderRequestedSigmaMDA.FormattingEnabled = true;
             this.cboxOrderRequestedSigmaMDA.Location = new System.Drawing.Point(123, 213);
             this.cboxOrderRequestedSigmaMDA.Name = "cboxOrderRequestedSigmaMDA";
-            this.cboxOrderRequestedSigmaMDA.Size = new System.Drawing.Size(263, 23);
+            this.cboxOrderRequestedSigmaMDA.Size = new System.Drawing.Size(263, 26);
             this.cboxOrderRequestedSigmaMDA.TabIndex = 5;
             this.cboxOrderRequestedSigmaMDA.ValueMember = "Id";
             this.cboxOrderRequestedSigmaMDA.SelectedIndexChanged += new System.EventHandler(this.cboxOrderRequestedSigmaMDA_SelectedIndexChanged);
@@ -4616,7 +4616,7 @@
             this.tbOrderDescription.Location = new System.Drawing.Point(123, 33);
             this.tbOrderDescription.MaxLength = 80;
             this.tbOrderDescription.Name = "tbOrderDescription";
-            this.tbOrderDescription.Size = new System.Drawing.Size(263, 21);
+            this.tbOrderDescription.Size = new System.Drawing.Size(263, 24);
             this.tbOrderDescription.TabIndex = 20;
             this.tbOrderDescription.TextChanged += new System.EventHandler(this.tbOrderDescription_TextChanged);
             // 
@@ -4638,7 +4638,7 @@
             // 
             this.toolStripLabel19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel19.Name = "toolStripLabel19";
-            this.toolStripLabel19.Size = new System.Drawing.Size(79, 28);
+            this.toolStripLabel19.Size = new System.Drawing.Size(99, 28);
             this.toolStripLabel19.Text = "Order details";
             // 
             // toolStripSeparator71
@@ -4651,7 +4651,7 @@
             this.btnOrderShowDefAsPDF.Image = global::DSA_lims.Properties.Resources.report;
             this.btnOrderShowDefAsPDF.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrderShowDefAsPDF.Name = "btnOrderShowDefAsPDF";
-            this.btnOrderShowDefAsPDF.Size = new System.Drawing.Size(133, 28);
+            this.btnOrderShowDefAsPDF.Size = new System.Drawing.Size(161, 28);
             this.btnOrderShowDefAsPDF.Text = "Show order as PDF";
             this.btnOrderShowDefAsPDF.ToolTipText = "Show order definition as a PDF document";
             this.btnOrderShowDefAsPDF.Click += new System.EventHandler(this.miOrderShowDefAsPDF_Click);
@@ -4671,7 +4671,7 @@
             this.treeOrderContent.ShowNodeToolTips = true;
             this.treeOrderContent.ShowPlusMinus = false;
             this.treeOrderContent.ShowRootLines = false;
-            this.treeOrderContent.Size = new System.Drawing.Size(980, 664);
+            this.treeOrderContent.Size = new System.Drawing.Size(980, 658);
             this.treeOrderContent.TabIndex = 2;
             this.treeOrderContent.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeOrderContent_AfterSelect);
             // 
@@ -4695,7 +4695,7 @@
             // 
             this.toolStripLabel8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel8.Name = "toolStripLabel8";
-            this.toolStripLabel8.Size = new System.Drawing.Size(68, 28);
+            this.toolStripLabel8.Size = new System.Drawing.Size(86, 28);
             this.toolStripLabel8.Text = "Order span";
             // 
             // toolStripSeparator60
@@ -4712,13 +4712,13 @@
             this.ddbOrderAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.ddbOrderAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ddbOrderAdd.Name = "ddbOrderAdd";
-            this.ddbOrderAdd.Size = new System.Drawing.Size(75, 28);
+            this.ddbOrderAdd.Size = new System.Drawing.Size(84, 28);
             this.ddbOrderAdd.Text = "Add...";
             // 
             // btnOrderAddSampleType
             // 
             this.btnOrderAddSampleType.Name = "btnOrderAddSampleType";
-            this.btnOrderAddSampleType.Size = new System.Drawing.Size(180, 22);
+            this.btnOrderAddSampleType.Size = new System.Drawing.Size(225, 26);
             this.btnOrderAddSampleType.Text = "Sample type";
             this.btnOrderAddSampleType.Click += new System.EventHandler(this.miOrderAddSampleType_Click);
             // 
@@ -4726,7 +4726,7 @@
             // 
             this.btnOrderAddPrepMeth.Enabled = false;
             this.btnOrderAddPrepMeth.Name = "btnOrderAddPrepMeth";
-            this.btnOrderAddPrepMeth.Size = new System.Drawing.Size(180, 22);
+            this.btnOrderAddPrepMeth.Size = new System.Drawing.Size(225, 26);
             this.btnOrderAddPrepMeth.Text = "Preparation method";
             this.btnOrderAddPrepMeth.Click += new System.EventHandler(this.miOrderAddPrepMeth_Click);
             // 
@@ -4734,7 +4734,7 @@
             // 
             this.btnOrderAddAnalMeth.Enabled = false;
             this.btnOrderAddAnalMeth.Name = "btnOrderAddAnalMeth";
-            this.btnOrderAddAnalMeth.Size = new System.Drawing.Size(180, 22);
+            this.btnOrderAddAnalMeth.Size = new System.Drawing.Size(225, 26);
             this.btnOrderAddAnalMeth.Text = "Analysis method";
             this.btnOrderAddAnalMeth.Click += new System.EventHandler(this.miOrderAddAnalMeth_Click);
             // 
@@ -4745,13 +4745,13 @@
             this.ddbOrderEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.ddbOrderEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ddbOrderEdit.Name = "ddbOrderEdit";
-            this.ddbOrderEdit.Size = new System.Drawing.Size(73, 28);
+            this.ddbOrderEdit.Size = new System.Drawing.Size(82, 28);
             this.ddbOrderEdit.Text = "Edit...";
             // 
             // btnOrderEditSampleType
             // 
             this.btnOrderEditSampleType.Name = "btnOrderEditSampleType";
-            this.btnOrderEditSampleType.Size = new System.Drawing.Size(139, 22);
+            this.btnOrderEditSampleType.Size = new System.Drawing.Size(175, 26);
             this.btnOrderEditSampleType.Text = "Sample type";
             this.btnOrderEditSampleType.Click += new System.EventHandler(this.btnOrderEditSampleType_Click);
             // 
@@ -4762,13 +4762,13 @@
             this.ddbOrderDel.Image = global::DSA_lims.Properties.Resources.delete;
             this.ddbOrderDel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ddbOrderDel.Name = "ddbOrderDel";
-            this.ddbOrderDel.Size = new System.Drawing.Size(86, 28);
+            this.ddbOrderDel.Size = new System.Drawing.Size(100, 28);
             this.ddbOrderDel.Text = "Delete...";
             // 
             // btnOrderDelSampleType
             // 
             this.btnOrderDelSampleType.Name = "btnOrderDelSampleType";
-            this.btnOrderDelSampleType.Size = new System.Drawing.Size(139, 22);
+            this.btnOrderDelSampleType.Size = new System.Drawing.Size(175, 26);
             this.btnOrderDelSampleType.Text = "Sample type";
             this.btnOrderDelSampleType.Click += new System.EventHandler(this.miOrderRemSampleType_Click);
             // 
@@ -4776,9 +4776,9 @@
             // 
             this.tabOrderStatus.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabOrderStatus.Controls.Add(this.panel11);
-            this.tabOrderStatus.Location = new System.Drawing.Point(4, 24);
+            this.tabOrderStatus.Location = new System.Drawing.Point(4, 27);
             this.tabOrderStatus.Name = "tabOrderStatus";
-            this.tabOrderStatus.Size = new System.Drawing.Size(1374, 695);
+            this.tabOrderStatus.Size = new System.Drawing.Size(1374, 692);
             this.tabOrderStatus.TabIndex = 2;
             this.tabOrderStatus.Text = "Order status";
             // 
@@ -4789,7 +4789,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1374, 695);
+            this.panel11.Size = new System.Drawing.Size(1374, 692);
             this.panel11.TabIndex = 2;
             // 
             // tableLayoutPanel7
@@ -4822,7 +4822,7 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1374, 664);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1374, 661);
             this.tableLayoutPanel7.TabIndex = 2;
             // 
             // cbOrderApprovedCustomer
@@ -4830,9 +4830,9 @@
             this.cbOrderApprovedCustomer.AutoSize = true;
             this.cbOrderApprovedCustomer.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cbOrderApprovedCustomer.Dock = System.Windows.Forms.DockStyle.Right;
-            this.cbOrderApprovedCustomer.Location = new System.Drawing.Point(331, 49);
+            this.cbOrderApprovedCustomer.Location = new System.Drawing.Point(299, 49);
             this.cbOrderApprovedCustomer.Name = "cbOrderApprovedCustomer";
-            this.cbOrderApprovedCustomer.Size = new System.Drawing.Size(146, 24);
+            this.cbOrderApprovedCustomer.Size = new System.Drawing.Size(178, 24);
             this.cbOrderApprovedCustomer.TabIndex = 0;
             this.cbOrderApprovedCustomer.Text = "Approved by customer";
             this.cbOrderApprovedCustomer.UseVisualStyleBackColor = true;
@@ -4844,7 +4844,7 @@
             this.tbOrderApprovedCustomerBy.Location = new System.Drawing.Point(483, 49);
             this.tbOrderApprovedCustomerBy.Name = "tbOrderApprovedCustomerBy";
             this.tbOrderApprovedCustomerBy.ReadOnly = true;
-            this.tbOrderApprovedCustomerBy.Size = new System.Drawing.Size(888, 21);
+            this.tbOrderApprovedCustomerBy.Size = new System.Drawing.Size(888, 24);
             this.tbOrderApprovedCustomerBy.TabIndex = 1;
             // 
             // cboxOrderStatus
@@ -4855,7 +4855,7 @@
             this.cboxOrderStatus.FormattingEnabled = true;
             this.cboxOrderStatus.Location = new System.Drawing.Point(3, 319);
             this.cboxOrderStatus.Name = "cboxOrderStatus";
-            this.cboxOrderStatus.Size = new System.Drawing.Size(474, 23);
+            this.cboxOrderStatus.Size = new System.Drawing.Size(474, 26);
             this.cboxOrderStatus.TabIndex = 8;
             this.cboxOrderStatus.ValueMember = "Id";
             this.cboxOrderStatus.SelectedIndexChanged += new System.EventHandler(this.cboxOrderStatus_SelectedIndexChanged);
@@ -4866,7 +4866,7 @@
             this.tbOrderLastWorkflowStatusBy.Location = new System.Drawing.Point(483, 319);
             this.tbOrderLastWorkflowStatusBy.Name = "tbOrderLastWorkflowStatusBy";
             this.tbOrderLastWorkflowStatusBy.ReadOnly = true;
-            this.tbOrderLastWorkflowStatusBy.Size = new System.Drawing.Size(888, 21);
+            this.tbOrderLastWorkflowStatusBy.Size = new System.Drawing.Size(888, 24);
             this.tbOrderLastWorkflowStatusBy.TabIndex = 9;
             // 
             // label71
@@ -4886,9 +4886,9 @@
             this.cbOrderApprovedLaboratory.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cbOrderApprovedLaboratory.Dock = System.Windows.Forms.DockStyle.Right;
             this.cbOrderApprovedLaboratory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbOrderApprovedLaboratory.Location = new System.Drawing.Point(328, 19);
+            this.cbOrderApprovedLaboratory.Location = new System.Drawing.Point(296, 19);
             this.cbOrderApprovedLaboratory.Name = "cbOrderApprovedLaboratory";
-            this.cbOrderApprovedLaboratory.Size = new System.Drawing.Size(149, 24);
+            this.cbOrderApprovedLaboratory.Size = new System.Drawing.Size(181, 24);
             this.cbOrderApprovedLaboratory.TabIndex = 3;
             this.cbOrderApprovedLaboratory.Text = "Approved by laboratory";
             this.cbOrderApprovedLaboratory.UseVisualStyleBackColor = true;
@@ -4944,7 +4944,7 @@
             this.tbOrderApprovedLaboratoryBy.Location = new System.Drawing.Point(483, 19);
             this.tbOrderApprovedLaboratoryBy.Name = "tbOrderApprovedLaboratoryBy";
             this.tbOrderApprovedLaboratoryBy.ReadOnly = true;
-            this.tbOrderApprovedLaboratoryBy.Size = new System.Drawing.Size(888, 21);
+            this.tbOrderApprovedLaboratoryBy.Size = new System.Drawing.Size(888, 24);
             this.tbOrderApprovedLaboratoryBy.TabIndex = 4;
             // 
             // toolsOrderStatus
@@ -4965,7 +4965,7 @@
             // 
             this.toolStripLabel17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel17.Name = "toolStripLabel17";
-            this.toolStripLabel17.Size = new System.Drawing.Size(76, 28);
+            this.toolStripLabel17.Size = new System.Drawing.Size(96, 28);
             this.toolStripLabel17.Text = "Order status";
             // 
             // toolStripSeparator2
@@ -4978,7 +4978,7 @@
             this.btnOrderCreateReport.Image = global::DSA_lims.Properties.Resources.report;
             this.btnOrderCreateReport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrderCreateReport.Name = "btnOrderCreateReport";
-            this.btnOrderCreateReport.Size = new System.Drawing.Size(135, 28);
+            this.btnOrderCreateReport.Size = new System.Drawing.Size(165, 28);
             this.btnOrderCreateReport.Text = "Create order report";
             this.btnOrderCreateReport.Click += new System.EventHandler(this.btnOrderCreateReport_Click);
             // 
@@ -4987,9 +4987,9 @@
             this.tabOrderAssigned.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabOrderAssigned.Controls.Add(this.tvOrderContent);
             this.tabOrderAssigned.Controls.Add(this.toolStrip17);
-            this.tabOrderAssigned.Location = new System.Drawing.Point(4, 24);
+            this.tabOrderAssigned.Location = new System.Drawing.Point(4, 27);
             this.tabOrderAssigned.Name = "tabOrderAssigned";
-            this.tabOrderAssigned.Size = new System.Drawing.Size(1374, 682);
+            this.tabOrderAssigned.Size = new System.Drawing.Size(1374, 692);
             this.tabOrderAssigned.TabIndex = 3;
             this.tabOrderAssigned.Text = "All units assigned to order";
             // 
@@ -5006,7 +5006,7 @@
             this.tvOrderContent.ShowNodeToolTips = true;
             this.tvOrderContent.ShowPlusMinus = false;
             this.tvOrderContent.ShowRootLines = false;
-            this.tvOrderContent.Size = new System.Drawing.Size(1374, 651);
+            this.tvOrderContent.Size = new System.Drawing.Size(1374, 661);
             this.tvOrderContent.TabIndex = 2;
             this.tvOrderContent.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvOrderContent_AfterSelect);
             // 
@@ -5031,7 +5031,7 @@
             // 
             this.toolStripLabel58.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel58.Name = "toolStripLabel58";
-            this.toolStripLabel58.Size = new System.Drawing.Size(147, 28);
+            this.toolStripLabel58.Size = new System.Drawing.Size(183, 28);
             this.toolStripLabel58.Text = "Units connected to order";
             // 
             // toolStripSeparator73
@@ -5045,7 +5045,7 @@
             this.btnOrderRemoveSampleFromOrder.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnOrderRemoveSampleFromOrder.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrderRemoveSampleFromOrder.Name = "btnOrderRemoveSampleFromOrder";
-            this.btnOrderRemoveSampleFromOrder.Size = new System.Drawing.Size(179, 28);
+            this.btnOrderRemoveSampleFromOrder.Size = new System.Drawing.Size(219, 28);
             this.btnOrderRemoveSampleFromOrder.Text = "Remove sample from order";
             this.btnOrderRemoveSampleFromOrder.Click += new System.EventHandler(this.btnOrderRemoveSampleFromOrder_Click);
             // 
@@ -5055,7 +5055,7 @@
             this.btnOrderGoToPrepAnal.Image = global::DSA_lims.Properties.Resources.right;
             this.btnOrderGoToPrepAnal.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrderGoToPrepAnal.Name = "btnOrderGoToPrepAnal";
-            this.btnOrderGoToPrepAnal.Size = new System.Drawing.Size(203, 28);
+            this.btnOrderGoToPrepAnal.Size = new System.Drawing.Size(250, 28);
             this.btnOrderGoToPrepAnal.Text = "Go to preparations and analyses";
             this.btnOrderGoToPrepAnal.Click += new System.EventHandler(this.btnOrderGoToPrepAnal_Click);
             // 
@@ -5064,7 +5064,7 @@
             this.btnOrderShowUnitsAsPDF.Image = global::DSA_lims.Properties.Resources.report;
             this.btnOrderShowUnitsAsPDF.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrderShowUnitsAsPDF.Name = "btnOrderShowUnitsAsPDF";
-            this.btnOrderShowUnitsAsPDF.Size = new System.Drawing.Size(154, 28);
+            this.btnOrderShowUnitsAsPDF.Size = new System.Drawing.Size(187, 28);
             this.btnOrderShowUnitsAsPDF.Text = "Show all results as PDF";
             this.btnOrderShowUnitsAsPDF.Click += new System.EventHandler(this.btnOrderShowUnitsAsPDF_Click);
             // 
@@ -5073,7 +5073,7 @@
             this.btnOrderShowSampleSummary.Image = global::DSA_lims.Properties.Resources.report;
             this.btnOrderShowSampleSummary.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrderShowSampleSummary.Name = "btnOrderShowSampleSummary";
-            this.btnOrderShowSampleSummary.Size = new System.Drawing.Size(158, 28);
+            this.btnOrderShowSampleSummary.Size = new System.Drawing.Size(189, 28);
             this.btnOrderShowSampleSummary.Text = "Show sample summary";
             this.btnOrderShowSampleSummary.Click += new System.EventHandler(this.btnOrderShowSampleSummary_Click);
             // 
@@ -5082,7 +5082,7 @@
             this.panel15.Controls.Add(this.btnOrderDiscard);
             this.panel15.Controls.Add(this.btnOrderSave);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel15.Location = new System.Drawing.Point(0, 748);
+            this.panel15.Location = new System.Drawing.Point(0, 745);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(1382, 26);
             this.panel15.TabIndex = 8;
@@ -5126,14 +5126,14 @@
             // 
             this.lblOrderToolsCreator.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             this.lblOrderToolsCreator.Name = "lblOrderToolsCreator";
-            this.lblOrderToolsCreator.Size = new System.Drawing.Size(70, 22);
+            this.lblOrderToolsCreator.Size = new System.Drawing.Size(80, 22);
             this.lblOrderToolsCreator.Text = "<Creator>";
             // 
             // lblOrderToolsUpdator
             // 
             this.lblOrderToolsUpdator.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             this.lblOrderToolsUpdator.Name = "lblOrderToolsUpdator";
-            this.lblOrderToolsUpdator.Size = new System.Drawing.Size(70, 22);
+            this.lblOrderToolsUpdator.Size = new System.Drawing.Size(80, 22);
             this.lblOrderToolsUpdator.Text = "<Updator>";
             // 
             // tabSearch
@@ -5141,9 +5141,9 @@
             this.tabSearch.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSearch.Controls.Add(this.tabsSearch);
             this.tabSearch.Controls.Add(this.panel17);
-            this.tabSearch.Location = new System.Drawing.Point(4, 24);
+            this.tabSearch.Location = new System.Drawing.Point(4, 27);
             this.tabSearch.Name = "tabSearch";
-            this.tabSearch.Size = new System.Drawing.Size(1382, 766);
+            this.tabSearch.Size = new System.Drawing.Size(1382, 771);
             this.tabSearch.TabIndex = 4;
             this.tabSearch.Text = "Results/Statistics";
             // 
@@ -5155,7 +5155,7 @@
             this.tabsSearch.Location = new System.Drawing.Point(0, 0);
             this.tabsSearch.Name = "tabsSearch";
             this.tabsSearch.SelectedIndex = 0;
-            this.tabsSearch.Size = new System.Drawing.Size(1382, 740);
+            this.tabsSearch.Size = new System.Drawing.Size(1382, 745);
             this.tabsSearch.TabIndex = 4;
             // 
             // tabSearchSearch
@@ -5164,9 +5164,9 @@
             this.tabSearchSearch.Controls.Add(this.gridSearchResult);
             this.tabSearchSearch.Controls.Add(this.toolStrip16);
             this.tabSearchSearch.Controls.Add(this.flowSearch);
-            this.tabSearchSearch.Location = new System.Drawing.Point(4, 24);
+            this.tabSearchSearch.Location = new System.Drawing.Point(4, 27);
             this.tabSearchSearch.Name = "tabSearchSearch";
-            this.tabSearchSearch.Size = new System.Drawing.Size(1374, 712);
+            this.tabSearchSearch.Size = new System.Drawing.Size(1374, 714);
             this.tabSearchSearch.TabIndex = 0;
             this.tabSearchSearch.Text = "Results";
             // 
@@ -5186,7 +5186,7 @@
             this.gridSearchResult.RowHeadersVisible = false;
             this.gridSearchResult.RowHeadersWidth = 62;
             this.gridSearchResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSearchResult.Size = new System.Drawing.Size(1374, 573);
+            this.gridSearchResult.Size = new System.Drawing.Size(1374, 575);
             this.gridSearchResult.TabIndex = 2;
             // 
             // toolStrip16
@@ -5209,14 +5209,14 @@
             // 
             this.toolStripLabel27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel27.Name = "toolStripLabel27";
-            this.toolStripLabel27.Size = new System.Drawing.Size(85, 28);
+            this.toolStripLabel27.Size = new System.Drawing.Size(106, 28);
             this.toolStripLabel27.Text = "Search results";
             // 
             // toolStripLabel26
             // 
             this.toolStripLabel26.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel26.Name = "toolStripLabel26";
-            this.toolStripLabel26.Size = new System.Drawing.Size(197, 28);
+            this.toolStripLabel26.Size = new System.Drawing.Size(248, 28);
             this.toolStripLabel26.Text = "Sigma Activity: 2, Sigma MDA: 1.645";
             // 
             // toolStripSeparator75
@@ -5229,7 +5229,7 @@
             this.btnResultsShowPdf.Image = global::DSA_lims.Properties.Resources.report;
             this.btnResultsShowPdf.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnResultsShowPdf.Name = "btnResultsShowPdf";
-            this.btnResultsShowPdf.Size = new System.Drawing.Size(139, 28);
+            this.btnResultsShowPdf.Size = new System.Drawing.Size(167, 28);
             this.btnResultsShowPdf.Text = "Show results as PDF";
             this.btnResultsShowPdf.Click += new System.EventHandler(this.miResultsShowPdf_Click);
             // 
@@ -5238,7 +5238,7 @@
             this.btnResultsShowMap.Image = global::DSA_lims.Properties.Resources.map;
             this.btnResultsShowMap.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnResultsShowMap.Name = "btnResultsShowMap";
-            this.btnResultsShowMap.Size = new System.Drawing.Size(154, 28);
+            this.btnResultsShowMap.Size = new System.Drawing.Size(186, 28);
             this.btnResultsShowMap.Text = "Show samples on map";
             this.btnResultsShowMap.Click += new System.EventHandler(this.miResultsShowMap_Click);
             // 
@@ -5285,7 +5285,7 @@
             this.cboxSearchSampleType.FormattingEnabled = true;
             this.cboxSearchSampleType.Location = new System.Drawing.Point(87, 0);
             this.cboxSearchSampleType.Name = "cboxSearchSampleType";
-            this.cboxSearchSampleType.Size = new System.Drawing.Size(282, 23);
+            this.cboxSearchSampleType.Size = new System.Drawing.Size(282, 26);
             this.cboxSearchSampleType.TabIndex = 2;
             this.cboxSearchSampleType.ValueMember = "Id";
             this.cboxSearchSampleType.SelectedIndexChanged += new System.EventHandler(this.cboxSearchSampleType_SelectedIndexChanged);
@@ -5317,7 +5317,7 @@
             this.cboxSearchProject.FormattingEnabled = true;
             this.cboxSearchProject.Location = new System.Drawing.Point(50, 0);
             this.cboxSearchProject.Name = "cboxSearchProject";
-            this.cboxSearchProject.Size = new System.Drawing.Size(193, 23);
+            this.cboxSearchProject.Size = new System.Drawing.Size(193, 26);
             this.cboxSearchProject.TabIndex = 1;
             this.cboxSearchProject.SelectedIndexChanged += new System.EventHandler(this.cboxSearchProject_SelectedIndexChanged);
             // 
@@ -5347,7 +5347,7 @@
             this.cboxSearchProjectSub.FormattingEnabled = true;
             this.cboxSearchProjectSub.Location = new System.Drawing.Point(76, 0);
             this.cboxSearchProjectSub.Name = "cboxSearchProjectSub";
-            this.cboxSearchProjectSub.Size = new System.Drawing.Size(197, 23);
+            this.cboxSearchProjectSub.Size = new System.Drawing.Size(197, 26);
             this.cboxSearchProjectSub.TabIndex = 1;
             this.cboxSearchProjectSub.SelectedIndexChanged += new System.EventHandler(this.cboxSearchProjectSub_SelectedIndexChanged);
             // 
@@ -5379,7 +5379,7 @@
             this.cboxSearchOrders.FormattingEnabled = true;
             this.cboxSearchOrders.Location = new System.Drawing.Point(44, 0);
             this.cboxSearchOrders.Name = "cboxSearchOrders";
-            this.cboxSearchOrders.Size = new System.Drawing.Size(195, 23);
+            this.cboxSearchOrders.Size = new System.Drawing.Size(195, 26);
             this.cboxSearchOrders.TabIndex = 1;
             this.cboxSearchOrders.ValueMember = "Id";
             this.cboxSearchOrders.SelectedIndexChanged += new System.EventHandler(this.cboxSearchOrders_SelectedIndexChanged);
@@ -5411,7 +5411,7 @@
             this.cboxSearchStations.FormattingEnabled = true;
             this.cboxSearchStations.Location = new System.Drawing.Point(48, 0);
             this.cboxSearchStations.Name = "cboxSearchStations";
-            this.cboxSearchStations.Size = new System.Drawing.Size(199, 23);
+            this.cboxSearchStations.Size = new System.Drawing.Size(199, 26);
             this.cboxSearchStations.TabIndex = 1;
             this.cboxSearchStations.SelectedIndexChanged += new System.EventHandler(this.cboxSearchStations_SelectedIndexChanged);
             // 
@@ -5441,7 +5441,7 @@
             this.cboxSearchNuclides.FormattingEnabled = true;
             this.cboxSearchNuclides.Location = new System.Drawing.Point(65, 0);
             this.cboxSearchNuclides.Name = "cboxSearchNuclides";
-            this.cboxSearchNuclides.Size = new System.Drawing.Size(141, 23);
+            this.cboxSearchNuclides.Size = new System.Drawing.Size(141, 26);
             this.cboxSearchNuclides.TabIndex = 1;
             this.cboxSearchNuclides.SelectedIndexChanged += new System.EventHandler(this.cboxSearchNuclides_SelectedIndexChanged);
             // 
@@ -5470,7 +5470,7 @@
             this.tbSearchActMin.Location = new System.Drawing.Point(63, 0);
             this.tbSearchActMin.MaxLength = 32;
             this.tbSearchActMin.Name = "tbSearchActMin";
-            this.tbSearchActMin.Size = new System.Drawing.Size(119, 21);
+            this.tbSearchActMin.Size = new System.Drawing.Size(119, 24);
             this.tbSearchActMin.TabIndex = 4;
             this.tbSearchActMin.TextChanged += new System.EventHandler(this.tbSearchActMin_TextChanged);
             // 
@@ -5499,7 +5499,7 @@
             this.tbSearchActMax.Location = new System.Drawing.Point(66, 0);
             this.tbSearchActMax.MaxLength = 32;
             this.tbSearchActMax.Name = "tbSearchActMax";
-            this.tbSearchActMax.Size = new System.Drawing.Size(121, 21);
+            this.tbSearchActMax.Size = new System.Drawing.Size(121, 24);
             this.tbSearchActMax.TabIndex = 1;
             this.tbSearchActMax.TextChanged += new System.EventHandler(this.tbSearchActMax_TextChanged);
             // 
@@ -5619,7 +5619,7 @@
             "10000"});
             this.cboxSearchMaxShown.Location = new System.Drawing.Point(117, 0);
             this.cboxSearchMaxShown.Name = "cboxSearchMaxShown";
-            this.cboxSearchMaxShown.Size = new System.Drawing.Size(130, 23);
+            this.cboxSearchMaxShown.Size = new System.Drawing.Size(130, 26);
             this.cboxSearchMaxShown.TabIndex = 1;
             // 
             // label48
@@ -5646,9 +5646,9 @@
             // 
             this.tabSearchStatistics.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSearchStatistics.Controls.Add(this.flowStatistics);
-            this.tabSearchStatistics.Location = new System.Drawing.Point(4, 24);
+            this.tabSearchStatistics.Location = new System.Drawing.Point(4, 27);
             this.tabSearchStatistics.Name = "tabSearchStatistics";
-            this.tabSearchStatistics.Size = new System.Drawing.Size(1374, 707);
+            this.tabSearchStatistics.Size = new System.Drawing.Size(1374, 717);
             this.tabSearchStatistics.TabIndex = 1;
             this.tabSearchStatistics.Text = "Statistics";
             // 
@@ -5659,7 +5659,7 @@
             this.flowStatistics.Location = new System.Drawing.Point(0, 0);
             this.flowStatistics.Name = "flowStatistics";
             this.flowStatistics.Padding = new System.Windows.Forms.Padding(12);
-            this.flowStatistics.Size = new System.Drawing.Size(1374, 707);
+            this.flowStatistics.Size = new System.Drawing.Size(1374, 717);
             this.flowStatistics.TabIndex = 0;
             // 
             // btnSearchAssignedWork
@@ -5676,7 +5676,7 @@
             // 
             this.panel17.Controls.Add(this.btnSearchClose);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel17.Location = new System.Drawing.Point(0, 740);
+            this.panel17.Location = new System.Drawing.Point(0, 745);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(1382, 26);
             this.panel17.TabIndex = 0;
@@ -5696,9 +5696,9 @@
             // 
             this.tabMetadata.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabMetadata.Controls.Add(this.tabsMeta);
-            this.tabMetadata.Location = new System.Drawing.Point(4, 24);
+            this.tabMetadata.Location = new System.Drawing.Point(4, 27);
             this.tabMetadata.Name = "tabMetadata";
-            this.tabMetadata.Size = new System.Drawing.Size(1382, 766);
+            this.tabMetadata.Size = new System.Drawing.Size(1382, 771);
             this.tabMetadata.TabIndex = 5;
             this.tabMetadata.Text = "Metadata";
             // 
@@ -5716,7 +5716,7 @@
             this.tabsMeta.Location = new System.Drawing.Point(0, 0);
             this.tabsMeta.Name = "tabsMeta";
             this.tabsMeta.SelectedIndex = 0;
-            this.tabsMeta.Size = new System.Drawing.Size(1382, 766);
+            this.tabsMeta.Size = new System.Drawing.Size(1382, 771);
             this.tabsMeta.TabIndex = 2;
             this.tabsMeta.SelectedIndexChanged += new System.EventHandler(this.tabsMeta_SelectedIndexChanged);
             // 
@@ -5725,9 +5725,9 @@
             this.tabMetaStations.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabMetaStations.Controls.Add(this.gridMetaStation);
             this.tabMetaStations.Controls.Add(this.toolsMetaStations);
-            this.tabMetaStations.Location = new System.Drawing.Point(4, 24);
+            this.tabMetaStations.Location = new System.Drawing.Point(4, 27);
             this.tabMetaStations.Name = "tabMetaStations";
-            this.tabMetaStations.Size = new System.Drawing.Size(1374, 738);
+            this.tabMetaStations.Size = new System.Drawing.Size(1374, 740);
             this.tabMetaStations.TabIndex = 5;
             this.tabMetaStations.Text = "Stations";
             // 
@@ -5747,7 +5747,7 @@
             this.gridMetaStation.RowHeadersVisible = false;
             this.gridMetaStation.RowHeadersWidth = 62;
             this.gridMetaStation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMetaStation.Size = new System.Drawing.Size(1374, 707);
+            this.gridMetaStation.Size = new System.Drawing.Size(1374, 709);
             this.gridMetaStation.TabIndex = 0;
             // 
             // toolsMetaStations
@@ -5770,7 +5770,7 @@
             // 
             this.toolStripLabel36.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel36.Name = "toolStripLabel36";
-            this.toolStripLabel36.Size = new System.Drawing.Size(52, 28);
+            this.toolStripLabel36.Size = new System.Drawing.Size(66, 28);
             this.toolStripLabel36.Text = "Stations";
             // 
             // toolStripSeparator17
@@ -5783,7 +5783,7 @@
             this.toolStripButton64.Image = global::DSA_lims.Properties.Resources.new1;
             this.toolStripButton64.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton64.Name = "toolStripButton64";
-            this.toolStripButton64.Size = new System.Drawing.Size(59, 28);
+            this.toolStripButton64.Size = new System.Drawing.Size(67, 28);
             this.toolStripButton64.Text = "New";
             this.toolStripButton64.Click += new System.EventHandler(this.miNewStation_Click);
             // 
@@ -5792,7 +5792,7 @@
             this.toolStripButton65.Image = global::DSA_lims.Properties.Resources.edit;
             this.toolStripButton65.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton65.Name = "toolStripButton65";
-            this.toolStripButton65.Size = new System.Drawing.Size(55, 28);
+            this.toolStripButton65.Size = new System.Drawing.Size(63, 28);
             this.toolStripButton65.Text = "Edit";
             this.toolStripButton65.Click += new System.EventHandler(this.miEditStation_Click);
             // 
@@ -5801,7 +5801,7 @@
             this.toolStripButton66.Image = global::DSA_lims.Properties.Resources.delete;
             this.toolStripButton66.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton66.Name = "toolStripButton66";
-            this.toolStripButton66.Size = new System.Drawing.Size(68, 28);
+            this.toolStripButton66.Size = new System.Drawing.Size(81, 28);
             this.toolStripButton66.Text = "Delete";
             this.toolStripButton66.Click += new System.EventHandler(this.miDeleteStation_Click);
             // 
@@ -5810,9 +5810,9 @@
             this.tabMetaSampleStorage.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabMetaSampleStorage.Controls.Add(this.gridMetaSampleStorage);
             this.tabMetaSampleStorage.Controls.Add(this.toolsMetaSampStorage);
-            this.tabMetaSampleStorage.Location = new System.Drawing.Point(4, 24);
+            this.tabMetaSampleStorage.Location = new System.Drawing.Point(4, 27);
             this.tabMetaSampleStorage.Name = "tabMetaSampleStorage";
-            this.tabMetaSampleStorage.Size = new System.Drawing.Size(1374, 733);
+            this.tabMetaSampleStorage.Size = new System.Drawing.Size(1374, 743);
             this.tabMetaSampleStorage.TabIndex = 6;
             this.tabMetaSampleStorage.Text = "Sample storage";
             // 
@@ -5833,7 +5833,7 @@
             this.gridMetaSampleStorage.RowHeadersVisible = false;
             this.gridMetaSampleStorage.RowHeadersWidth = 62;
             this.gridMetaSampleStorage.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMetaSampleStorage.Size = new System.Drawing.Size(1374, 702);
+            this.gridMetaSampleStorage.Size = new System.Drawing.Size(1374, 712);
             this.gridMetaSampleStorage.TabIndex = 0;
             // 
             // toolsMetaSampStorage
@@ -5856,7 +5856,7 @@
             // 
             this.toolStripLabel37.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel37.Name = "toolStripLabel37";
-            this.toolStripLabel37.Size = new System.Drawing.Size(93, 28);
+            this.toolStripLabel37.Size = new System.Drawing.Size(117, 28);
             this.toolStripLabel37.Text = "Sample storage";
             // 
             // toolStripSeparator18
@@ -5869,7 +5869,7 @@
             this.toolStripButton67.Image = global::DSA_lims.Properties.Resources.new1;
             this.toolStripButton67.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton67.Name = "toolStripButton67";
-            this.toolStripButton67.Size = new System.Drawing.Size(59, 28);
+            this.toolStripButton67.Size = new System.Drawing.Size(67, 28);
             this.toolStripButton67.Text = "New";
             this.toolStripButton67.Click += new System.EventHandler(this.miNewSampleStorage_Click);
             // 
@@ -5878,7 +5878,7 @@
             this.toolStripButton68.Image = global::DSA_lims.Properties.Resources.edit;
             this.toolStripButton68.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton68.Name = "toolStripButton68";
-            this.toolStripButton68.Size = new System.Drawing.Size(55, 28);
+            this.toolStripButton68.Size = new System.Drawing.Size(63, 28);
             this.toolStripButton68.Text = "Edit";
             this.toolStripButton68.Click += new System.EventHandler(this.miEditSampleStorage_Click);
             // 
@@ -5887,7 +5887,7 @@
             this.toolStripButton69.Image = global::DSA_lims.Properties.Resources.delete;
             this.toolStripButton69.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton69.Name = "toolStripButton69";
-            this.toolStripButton69.Size = new System.Drawing.Size(68, 28);
+            this.toolStripButton69.Size = new System.Drawing.Size(81, 28);
             this.toolStripButton69.Text = "Delete";
             this.toolStripButton69.Click += new System.EventHandler(this.miDeleteSampleStorage_Click);
             // 
@@ -5895,9 +5895,9 @@
             // 
             this.tabMetaUnits.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabMetaUnits.Controls.Add(this.splitContainer22);
-            this.tabMetaUnits.Location = new System.Drawing.Point(4, 24);
+            this.tabMetaUnits.Location = new System.Drawing.Point(4, 27);
             this.tabMetaUnits.Name = "tabMetaUnits";
-            this.tabMetaUnits.Size = new System.Drawing.Size(1374, 733);
+            this.tabMetaUnits.Size = new System.Drawing.Size(1374, 743);
             this.tabMetaUnits.TabIndex = 9;
             this.tabMetaUnits.Text = "Units";
             // 
@@ -5914,7 +5914,7 @@
             // splitContainer22.Panel2
             // 
             this.splitContainer22.Panel2.Controls.Add(this.splitContainer5);
-            this.splitContainer22.Size = new System.Drawing.Size(1374, 733);
+            this.splitContainer22.Size = new System.Drawing.Size(1374, 743);
             this.splitContainer22.SplitterDistance = 642;
             this.splitContainer22.SplitterWidth = 3;
             this.splitContainer22.TabIndex = 4;
@@ -5935,8 +5935,8 @@
             // 
             this.splitContainer6.Panel2.Controls.Add(this.gridMetaUnitQuantUnits);
             this.splitContainer6.Panel2.Controls.Add(this.toolStrip13);
-            this.splitContainer6.Size = new System.Drawing.Size(642, 733);
-            this.splitContainer6.SplitterDistance = 338;
+            this.splitContainer6.Size = new System.Drawing.Size(642, 743);
+            this.splitContainer6.SplitterDistance = 341;
             this.splitContainer6.TabIndex = 4;
             // 
             // gridMetaUnitPrepUnits
@@ -5956,7 +5956,7 @@
             this.gridMetaUnitPrepUnits.RowHeadersVisible = false;
             this.gridMetaUnitPrepUnits.RowHeadersWidth = 62;
             this.gridMetaUnitPrepUnits.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMetaUnitPrepUnits.Size = new System.Drawing.Size(642, 307);
+            this.gridMetaUnitPrepUnits.Size = new System.Drawing.Size(642, 310);
             this.gridMetaUnitPrepUnits.TabIndex = 3;
             // 
             // toolsMetaUnits
@@ -5978,7 +5978,7 @@
             // 
             this.toolStripLabel38.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel38.Name = "toolStripLabel38";
-            this.toolStripLabel38.Size = new System.Drawing.Size(102, 28);
+            this.toolStripLabel38.Size = new System.Drawing.Size(130, 28);
             this.toolStripLabel38.Text = "Preparation units";
             // 
             // toolStripSeparator19
@@ -5992,7 +5992,7 @@
             this.btnMetaUnitPrepUnitsNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnMetaUnitPrepUnitsNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUnitPrepUnitsNew.Name = "btnMetaUnitPrepUnitsNew";
-            this.btnMetaUnitPrepUnitsNew.Size = new System.Drawing.Size(59, 28);
+            this.btnMetaUnitPrepUnitsNew.Size = new System.Drawing.Size(67, 28);
             this.btnMetaUnitPrepUnitsNew.Text = "New";
             // 
             // btnMetaUnitPrepUnitsEdit
@@ -6001,7 +6001,7 @@
             this.btnMetaUnitPrepUnitsEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnMetaUnitPrepUnitsEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUnitPrepUnitsEdit.Name = "btnMetaUnitPrepUnitsEdit";
-            this.btnMetaUnitPrepUnitsEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnMetaUnitPrepUnitsEdit.Size = new System.Drawing.Size(63, 28);
             this.btnMetaUnitPrepUnitsEdit.Text = "Edit";
             // 
             // gridMetaUnitQuantUnits
@@ -6021,7 +6021,7 @@
             this.gridMetaUnitQuantUnits.RowHeadersVisible = false;
             this.gridMetaUnitQuantUnits.RowHeadersWidth = 62;
             this.gridMetaUnitQuantUnits.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMetaUnitQuantUnits.Size = new System.Drawing.Size(642, 360);
+            this.gridMetaUnitQuantUnits.Size = new System.Drawing.Size(642, 367);
             this.gridMetaUnitQuantUnits.TabIndex = 4;
             // 
             // toolStrip13
@@ -6043,7 +6043,7 @@
             // 
             this.toolStripLabel42.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel42.Name = "toolStripLabel42";
-            this.toolStripLabel42.Size = new System.Drawing.Size(85, 28);
+            this.toolStripLabel42.Size = new System.Drawing.Size(109, 28);
             this.toolStripLabel42.Text = "Quantity units";
             // 
             // toolStripSeparator22
@@ -6057,7 +6057,7 @@
             this.btnMetaUnitQuantUnitsNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnMetaUnitQuantUnitsNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUnitQuantUnitsNew.Name = "btnMetaUnitQuantUnitsNew";
-            this.btnMetaUnitQuantUnitsNew.Size = new System.Drawing.Size(59, 28);
+            this.btnMetaUnitQuantUnitsNew.Size = new System.Drawing.Size(67, 28);
             this.btnMetaUnitQuantUnitsNew.Text = "New";
             // 
             // btnMetaUnitQuantUnitsEdit
@@ -6066,7 +6066,7 @@
             this.btnMetaUnitQuantUnitsEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnMetaUnitQuantUnitsEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUnitQuantUnitsEdit.Name = "btnMetaUnitQuantUnitsEdit";
-            this.btnMetaUnitQuantUnitsEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnMetaUnitQuantUnitsEdit.Size = new System.Drawing.Size(63, 28);
             this.btnMetaUnitQuantUnitsEdit.Text = "Edit";
             // 
             // splitContainer5
@@ -6085,8 +6085,8 @@
             // 
             this.splitContainer5.Panel2.Controls.Add(this.gridMetaUnitActivityUnitTypes);
             this.splitContainer5.Panel2.Controls.Add(this.toolStrip12);
-            this.splitContainer5.Size = new System.Drawing.Size(729, 733);
-            this.splitContainer5.SplitterDistance = 338;
+            this.splitContainer5.Size = new System.Drawing.Size(729, 743);
+            this.splitContainer5.SplitterDistance = 341;
             this.splitContainer5.TabIndex = 2;
             // 
             // gridMetaUnitActivityUnits
@@ -6106,7 +6106,7 @@
             this.gridMetaUnitActivityUnits.RowHeadersVisible = false;
             this.gridMetaUnitActivityUnits.RowHeadersWidth = 62;
             this.gridMetaUnitActivityUnits.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMetaUnitActivityUnits.Size = new System.Drawing.Size(729, 307);
+            this.gridMetaUnitActivityUnits.Size = new System.Drawing.Size(729, 310);
             this.gridMetaUnitActivityUnits.TabIndex = 1;
             // 
             // toolStrip2
@@ -6128,7 +6128,7 @@
             // 
             this.toolStripLabel60.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel60.Name = "toolStripLabel60";
-            this.toolStripLabel60.Size = new System.Drawing.Size(80, 28);
+            this.toolStripLabel60.Size = new System.Drawing.Size(102, 28);
             this.toolStripLabel60.Text = "Activity units";
             // 
             // toolStripSeparator51
@@ -6142,7 +6142,7 @@
             this.btnMetaUnitActivityUnitsNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnMetaUnitActivityUnitsNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUnitActivityUnitsNew.Name = "btnMetaUnitActivityUnitsNew";
-            this.btnMetaUnitActivityUnitsNew.Size = new System.Drawing.Size(59, 28);
+            this.btnMetaUnitActivityUnitsNew.Size = new System.Drawing.Size(67, 28);
             this.btnMetaUnitActivityUnitsNew.Text = "New";
             // 
             // btnMetaUnitActivityUnitsEdit
@@ -6151,7 +6151,7 @@
             this.btnMetaUnitActivityUnitsEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnMetaUnitActivityUnitsEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUnitActivityUnitsEdit.Name = "btnMetaUnitActivityUnitsEdit";
-            this.btnMetaUnitActivityUnitsEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnMetaUnitActivityUnitsEdit.Size = new System.Drawing.Size(63, 28);
             this.btnMetaUnitActivityUnitsEdit.Text = "Edit";
             // 
             // gridMetaUnitActivityUnitTypes
@@ -6171,7 +6171,7 @@
             this.gridMetaUnitActivityUnitTypes.RowHeadersVisible = false;
             this.gridMetaUnitActivityUnitTypes.RowHeadersWidth = 62;
             this.gridMetaUnitActivityUnitTypes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMetaUnitActivityUnitTypes.Size = new System.Drawing.Size(729, 360);
+            this.gridMetaUnitActivityUnitTypes.Size = new System.Drawing.Size(729, 367);
             this.gridMetaUnitActivityUnitTypes.TabIndex = 2;
             // 
             // toolStrip12
@@ -6193,7 +6193,7 @@
             // 
             this.toolStripLabel12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel12.Name = "toolStripLabel12";
-            this.toolStripLabel12.Size = new System.Drawing.Size(108, 28);
+            this.toolStripLabel12.Size = new System.Drawing.Size(137, 28);
             this.toolStripLabel12.Text = "Activity unit types";
             // 
             // toolStripSeparator5
@@ -6207,7 +6207,7 @@
             this.btnMetaUnitActivityUnitTypesNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnMetaUnitActivityUnitTypesNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUnitActivityUnitTypesNew.Name = "btnMetaUnitActivityUnitTypesNew";
-            this.btnMetaUnitActivityUnitTypesNew.Size = new System.Drawing.Size(59, 28);
+            this.btnMetaUnitActivityUnitTypesNew.Size = new System.Drawing.Size(67, 28);
             this.btnMetaUnitActivityUnitTypesNew.Text = "New";
             // 
             // btnMetaUnitActivityUnitTypesEdit
@@ -6216,7 +6216,7 @@
             this.btnMetaUnitActivityUnitTypesEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnMetaUnitActivityUnitTypesEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUnitActivityUnitTypesEdit.Name = "btnMetaUnitActivityUnitTypesEdit";
-            this.btnMetaUnitActivityUnitTypesEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnMetaUnitActivityUnitTypesEdit.Size = new System.Drawing.Size(63, 28);
             this.btnMetaUnitActivityUnitTypesEdit.Text = "Edit";
             // 
             // tabMetaSamplers
@@ -6224,9 +6224,9 @@
             this.tabMetaSamplers.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabMetaSamplers.Controls.Add(this.gridMetaSamplers);
             this.tabMetaSamplers.Controls.Add(this.toolsMetaSamplers);
-            this.tabMetaSamplers.Location = new System.Drawing.Point(4, 24);
+            this.tabMetaSamplers.Location = new System.Drawing.Point(4, 27);
             this.tabMetaSamplers.Name = "tabMetaSamplers";
-            this.tabMetaSamplers.Size = new System.Drawing.Size(1374, 733);
+            this.tabMetaSamplers.Size = new System.Drawing.Size(1374, 743);
             this.tabMetaSamplers.TabIndex = 12;
             this.tabMetaSamplers.Text = "Samplers";
             // 
@@ -6247,7 +6247,7 @@
             this.gridMetaSamplers.RowHeadersVisible = false;
             this.gridMetaSamplers.RowHeadersWidth = 62;
             this.gridMetaSamplers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMetaSamplers.Size = new System.Drawing.Size(1374, 702);
+            this.gridMetaSamplers.Size = new System.Drawing.Size(1374, 712);
             this.gridMetaSamplers.TabIndex = 0;
             // 
             // toolsMetaSamplers
@@ -6270,7 +6270,7 @@
             // 
             this.toolStripLabel39.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel39.Name = "toolStripLabel39";
-            this.toolStripLabel39.Size = new System.Drawing.Size(58, 28);
+            this.toolStripLabel39.Size = new System.Drawing.Size(73, 28);
             this.toolStripLabel39.Text = "Samplers";
             // 
             // toolStripSeparator20
@@ -6283,7 +6283,7 @@
             this.toolStripButton62.Image = global::DSA_lims.Properties.Resources.new1;
             this.toolStripButton62.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton62.Name = "toolStripButton62";
-            this.toolStripButton62.Size = new System.Drawing.Size(59, 28);
+            this.toolStripButton62.Size = new System.Drawing.Size(67, 28);
             this.toolStripButton62.Text = "New";
             this.toolStripButton62.Click += new System.EventHandler(this.miSamplerNew_Click);
             // 
@@ -6292,7 +6292,7 @@
             this.toolStripButton63.Image = global::DSA_lims.Properties.Resources.edit;
             this.toolStripButton63.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton63.Name = "toolStripButton63";
-            this.toolStripButton63.Size = new System.Drawing.Size(55, 28);
+            this.toolStripButton63.Size = new System.Drawing.Size(63, 28);
             this.toolStripButton63.Text = "Edit";
             this.toolStripButton63.Click += new System.EventHandler(this.miSamplerEdit_Click);
             // 
@@ -6301,7 +6301,7 @@
             this.toolStripButton75.Image = global::DSA_lims.Properties.Resources.delete;
             this.toolStripButton75.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton75.Name = "toolStripButton75";
-            this.toolStripButton75.Size = new System.Drawing.Size(68, 28);
+            this.toolStripButton75.Size = new System.Drawing.Size(81, 28);
             this.toolStripButton75.Text = "Delete";
             this.toolStripButton75.Click += new System.EventHandler(this.miSamplerDelete_Click);
             // 
@@ -6310,9 +6310,9 @@
             this.tabMetaSamplingMeth.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabMetaSamplingMeth.Controls.Add(this.gridMetaSamplingMeth);
             this.tabMetaSamplingMeth.Controls.Add(this.toolsMetaSampMeth);
-            this.tabMetaSamplingMeth.Location = new System.Drawing.Point(4, 24);
+            this.tabMetaSamplingMeth.Location = new System.Drawing.Point(4, 27);
             this.tabMetaSamplingMeth.Name = "tabMetaSamplingMeth";
-            this.tabMetaSamplingMeth.Size = new System.Drawing.Size(1374, 733);
+            this.tabMetaSamplingMeth.Size = new System.Drawing.Size(1374, 743);
             this.tabMetaSamplingMeth.TabIndex = 13;
             this.tabMetaSamplingMeth.Text = "Sampling methods";
             // 
@@ -6333,7 +6333,7 @@
             this.gridMetaSamplingMeth.RowHeadersVisible = false;
             this.gridMetaSamplingMeth.RowHeadersWidth = 62;
             this.gridMetaSamplingMeth.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMetaSamplingMeth.Size = new System.Drawing.Size(1374, 702);
+            this.gridMetaSamplingMeth.Size = new System.Drawing.Size(1374, 712);
             this.gridMetaSamplingMeth.TabIndex = 3;
             // 
             // toolsMetaSampMeth
@@ -6356,7 +6356,7 @@
             // 
             this.toolStripLabel40.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel40.Name = "toolStripLabel40";
-            this.toolStripLabel40.Size = new System.Drawing.Size(110, 28);
+            this.toolStripLabel40.Size = new System.Drawing.Size(140, 28);
             this.toolStripLabel40.Text = "Sampling methods";
             // 
             // toolStripSeparator21
@@ -6369,7 +6369,7 @@
             this.toolStripButton82.Image = global::DSA_lims.Properties.Resources.new1;
             this.toolStripButton82.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton82.Name = "toolStripButton82";
-            this.toolStripButton82.Size = new System.Drawing.Size(59, 28);
+            this.toolStripButton82.Size = new System.Drawing.Size(67, 28);
             this.toolStripButton82.Text = "New";
             this.toolStripButton82.Click += new System.EventHandler(this.miSamplingMethodNew_Click);
             // 
@@ -6378,7 +6378,7 @@
             this.toolStripButton83.Image = global::DSA_lims.Properties.Resources.edit;
             this.toolStripButton83.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton83.Name = "toolStripButton83";
-            this.toolStripButton83.Size = new System.Drawing.Size(55, 28);
+            this.toolStripButton83.Size = new System.Drawing.Size(63, 28);
             this.toolStripButton83.Text = "Edit";
             this.toolStripButton83.Click += new System.EventHandler(this.miSamplingMethodEdit_Click);
             // 
@@ -6387,7 +6387,7 @@
             this.toolStripButton84.Image = global::DSA_lims.Properties.Resources.delete;
             this.toolStripButton84.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton84.Name = "toolStripButton84";
-            this.toolStripButton84.Size = new System.Drawing.Size(68, 28);
+            this.toolStripButton84.Size = new System.Drawing.Size(81, 28);
             this.toolStripButton84.Text = "Delete";
             this.toolStripButton84.Click += new System.EventHandler(this.miSamplingMethodDelete_Click);
             // 
@@ -6396,9 +6396,9 @@
             this.tabMetaCompanies.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabMetaCompanies.Controls.Add(this.gridMetaCompanies);
             this.tabMetaCompanies.Controls.Add(this.toolStrip15);
-            this.tabMetaCompanies.Location = new System.Drawing.Point(4, 24);
+            this.tabMetaCompanies.Location = new System.Drawing.Point(4, 27);
             this.tabMetaCompanies.Name = "tabMetaCompanies";
-            this.tabMetaCompanies.Size = new System.Drawing.Size(1374, 733);
+            this.tabMetaCompanies.Size = new System.Drawing.Size(1374, 743);
             this.tabMetaCompanies.TabIndex = 14;
             this.tabMetaCompanies.Text = "Companies";
             // 
@@ -6419,7 +6419,7 @@
             this.gridMetaCompanies.RowHeadersVisible = false;
             this.gridMetaCompanies.RowHeadersWidth = 62;
             this.gridMetaCompanies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMetaCompanies.Size = new System.Drawing.Size(1374, 702);
+            this.gridMetaCompanies.Size = new System.Drawing.Size(1374, 712);
             this.gridMetaCompanies.TabIndex = 3;
             // 
             // toolStrip15
@@ -6442,7 +6442,7 @@
             // 
             this.toolStripLabel46.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel46.Name = "toolStripLabel46";
-            this.toolStripLabel46.Size = new System.Drawing.Size(58, 28);
+            this.toolStripLabel46.Size = new System.Drawing.Size(73, 28);
             this.toolStripLabel46.Text = "Samplers";
             // 
             // toolStripSeparator59
@@ -6455,7 +6455,7 @@
             this.toolStripButton14.Image = global::DSA_lims.Properties.Resources.new1;
             this.toolStripButton14.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton14.Name = "toolStripButton14";
-            this.toolStripButton14.Size = new System.Drawing.Size(59, 28);
+            this.toolStripButton14.Size = new System.Drawing.Size(67, 28);
             this.toolStripButton14.Text = "New";
             this.toolStripButton14.Click += new System.EventHandler(this.miCompanyNew_Click);
             // 
@@ -6464,7 +6464,7 @@
             this.toolStripButton15.Image = global::DSA_lims.Properties.Resources.edit;
             this.toolStripButton15.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton15.Name = "toolStripButton15";
-            this.toolStripButton15.Size = new System.Drawing.Size(55, 28);
+            this.toolStripButton15.Size = new System.Drawing.Size(63, 28);
             this.toolStripButton15.Text = "Edit";
             this.toolStripButton15.Click += new System.EventHandler(this.miCompanyEdit_Click);
             // 
@@ -6473,7 +6473,7 @@
             this.toolStripButton25.Image = global::DSA_lims.Properties.Resources.delete;
             this.toolStripButton25.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton25.Name = "toolStripButton25";
-            this.toolStripButton25.Size = new System.Drawing.Size(68, 28);
+            this.toolStripButton25.Size = new System.Drawing.Size(81, 28);
             this.toolStripButton25.Text = "Delete";
             this.toolStripButton25.Click += new System.EventHandler(this.miCompanyDelete_Click);
             // 
@@ -6482,9 +6482,9 @@
             this.tabCustomers.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabCustomers.Controls.Add(this.gridCustomers);
             this.tabCustomers.Controls.Add(this.toolsCust);
-            this.tabCustomers.Location = new System.Drawing.Point(4, 24);
+            this.tabCustomers.Location = new System.Drawing.Point(4, 27);
             this.tabCustomers.Name = "tabCustomers";
-            this.tabCustomers.Size = new System.Drawing.Size(1374, 733);
+            this.tabCustomers.Size = new System.Drawing.Size(1374, 743);
             this.tabCustomers.TabIndex = 15;
             this.tabCustomers.Text = "Customers";
             // 
@@ -6505,7 +6505,7 @@
             this.gridCustomers.RowHeadersVisible = false;
             this.gridCustomers.RowHeadersWidth = 62;
             this.gridCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridCustomers.Size = new System.Drawing.Size(1374, 702);
+            this.gridCustomers.Size = new System.Drawing.Size(1374, 712);
             this.gridCustomers.TabIndex = 1;
             // 
             // toolsCust
@@ -6528,7 +6528,7 @@
             // 
             this.toolStripLabel45.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel45.Name = "toolStripLabel45";
-            this.toolStripLabel45.Size = new System.Drawing.Size(66, 28);
+            this.toolStripLabel45.Size = new System.Drawing.Size(84, 28);
             this.toolStripLabel45.Text = "Customers";
             // 
             // toolStripSeparator33
@@ -6541,7 +6541,7 @@
             this.btnCustomersNew.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomersNew.Image")));
             this.btnCustomersNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCustomersNew.Name = "btnCustomersNew";
-            this.btnCustomersNew.Size = new System.Drawing.Size(57, 28);
+            this.btnCustomersNew.Size = new System.Drawing.Size(65, 28);
             this.btnCustomersNew.Text = "Add";
             this.btnCustomersNew.Click += new System.EventHandler(this.miCustomersNew_Click);
             // 
@@ -6550,7 +6550,7 @@
             this.btnCustomersEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomersEdit.Image")));
             this.btnCustomersEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCustomersEdit.Name = "btnCustomersEdit";
-            this.btnCustomersEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnCustomersEdit.Size = new System.Drawing.Size(63, 28);
             this.btnCustomersEdit.Text = "Edit";
             this.btnCustomersEdit.Click += new System.EventHandler(this.miCustomersEdit_Click);
             // 
@@ -6559,7 +6559,7 @@
             this.btnCustomersDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomersDelete.Image")));
             this.btnCustomersDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCustomersDelete.Name = "btnCustomersDelete";
-            this.btnCustomersDelete.Size = new System.Drawing.Size(68, 28);
+            this.btnCustomersDelete.Size = new System.Drawing.Size(81, 28);
             this.btnCustomersDelete.Text = "Delete";
             this.btnCustomersDelete.Click += new System.EventHandler(this.miCustomersDelete_Click);
             // 
@@ -6569,10 +6569,10 @@
             this.tabsISO.Controls.Add(this.panel68);
             this.tabsISO.Controls.Add(this.panel62);
             this.tabsISO.Controls.Add(this.panel50);
-            this.tabsISO.Location = new System.Drawing.Point(4, 24);
+            this.tabsISO.Location = new System.Drawing.Point(4, 27);
             this.tabsISO.Name = "tabsISO";
             this.tabsISO.Padding = new System.Windows.Forms.Padding(12);
-            this.tabsISO.Size = new System.Drawing.Size(1374, 733);
+            this.tabsISO.Size = new System.Drawing.Size(1374, 743);
             this.tabsISO.TabIndex = 16;
             this.tabsISO.Text = "Report";
             // 
@@ -6611,7 +6611,7 @@
             this.tbReportISO.Location = new System.Drawing.Point(0, 0);
             this.tbReportISO.MaxLength = 500;
             this.tbReportISO.Name = "tbReportISO";
-            this.tbReportISO.Size = new System.Drawing.Size(1350, 21);
+            this.tbReportISO.Size = new System.Drawing.Size(1350, 24);
             this.tbReportISO.TabIndex = 2;
             this.tbReportISO.Text = "Deteksjonsgrenser (MDA) er for HPGe analyser beregnet i henhold til ISO 11929-1:2" +
     "021 og Currie for NaI analyser.";
@@ -6631,7 +6631,7 @@
             this.label68.Dock = System.Windows.Forms.DockStyle.Left;
             this.label68.Location = new System.Drawing.Point(0, 0);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(219, 15);
+            this.label68.Size = new System.Drawing.Size(269, 18);
             this.label68.TabIndex = 0;
             this.label68.Text = "Set ISO description for analysis reports ";
             // 
@@ -6641,9 +6641,9 @@
             this.tabOrders.Controls.Add(this.panel2);
             this.tabOrders.Controls.Add(this.flowLayoutPanel1);
             this.tabOrders.Controls.Add(this.toolsOrders);
-            this.tabOrders.Location = new System.Drawing.Point(4, 24);
+            this.tabOrders.Location = new System.Drawing.Point(4, 27);
             this.tabOrders.Name = "tabOrders";
-            this.tabOrders.Size = new System.Drawing.Size(1382, 774);
+            this.tabOrders.Size = new System.Drawing.Size(1382, 771);
             this.tabOrders.TabIndex = 6;
             this.tabOrders.Text = "Orders";
             // 
@@ -6654,7 +6654,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 86);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1382, 688);
+            this.panel2.Size = new System.Drawing.Size(1382, 685);
             this.panel2.TabIndex = 3;
             // 
             // gridOrders
@@ -6674,7 +6674,7 @@
             this.gridOrders.RowHeadersVisible = false;
             this.gridOrders.RowHeadersWidth = 62;
             this.gridOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridOrders.Size = new System.Drawing.Size(1382, 657);
+            this.gridOrders.Size = new System.Drawing.Size(1382, 654);
             this.gridOrders.TabIndex = 2;
             // 
             // toolStrip9
@@ -6703,7 +6703,7 @@
             // 
             this.toolStripLabel44.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel44.Name = "toolStripLabel44";
-            this.toolStripLabel44.Size = new System.Drawing.Size(45, 28);
+            this.toolStripLabel44.Size = new System.Drawing.Size(56, 28);
             this.toolStripLabel44.Text = "Orders";
             // 
             // toolStripSeparator64
@@ -6716,7 +6716,7 @@
             this.btnOrdersNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnOrdersNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrdersNew.Name = "btnOrdersNew";
-            this.btnOrdersNew.Size = new System.Drawing.Size(59, 28);
+            this.btnOrdersNew.Size = new System.Drawing.Size(67, 28);
             this.btnOrdersNew.Text = "New";
             this.btnOrdersNew.Click += new System.EventHandler(this.miOrdersNew_Click);
             // 
@@ -6725,7 +6725,7 @@
             this.btnOrdersEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnOrdersEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrdersEdit.Name = "btnOrdersEdit";
-            this.btnOrdersEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnOrdersEdit.Size = new System.Drawing.Size(63, 28);
             this.btnOrdersEdit.Text = "Edit";
             this.btnOrdersEdit.Click += new System.EventHandler(this.miOrdersEdit_Click);
             // 
@@ -6734,7 +6734,7 @@
             this.btnOrdersCopy.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnOrdersCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrdersCopy.Name = "btnOrdersCopy";
-            this.btnOrdersCopy.Size = new System.Drawing.Size(63, 28);
+            this.btnOrdersCopy.Size = new System.Drawing.Size(71, 28);
             this.btnOrdersCopy.Text = "Copy";
             this.btnOrdersCopy.Click += new System.EventHandler(this.miOrdersCopy_Click);
             // 
@@ -6743,7 +6743,7 @@
             this.btnOrdersDelete.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnOrdersDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrdersDelete.Name = "btnOrdersDelete";
-            this.btnOrdersDelete.Size = new System.Drawing.Size(68, 28);
+            this.btnOrdersDelete.Size = new System.Drawing.Size(81, 28);
             this.btnOrdersDelete.Text = "Delete";
             this.btnOrdersDelete.Click += new System.EventHandler(this.miOrdersDelete_Click);
             // 
@@ -6757,7 +6757,7 @@
             this.btnOrdersAssignUsers.Image = global::DSA_lims.Properties.Resources.users;
             this.btnOrdersAssignUsers.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrdersAssignUsers.Name = "btnOrdersAssignUsers";
-            this.btnOrdersAssignUsers.Size = new System.Drawing.Size(100, 28);
+            this.btnOrdersAssignUsers.Size = new System.Drawing.Size(117, 28);
             this.btnOrdersAssignUsers.Text = "Assign users";
             this.btnOrdersAssignUsers.Click += new System.EventHandler(this.btnOrdersAssignUsers_Click);
             // 
@@ -6775,27 +6775,27 @@
             this.btnOrdersSummary.Image = global::DSA_lims.Properties.Resources.info;
             this.btnOrdersSummary.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrdersSummary.Name = "btnOrdersSummary";
-            this.btnOrdersSummary.Size = new System.Drawing.Size(104, 28);
+            this.btnOrdersSummary.Size = new System.Drawing.Size(118, 28);
             this.btnOrdersSummary.Text = "Summary...";
             // 
             // btnOrdersPrepSummary
             // 
             this.btnOrdersPrepSummary.Name = "btnOrdersPrepSummary";
-            this.btnOrdersPrepSummary.Size = new System.Drawing.Size(218, 22);
+            this.btnOrdersPrepSummary.Size = new System.Drawing.Size(277, 26);
             this.btnOrdersPrepSummary.Text = "Selected order &preparations";
             this.btnOrdersPrepSummary.Click += new System.EventHandler(this.btnOrdersPrepSummary_Click);
             // 
             // btnOrdersAuditLog
             // 
             this.btnOrdersAuditLog.Name = "btnOrdersAuditLog";
-            this.btnOrdersAuditLog.Size = new System.Drawing.Size(218, 22);
+            this.btnOrdersAuditLog.Size = new System.Drawing.Size(277, 26);
             this.btnOrdersAuditLog.Text = "Selected order audit log";
             this.btnOrdersAuditLog.Click += new System.EventHandler(this.miOrdersShowAuditLog_Click);
             // 
             // btnOrdersSummaryCurrent
             // 
             this.btnOrdersSummaryCurrent.Name = "btnOrdersSummaryCurrent";
-            this.btnOrdersSummaryCurrent.Size = new System.Drawing.Size(218, 22);
+            this.btnOrdersSummaryCurrent.Size = new System.Drawing.Size(277, 26);
             this.btnOrdersSummaryCurrent.Text = "Current search result";
             this.btnOrdersSummaryCurrent.Click += new System.EventHandler(this.btnOrdersSummaryCurrent_Click);
             // 
@@ -6804,7 +6804,7 @@
             this.btnOrdersUnlock.Image = global::DSA_lims.Properties.Resources.switch1;
             this.btnOrdersUnlock.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrdersUnlock.Name = "btnOrdersUnlock";
-            this.btnOrdersUnlock.Size = new System.Drawing.Size(72, 28);
+            this.btnOrdersUnlock.Size = new System.Drawing.Size(82, 28);
             this.btnOrdersUnlock.Text = "Unlock";
             this.btnOrdersUnlock.Click += new System.EventHandler(this.miOrdersUnlock_Click);
             // 
@@ -6842,7 +6842,7 @@
             this.cboxOrdersLaboratory.FormattingEnabled = true;
             this.cboxOrdersLaboratory.Location = new System.Drawing.Point(75, 0);
             this.cboxOrdersLaboratory.Name = "cboxOrdersLaboratory";
-            this.cboxOrdersLaboratory.Size = new System.Drawing.Size(159, 23);
+            this.cboxOrdersLaboratory.Size = new System.Drawing.Size(159, 26);
             this.cboxOrdersLaboratory.TabIndex = 0;
             this.cboxOrdersLaboratory.ValueMember = "Id";
             this.cboxOrdersLaboratory.SelectedIndexChanged += new System.EventHandler(this.cboxOrdersLaboratory_SelectedIndexChanged);
@@ -6874,7 +6874,7 @@
             this.cboxOrdersYear.FormattingEnabled = true;
             this.cboxOrdersYear.Location = new System.Drawing.Point(33, 0);
             this.cboxOrdersYear.Name = "cboxOrdersYear";
-            this.cboxOrdersYear.Size = new System.Drawing.Size(115, 23);
+            this.cboxOrdersYear.Size = new System.Drawing.Size(115, 26);
             this.cboxOrdersYear.TabIndex = 1;
             this.cboxOrdersYear.SelectedIndexChanged += new System.EventHandler(this.cboxOrdersYear_SelectedIndexChanged);
             // 
@@ -6906,7 +6906,7 @@
             this.cboxOrdersWorkflowStatus.FormattingEnabled = true;
             this.cboxOrdersWorkflowStatus.Location = new System.Drawing.Point(47, 0);
             this.cboxOrdersWorkflowStatus.Name = "cboxOrdersWorkflowStatus";
-            this.cboxOrdersWorkflowStatus.Size = new System.Drawing.Size(112, 23);
+            this.cboxOrdersWorkflowStatus.Size = new System.Drawing.Size(112, 26);
             this.cboxOrdersWorkflowStatus.TabIndex = 2;
             this.cboxOrdersWorkflowStatus.ValueMember = "Id";
             this.cboxOrdersWorkflowStatus.SelectedIndexChanged += new System.EventHandler(this.cboxOrdersWorkflowStatus_SelectedIndexChanged);
@@ -6943,7 +6943,7 @@
             "All"});
             this.cboxOrdersTop.Location = new System.Drawing.Point(81, 0);
             this.cboxOrdersTop.Name = "cboxOrdersTop";
-            this.cboxOrdersTop.Size = new System.Drawing.Size(115, 23);
+            this.cboxOrdersTop.Size = new System.Drawing.Size(115, 26);
             this.cboxOrdersTop.TabIndex = 8;
             this.cboxOrdersTop.ValueMember = "Id";
             this.cboxOrdersTop.SelectedIndexChanged += new System.EventHandler(this.cboxOrdersTop_SelectedIndexChanged);
@@ -6987,7 +6987,7 @@
             // 
             this.toolStripLabel30.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel30.Name = "toolStripLabel30";
-            this.toolStripLabel30.Size = new System.Drawing.Size(81, 28);
+            this.toolStripLabel30.Size = new System.Drawing.Size(100, 28);
             this.toolStripLabel30.Text = "Search filters";
             // 
             // toolStripSeparator63
@@ -7000,7 +7000,7 @@
             this.btnOrdersClearAllFilters.Image = global::DSA_lims.Properties.Resources.trash;
             this.btnOrdersClearAllFilters.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOrdersClearAllFilters.Name = "btnOrdersClearAllFilters";
-            this.btnOrdersClearAllFilters.Size = new System.Drawing.Size(109, 28);
+            this.btnOrdersClearAllFilters.Size = new System.Drawing.Size(132, 28);
             this.btnOrdersClearAllFilters.Text = "Clear all filters";
             this.btnOrdersClearAllFilters.Click += new System.EventHandler(this.miOrdersClearAllFilters_Click);
             // 
@@ -7010,9 +7010,9 @@
             this.tabSamples.Controls.Add(this.panel78);
             this.tabSamples.Controls.Add(this.flowLayoutPanel2);
             this.tabSamples.Controls.Add(this.toolStrip8);
-            this.tabSamples.Location = new System.Drawing.Point(4, 24);
+            this.tabSamples.Location = new System.Drawing.Point(4, 27);
             this.tabSamples.Name = "tabSamples";
-            this.tabSamples.Size = new System.Drawing.Size(1382, 766);
+            this.tabSamples.Size = new System.Drawing.Size(1382, 771);
             this.tabSamples.TabIndex = 7;
             this.tabSamples.Text = "Samples";
             // 
@@ -7023,7 +7023,7 @@
             this.panel78.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel78.Location = new System.Drawing.Point(0, 115);
             this.panel78.Name = "panel78";
-            this.panel78.Size = new System.Drawing.Size(1382, 651);
+            this.panel78.Size = new System.Drawing.Size(1382, 656);
             this.panel78.TabIndex = 8;
             // 
             // gridSamples
@@ -7042,7 +7042,7 @@
             this.gridSamples.RowHeadersVisible = false;
             this.gridSamples.RowHeadersWidth = 62;
             this.gridSamples.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSamples.Size = new System.Drawing.Size(1382, 620);
+            this.gridSamples.Size = new System.Drawing.Size(1382, 625);
             this.gridSamples.TabIndex = 5;
             this.gridSamples.SelectionChanged += new System.EventHandler(this.gridSamples_SelectionChanged);
             // 
@@ -7078,7 +7078,7 @@
             // 
             this.toolStripLabel56.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel56.Name = "toolStripLabel56";
-            this.toolStripLabel56.Size = new System.Drawing.Size(53, 28);
+            this.toolStripLabel56.Size = new System.Drawing.Size(67, 28);
             this.toolStripLabel56.Text = "Samples";
             // 
             // toolStripSeparator30
@@ -7091,7 +7091,7 @@
             this.btnSamplesNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSamplesNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSamplesNew.Name = "btnSamplesNew";
-            this.btnSamplesNew.Size = new System.Drawing.Size(59, 28);
+            this.btnSamplesNew.Size = new System.Drawing.Size(67, 28);
             this.btnSamplesNew.Text = "New";
             this.btnSamplesNew.Click += new System.EventHandler(this.miSamplesNew_Click);
             // 
@@ -7100,7 +7100,7 @@
             this.btnSamplesEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnSamplesEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSamplesEdit.Name = "btnSamplesEdit";
-            this.btnSamplesEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnSamplesEdit.Size = new System.Drawing.Size(63, 28);
             this.btnSamplesEdit.Text = "Edit";
             this.btnSamplesEdit.Click += new System.EventHandler(this.miSamplesEdit_Click);
             // 
@@ -7109,7 +7109,7 @@
             this.btnSamplesCopy.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSamplesCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSamplesCopy.Name = "btnSamplesCopy";
-            this.btnSamplesCopy.Size = new System.Drawing.Size(63, 28);
+            this.btnSamplesCopy.Size = new System.Drawing.Size(71, 28);
             this.btnSamplesCopy.Text = "Copy";
             this.btnSamplesCopy.Click += new System.EventHandler(this.miSamplesCopy_Click);
             // 
@@ -7118,7 +7118,7 @@
             this.btnSamplesView.Image = global::DSA_lims.Properties.Resources.eye;
             this.btnSamplesView.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSamplesView.Name = "btnSamplesView";
-            this.btnSamplesView.Size = new System.Drawing.Size(60, 28);
+            this.btnSamplesView.Size = new System.Drawing.Size(69, 28);
             this.btnSamplesView.Text = "View";
             this.btnSamplesView.ToolTipText = "View selected sample";
             this.btnSamplesView.Click += new System.EventHandler(this.miSamplesView_Click);
@@ -7131,20 +7131,20 @@
             this.toolStripDropDownButton3.Image = global::DSA_lims.Properties.Resources.new1;
             this.toolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton3.Name = "toolStripDropDownButton3";
-            this.toolStripDropDownButton3.Size = new System.Drawing.Size(89, 28);
+            this.toolStripDropDownButton3.Size = new System.Drawing.Size(101, 28);
             this.toolStripDropDownButton3.Text = "Import...";
             // 
             // btnSamplesImportExisting
             // 
             this.btnSamplesImportExisting.Name = "btnSamplesImportExisting";
-            this.btnSamplesImportExisting.Size = new System.Drawing.Size(209, 22);
+            this.btnSamplesImportExisting.Size = new System.Drawing.Size(263, 26);
             this.btnSamplesImportExisting.Text = "&Import existing file";
             this.btnSamplesImportExisting.Click += new System.EventHandler(this.miSamplesImportTemplate_Click);
             // 
             // btnSamplesImportGetExcelTemplate
             // 
             this.btnSamplesImportGetExcelTemplate.Name = "btnSamplesImportGetExcelTemplate";
-            this.btnSamplesImportGetExcelTemplate.Size = new System.Drawing.Size(209, 22);
+            this.btnSamplesImportGetExcelTemplate.Size = new System.Drawing.Size(263, 26);
             this.btnSamplesImportGetExcelTemplate.Text = "Get empty Excel &template";
             this.btnSamplesImportGetExcelTemplate.Click += new System.EventHandler(this.miSamplesImportGetExcelTemplate_Click);
             // 
@@ -7158,7 +7158,7 @@
             this.btnSamplesSplit.Image = global::DSA_lims.Properties.Resources.split;
             this.btnSamplesSplit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSamplesSplit.Name = "btnSamplesSplit";
-            this.btnSamplesSplit.Size = new System.Drawing.Size(58, 28);
+            this.btnSamplesSplit.Size = new System.Drawing.Size(67, 28);
             this.btnSamplesSplit.Text = "Split";
             this.btnSamplesSplit.Click += new System.EventHandler(this.miSamplesSplit_Click);
             // 
@@ -7167,7 +7167,7 @@
             this.btnSamplesMerge.Image = global::DSA_lims.Properties.Resources.merge;
             this.btnSamplesMerge.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSamplesMerge.Name = "btnSamplesMerge";
-            this.btnSamplesMerge.Size = new System.Drawing.Size(69, 28);
+            this.btnSamplesMerge.Size = new System.Drawing.Size(80, 28);
             this.btnSamplesMerge.Text = "Merge";
             this.btnSamplesMerge.Click += new System.EventHandler(this.miSamplesMerge_Click);
             // 
@@ -7188,48 +7188,48 @@
             this.toolStripDropDownButton2.Image = global::DSA_lims.Properties.Resources.set;
             this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
-            this.toolStripDropDownButton2.Size = new System.Drawing.Size(69, 28);
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(77, 28);
             this.toolStripDropDownButton2.Text = "Set...";
             // 
             // projectToolStripMenuItem
             // 
             this.projectToolStripMenuItem.Name = "projectToolStripMenuItem";
-            this.projectToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.projectToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
             this.projectToolStripMenuItem.Text = "&Project";
             this.projectToolStripMenuItem.Click += new System.EventHandler(this.miSamplesSetProject_Click);
             // 
             // storageToolStripMenuItem
             // 
             this.storageToolStripMenuItem.Name = "storageToolStripMenuItem";
-            this.storageToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.storageToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
             this.storageToolStripMenuItem.Text = "Storage";
             this.storageToolStripMenuItem.Click += new System.EventHandler(this.storageToolStripMenuItem_Click);
             // 
             // samplerToolStripMenuItem1
             // 
             this.samplerToolStripMenuItem1.Name = "samplerToolStripMenuItem1";
-            this.samplerToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
+            this.samplerToolStripMenuItem1.Size = new System.Drawing.Size(230, 26);
             this.samplerToolStripMenuItem1.Text = "&Sampler";
             this.samplerToolStripMenuItem1.Click += new System.EventHandler(this.miSamplesSetSampler_Click);
             // 
             // samplingmethodToolStripMenuItem1
             // 
             this.samplingmethodToolStripMenuItem1.Name = "samplingmethodToolStripMenuItem1";
-            this.samplingmethodToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
+            this.samplingmethodToolStripMenuItem1.Size = new System.Drawing.Size(230, 26);
             this.samplingmethodToolStripMenuItem1.Text = "Sampling &method";
             this.samplingmethodToolStripMenuItem1.Click += new System.EventHandler(this.miSamplesSetSamplingMethod_Click);
             // 
             // excemptFromPublicToolStripMenuItem
             // 
             this.excemptFromPublicToolStripMenuItem.Name = "excemptFromPublicToolStripMenuItem";
-            this.excemptFromPublicToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.excemptFromPublicToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
             this.excemptFromPublicToolStripMenuItem.Text = "&Excempt from public";
             this.excemptFromPublicToolStripMenuItem.Click += new System.EventHandler(this.miSamplesSetExcempt_Click);
             // 
             // btnSamplesSetInstanceStatus
             // 
             this.btnSamplesSetInstanceStatus.Name = "btnSamplesSetInstanceStatus";
-            this.btnSamplesSetInstanceStatus.Size = new System.Drawing.Size(185, 22);
+            this.btnSamplesSetInstanceStatus.Size = new System.Drawing.Size(230, 26);
             this.btnSamplesSetInstanceStatus.Text = "Instance status";
             this.btnSamplesSetInstanceStatus.Click += new System.EventHandler(this.miSamplesSetInstanceStatus_Click);
             // 
@@ -7238,7 +7238,7 @@
             this.btnSamplesSetOrder.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSamplesSetOrder.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSamplesSetOrder.Name = "btnSamplesSetOrder";
-            this.btnSamplesSetOrder.Size = new System.Drawing.Size(102, 28);
+            this.btnSamplesSetOrder.Size = new System.Drawing.Size(123, 28);
             this.btnSamplesSetOrder.Text = "Add to order";
             this.btnSamplesSetOrder.Click += new System.EventHandler(this.miSamplesSetOrder_Click);
             // 
@@ -7247,7 +7247,7 @@
             this.btnSamplesPrepAnal.Image = global::DSA_lims.Properties.Resources.prep_anal;
             this.btnSamplesPrepAnal.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSamplesPrepAnal.Name = "btnSamplesPrepAnal";
-            this.btnSamplesPrepAnal.Size = new System.Drawing.Size(171, 28);
+            this.btnSamplesPrepAnal.Size = new System.Drawing.Size(208, 28);
             this.btnSamplesPrepAnal.Text = "Preparations and analyses";
             this.btnSamplesPrepAnal.Click += new System.EventHandler(this.miSamplesPrepAnal_Click);
             // 
@@ -7259,20 +7259,20 @@
             this.toolStripDropDownButton5.Image = global::DSA_lims.Properties.Resources.report;
             this.toolStripDropDownButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton5.Name = "toolStripDropDownButton5";
-            this.toolStripDropDownButton5.Size = new System.Drawing.Size(104, 28);
+            this.toolStripDropDownButton5.Size = new System.Drawing.Size(118, 28);
             this.toolStripDropDownButton5.Text = "Summary...";
             // 
             // auditLogToolStripMenuItem
             // 
             this.auditLogToolStripMenuItem.Name = "auditLogToolStripMenuItem";
-            this.auditLogToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.auditLogToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
             this.auditLogToolStripMenuItem.Text = "Selected sample &audit log";
             this.auditLogToolStripMenuItem.Click += new System.EventHandler(this.miSamplesShowAuditLog_Click);
             // 
             // currentSearchAsPDFToolStripMenuItem
             // 
             this.currentSearchAsPDFToolStripMenuItem.Name = "currentSearchAsPDFToolStripMenuItem";
-            this.currentSearchAsPDFToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.currentSearchAsPDFToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
             this.currentSearchAsPDFToolStripMenuItem.Text = "Current &search result";
             this.currentSearchAsPDFToolStripMenuItem.Click += new System.EventHandler(this.currentSearchAsPDFToolStripMenuItem_Click);
             // 
@@ -7284,20 +7284,20 @@
             this.toolStripDropDownButton4.Image = global::DSA_lims.Properties.Resources.printer;
             this.toolStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton4.Name = "toolStripDropDownButton4";
-            this.toolStripDropDownButton4.Size = new System.Drawing.Size(78, 28);
+            this.toolStripDropDownButton4.Size = new System.Drawing.Size(86, 28);
             this.toolStripDropDownButton4.Text = "Print...";
             // 
             // sampleLabelToolStripMenuItem
             // 
             this.sampleLabelToolStripMenuItem.Name = "sampleLabelToolStripMenuItem";
-            this.sampleLabelToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.sampleLabelToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.sampleLabelToolStripMenuItem.Text = "Sample labels";
             this.sampleLabelToolStripMenuItem.Click += new System.EventHandler(this.miSamplesPrintSampleLabels_Click);
             // 
             // sampleInfoForSelectedToolStripMenuItem
             // 
             this.sampleInfoForSelectedToolStripMenuItem.Name = "sampleInfoForSelectedToolStripMenuItem";
-            this.sampleInfoForSelectedToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.sampleInfoForSelectedToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.sampleInfoForSelectedToolStripMenuItem.Text = "Sample info";
             // 
             // btnSamplesUnlock
@@ -7305,7 +7305,7 @@
             this.btnSamplesUnlock.Image = global::DSA_lims.Properties.Resources.switch1;
             this.btnSamplesUnlock.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSamplesUnlock.Name = "btnSamplesUnlock";
-            this.btnSamplesUnlock.Size = new System.Drawing.Size(72, 28);
+            this.btnSamplesUnlock.Size = new System.Drawing.Size(82, 28);
             this.btnSamplesUnlock.Text = "Unlock";
             this.btnSamplesUnlock.Click += new System.EventHandler(this.miSamplesUnlock_Click);
             // 
@@ -7344,7 +7344,7 @@
             this.tbSamplesLookup.Location = new System.Drawing.Point(74, 0);
             this.tbSamplesLookup.MaxLength = 10;
             this.tbSamplesLookup.Name = "tbSamplesLookup";
-            this.tbSamplesLookup.Size = new System.Drawing.Size(122, 21);
+            this.tbSamplesLookup.Size = new System.Drawing.Size(122, 24);
             this.tbSamplesLookup.TabIndex = 0;
             this.tbSamplesLookup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSamplesLookup_KeyPress);
             // 
@@ -7376,7 +7376,7 @@
             this.cboxSamplesProjects.FormattingEnabled = true;
             this.cboxSamplesProjects.Location = new System.Drawing.Point(52, 0);
             this.cboxSamplesProjects.Name = "cboxSamplesProjects";
-            this.cboxSamplesProjects.Size = new System.Drawing.Size(158, 23);
+            this.cboxSamplesProjects.Size = new System.Drawing.Size(158, 26);
             this.cboxSamplesProjects.TabIndex = 1;
             this.cboxSamplesProjects.ValueMember = "Id";
             this.cboxSamplesProjects.SelectedIndexChanged += new System.EventHandler(this.cboxSamplesProjects_SelectedIndexChanged);
@@ -7409,7 +7409,7 @@
             this.cboxSamplesProjectsSub.FormattingEnabled = true;
             this.cboxSamplesProjectsSub.Location = new System.Drawing.Point(81, 0);
             this.cboxSamplesProjectsSub.Name = "cboxSamplesProjectsSub";
-            this.cboxSamplesProjectsSub.Size = new System.Drawing.Size(155, 23);
+            this.cboxSamplesProjectsSub.Size = new System.Drawing.Size(155, 26);
             this.cboxSamplesProjectsSub.TabIndex = 2;
             this.cboxSamplesProjectsSub.ValueMember = "Id";
             this.cboxSamplesProjectsSub.SelectedIndexChanged += new System.EventHandler(this.cboxSamplesProjectsSub_SelectedIndexChanged);
@@ -7442,7 +7442,7 @@
             this.cboxSamplesOrders.FormattingEnabled = true;
             this.cboxSamplesOrders.Location = new System.Drawing.Point(43, 0);
             this.cboxSamplesOrders.Name = "cboxSamplesOrders";
-            this.cboxSamplesOrders.Size = new System.Drawing.Size(152, 23);
+            this.cboxSamplesOrders.Size = new System.Drawing.Size(152, 26);
             this.cboxSamplesOrders.TabIndex = 3;
             this.cboxSamplesOrders.ValueMember = "Id";
             this.cboxSamplesOrders.SelectedIndexChanged += new System.EventHandler(this.cboxSamplesOrders_SelectedIndexChanged);
@@ -7475,7 +7475,7 @@
             this.cboxSamplesStatus.FormattingEnabled = true;
             this.cboxSamplesStatus.Location = new System.Drawing.Point(47, 0);
             this.cboxSamplesStatus.Name = "cboxSamplesStatus";
-            this.cboxSamplesStatus.Size = new System.Drawing.Size(149, 23);
+            this.cboxSamplesStatus.Size = new System.Drawing.Size(149, 26);
             this.cboxSamplesStatus.TabIndex = 4;
             this.cboxSamplesStatus.ValueMember = "Id";
             this.cboxSamplesStatus.SelectedIndexChanged += new System.EventHandler(this.cboxSamplesStatus_SelectedIndexChanged);
@@ -7509,7 +7509,7 @@
             this.cboxSamplesLaboratory.FormattingEnabled = true;
             this.cboxSamplesLaboratory.Location = new System.Drawing.Point(75, 0);
             this.cboxSamplesLaboratory.Name = "cboxSamplesLaboratory";
-            this.cboxSamplesLaboratory.Size = new System.Drawing.Size(175, 23);
+            this.cboxSamplesLaboratory.Size = new System.Drawing.Size(175, 26);
             this.cboxSamplesLaboratory.TabIndex = 5;
             this.cboxSamplesLaboratory.ValueMember = "Id";
             this.cboxSamplesLaboratory.SelectedIndexChanged += new System.EventHandler(this.cboxSamplesLaboratory_SelectedIndexChanged);
@@ -7546,7 +7546,7 @@
             "All"});
             this.cboxSamplesTop.Location = new System.Drawing.Point(79, 0);
             this.cboxSamplesTop.Name = "cboxSamplesTop";
-            this.cboxSamplesTop.Size = new System.Drawing.Size(121, 23);
+            this.cboxSamplesTop.Size = new System.Drawing.Size(121, 26);
             this.cboxSamplesTop.TabIndex = 17;
             this.cboxSamplesTop.ValueMember = "Id";
             this.cboxSamplesTop.SelectedIndexChanged += new System.EventHandler(this.cboxSamplesTop_SelectedIndexChanged);
@@ -7590,7 +7590,7 @@
             // 
             this.toolStripLabel22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel22.Name = "toolStripLabel22";
-            this.toolStripLabel22.Size = new System.Drawing.Size(81, 28);
+            this.toolStripLabel22.Size = new System.Drawing.Size(100, 28);
             this.toolStripLabel22.Text = "Search filters";
             // 
             // toolStripSeparator57
@@ -7603,7 +7603,7 @@
             this.btnSamplesClearFilters.Image = global::DSA_lims.Properties.Resources.trash;
             this.btnSamplesClearFilters.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSamplesClearFilters.Name = "btnSamplesClearFilters";
-            this.btnSamplesClearFilters.Size = new System.Drawing.Size(109, 28);
+            this.btnSamplesClearFilters.Size = new System.Drawing.Size(132, 28);
             this.btnSamplesClearFilters.Text = "Clear all filters";
             this.btnSamplesClearFilters.Click += new System.EventHandler(this.btnSamplesClearFilters_Click);
             // 
@@ -7611,9 +7611,9 @@
             // 
             this.tabProjects.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabProjects.Controls.Add(this.splitProjects);
-            this.tabProjects.Location = new System.Drawing.Point(4, 24);
+            this.tabProjects.Location = new System.Drawing.Point(4, 27);
             this.tabProjects.Name = "tabProjects";
-            this.tabProjects.Size = new System.Drawing.Size(1382, 766);
+            this.tabProjects.Size = new System.Drawing.Size(1382, 771);
             this.tabProjects.TabIndex = 8;
             this.tabProjects.Text = "Projects";
             // 
@@ -7631,7 +7631,7 @@
             // splitProjects.Panel2
             // 
             this.splitProjects.Panel2.Controls.Add(this.splitContainer24);
-            this.splitProjects.Size = new System.Drawing.Size(1382, 766);
+            this.splitProjects.Size = new System.Drawing.Size(1382, 771);
             this.splitProjects.SplitterDistance = 454;
             this.splitProjects.SplitterWidth = 3;
             this.splitProjects.TabIndex = 6;
@@ -7653,7 +7653,7 @@
             this.gridProjectMain.RowHeadersVisible = false;
             this.gridProjectMain.RowHeadersWidth = 62;
             this.gridProjectMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProjectMain.Size = new System.Drawing.Size(454, 735);
+            this.gridProjectMain.Size = new System.Drawing.Size(454, 740);
             this.gridProjectMain.TabIndex = 1;
             this.gridProjectMain.SelectionChanged += new System.EventHandler(this.gridProjectMain_SelectionChanged);
             // 
@@ -7676,7 +7676,7 @@
             // 
             this.toolStripLabel15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel15.Name = "toolStripLabel15";
-            this.toolStripLabel15.Size = new System.Drawing.Size(82, 28);
+            this.toolStripLabel15.Size = new System.Drawing.Size(104, 28);
             this.toolStripLabel15.Text = "Main projects";
             // 
             // toolStripSeparator54
@@ -7689,7 +7689,7 @@
             this.btnProjectsMainNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnProjectsMainNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProjectsMainNew.Name = "btnProjectsMainNew";
-            this.btnProjectsMainNew.Size = new System.Drawing.Size(59, 28);
+            this.btnProjectsMainNew.Size = new System.Drawing.Size(67, 28);
             this.btnProjectsMainNew.Text = "New";
             this.btnProjectsMainNew.Click += new System.EventHandler(this.miProjectsNew_Click);
             // 
@@ -7698,7 +7698,7 @@
             this.btnProjectsMainEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnProjectsMainEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProjectsMainEdit.Name = "btnProjectsMainEdit";
-            this.btnProjectsMainEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnProjectsMainEdit.Size = new System.Drawing.Size(63, 28);
             this.btnProjectsMainEdit.Text = "Edit";
             this.btnProjectsMainEdit.Click += new System.EventHandler(this.miProjectsEdit_Click);
             // 
@@ -7716,7 +7716,7 @@
             // splitContainer24.Panel2
             // 
             this.splitContainer24.Panel2.Controls.Add(this.splitContainer25);
-            this.splitContainer24.Size = new System.Drawing.Size(925, 766);
+            this.splitContainer24.Size = new System.Drawing.Size(925, 771);
             this.splitContainer24.SplitterDistance = 470;
             this.splitContainer24.SplitterWidth = 3;
             this.splitContainer24.TabIndex = 0;
@@ -7738,7 +7738,7 @@
             this.gridProjectSub.RowHeadersVisible = false;
             this.gridProjectSub.RowHeadersWidth = 62;
             this.gridProjectSub.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProjectSub.Size = new System.Drawing.Size(470, 735);
+            this.gridProjectSub.Size = new System.Drawing.Size(470, 740);
             this.gridProjectSub.TabIndex = 1;
             this.gridProjectSub.SelectionChanged += new System.EventHandler(this.gridProjectSub_SelectionChanged);
             // 
@@ -7763,7 +7763,7 @@
             // 
             this.toolStripLabel21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel21.Name = "toolStripLabel21";
-            this.toolStripLabel21.Size = new System.Drawing.Size(76, 28);
+            this.toolStripLabel21.Size = new System.Drawing.Size(95, 28);
             this.toolStripLabel21.Text = "Sub projects";
             // 
             // toolStripSeparator55
@@ -7776,7 +7776,7 @@
             this.btnProjectsSubNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnProjectsSubNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProjectsSubNew.Name = "btnProjectsSubNew";
-            this.btnProjectsSubNew.Size = new System.Drawing.Size(59, 28);
+            this.btnProjectsSubNew.Size = new System.Drawing.Size(67, 28);
             this.btnProjectsSubNew.Text = "New";
             this.btnProjectsSubNew.Click += new System.EventHandler(this.miProjectsSubNew_Click);
             // 
@@ -7785,7 +7785,7 @@
             this.btnProjectsSubEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnProjectsSubEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProjectsSubEdit.Name = "btnProjectsSubEdit";
-            this.btnProjectsSubEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnProjectsSubEdit.Size = new System.Drawing.Size(63, 28);
             this.btnProjectsSubEdit.Text = "Edit";
             this.btnProjectsSubEdit.Click += new System.EventHandler(this.miProjectsSubEdit_Click);
             // 
@@ -7799,7 +7799,7 @@
             this.btnProjectSubPrint.Image = global::DSA_lims.Properties.Resources.printer;
             this.btnProjectSubPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProjectSubPrint.Name = "btnProjectSubPrint";
-            this.btnProjectSubPrint.Size = new System.Drawing.Size(88, 28);
+            this.btnProjectSubPrint.Size = new System.Drawing.Size(104, 28);
             this.btnProjectSubPrint.Text = "Print label";
             this.btnProjectSubPrint.Click += new System.EventHandler(this.btnProjectSubPrint_Click);
             // 
@@ -7819,8 +7819,8 @@
             // 
             this.splitContainer25.Panel2.Controls.Add(this.gridProjectAttachments);
             this.splitContainer25.Panel2.Controls.Add(this.toolsProjAttachments);
-            this.splitContainer25.Size = new System.Drawing.Size(452, 766);
-            this.splitContainer25.SplitterDistance = 379;
+            this.splitContainer25.Size = new System.Drawing.Size(452, 771);
+            this.splitContainer25.SplitterDistance = 380;
             this.splitContainer25.SplitterWidth = 3;
             this.splitContainer25.TabIndex = 0;
             // 
@@ -7840,7 +7840,7 @@
             this.gridProjectsUsers.RowHeadersVisible = false;
             this.gridProjectsUsers.RowHeadersWidth = 62;
             this.gridProjectsUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProjectsUsers.Size = new System.Drawing.Size(452, 348);
+            this.gridProjectsUsers.Size = new System.Drawing.Size(452, 349);
             this.gridProjectsUsers.TabIndex = 1;
             // 
             // toolsProjUsers
@@ -7862,7 +7862,7 @@
             // 
             this.toolStripLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(38, 28);
+            this.toolStripLabel2.Size = new System.Drawing.Size(48, 28);
             this.toolStripLabel2.Text = "Users";
             // 
             // toolStripSeparator31
@@ -7875,7 +7875,7 @@
             this.btnProjectsUsersAdd.Image = global::DSA_lims.Properties.Resources.create_user;
             this.btnProjectsUsersAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProjectsUsersAdd.Name = "btnProjectsUsersAdd";
-            this.btnProjectsUsersAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnProjectsUsersAdd.Size = new System.Drawing.Size(65, 28);
             this.btnProjectsUsersAdd.Text = "Add";
             this.btnProjectsUsersAdd.Click += new System.EventHandler(this.btnProjectsUsersAdd_Click);
             // 
@@ -7884,7 +7884,7 @@
             this.btnProjectsUsersRemove.Image = global::DSA_lims.Properties.Resources.delete_user;
             this.btnProjectsUsersRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProjectsUsersRemove.Name = "btnProjectsUsersRemove";
-            this.btnProjectsUsersRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnProjectsUsersRemove.Size = new System.Drawing.Size(91, 28);
             this.btnProjectsUsersRemove.Text = "Remove";
             this.btnProjectsUsersRemove.Click += new System.EventHandler(this.btnProjectsUsersRemove_Click);
             // 
@@ -7904,7 +7904,7 @@
             this.gridProjectAttachments.RowHeadersVisible = false;
             this.gridProjectAttachments.RowHeadersWidth = 62;
             this.gridProjectAttachments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProjectAttachments.Size = new System.Drawing.Size(452, 353);
+            this.gridProjectAttachments.Size = new System.Drawing.Size(452, 357);
             this.gridProjectAttachments.TabIndex = 1;
             this.gridProjectAttachments.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridAttachments_CellDoubleClick);
             // 
@@ -7928,7 +7928,7 @@
             // 
             this.toolStripLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(79, 28);
+            this.toolStripLabel3.Size = new System.Drawing.Size(100, 28);
             this.toolStripLabel3.Text = "Attachments";
             // 
             // toolStripSeparator32
@@ -7941,7 +7941,7 @@
             this.btnProjectScanAttachment.Image = global::DSA_lims.Properties.Resources.scan;
             this.btnProjectScanAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProjectScanAttachment.Name = "btnProjectScanAttachment";
-            this.btnProjectScanAttachment.Size = new System.Drawing.Size(60, 28);
+            this.btnProjectScanAttachment.Size = new System.Drawing.Size(68, 28);
             this.btnProjectScanAttachment.Text = "Scan";
             this.btnProjectScanAttachment.Click += new System.EventHandler(this.btnProjectScanAttachment_Click);
             // 
@@ -7950,7 +7950,7 @@
             this.btnProjectBrowseAttachment.Image = global::DSA_lims.Properties.Resources.projects;
             this.btnProjectBrowseAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProjectBrowseAttachment.Name = "btnProjectBrowseAttachment";
-            this.btnProjectBrowseAttachment.Size = new System.Drawing.Size(73, 28);
+            this.btnProjectBrowseAttachment.Size = new System.Drawing.Size(85, 28);
             this.btnProjectBrowseAttachment.Text = "Browse";
             this.btnProjectBrowseAttachment.Click += new System.EventHandler(this.btnProjectBrowseAttachment_Click);
             // 
@@ -7959,7 +7959,7 @@
             this.btnProjectDeleteAttachment.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnProjectDeleteAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProjectDeleteAttachment.Name = "btnProjectDeleteAttachment";
-            this.btnProjectDeleteAttachment.Size = new System.Drawing.Size(68, 28);
+            this.btnProjectDeleteAttachment.Size = new System.Drawing.Size(81, 28);
             this.btnProjectDeleteAttachment.Text = "Delete";
             this.btnProjectDeleteAttachment.Click += new System.EventHandler(this.btnProjectDeleteAttachment_Click);
             // 
@@ -7967,9 +7967,9 @@
             // 
             this.tabTypeRel.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabTypeRel.Controls.Add(this.tabsTypeRel);
-            this.tabTypeRel.Location = new System.Drawing.Point(4, 24);
+            this.tabTypeRel.Location = new System.Drawing.Point(4, 27);
             this.tabTypeRel.Name = "tabTypeRel";
-            this.tabTypeRel.Size = new System.Drawing.Size(1382, 774);
+            this.tabTypeRel.Size = new System.Drawing.Size(1382, 771);
             this.tabTypeRel.TabIndex = 13;
             this.tabTypeRel.Text = "Types/Methods";
             // 
@@ -7982,7 +7982,7 @@
             this.tabsTypeRel.Location = new System.Drawing.Point(0, 0);
             this.tabsTypeRel.Name = "tabsTypeRel";
             this.tabsTypeRel.SelectedIndex = 0;
-            this.tabsTypeRel.Size = new System.Drawing.Size(1382, 774);
+            this.tabsTypeRel.Size = new System.Drawing.Size(1382, 771);
             this.tabsTypeRel.TabIndex = 8;
             this.tabsTypeRel.SelectedIndexChanged += new System.EventHandler(this.tabsTypeRel_SelectedIndexChanged);
             // 
@@ -7990,9 +7990,9 @@
             // 
             this.tabTypeRelationsSampleTypes.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabTypeRelationsSampleTypes.Controls.Add(this.splitContainer12);
-            this.tabTypeRelationsSampleTypes.Location = new System.Drawing.Point(4, 24);
+            this.tabTypeRelationsSampleTypes.Location = new System.Drawing.Point(4, 27);
             this.tabTypeRelationsSampleTypes.Name = "tabTypeRelationsSampleTypes";
-            this.tabTypeRelationsSampleTypes.Size = new System.Drawing.Size(1374, 746);
+            this.tabTypeRelationsSampleTypes.Size = new System.Drawing.Size(1374, 740);
             this.tabTypeRelationsSampleTypes.TabIndex = 0;
             this.tabTypeRelationsSampleTypes.Text = "Sample types";
             // 
@@ -8010,7 +8010,7 @@
             // splitContainer12.Panel2
             // 
             this.splitContainer12.Panel2.Controls.Add(this.tabControl3);
-            this.splitContainer12.Size = new System.Drawing.Size(1374, 746);
+            this.splitContainer12.Size = new System.Drawing.Size(1374, 740);
             this.splitContainer12.SplitterDistance = 619;
             this.splitContainer12.SplitterWidth = 5;
             this.splitContainer12.TabIndex = 7;
@@ -8030,7 +8030,7 @@
             this.treeSampleTypes.Name = "treeSampleTypes";
             this.treeSampleTypes.PathSeparator = "/";
             this.treeSampleTypes.ShowNodeToolTips = true;
-            this.treeSampleTypes.Size = new System.Drawing.Size(619, 715);
+            this.treeSampleTypes.Size = new System.Drawing.Size(619, 709);
             this.treeSampleTypes.TabIndex = 0;
             this.treeSampleTypes.DrawNode += new System.Windows.Forms.DrawTreeNodeEventHandler(this.treeSampleTypes_DrawNode);
             this.treeSampleTypes.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeSampleTypes_AfterSelect);
@@ -8041,12 +8041,12 @@
             this.cmenuSampleTypes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmiTypeRelSampleTypesExportSampID});
             this.cmenuSampleTypes.Name = "cmenuSampleTypes";
-            this.cmenuSampleTypes.Size = new System.Drawing.Size(231, 26);
+            this.cmenuSampleTypes.Size = new System.Drawing.Size(278, 28);
             // 
             // cmiTypeRelSampleTypesExportSampID
             // 
             this.cmiTypeRelSampleTypesExportSampID.Name = "cmiTypeRelSampleTypesExportSampID";
-            this.cmiTypeRelSampleTypesExportSampID.Size = new System.Drawing.Size(230, 22);
+            this.cmiTypeRelSampleTypesExportSampID.Size = new System.Drawing.Size(277, 24);
             this.cmiTypeRelSampleTypesExportSampID.Text = "Show selected sample type ID";
             this.cmiTypeRelSampleTypesExportSampID.Click += new System.EventHandler(this.miTypeRelSampleTypesExportSampID_Click);
             // 
@@ -8073,7 +8073,7 @@
             // 
             this.toolStripLabel47.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel47.Name = "toolStripLabel47";
-            this.toolStripLabel47.Size = new System.Drawing.Size(81, 28);
+            this.toolStripLabel47.Size = new System.Drawing.Size(102, 28);
             this.toolStripLabel47.Text = "Sample types";
             // 
             // toolStripSeparator35
@@ -8086,7 +8086,7 @@
             this.btnTypeRelSampleTypesNewRoot.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnTypeRelSampleTypesNewRoot.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTypeRelSampleTypesNewRoot.Name = "btnTypeRelSampleTypesNewRoot";
-            this.btnTypeRelSampleTypesNewRoot.Size = new System.Drawing.Size(84, 28);
+            this.btnTypeRelSampleTypesNewRoot.Size = new System.Drawing.Size(99, 28);
             this.btnTypeRelSampleTypesNewRoot.Text = "New root";
             this.btnTypeRelSampleTypesNewRoot.Click += new System.EventHandler(this.miTypeRelSampleTypesNewRoot_Click);
             // 
@@ -8095,7 +8095,7 @@
             this.btnTypeRelSampleTypesNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnTypeRelSampleTypesNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTypeRelSampleTypesNew.Name = "btnTypeRelSampleTypesNew";
-            this.btnTypeRelSampleTypesNew.Size = new System.Drawing.Size(59, 28);
+            this.btnTypeRelSampleTypesNew.Size = new System.Drawing.Size(67, 28);
             this.btnTypeRelSampleTypesNew.Text = "New";
             this.btnTypeRelSampleTypesNew.Click += new System.EventHandler(this.miSampleTypesNew_Click);
             // 
@@ -8104,7 +8104,7 @@
             this.btnTypeRelSampleTypesEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnTypeRelSampleTypesEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTypeRelSampleTypesEdit.Name = "btnTypeRelSampleTypesEdit";
-            this.btnTypeRelSampleTypesEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnTypeRelSampleTypesEdit.Size = new System.Drawing.Size(63, 28);
             this.btnTypeRelSampleTypesEdit.Text = "Edit";
             this.btnTypeRelSampleTypesEdit.Click += new System.EventHandler(this.miSampleTypesEdit_Click);
             // 
@@ -8113,7 +8113,7 @@
             this.btnTypeRelSampleTypesDelete.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnTypeRelSampleTypesDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTypeRelSampleTypesDelete.Name = "btnTypeRelSampleTypesDelete";
-            this.btnTypeRelSampleTypesDelete.Size = new System.Drawing.Size(68, 28);
+            this.btnTypeRelSampleTypesDelete.Size = new System.Drawing.Size(81, 28);
             this.btnTypeRelSampleTypesDelete.Text = "Delete";
             this.btnTypeRelSampleTypesDelete.Click += new System.EventHandler(this.miSampleTypesDelete_Click);
             // 
@@ -8131,27 +8131,27 @@
             this.btnTypeRelSampTypeExport.Image = global::DSA_lims.Properties.Resources.info;
             this.btnTypeRelSampTypeExport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTypeRelSampTypeExport.Name = "btnTypeRelSampTypeExport";
-            this.btnTypeRelSampTypeExport.Size = new System.Drawing.Size(87, 28);
+            this.btnTypeRelSampTypeExport.Size = new System.Drawing.Size(99, 28);
             this.btnTypeRelSampTypeExport.Text = "Export...";
             // 
             // btnTypeRelSampleTypesExportSampTypeList
             // 
             this.btnTypeRelSampleTypesExportSampTypeList.Name = "btnTypeRelSampleTypesExportSampTypeList";
-            this.btnTypeRelSampleTypesExportSampTypeList.Size = new System.Drawing.Size(195, 22);
+            this.btnTypeRelSampleTypesExportSampTypeList.Size = new System.Drawing.Size(246, 26);
             this.btnTypeRelSampleTypesExportSampTypeList.Text = "Simple sample type list";
             this.btnTypeRelSampleTypesExportSampTypeList.Click += new System.EventHandler(this.miTypeRelSampleTypesExportSampTypeList_Click);
             // 
             // btnTypeRelSampleTypesExportSampTypeXML
             // 
             this.btnTypeRelSampleTypesExportSampTypeXML.Name = "btnTypeRelSampleTypesExportSampTypeXML";
-            this.btnTypeRelSampleTypesExportSampTypeXML.Size = new System.Drawing.Size(195, 22);
+            this.btnTypeRelSampleTypesExportSampTypeXML.Size = new System.Drawing.Size(246, 26);
             this.btnTypeRelSampleTypesExportSampTypeXML.Text = "Sample types (XML)";
             this.btnTypeRelSampleTypesExportSampTypeXML.Click += new System.EventHandler(this.miTypeRelSampleTypesExportSampTypeXML_Click);
             // 
             // btnTypeRelSampleTypesExportSampID
             // 
             this.btnTypeRelSampleTypesExportSampID.Name = "btnTypeRelSampleTypesExportSampID";
-            this.btnTypeRelSampleTypesExportSampID.Size = new System.Drawing.Size(195, 22);
+            this.btnTypeRelSampleTypesExportSampID.Size = new System.Drawing.Size(246, 26);
             this.btnTypeRelSampleTypesExportSampID.Text = "Current sample ID";
             this.btnTypeRelSampleTypesExportSampID.Click += new System.EventHandler(this.miTypeRelSampleTypesExportSampID_Click);
             // 
@@ -8163,16 +8163,16 @@
             this.tabControl3.Location = new System.Drawing.Point(0, 0);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(750, 746);
+            this.tabControl3.Size = new System.Drawing.Size(750, 740);
             this.tabControl3.TabIndex = 1;
             // 
             // tabTypeRelSampTypeComp
             // 
             this.tabTypeRelSampTypeComp.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabTypeRelSampTypeComp.Controls.Add(this.splitContainer16);
-            this.tabTypeRelSampTypeComp.Location = new System.Drawing.Point(4, 24);
+            this.tabTypeRelSampTypeComp.Location = new System.Drawing.Point(4, 27);
             this.tabTypeRelSampTypeComp.Name = "tabTypeRelSampTypeComp";
-            this.tabTypeRelSampTypeComp.Size = new System.Drawing.Size(742, 718);
+            this.tabTypeRelSampTypeComp.Size = new System.Drawing.Size(742, 709);
             this.tabTypeRelSampTypeComp.TabIndex = 0;
             this.tabTypeRelSampTypeComp.Text = "Connected components";
             // 
@@ -8192,8 +8192,8 @@
             // 
             this.splitContainer16.Panel2.Controls.Add(this.lbSampleTypesInheritedComponents);
             this.splitContainer16.Panel2.Controls.Add(this.toolsTypeRelSampCompInherit);
-            this.splitContainer16.Size = new System.Drawing.Size(742, 718);
-            this.splitContainer16.SplitterDistance = 283;
+            this.splitContainer16.Size = new System.Drawing.Size(742, 709);
+            this.splitContainer16.SplitterDistance = 279;
             this.splitContainer16.SplitterWidth = 3;
             this.splitContainer16.TabIndex = 0;
             // 
@@ -8203,10 +8203,10 @@
             this.lbSampleTypesComponents.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbSampleTypesComponents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbSampleTypesComponents.FormattingEnabled = true;
-            this.lbSampleTypesComponents.ItemHeight = 15;
+            this.lbSampleTypesComponents.ItemHeight = 18;
             this.lbSampleTypesComponents.Location = new System.Drawing.Point(0, 31);
             this.lbSampleTypesComponents.Name = "lbSampleTypesComponents";
-            this.lbSampleTypesComponents.Size = new System.Drawing.Size(742, 252);
+            this.lbSampleTypesComponents.Size = new System.Drawing.Size(742, 248);
             this.lbSampleTypesComponents.TabIndex = 2;
             // 
             // toolsTypeRelSampComp
@@ -8230,7 +8230,7 @@
             // 
             this.toolStripLabel48.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel48.Name = "toolStripLabel48";
-            this.toolStripLabel48.Size = new System.Drawing.Size(139, 28);
+            this.toolStripLabel48.Size = new System.Drawing.Size(174, 28);
             this.toolStripLabel48.Text = "Connected components";
             // 
             // toolStripSeparator36
@@ -8243,7 +8243,7 @@
             this.btnTypeRelSampTypeCompAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnTypeRelSampTypeCompAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTypeRelSampTypeCompAdd.Name = "btnTypeRelSampTypeCompAdd";
-            this.btnTypeRelSampTypeCompAdd.Size = new System.Drawing.Size(59, 28);
+            this.btnTypeRelSampTypeCompAdd.Size = new System.Drawing.Size(67, 28);
             this.btnTypeRelSampTypeCompAdd.Text = "New";
             this.btnTypeRelSampTypeCompAdd.Click += new System.EventHandler(this.miTypeRelSampleTypesCompNew_Click);
             // 
@@ -8252,7 +8252,7 @@
             this.btnTypeRelSampTypeCompEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnTypeRelSampTypeCompEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTypeRelSampTypeCompEdit.Name = "btnTypeRelSampTypeCompEdit";
-            this.btnTypeRelSampTypeCompEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnTypeRelSampTypeCompEdit.Size = new System.Drawing.Size(63, 28);
             this.btnTypeRelSampTypeCompEdit.Text = "Edit";
             this.btnTypeRelSampTypeCompEdit.Click += new System.EventHandler(this.miTypeRelSampleTypesCompEdit_Click);
             // 
@@ -8262,7 +8262,7 @@
             this.btnTypeRelSampTypeCompDelete.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnTypeRelSampTypeCompDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTypeRelSampTypeCompDelete.Name = "btnTypeRelSampTypeCompDelete";
-            this.btnTypeRelSampTypeCompDelete.Size = new System.Drawing.Size(68, 28);
+            this.btnTypeRelSampTypeCompDelete.Size = new System.Drawing.Size(81, 28);
             this.btnTypeRelSampTypeCompDelete.Text = "Delete";
             this.btnTypeRelSampTypeCompDelete.Click += new System.EventHandler(this.miTypeRelSampleTypesCompRemove_Click);
             // 
@@ -8279,11 +8279,11 @@
             this.lbSampleTypesInheritedComponents.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbSampleTypesInheritedComponents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbSampleTypesInheritedComponents.FormattingEnabled = true;
-            this.lbSampleTypesInheritedComponents.ItemHeight = 15;
+            this.lbSampleTypesInheritedComponents.ItemHeight = 18;
             this.lbSampleTypesInheritedComponents.Location = new System.Drawing.Point(0, 25);
             this.lbSampleTypesInheritedComponents.Name = "lbSampleTypesInheritedComponents";
             this.lbSampleTypesInheritedComponents.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.lbSampleTypesInheritedComponents.Size = new System.Drawing.Size(742, 407);
+            this.lbSampleTypesInheritedComponents.Size = new System.Drawing.Size(742, 402);
             this.lbSampleTypesInheritedComponents.TabIndex = 3;
             // 
             // toolsTypeRelSampCompInherit
@@ -8302,16 +8302,16 @@
             // 
             this.toolStripLabel25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel25.Name = "toolStripLabel25";
-            this.toolStripLabel25.Size = new System.Drawing.Size(193, 22);
+            this.toolStripLabel25.Size = new System.Drawing.Size(240, 22);
             this.toolStripLabel25.Text = "Inherited connected components";
             // 
             // tabTypeRelSampTypePrep
             // 
             this.tabTypeRelSampTypePrep.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabTypeRelSampTypePrep.Controls.Add(this.splitContainer13);
-            this.tabTypeRelSampTypePrep.Location = new System.Drawing.Point(4, 22);
+            this.tabTypeRelSampTypePrep.Location = new System.Drawing.Point(4, 25);
             this.tabTypeRelSampTypePrep.Name = "tabTypeRelSampTypePrep";
-            this.tabTypeRelSampTypePrep.Size = new System.Drawing.Size(742, 711);
+            this.tabTypeRelSampTypePrep.Size = new System.Drawing.Size(742, 716);
             this.tabTypeRelSampTypePrep.TabIndex = 2;
             this.tabTypeRelSampTypePrep.Text = "Connected preparation methods";
             // 
@@ -8331,8 +8331,8 @@
             // 
             this.splitContainer13.Panel2.Controls.Add(this.lbTypeRelSampTypeInheritedPrepMeth);
             this.splitContainer13.Panel2.Controls.Add(this.toolsTypeRelSampAnalMeth);
-            this.splitContainer13.Size = new System.Drawing.Size(742, 711);
-            this.splitContainer13.SplitterDistance = 272;
+            this.splitContainer13.Size = new System.Drawing.Size(742, 716);
+            this.splitContainer13.SplitterDistance = 273;
             this.splitContainer13.SplitterWidth = 3;
             this.splitContainer13.TabIndex = 0;
             // 
@@ -8342,11 +8342,11 @@
             this.lbTypeRelSampTypePrepMeth.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbTypeRelSampTypePrepMeth.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbTypeRelSampTypePrepMeth.FormattingEnabled = true;
-            this.lbTypeRelSampTypePrepMeth.ItemHeight = 15;
+            this.lbTypeRelSampTypePrepMeth.ItemHeight = 18;
             this.lbTypeRelSampTypePrepMeth.Location = new System.Drawing.Point(0, 31);
             this.lbTypeRelSampTypePrepMeth.Name = "lbTypeRelSampTypePrepMeth";
             this.lbTypeRelSampTypePrepMeth.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbTypeRelSampTypePrepMeth.Size = new System.Drawing.Size(742, 241);
+            this.lbTypeRelSampTypePrepMeth.Size = new System.Drawing.Size(742, 242);
             this.lbTypeRelSampTypePrepMeth.TabIndex = 1;
             // 
             // toolsTypeRelSampPrepMeth
@@ -8369,7 +8369,7 @@
             // 
             this.toolStripLabel50.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel50.Name = "toolStripLabel50";
-            this.toolStripLabel50.Size = new System.Drawing.Size(187, 28);
+            this.toolStripLabel50.Size = new System.Drawing.Size(235, 28);
             this.toolStripLabel50.Text = "Connected preparation methods";
             // 
             // toolStripSeparator38
@@ -8382,7 +8382,7 @@
             this.btnTypeRelSampTypePrepMethAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnTypeRelSampTypePrepMethAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTypeRelSampTypePrepMethAdd.Name = "btnTypeRelSampTypePrepMethAdd";
-            this.btnTypeRelSampTypePrepMethAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnTypeRelSampTypePrepMethAdd.Size = new System.Drawing.Size(65, 28);
             this.btnTypeRelSampTypePrepMethAdd.Text = "Add";
             this.btnTypeRelSampTypePrepMethAdd.Click += new System.EventHandler(this.miAddPrepMethToSampType_Click);
             // 
@@ -8391,7 +8391,7 @@
             this.btnTypeRelSampTypePrepMethRemove.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnTypeRelSampTypePrepMethRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTypeRelSampTypePrepMethRemove.Name = "btnTypeRelSampTypePrepMethRemove";
-            this.btnTypeRelSampTypePrepMethRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnTypeRelSampTypePrepMethRemove.Size = new System.Drawing.Size(91, 28);
             this.btnTypeRelSampTypePrepMethRemove.Text = "Remove";
             this.btnTypeRelSampTypePrepMethRemove.Click += new System.EventHandler(this.miTypeRelSampleTypesPrepMethRemove_Click);
             // 
@@ -8408,11 +8408,11 @@
             this.lbTypeRelSampTypeInheritedPrepMeth.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbTypeRelSampTypeInheritedPrepMeth.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbTypeRelSampTypeInheritedPrepMeth.FormattingEnabled = true;
-            this.lbTypeRelSampTypeInheritedPrepMeth.ItemHeight = 15;
+            this.lbTypeRelSampTypeInheritedPrepMeth.ItemHeight = 18;
             this.lbTypeRelSampTypeInheritedPrepMeth.Location = new System.Drawing.Point(0, 25);
             this.lbTypeRelSampTypeInheritedPrepMeth.Name = "lbTypeRelSampTypeInheritedPrepMeth";
             this.lbTypeRelSampTypeInheritedPrepMeth.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.lbTypeRelSampTypeInheritedPrepMeth.Size = new System.Drawing.Size(742, 411);
+            this.lbTypeRelSampTypeInheritedPrepMeth.Size = new System.Drawing.Size(742, 415);
             this.lbTypeRelSampTypeInheritedPrepMeth.TabIndex = 1;
             // 
             // toolsTypeRelSampAnalMeth
@@ -8431,16 +8431,16 @@
             // 
             this.toolStripLabel55.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel55.Name = "toolStripLabel55";
-            this.toolStripLabel55.Size = new System.Drawing.Size(241, 22);
+            this.toolStripLabel55.Size = new System.Drawing.Size(301, 22);
             this.toolStripLabel55.Text = "Inherited connected preparation methods";
             // 
             // tabTypeRelationsPrepMeth
             // 
             this.tabTypeRelationsPrepMeth.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabTypeRelationsPrepMeth.Controls.Add(this.splitContainer15);
-            this.tabTypeRelationsPrepMeth.Location = new System.Drawing.Point(4, 24);
+            this.tabTypeRelationsPrepMeth.Location = new System.Drawing.Point(4, 27);
             this.tabTypeRelationsPrepMeth.Name = "tabTypeRelationsPrepMeth";
-            this.tabTypeRelationsPrepMeth.Size = new System.Drawing.Size(1374, 735);
+            this.tabTypeRelationsPrepMeth.Size = new System.Drawing.Size(1374, 743);
             this.tabTypeRelationsPrepMeth.TabIndex = 1;
             this.tabTypeRelationsPrepMeth.Text = "Preparation methods";
             // 
@@ -8459,7 +8459,7 @@
             // 
             this.splitContainer15.Panel2.Controls.Add(this.lbTypRelPrepMethAnalMeth);
             this.splitContainer15.Panel2.Controls.Add(this.toolsTypeRelPrepAnalMeth);
-            this.splitContainer15.Size = new System.Drawing.Size(1374, 735);
+            this.splitContainer15.Size = new System.Drawing.Size(1374, 743);
             this.splitContainer15.SplitterDistance = 694;
             this.splitContainer15.SplitterWidth = 3;
             this.splitContainer15.TabIndex = 0;
@@ -8481,7 +8481,7 @@
             this.gridTypeRelPrepMeth.RowHeadersVisible = false;
             this.gridTypeRelPrepMeth.RowHeadersWidth = 62;
             this.gridTypeRelPrepMeth.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridTypeRelPrepMeth.Size = new System.Drawing.Size(694, 704);
+            this.gridTypeRelPrepMeth.Size = new System.Drawing.Size(694, 712);
             this.gridTypeRelPrepMeth.TabIndex = 1;
             this.gridTypeRelPrepMeth.SelectionChanged += new System.EventHandler(this.gridTypeRelPrepMeth_SelectionChanged);
             // 
@@ -8505,7 +8505,7 @@
             // 
             this.toolStripLabel51.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel51.Name = "toolStripLabel51";
-            this.toolStripLabel51.Size = new System.Drawing.Size(124, 28);
+            this.toolStripLabel51.Size = new System.Drawing.Size(157, 28);
             this.toolStripLabel51.Text = "Preparation methods";
             // 
             // toolStripSeparator39
@@ -8518,7 +8518,7 @@
             this.toolStripButton49.Image = global::DSA_lims.Properties.Resources.new1;
             this.toolStripButton49.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton49.Name = "toolStripButton49";
-            this.toolStripButton49.Size = new System.Drawing.Size(59, 28);
+            this.toolStripButton49.Size = new System.Drawing.Size(67, 28);
             this.toolStripButton49.Text = "New";
             this.toolStripButton49.Click += new System.EventHandler(this.miPreparationMethodsNew_Click);
             // 
@@ -8527,7 +8527,7 @@
             this.toolStripButton50.Image = global::DSA_lims.Properties.Resources.edit;
             this.toolStripButton50.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton50.Name = "toolStripButton50";
-            this.toolStripButton50.Size = new System.Drawing.Size(55, 28);
+            this.toolStripButton50.Size = new System.Drawing.Size(63, 28);
             this.toolStripButton50.Text = "Edit";
             this.toolStripButton50.Click += new System.EventHandler(this.miPreparationMethodEdit_Click);
             // 
@@ -8536,7 +8536,7 @@
             this.toolStripButton91.Image = global::DSA_lims.Properties.Resources.delete;
             this.toolStripButton91.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton91.Name = "toolStripButton91";
-            this.toolStripButton91.Size = new System.Drawing.Size(68, 28);
+            this.toolStripButton91.Size = new System.Drawing.Size(81, 28);
             this.toolStripButton91.Text = "Delete";
             this.toolStripButton91.Click += new System.EventHandler(this.miPreparationMethodDelete_Click);
             // 
@@ -8546,11 +8546,11 @@
             this.lbTypRelPrepMethAnalMeth.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbTypRelPrepMethAnalMeth.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbTypRelPrepMethAnalMeth.FormattingEnabled = true;
-            this.lbTypRelPrepMethAnalMeth.ItemHeight = 15;
+            this.lbTypRelPrepMethAnalMeth.ItemHeight = 18;
             this.lbTypRelPrepMethAnalMeth.Location = new System.Drawing.Point(0, 31);
             this.lbTypRelPrepMethAnalMeth.Name = "lbTypRelPrepMethAnalMeth";
             this.lbTypRelPrepMethAnalMeth.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbTypRelPrepMethAnalMeth.Size = new System.Drawing.Size(677, 704);
+            this.lbTypRelPrepMethAnalMeth.Size = new System.Drawing.Size(677, 712);
             this.lbTypRelPrepMethAnalMeth.TabIndex = 1;
             // 
             // toolsTypeRelPrepAnalMeth
@@ -8572,7 +8572,7 @@
             // 
             this.toolStripLabel20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel20.Name = "toolStripLabel20";
-            this.toolStripLabel20.Size = new System.Drawing.Size(163, 28);
+            this.toolStripLabel20.Size = new System.Drawing.Size(208, 28);
             this.toolStripLabel20.Text = "Connected analysis methods";
             // 
             // toolStripSeparator40
@@ -8585,7 +8585,7 @@
             this.btnTypeRelPrepMethAddAnalMeth.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnTypeRelPrepMethAddAnalMeth.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTypeRelPrepMethAddAnalMeth.Name = "btnTypeRelPrepMethAddAnalMeth";
-            this.btnTypeRelPrepMethAddAnalMeth.Size = new System.Drawing.Size(57, 28);
+            this.btnTypeRelPrepMethAddAnalMeth.Size = new System.Drawing.Size(65, 28);
             this.btnTypeRelPrepMethAddAnalMeth.Text = "Add";
             this.btnTypeRelPrepMethAddAnalMeth.Click += new System.EventHandler(this.miTypeRelPrepMethAddAnalMeth_Click);
             // 
@@ -8594,7 +8594,7 @@
             this.toolStripButton48.Image = global::DSA_lims.Properties.Resources.delete;
             this.toolStripButton48.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton48.Name = "toolStripButton48";
-            this.toolStripButton48.Size = new System.Drawing.Size(78, 28);
+            this.toolStripButton48.Size = new System.Drawing.Size(91, 28);
             this.toolStripButton48.Text = "Remove";
             this.toolStripButton48.Click += new System.EventHandler(this.miTypeRelPrepMethRemAnalMeth_Click);
             // 
@@ -8602,9 +8602,9 @@
             // 
             this.tabTypeRelationsAnalMeth.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabTypeRelationsAnalMeth.Controls.Add(this.splitContainer17);
-            this.tabTypeRelationsAnalMeth.Location = new System.Drawing.Point(4, 24);
+            this.tabTypeRelationsAnalMeth.Location = new System.Drawing.Point(4, 27);
             this.tabTypeRelationsAnalMeth.Name = "tabTypeRelationsAnalMeth";
-            this.tabTypeRelationsAnalMeth.Size = new System.Drawing.Size(1374, 735);
+            this.tabTypeRelationsAnalMeth.Size = new System.Drawing.Size(1374, 743);
             this.tabTypeRelationsAnalMeth.TabIndex = 2;
             this.tabTypeRelationsAnalMeth.Text = "Analysis methods";
             // 
@@ -8623,7 +8623,7 @@
             // 
             this.splitContainer17.Panel2.Controls.Add(this.lbTypRelAnalMethNuclides);
             this.splitContainer17.Panel2.Controls.Add(this.toolsTypeRelNuclides);
-            this.splitContainer17.Size = new System.Drawing.Size(1374, 735);
+            this.splitContainer17.Size = new System.Drawing.Size(1374, 743);
             this.splitContainer17.SplitterDistance = 693;
             this.splitContainer17.SplitterWidth = 3;
             this.splitContainer17.TabIndex = 1;
@@ -8645,7 +8645,7 @@
             this.gridTypeRelAnalMeth.RowHeadersVisible = false;
             this.gridTypeRelAnalMeth.RowHeadersWidth = 62;
             this.gridTypeRelAnalMeth.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridTypeRelAnalMeth.Size = new System.Drawing.Size(693, 704);
+            this.gridTypeRelAnalMeth.Size = new System.Drawing.Size(693, 712);
             this.gridTypeRelAnalMeth.TabIndex = 1;
             this.gridTypeRelAnalMeth.SelectionChanged += new System.EventHandler(this.gridTypeRelAnalMeth_SelectionChanged);
             // 
@@ -8669,7 +8669,7 @@
             // 
             this.toolStripLabel52.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel52.Name = "toolStripLabel52";
-            this.toolStripLabel52.Size = new System.Drawing.Size(102, 28);
+            this.toolStripLabel52.Size = new System.Drawing.Size(133, 28);
             this.toolStripLabel52.Text = "Analysis methods";
             // 
             // toolStripSeparator41
@@ -8682,7 +8682,7 @@
             this.toolStripButton51.Image = global::DSA_lims.Properties.Resources.new1;
             this.toolStripButton51.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton51.Name = "toolStripButton51";
-            this.toolStripButton51.Size = new System.Drawing.Size(59, 28);
+            this.toolStripButton51.Size = new System.Drawing.Size(67, 28);
             this.toolStripButton51.Text = "New";
             this.toolStripButton51.Click += new System.EventHandler(this.miAnalysisMethodsNew_Click);
             // 
@@ -8691,7 +8691,7 @@
             this.toolStripButton52.Image = global::DSA_lims.Properties.Resources.edit;
             this.toolStripButton52.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton52.Name = "toolStripButton52";
-            this.toolStripButton52.Size = new System.Drawing.Size(55, 28);
+            this.toolStripButton52.Size = new System.Drawing.Size(63, 28);
             this.toolStripButton52.Text = "Edit";
             this.toolStripButton52.Click += new System.EventHandler(this.miAnalysisMethodsEdit_Click);
             // 
@@ -8700,7 +8700,7 @@
             this.toolStripButton93.Image = global::DSA_lims.Properties.Resources.delete;
             this.toolStripButton93.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton93.Name = "toolStripButton93";
-            this.toolStripButton93.Size = new System.Drawing.Size(68, 28);
+            this.toolStripButton93.Size = new System.Drawing.Size(81, 28);
             this.toolStripButton93.Text = "Delete";
             this.toolStripButton93.Click += new System.EventHandler(this.miAnalysisMethodsDelete_Click);
             // 
@@ -8710,11 +8710,11 @@
             this.lbTypRelAnalMethNuclides.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbTypRelAnalMethNuclides.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbTypRelAnalMethNuclides.FormattingEnabled = true;
-            this.lbTypRelAnalMethNuclides.ItemHeight = 15;
+            this.lbTypRelAnalMethNuclides.ItemHeight = 18;
             this.lbTypRelAnalMethNuclides.Location = new System.Drawing.Point(0, 31);
             this.lbTypRelAnalMethNuclides.Name = "lbTypRelAnalMethNuclides";
             this.lbTypRelAnalMethNuclides.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbTypRelAnalMethNuclides.Size = new System.Drawing.Size(678, 704);
+            this.lbTypRelAnalMethNuclides.Size = new System.Drawing.Size(678, 712);
             this.lbTypRelAnalMethNuclides.TabIndex = 1;
             // 
             // toolsTypeRelNuclides
@@ -8736,7 +8736,7 @@
             // 
             this.toolStripLabel23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel23.Name = "toolStripLabel23";
-            this.toolStripLabel23.Size = new System.Drawing.Size(115, 28);
+            this.toolStripLabel23.Size = new System.Drawing.Size(144, 28);
             this.toolStripLabel23.Text = "Connected nuclides";
             // 
             // toolStripSeparator42
@@ -8749,7 +8749,7 @@
             this.btnAnalysisMethodsAddNuclide.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnAnalysisMethodsAddNuclide.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAnalysisMethodsAddNuclide.Name = "btnAnalysisMethodsAddNuclide";
-            this.btnAnalysisMethodsAddNuclide.Size = new System.Drawing.Size(57, 28);
+            this.btnAnalysisMethodsAddNuclide.Size = new System.Drawing.Size(65, 28);
             this.btnAnalysisMethodsAddNuclide.Text = "Add";
             this.btnAnalysisMethodsAddNuclide.Click += new System.EventHandler(this.miAnalysisMethodsAddNuclide_Click);
             // 
@@ -8758,7 +8758,7 @@
             this.toolStripButton54.Image = global::DSA_lims.Properties.Resources.delete;
             this.toolStripButton54.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton54.Name = "toolStripButton54";
-            this.toolStripButton54.Size = new System.Drawing.Size(78, 28);
+            this.toolStripButton54.Size = new System.Drawing.Size(91, 28);
             this.toolStripButton54.Text = "Remove";
             this.toolStripButton54.Click += new System.EventHandler(this.miAnalysisMethodsRemNuclide_Click);
             // 
@@ -8767,9 +8767,9 @@
             this.tabAuditLog.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabAuditLog.Controls.Add(this.splitContainer1);
             this.tabAuditLog.Controls.Add(this.toolsAuditLog);
-            this.tabAuditLog.Location = new System.Drawing.Point(4, 24);
+            this.tabAuditLog.Location = new System.Drawing.Point(4, 27);
             this.tabAuditLog.Name = "tabAuditLog";
-            this.tabAuditLog.Size = new System.Drawing.Size(1382, 766);
+            this.tabAuditLog.Size = new System.Drawing.Size(1382, 771);
             this.tabAuditLog.TabIndex = 14;
             this.tabAuditLog.Text = "Audit log";
             // 
@@ -8786,7 +8786,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tbAuditLogObject);
-            this.splitContainer1.Size = new System.Drawing.Size(1382, 741);
+            this.splitContainer1.Size = new System.Drawing.Size(1382, 746);
             this.splitContainer1.SplitterDistance = 648;
             this.splitContainer1.TabIndex = 10;
             // 
@@ -8807,7 +8807,7 @@
             this.gridAuditLog.RowHeadersVisible = false;
             this.gridAuditLog.RowHeadersWidth = 62;
             this.gridAuditLog.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridAuditLog.Size = new System.Drawing.Size(648, 741);
+            this.gridAuditLog.Size = new System.Drawing.Size(648, 746);
             this.gridAuditLog.TabIndex = 9;
             this.gridAuditLog.SelectionChanged += new System.EventHandler(this.gridAuditLog_SelectionChanged);
             // 
@@ -8820,7 +8820,7 @@
             this.tbAuditLogObject.Name = "tbAuditLogObject";
             this.tbAuditLogObject.ReadOnly = true;
             this.tbAuditLogObject.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbAuditLogObject.Size = new System.Drawing.Size(730, 741);
+            this.tbAuditLogObject.Size = new System.Drawing.Size(730, 746);
             this.tbAuditLogObject.TabIndex = 1;
             // 
             // toolsAuditLog
@@ -8841,7 +8841,7 @@
             // 
             this.toolStripLabel53.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel53.Name = "toolStripLabel53";
-            this.toolStripLabel53.Size = new System.Drawing.Size(57, 22);
+            this.toolStripLabel53.Size = new System.Drawing.Size(74, 22);
             this.toolStripLabel53.Text = "Audit log";
             // 
             // toolStripSeparator43
@@ -8853,17 +8853,17 @@
             // 
             this.lblAuditLogTitle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblAuditLogTitle.Name = "lblAuditLogTitle";
-            this.lblAuditLogTitle.Size = new System.Drawing.Size(111, 22);
+            this.lblAuditLogTitle.Size = new System.Drawing.Size(144, 22);
             this.lblAuditLogTitle.Text = "<lblAuditLogTitle>";
             // 
             // tabSysdata
             // 
             this.tabSysdata.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSysdata.Controls.Add(this.tabsSys);
-            this.tabSysdata.Location = new System.Drawing.Point(4, 24);
+            this.tabSysdata.Location = new System.Drawing.Point(4, 27);
             this.tabSysdata.Name = "tabSysdata";
             this.tabSysdata.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSysdata.Size = new System.Drawing.Size(1382, 766);
+            this.tabSysdata.Size = new System.Drawing.Size(1382, 771);
             this.tabSysdata.TabIndex = 18;
             this.tabSysdata.Text = "Sysdata";
             // 
@@ -8881,7 +8881,7 @@
             this.tabsSys.Location = new System.Drawing.Point(3, 3);
             this.tabsSys.Name = "tabsSys";
             this.tabsSys.SelectedIndex = 0;
-            this.tabsSys.Size = new System.Drawing.Size(1376, 760);
+            this.tabsSys.Size = new System.Drawing.Size(1376, 765);
             this.tabsSys.TabIndex = 0;
             this.tabsSys.SelectedIndexChanged += new System.EventHandler(this.tabsSys_SelectedIndexChanged);
             // 
@@ -8889,9 +8889,9 @@
             // 
             this.tabSysLaboratories.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSysLaboratories.Controls.Add(this.splitContainer9);
-            this.tabSysLaboratories.Location = new System.Drawing.Point(4, 24);
+            this.tabSysLaboratories.Location = new System.Drawing.Point(4, 27);
             this.tabSysLaboratories.Name = "tabSysLaboratories";
-            this.tabSysLaboratories.Size = new System.Drawing.Size(1368, 732);
+            this.tabSysLaboratories.Size = new System.Drawing.Size(1368, 734);
             this.tabSysLaboratories.TabIndex = 2;
             this.tabSysLaboratories.Text = "Laboratories";
             // 
@@ -8909,7 +8909,7 @@
             // splitContainer9.Panel2
             // 
             this.splitContainer9.Panel2.Controls.Add(this.splitContainer10);
-            this.splitContainer9.Size = new System.Drawing.Size(1368, 732);
+            this.splitContainer9.Size = new System.Drawing.Size(1368, 734);
             this.splitContainer9.SplitterDistance = 797;
             this.splitContainer9.SplitterWidth = 3;
             this.splitContainer9.TabIndex = 3;
@@ -8931,7 +8931,7 @@
             this.gridSysLab.RowHeadersVisible = false;
             this.gridSysLab.RowHeadersWidth = 62;
             this.gridSysLab.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSysLab.Size = new System.Drawing.Size(797, 701);
+            this.gridSysLab.Size = new System.Drawing.Size(797, 703);
             this.gridSysLab.TabIndex = 2;
             this.gridSysLab.SelectionChanged += new System.EventHandler(this.gridSysLab_SelectionChanged);
             // 
@@ -8955,7 +8955,7 @@
             // 
             this.toolStripLabel31.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel31.Name = "toolStripLabel31";
-            this.toolStripLabel31.Size = new System.Drawing.Size(76, 28);
+            this.toolStripLabel31.Size = new System.Drawing.Size(97, 28);
             this.toolStripLabel31.Text = "Laboratories";
             // 
             // toolStripSeparator14
@@ -8968,7 +8968,7 @@
             this.btnSysLabNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSysLabNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysLabNew.Name = "btnSysLabNew";
-            this.btnSysLabNew.Size = new System.Drawing.Size(59, 28);
+            this.btnSysLabNew.Size = new System.Drawing.Size(67, 28);
             this.btnSysLabNew.Text = "New";
             this.btnSysLabNew.Click += new System.EventHandler(this.miNewLaboratory_Click);
             // 
@@ -8977,7 +8977,7 @@
             this.btnSysLabEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnSysLabEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysLabEdit.Name = "btnSysLabEdit";
-            this.btnSysLabEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnSysLabEdit.Size = new System.Drawing.Size(63, 28);
             this.btnSysLabEdit.Text = "Edit";
             this.btnSysLabEdit.Click += new System.EventHandler(this.miEditLaboratory_Click);
             // 
@@ -8986,7 +8986,7 @@
             this.btnSysLabDelete.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnSysLabDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysLabDelete.Name = "btnSysLabDelete";
-            this.btnSysLabDelete.Size = new System.Drawing.Size(68, 28);
+            this.btnSysLabDelete.Size = new System.Drawing.Size(81, 28);
             this.btnSysLabDelete.Text = "Delete";
             this.btnSysLabDelete.Click += new System.EventHandler(this.miDeleteLaboratory_Click);
             // 
@@ -9006,7 +9006,7 @@
             // 
             this.splitContainer10.Panel2.Controls.Add(this.gridSysLabAnalMeth);
             this.splitContainer10.Panel2.Controls.Add(this.toolsSysLabAnalMeth);
-            this.splitContainer10.Size = new System.Drawing.Size(568, 732);
+            this.splitContainer10.Size = new System.Drawing.Size(568, 734);
             this.splitContainer10.SplitterDistance = 314;
             this.splitContainer10.SplitterWidth = 3;
             this.splitContainer10.TabIndex = 0;
@@ -9050,7 +9050,7 @@
             // 
             this.toolStripLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel5.Name = "toolStripLabel5";
-            this.toolStripLabel5.Size = new System.Drawing.Size(124, 28);
+            this.toolStripLabel5.Size = new System.Drawing.Size(157, 28);
             this.toolStripLabel5.Text = "Preparation methods";
             // 
             // toolStripSeparator15
@@ -9063,7 +9063,7 @@
             this.btnSysLabPrepMethAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSysLabPrepMethAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysLabPrepMethAdd.Name = "btnSysLabPrepMethAdd";
-            this.btnSysLabPrepMethAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnSysLabPrepMethAdd.Size = new System.Drawing.Size(65, 28);
             this.btnSysLabPrepMethAdd.Text = "Add";
             this.btnSysLabPrepMethAdd.Click += new System.EventHandler(this.btnSysLabPrepMethAdd_Click);
             // 
@@ -9072,7 +9072,7 @@
             this.btnSysLabPrepMethRemove.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnSysLabPrepMethRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysLabPrepMethRemove.Name = "btnSysLabPrepMethRemove";
-            this.btnSysLabPrepMethRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnSysLabPrepMethRemove.Size = new System.Drawing.Size(91, 28);
             this.btnSysLabPrepMethRemove.Text = "Remove";
             this.btnSysLabPrepMethRemove.Click += new System.EventHandler(this.btnSysLabPrepMethRemove_Click);
             // 
@@ -9093,7 +9093,7 @@
             this.gridSysLabAnalMeth.RowHeadersVisible = false;
             this.gridSysLabAnalMeth.RowHeadersWidth = 62;
             this.gridSysLabAnalMeth.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSysLabAnalMeth.Size = new System.Drawing.Size(568, 384);
+            this.gridSysLabAnalMeth.Size = new System.Drawing.Size(568, 386);
             this.gridSysLabAnalMeth.TabIndex = 1;
             // 
             // toolsSysLabAnalMeth
@@ -9115,7 +9115,7 @@
             // 
             this.toolStripLabel14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel14.Name = "toolStripLabel14";
-            this.toolStripLabel14.Size = new System.Drawing.Size(102, 28);
+            this.toolStripLabel14.Size = new System.Drawing.Size(133, 28);
             this.toolStripLabel14.Text = "Analysis methods";
             // 
             // toolStripSeparator16
@@ -9128,7 +9128,7 @@
             this.btnSysLabAnalMethAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSysLabAnalMethAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysLabAnalMethAdd.Name = "btnSysLabAnalMethAdd";
-            this.btnSysLabAnalMethAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnSysLabAnalMethAdd.Size = new System.Drawing.Size(65, 28);
             this.btnSysLabAnalMethAdd.Text = "Add";
             this.btnSysLabAnalMethAdd.Click += new System.EventHandler(this.btnSysLabAnalMethAdd_Click);
             // 
@@ -9137,7 +9137,7 @@
             this.btnSysLabAnalMethRemove.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnSysLabAnalMethRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysLabAnalMethRemove.Name = "btnSysLabAnalMethRemove";
-            this.btnSysLabAnalMethRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnSysLabAnalMethRemove.Size = new System.Drawing.Size(91, 28);
             this.btnSysLabAnalMethRemove.Text = "Remove";
             this.btnSysLabAnalMethRemove.Click += new System.EventHandler(this.btnSysLabAnalMethRemove_Click);
             // 
@@ -9145,9 +9145,9 @@
             // 
             this.tabSysUsers.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSysUsers.Controls.Add(this.splitContainer11);
-            this.tabSysUsers.Location = new System.Drawing.Point(4, 24);
+            this.tabSysUsers.Location = new System.Drawing.Point(4, 27);
             this.tabSysUsers.Name = "tabSysUsers";
-            this.tabSysUsers.Size = new System.Drawing.Size(1368, 727);
+            this.tabSysUsers.Size = new System.Drawing.Size(1368, 737);
             this.tabSysUsers.TabIndex = 3;
             this.tabSysUsers.Text = "Users";
             // 
@@ -9165,7 +9165,7 @@
             // splitContainer11.Panel2
             // 
             this.splitContainer11.Panel2.Controls.Add(this.splitContainer18);
-            this.splitContainer11.Size = new System.Drawing.Size(1368, 727);
+            this.splitContainer11.Size = new System.Drawing.Size(1368, 737);
             this.splitContainer11.SplitterDistance = 797;
             this.splitContainer11.SplitterWidth = 3;
             this.splitContainer11.TabIndex = 5;
@@ -9187,7 +9187,7 @@
             this.gridSysUsers.RowHeadersVisible = false;
             this.gridSysUsers.RowHeadersWidth = 62;
             this.gridSysUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSysUsers.Size = new System.Drawing.Size(797, 696);
+            this.gridSysUsers.Size = new System.Drawing.Size(797, 706);
             this.gridSysUsers.TabIndex = 0;
             this.gridSysUsers.SelectionChanged += new System.EventHandler(this.gridMetaUsers_SelectionChanged);
             // 
@@ -9213,7 +9213,7 @@
             // 
             this.toolStripLabel35.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel35.Name = "toolStripLabel35";
-            this.toolStripLabel35.Size = new System.Drawing.Size(38, 28);
+            this.toolStripLabel35.Size = new System.Drawing.Size(48, 28);
             this.toolStripLabel35.Text = "Users";
             // 
             // toolStripSeparator10
@@ -9226,7 +9226,7 @@
             this.btnMetaUsersNew.Image = global::DSA_lims.Properties.Resources.create_user;
             this.btnMetaUsersNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUsersNew.Name = "btnMetaUsersNew";
-            this.btnMetaUsersNew.Size = new System.Drawing.Size(59, 28);
+            this.btnMetaUsersNew.Size = new System.Drawing.Size(67, 28);
             this.btnMetaUsersNew.Text = "New";
             this.btnMetaUsersNew.Click += new System.EventHandler(this.miNewUser_Click);
             // 
@@ -9235,7 +9235,7 @@
             this.btnMetaUsersEdit.Image = global::DSA_lims.Properties.Resources.user;
             this.btnMetaUsersEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUsersEdit.Name = "btnMetaUsersEdit";
-            this.btnMetaUsersEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnMetaUsersEdit.Size = new System.Drawing.Size(63, 28);
             this.btnMetaUsersEdit.Text = "Edit";
             this.btnMetaUsersEdit.Click += new System.EventHandler(this.miEditUser_Click);
             // 
@@ -9244,7 +9244,7 @@
             this.btnMetaUsersDelete.Image = global::DSA_lims.Properties.Resources.delete_user;
             this.btnMetaUsersDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUsersDelete.Name = "btnMetaUsersDelete";
-            this.btnMetaUsersDelete.Size = new System.Drawing.Size(68, 28);
+            this.btnMetaUsersDelete.Size = new System.Drawing.Size(81, 28);
             this.btnMetaUsersDelete.Text = "Delete";
             this.btnMetaUsersDelete.Click += new System.EventHandler(this.miDeleteUser_Click);
             // 
@@ -9259,7 +9259,7 @@
             this.btnMetaUsersResetPass.Image = global::DSA_lims.Properties.Resources.refresh;
             this.btnMetaUsersResetPass.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMetaUsersResetPass.Name = "btnMetaUsersResetPass";
-            this.btnMetaUsersResetPass.Size = new System.Drawing.Size(116, 28);
+            this.btnMetaUsersResetPass.Size = new System.Drawing.Size(140, 28);
             this.btnMetaUsersResetPass.Text = "Reset password";
             this.btnMetaUsersResetPass.Click += new System.EventHandler(this.miResetPass_Click);
             // 
@@ -9279,8 +9279,8 @@
             // 
             this.splitContainer18.Panel2.Controls.Add(this.gridSysUsersAnalMeth);
             this.splitContainer18.Panel2.Controls.Add(this.toolsSysUsersAnalMeth);
-            this.splitContainer18.Size = new System.Drawing.Size(568, 727);
-            this.splitContainer18.SplitterDistance = 308;
+            this.splitContainer18.Size = new System.Drawing.Size(568, 737);
+            this.splitContainer18.SplitterDistance = 311;
             this.splitContainer18.SplitterWidth = 3;
             this.splitContainer18.TabIndex = 3;
             // 
@@ -9289,11 +9289,11 @@
             this.lbSysUsersRoles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbSysUsersRoles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbSysUsersRoles.FormattingEnabled = true;
-            this.lbSysUsersRoles.ItemHeight = 15;
+            this.lbSysUsersRoles.ItemHeight = 18;
             this.lbSysUsersRoles.Location = new System.Drawing.Point(0, 31);
             this.lbSysUsersRoles.Name = "lbSysUsersRoles";
             this.lbSysUsersRoles.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbSysUsersRoles.Size = new System.Drawing.Size(568, 277);
+            this.lbSysUsersRoles.Size = new System.Drawing.Size(568, 280);
             this.lbSysUsersRoles.TabIndex = 1;
             // 
             // toolsSysUsersRoles
@@ -9315,7 +9315,7 @@
             // 
             this.toolStripLabel28.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel28.Name = "toolStripLabel28";
-            this.toolStripLabel28.Size = new System.Drawing.Size(37, 28);
+            this.toolStripLabel28.Size = new System.Drawing.Size(47, 28);
             this.toolStripLabel28.Text = "Roles";
             // 
             // toolStripSeparator12
@@ -9328,7 +9328,7 @@
             this.btnSysUsersAddRoles.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSysUsersAddRoles.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysUsersAddRoles.Name = "btnSysUsersAddRoles";
-            this.btnSysUsersAddRoles.Size = new System.Drawing.Size(57, 28);
+            this.btnSysUsersAddRoles.Size = new System.Drawing.Size(65, 28);
             this.btnSysUsersAddRoles.Text = "Add";
             this.btnSysUsersAddRoles.Click += new System.EventHandler(this.btnSysUsersAddRoles_Click);
             // 
@@ -9337,7 +9337,7 @@
             this.btnSysUsersRemRoles.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnSysUsersRemRoles.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysUsersRemRoles.Name = "btnSysUsersRemRoles";
-            this.btnSysUsersRemRoles.Size = new System.Drawing.Size(78, 28);
+            this.btnSysUsersRemRoles.Size = new System.Drawing.Size(91, 28);
             this.btnSysUsersRemRoles.Text = "Remove";
             this.btnSysUsersRemRoles.Click += new System.EventHandler(this.btnSysUsersRemRoles_Click);
             // 
@@ -9358,7 +9358,7 @@
             this.gridSysUsersAnalMeth.RowHeadersVisible = false;
             this.gridSysUsersAnalMeth.RowHeadersWidth = 62;
             this.gridSysUsersAnalMeth.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSysUsersAnalMeth.Size = new System.Drawing.Size(568, 385);
+            this.gridSysUsersAnalMeth.Size = new System.Drawing.Size(568, 392);
             this.gridSysUsersAnalMeth.TabIndex = 1;
             // 
             // toolsSysUsersAnalMeth
@@ -9380,7 +9380,7 @@
             // 
             this.toolStripLabel29.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel29.Name = "toolStripLabel29";
-            this.toolStripLabel29.Size = new System.Drawing.Size(102, 28);
+            this.toolStripLabel29.Size = new System.Drawing.Size(133, 28);
             this.toolStripLabel29.Text = "Analysis methods";
             // 
             // toolStripSeparator13
@@ -9393,7 +9393,7 @@
             this.btnSysUsersAnalMethAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSysUsersAnalMethAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysUsersAnalMethAdd.Name = "btnSysUsersAnalMethAdd";
-            this.btnSysUsersAnalMethAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnSysUsersAnalMethAdd.Size = new System.Drawing.Size(65, 28);
             this.btnSysUsersAnalMethAdd.Text = "Add";
             this.btnSysUsersAnalMethAdd.Click += new System.EventHandler(this.btnSysUsersAnalMethAdd_Click);
             // 
@@ -9402,7 +9402,7 @@
             this.btnSysUsersAnalMethRemove.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnSysUsersAnalMethRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysUsersAnalMethRemove.Name = "btnSysUsersAnalMethRemove";
-            this.btnSysUsersAnalMethRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnSysUsersAnalMethRemove.Size = new System.Drawing.Size(91, 28);
             this.btnSysUsersAnalMethRemove.Text = "Remove";
             this.btnSysUsersAnalMethRemove.Click += new System.EventHandler(this.btnSysUsersAnalMethRemove_Click);
             // 
@@ -9410,9 +9410,9 @@
             // 
             this.tabSysMunicipalities.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSysMunicipalities.Controls.Add(this.splitContainer19);
-            this.tabSysMunicipalities.Location = new System.Drawing.Point(4, 24);
+            this.tabSysMunicipalities.Location = new System.Drawing.Point(4, 27);
             this.tabSysMunicipalities.Name = "tabSysMunicipalities";
-            this.tabSysMunicipalities.Size = new System.Drawing.Size(1368, 727);
+            this.tabSysMunicipalities.Size = new System.Drawing.Size(1368, 737);
             this.tabSysMunicipalities.TabIndex = 5;
             this.tabSysMunicipalities.Text = "Municipalities";
             // 
@@ -9431,7 +9431,7 @@
             // 
             this.splitContainer19.Panel2.Controls.Add(this.gridSysMunicipality);
             this.splitContainer19.Panel2.Controls.Add(this.toolsSysMunicipalities);
-            this.splitContainer19.Size = new System.Drawing.Size(1368, 727);
+            this.splitContainer19.Size = new System.Drawing.Size(1368, 737);
             this.splitContainer19.SplitterDistance = 640;
             this.splitContainer19.SplitterWidth = 5;
             this.splitContainer19.TabIndex = 1;
@@ -9453,7 +9453,7 @@
             this.gridSysCounty.RowHeadersVisible = false;
             this.gridSysCounty.RowHeadersWidth = 62;
             this.gridSysCounty.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSysCounty.Size = new System.Drawing.Size(640, 696);
+            this.gridSysCounty.Size = new System.Drawing.Size(640, 706);
             this.gridSysCounty.TabIndex = 1;
             this.gridSysCounty.SelectionChanged += new System.EventHandler(this.gridSysCounty_SelectionChanged);
             // 
@@ -9477,7 +9477,7 @@
             // 
             this.toolStripLabel32.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel32.Name = "toolStripLabel32";
-            this.toolStripLabel32.Size = new System.Drawing.Size(55, 28);
+            this.toolStripLabel32.Size = new System.Drawing.Size(70, 28);
             this.toolStripLabel32.Text = "Counties";
             // 
             // toolStripSeparator8
@@ -9490,7 +9490,7 @@
             this.btnNewCounty.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnNewCounty.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNewCounty.Name = "btnNewCounty";
-            this.btnNewCounty.Size = new System.Drawing.Size(59, 28);
+            this.btnNewCounty.Size = new System.Drawing.Size(67, 28);
             this.btnNewCounty.Text = "New";
             this.btnNewCounty.Click += new System.EventHandler(this.miNewCounty_Click);
             // 
@@ -9499,7 +9499,7 @@
             this.btnEditCounty.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnEditCounty.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditCounty.Name = "btnEditCounty";
-            this.btnEditCounty.Size = new System.Drawing.Size(55, 28);
+            this.btnEditCounty.Size = new System.Drawing.Size(63, 28);
             this.btnEditCounty.Text = "Edit";
             this.btnEditCounty.Click += new System.EventHandler(this.miEditCounty_Click);
             // 
@@ -9508,7 +9508,7 @@
             this.btnDeleteCounty.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnDeleteCounty.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDeleteCounty.Name = "btnDeleteCounty";
-            this.btnDeleteCounty.Size = new System.Drawing.Size(68, 28);
+            this.btnDeleteCounty.Size = new System.Drawing.Size(81, 28);
             this.btnDeleteCounty.Text = "Delete";
             this.btnDeleteCounty.Click += new System.EventHandler(this.miDeleteCounty_Click);
             // 
@@ -9528,7 +9528,7 @@
             this.gridSysMunicipality.RowHeadersVisible = false;
             this.gridSysMunicipality.RowHeadersWidth = 62;
             this.gridSysMunicipality.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSysMunicipality.Size = new System.Drawing.Size(723, 696);
+            this.gridSysMunicipality.Size = new System.Drawing.Size(723, 706);
             this.gridSysMunicipality.TabIndex = 1;
             // 
             // toolsSysMunicipalities
@@ -9551,7 +9551,7 @@
             // 
             this.toolStripLabel33.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel33.Name = "toolStripLabel33";
-            this.toolStripLabel33.Size = new System.Drawing.Size(83, 28);
+            this.toolStripLabel33.Size = new System.Drawing.Size(106, 28);
             this.toolStripLabel33.Text = "Municipalities";
             // 
             // toolStripSeparator9
@@ -9564,7 +9564,7 @@
             this.btnNewMunicipality.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnNewMunicipality.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNewMunicipality.Name = "btnNewMunicipality";
-            this.btnNewMunicipality.Size = new System.Drawing.Size(59, 28);
+            this.btnNewMunicipality.Size = new System.Drawing.Size(67, 28);
             this.btnNewMunicipality.Text = "New";
             this.btnNewMunicipality.Click += new System.EventHandler(this.miNewMunicipality_Click);
             // 
@@ -9573,7 +9573,7 @@
             this.btnEditMunicipality.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnEditMunicipality.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditMunicipality.Name = "btnEditMunicipality";
-            this.btnEditMunicipality.Size = new System.Drawing.Size(55, 28);
+            this.btnEditMunicipality.Size = new System.Drawing.Size(63, 28);
             this.btnEditMunicipality.Text = "Edit";
             this.btnEditMunicipality.Click += new System.EventHandler(this.miEditMunicipality_Click);
             // 
@@ -9582,7 +9582,7 @@
             this.btnDeleteMunicipality.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnDeleteMunicipality.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDeleteMunicipality.Name = "btnDeleteMunicipality";
-            this.btnDeleteMunicipality.Size = new System.Drawing.Size(68, 28);
+            this.btnDeleteMunicipality.Size = new System.Drawing.Size(81, 28);
             this.btnDeleteMunicipality.Text = "Delete";
             this.btnDeleteMunicipality.Click += new System.EventHandler(this.miDeleteMunicipality_Click);
             // 
@@ -9590,9 +9590,9 @@
             // 
             this.tabSysAccredRules.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSysAccredRules.Controls.Add(this.splitContainer8);
-            this.tabSysAccredRules.Location = new System.Drawing.Point(4, 24);
+            this.tabSysAccredRules.Location = new System.Drawing.Point(4, 27);
             this.tabSysAccredRules.Name = "tabSysAccredRules";
-            this.tabSysAccredRules.Size = new System.Drawing.Size(1368, 727);
+            this.tabSysAccredRules.Size = new System.Drawing.Size(1368, 737);
             this.tabSysAccredRules.TabIndex = 8;
             this.tabSysAccredRules.Text = "Accreditation terms";
             // 
@@ -9610,7 +9610,7 @@
             // splitContainer8.Panel2
             // 
             this.splitContainer8.Panel2.Controls.Add(this.tabsAccreditationTerms);
-            this.splitContainer8.Size = new System.Drawing.Size(1368, 727);
+            this.splitContainer8.Size = new System.Drawing.Size(1368, 737);
             this.splitContainer8.SplitterDistance = 660;
             this.splitContainer8.TabIndex = 3;
             // 
@@ -9631,7 +9631,7 @@
             this.gridSysAccTerms.RowHeadersVisible = false;
             this.gridSysAccTerms.RowHeadersWidth = 62;
             this.gridSysAccTerms.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSysAccTerms.Size = new System.Drawing.Size(660, 696);
+            this.gridSysAccTerms.Size = new System.Drawing.Size(660, 706);
             this.gridSysAccTerms.TabIndex = 1;
             this.gridSysAccTerms.SelectionChanged += new System.EventHandler(this.gridSysAccTerms_SelectionChanged);
             // 
@@ -9654,7 +9654,7 @@
             // 
             this.toolStripLabel34.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel34.Name = "toolStripLabel34";
-            this.toolStripLabel34.Size = new System.Drawing.Size(118, 28);
+            this.toolStripLabel34.Size = new System.Drawing.Size(148, 28);
             this.toolStripLabel34.Text = "Accreditation terms";
             // 
             // toolStripSeparator7
@@ -9667,7 +9667,7 @@
             this.btnSysAccTermNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSysAccTermNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysAccTermNew.Name = "btnSysAccTermNew";
-            this.btnSysAccTermNew.Size = new System.Drawing.Size(59, 28);
+            this.btnSysAccTermNew.Size = new System.Drawing.Size(67, 28);
             this.btnSysAccTermNew.Text = "New";
             this.btnSysAccTermNew.Click += new System.EventHandler(this.miSysAccTermNew_Click);
             // 
@@ -9676,7 +9676,7 @@
             this.btnSysAccTermEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnSysAccTermEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysAccTermEdit.Name = "btnSysAccTermEdit";
-            this.btnSysAccTermEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnSysAccTermEdit.Size = new System.Drawing.Size(63, 28);
             this.btnSysAccTermEdit.Text = "Edit";
             this.btnSysAccTermEdit.Click += new System.EventHandler(this.miSysAccTermEdit_Click);
             // 
@@ -9691,17 +9691,17 @@
             this.tabsAccreditationTerms.Location = new System.Drawing.Point(0, 0);
             this.tabsAccreditationTerms.Name = "tabsAccreditationTerms";
             this.tabsAccreditationTerms.SelectedIndex = 0;
-            this.tabsAccreditationTerms.Size = new System.Drawing.Size(704, 727);
+            this.tabsAccreditationTerms.Size = new System.Drawing.Size(704, 737);
             this.tabsAccreditationTerms.TabIndex = 2;
             // 
             // tabAccredLab
             // 
             this.tabAccredLab.Controls.Add(this.lbAccredLabs);
             this.tabAccredLab.Controls.Add(this.toolStrip19);
-            this.tabAccredLab.Location = new System.Drawing.Point(4, 24);
+            this.tabAccredLab.Location = new System.Drawing.Point(4, 27);
             this.tabAccredLab.Name = "tabAccredLab";
             this.tabAccredLab.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAccredLab.Size = new System.Drawing.Size(696, 699);
+            this.tabAccredLab.Size = new System.Drawing.Size(696, 706);
             this.tabAccredLab.TabIndex = 0;
             this.tabAccredLab.Text = "Laboratories";
             this.tabAccredLab.UseVisualStyleBackColor = true;
@@ -9712,11 +9712,11 @@
             this.lbAccredLabs.DisplayMember = "Name";
             this.lbAccredLabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbAccredLabs.FormattingEnabled = true;
-            this.lbAccredLabs.ItemHeight = 15;
+            this.lbAccredLabs.ItemHeight = 18;
             this.lbAccredLabs.Location = new System.Drawing.Point(3, 34);
             this.lbAccredLabs.Name = "lbAccredLabs";
             this.lbAccredLabs.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbAccredLabs.Size = new System.Drawing.Size(690, 662);
+            this.lbAccredLabs.Size = new System.Drawing.Size(690, 669);
             this.lbAccredLabs.TabIndex = 1;
             this.lbAccredLabs.ValueMember = "Id";
             // 
@@ -9738,7 +9738,7 @@
             this.btnAccredLabsAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnAccredLabsAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredLabsAdd.Name = "btnAccredLabsAdd";
-            this.btnAccredLabsAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnAccredLabsAdd.Size = new System.Drawing.Size(65, 28);
             this.btnAccredLabsAdd.Text = "Add";
             this.btnAccredLabsAdd.Click += new System.EventHandler(this.btnAccredLabsAdd_Click);
             // 
@@ -9747,17 +9747,17 @@
             this.btnAccredLabsRemove.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnAccredLabsRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredLabsRemove.Name = "btnAccredLabsRemove";
-            this.btnAccredLabsRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnAccredLabsRemove.Size = new System.Drawing.Size(91, 28);
             this.btnAccredLabsRemove.Text = "Remove";
             this.btnAccredLabsRemove.Click += new System.EventHandler(this.btnAccredLabsRemove_Click);
             // 
             // tabAccredSampleType
             // 
             this.tabAccredSampleType.Controls.Add(this.splitContainer14);
-            this.tabAccredSampleType.Location = new System.Drawing.Point(4, 22);
+            this.tabAccredSampleType.Location = new System.Drawing.Point(4, 25);
             this.tabAccredSampleType.Name = "tabAccredSampleType";
             this.tabAccredSampleType.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAccredSampleType.Size = new System.Drawing.Size(696, 703);
+            this.tabAccredSampleType.Size = new System.Drawing.Size(696, 710);
             this.tabAccredSampleType.TabIndex = 1;
             this.tabAccredSampleType.Text = "Sample types";
             this.tabAccredSampleType.UseVisualStyleBackColor = true;
@@ -9778,8 +9778,8 @@
             // 
             this.splitContainer14.Panel2.Controls.Add(this.lbAccredSampComp);
             this.splitContainer14.Panel2.Controls.Add(this.toolStrip23);
-            this.splitContainer14.Size = new System.Drawing.Size(690, 697);
-            this.splitContainer14.SplitterDistance = 330;
+            this.splitContainer14.Size = new System.Drawing.Size(690, 704);
+            this.splitContainer14.SplitterDistance = 332;
             this.splitContainer14.TabIndex = 2;
             // 
             // gridAccredSampTypes
@@ -9798,7 +9798,7 @@
             this.gridAccredSampTypes.RowHeadersVisible = false;
             this.gridAccredSampTypes.RowHeadersWidth = 62;
             this.gridAccredSampTypes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridAccredSampTypes.Size = new System.Drawing.Size(690, 299);
+            this.gridAccredSampTypes.Size = new System.Drawing.Size(690, 301);
             this.gridAccredSampTypes.TabIndex = 1;
             this.gridAccredSampTypes.SelectionChanged += new System.EventHandler(this.gridAccredSampTypes_SelectionChanged);
             // 
@@ -9821,7 +9821,7 @@
             // 
             this.toolStripLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel6.Name = "toolStripLabel6";
-            this.toolStripLabel6.Size = new System.Drawing.Size(81, 28);
+            this.toolStripLabel6.Size = new System.Drawing.Size(102, 28);
             this.toolStripLabel6.Text = "Sample types";
             // 
             // toolStripSeparator77
@@ -9834,7 +9834,7 @@
             this.btnAccredSampTypesAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnAccredSampTypesAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredSampTypesAdd.Name = "btnAccredSampTypesAdd";
-            this.btnAccredSampTypesAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnAccredSampTypesAdd.Size = new System.Drawing.Size(65, 28);
             this.btnAccredSampTypesAdd.Text = "Add";
             this.btnAccredSampTypesAdd.Click += new System.EventHandler(this.btnAccredSampTypesAdd_Click);
             // 
@@ -9843,7 +9843,7 @@
             this.btnAccredSampTypesRemove.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnAccredSampTypesRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredSampTypesRemove.Name = "btnAccredSampTypesRemove";
-            this.btnAccredSampTypesRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnAccredSampTypesRemove.Size = new System.Drawing.Size(91, 28);
             this.btnAccredSampTypesRemove.Text = "Remove";
             this.btnAccredSampTypesRemove.Click += new System.EventHandler(this.btnAccredSampTypesRemove_Click);
             // 
@@ -9852,11 +9852,11 @@
             this.lbAccredSampComp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbAccredSampComp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbAccredSampComp.FormattingEnabled = true;
-            this.lbAccredSampComp.ItemHeight = 15;
+            this.lbAccredSampComp.ItemHeight = 18;
             this.lbAccredSampComp.Location = new System.Drawing.Point(0, 31);
             this.lbAccredSampComp.Name = "lbAccredSampComp";
             this.lbAccredSampComp.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbAccredSampComp.Size = new System.Drawing.Size(690, 332);
+            this.lbAccredSampComp.Size = new System.Drawing.Size(690, 337);
             this.lbAccredSampComp.TabIndex = 1;
             // 
             // toolStrip23
@@ -9878,7 +9878,7 @@
             // 
             this.toolStripLabel49.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel49.Name = "toolStripLabel49";
-            this.toolStripLabel49.Size = new System.Drawing.Size(120, 28);
+            this.toolStripLabel49.Size = new System.Drawing.Size(151, 28);
             this.toolStripLabel49.Text = "Sample components";
             // 
             // toolStripSeparator78
@@ -9891,7 +9891,7 @@
             this.btnAccredSampCompAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnAccredSampCompAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredSampCompAdd.Name = "btnAccredSampCompAdd";
-            this.btnAccredSampCompAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnAccredSampCompAdd.Size = new System.Drawing.Size(65, 28);
             this.btnAccredSampCompAdd.Text = "Add";
             this.btnAccredSampCompAdd.Click += new System.EventHandler(this.btnAccredSampCompAdd_Click);
             // 
@@ -9900,7 +9900,7 @@
             this.btnAccredSampCompRemove.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnAccredSampCompRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredSampCompRemove.Name = "btnAccredSampCompRemove";
-            this.btnAccredSampCompRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnAccredSampCompRemove.Size = new System.Drawing.Size(91, 28);
             this.btnAccredSampCompRemove.Text = "Remove";
             this.btnAccredSampCompRemove.Click += new System.EventHandler(this.btnAccredSampCompRemove_Click);
             // 
@@ -9908,10 +9908,10 @@
             // 
             this.tabAccredNuclides.Controls.Add(this.lbAccredNuclides);
             this.tabAccredNuclides.Controls.Add(this.toolStrip20);
-            this.tabAccredNuclides.Location = new System.Drawing.Point(4, 22);
+            this.tabAccredNuclides.Location = new System.Drawing.Point(4, 25);
             this.tabAccredNuclides.Name = "tabAccredNuclides";
             this.tabAccredNuclides.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAccredNuclides.Size = new System.Drawing.Size(696, 703);
+            this.tabAccredNuclides.Size = new System.Drawing.Size(696, 710);
             this.tabAccredNuclides.TabIndex = 2;
             this.tabAccredNuclides.Text = "Nuclides";
             this.tabAccredNuclides.UseVisualStyleBackColor = true;
@@ -9922,11 +9922,11 @@
             this.lbAccredNuclides.DisplayMember = "Name";
             this.lbAccredNuclides.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbAccredNuclides.FormattingEnabled = true;
-            this.lbAccredNuclides.ItemHeight = 15;
+            this.lbAccredNuclides.ItemHeight = 18;
             this.lbAccredNuclides.Location = new System.Drawing.Point(3, 34);
             this.lbAccredNuclides.Name = "lbAccredNuclides";
             this.lbAccredNuclides.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbAccredNuclides.Size = new System.Drawing.Size(690, 666);
+            this.lbAccredNuclides.Size = new System.Drawing.Size(690, 673);
             this.lbAccredNuclides.TabIndex = 0;
             this.lbAccredNuclides.ValueMember = "Id";
             // 
@@ -9948,7 +9948,7 @@
             this.btnAccredNuclidesAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnAccredNuclidesAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredNuclidesAdd.Name = "btnAccredNuclidesAdd";
-            this.btnAccredNuclidesAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnAccredNuclidesAdd.Size = new System.Drawing.Size(65, 28);
             this.btnAccredNuclidesAdd.Text = "Add";
             this.btnAccredNuclidesAdd.Click += new System.EventHandler(this.btnAccredNuclidesAdd_Click);
             // 
@@ -9957,7 +9957,7 @@
             this.btnAccredNuclidesRemove.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnAccredNuclidesRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredNuclidesRemove.Name = "btnAccredNuclidesRemove";
-            this.btnAccredNuclidesRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnAccredNuclidesRemove.Size = new System.Drawing.Size(91, 28);
             this.btnAccredNuclidesRemove.Text = "Remove";
             this.btnAccredNuclidesRemove.Click += new System.EventHandler(this.btnAccredNuclidesRemove_Click);
             // 
@@ -9965,10 +9965,10 @@
             // 
             this.tabAccredPrepMeth.Controls.Add(this.lbAccredPrepMeth);
             this.tabAccredPrepMeth.Controls.Add(this.toolStrip21);
-            this.tabAccredPrepMeth.Location = new System.Drawing.Point(4, 22);
+            this.tabAccredPrepMeth.Location = new System.Drawing.Point(4, 25);
             this.tabAccredPrepMeth.Name = "tabAccredPrepMeth";
             this.tabAccredPrepMeth.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAccredPrepMeth.Size = new System.Drawing.Size(696, 703);
+            this.tabAccredPrepMeth.Size = new System.Drawing.Size(696, 710);
             this.tabAccredPrepMeth.TabIndex = 3;
             this.tabAccredPrepMeth.Text = "Preparation meth.";
             this.tabAccredPrepMeth.UseVisualStyleBackColor = true;
@@ -9979,11 +9979,11 @@
             this.lbAccredPrepMeth.DisplayMember = "Name";
             this.lbAccredPrepMeth.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbAccredPrepMeth.FormattingEnabled = true;
-            this.lbAccredPrepMeth.ItemHeight = 15;
+            this.lbAccredPrepMeth.ItemHeight = 18;
             this.lbAccredPrepMeth.Location = new System.Drawing.Point(3, 34);
             this.lbAccredPrepMeth.Name = "lbAccredPrepMeth";
             this.lbAccredPrepMeth.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbAccredPrepMeth.Size = new System.Drawing.Size(690, 666);
+            this.lbAccredPrepMeth.Size = new System.Drawing.Size(690, 673);
             this.lbAccredPrepMeth.TabIndex = 3;
             this.lbAccredPrepMeth.ValueMember = "Id";
             // 
@@ -10005,7 +10005,7 @@
             this.btnAccredPrepMethAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnAccredPrepMethAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredPrepMethAdd.Name = "btnAccredPrepMethAdd";
-            this.btnAccredPrepMethAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnAccredPrepMethAdd.Size = new System.Drawing.Size(65, 28);
             this.btnAccredPrepMethAdd.Text = "Add";
             this.btnAccredPrepMethAdd.Click += new System.EventHandler(this.btnAccredPrepMethAdd_Click);
             // 
@@ -10014,7 +10014,7 @@
             this.btnAccredPrepMethRemove.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnAccredPrepMethRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredPrepMethRemove.Name = "btnAccredPrepMethRemove";
-            this.btnAccredPrepMethRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnAccredPrepMethRemove.Size = new System.Drawing.Size(91, 28);
             this.btnAccredPrepMethRemove.Text = "Remove";
             this.btnAccredPrepMethRemove.Click += new System.EventHandler(this.btnAccredPrepMethRemove_Click);
             // 
@@ -10022,10 +10022,10 @@
             // 
             this.tabAccredAnalMeth.Controls.Add(this.lbAccredAnalMeth);
             this.tabAccredAnalMeth.Controls.Add(this.toolStrip22);
-            this.tabAccredAnalMeth.Location = new System.Drawing.Point(4, 22);
+            this.tabAccredAnalMeth.Location = new System.Drawing.Point(4, 25);
             this.tabAccredAnalMeth.Name = "tabAccredAnalMeth";
             this.tabAccredAnalMeth.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAccredAnalMeth.Size = new System.Drawing.Size(696, 703);
+            this.tabAccredAnalMeth.Size = new System.Drawing.Size(696, 710);
             this.tabAccredAnalMeth.TabIndex = 4;
             this.tabAccredAnalMeth.Text = "Analysis meth.";
             this.tabAccredAnalMeth.UseVisualStyleBackColor = true;
@@ -10036,11 +10036,11 @@
             this.lbAccredAnalMeth.DisplayMember = "Name";
             this.lbAccredAnalMeth.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbAccredAnalMeth.FormattingEnabled = true;
-            this.lbAccredAnalMeth.ItemHeight = 15;
+            this.lbAccredAnalMeth.ItemHeight = 18;
             this.lbAccredAnalMeth.Location = new System.Drawing.Point(3, 34);
             this.lbAccredAnalMeth.Name = "lbAccredAnalMeth";
             this.lbAccredAnalMeth.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbAccredAnalMeth.Size = new System.Drawing.Size(690, 666);
+            this.lbAccredAnalMeth.Size = new System.Drawing.Size(690, 673);
             this.lbAccredAnalMeth.TabIndex = 4;
             this.lbAccredAnalMeth.ValueMember = "Id";
             // 
@@ -10062,7 +10062,7 @@
             this.btnAccredAnalMethAdd.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnAccredAnalMethAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredAnalMethAdd.Name = "btnAccredAnalMethAdd";
-            this.btnAccredAnalMethAdd.Size = new System.Drawing.Size(57, 28);
+            this.btnAccredAnalMethAdd.Size = new System.Drawing.Size(65, 28);
             this.btnAccredAnalMethAdd.Text = "Add";
             this.btnAccredAnalMethAdd.Click += new System.EventHandler(this.btnAccredAnalMethAdd_Click);
             // 
@@ -10071,7 +10071,7 @@
             this.btnAccredAnalMethRemove.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnAccredAnalMethRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAccredAnalMethRemove.Name = "btnAccredAnalMethRemove";
-            this.btnAccredAnalMethRemove.Size = new System.Drawing.Size(78, 28);
+            this.btnAccredAnalMethRemove.Size = new System.Drawing.Size(91, 28);
             this.btnAccredAnalMethRemove.Text = "Remove";
             this.btnAccredAnalMethRemove.Click += new System.EventHandler(this.btnAccredAnalMethRemove_Click);
             // 
@@ -10080,9 +10080,9 @@
             this.tabSysNuclides.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSysNuclides.Controls.Add(this.gridSysNuclides);
             this.tabSysNuclides.Controls.Add(this.toolsSysNuclides);
-            this.tabSysNuclides.Location = new System.Drawing.Point(4, 24);
+            this.tabSysNuclides.Location = new System.Drawing.Point(4, 27);
             this.tabSysNuclides.Name = "tabSysNuclides";
-            this.tabSysNuclides.Size = new System.Drawing.Size(1368, 727);
+            this.tabSysNuclides.Size = new System.Drawing.Size(1368, 737);
             this.tabSysNuclides.TabIndex = 9;
             this.tabSysNuclides.Text = "Nuclides";
             // 
@@ -10103,7 +10103,7 @@
             this.gridSysNuclides.RowHeadersVisible = false;
             this.gridSysNuclides.RowHeadersWidth = 62;
             this.gridSysNuclides.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSysNuclides.Size = new System.Drawing.Size(1368, 696);
+            this.gridSysNuclides.Size = new System.Drawing.Size(1368, 706);
             this.gridSysNuclides.TabIndex = 1;
             // 
             // toolsSysNuclides
@@ -10128,7 +10128,7 @@
             // 
             this.toolStripLabel41.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel41.Name = "toolStripLabel41";
-            this.toolStripLabel41.Size = new System.Drawing.Size(54, 28);
+            this.toolStripLabel41.Size = new System.Drawing.Size(69, 28);
             this.toolStripLabel41.Text = "Nuclides";
             // 
             // toolStripSeparator3
@@ -10141,7 +10141,7 @@
             this.btnSysNuclideNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSysNuclideNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysNuclideNew.Name = "btnSysNuclideNew";
-            this.btnSysNuclideNew.Size = new System.Drawing.Size(59, 28);
+            this.btnSysNuclideNew.Size = new System.Drawing.Size(67, 28);
             this.btnSysNuclideNew.Text = "New";
             this.btnSysNuclideNew.Click += new System.EventHandler(this.miNuclidesNew_Click);
             // 
@@ -10150,7 +10150,7 @@
             this.btnSysNuclideEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnSysNuclideEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysNuclideEdit.Name = "btnSysNuclideEdit";
-            this.btnSysNuclideEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnSysNuclideEdit.Size = new System.Drawing.Size(63, 28);
             this.btnSysNuclideEdit.Text = "Edit";
             this.btnSysNuclideEdit.Click += new System.EventHandler(this.miNuclidesEdit_Click);
             // 
@@ -10159,7 +10159,7 @@
             this.btnSysNuclideDelete.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnSysNuclideDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysNuclideDelete.Name = "btnSysNuclideDelete";
-            this.btnSysNuclideDelete.Size = new System.Drawing.Size(68, 28);
+            this.btnSysNuclideDelete.Size = new System.Drawing.Size(81, 28);
             this.btnSysNuclideDelete.Text = "Delete";
             // 
             // toolStripSeparator37
@@ -10174,13 +10174,13 @@
             this.btnSysNuclideExport.Image = global::DSA_lims.Properties.Resources.info;
             this.btnSysNuclideExport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysNuclideExport.Name = "btnSysNuclideExport";
-            this.btnSysNuclideExport.Size = new System.Drawing.Size(87, 28);
+            this.btnSysNuclideExport.Size = new System.Drawing.Size(99, 28);
             this.btnSysNuclideExport.Text = "Export...";
             // 
             // btnNuclidesExportNuclidesXML
             // 
             this.btnNuclidesExportNuclidesXML.Name = "btnNuclidesExportNuclidesXML";
-            this.btnNuclidesExportNuclidesXML.Size = new System.Drawing.Size(155, 22);
+            this.btnNuclidesExportNuclidesXML.Size = new System.Drawing.Size(192, 26);
             this.btnNuclidesExportNuclidesXML.Text = "Nuclides (XML)";
             this.btnNuclidesExportNuclidesXML.Click += new System.EventHandler(this.miNuclidesExportNuclidesXML_Click);
             // 
@@ -10189,9 +10189,9 @@
             this.tabSysGeometries.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSysGeometries.Controls.Add(this.panel6);
             this.tabSysGeometries.Controls.Add(this.toolsSysGeom);
-            this.tabSysGeometries.Location = new System.Drawing.Point(4, 24);
+            this.tabSysGeometries.Location = new System.Drawing.Point(4, 27);
             this.tabSysGeometries.Name = "tabSysGeometries";
-            this.tabSysGeometries.Size = new System.Drawing.Size(1368, 727);
+            this.tabSysGeometries.Size = new System.Drawing.Size(1368, 737);
             this.tabSysGeometries.TabIndex = 11;
             this.tabSysGeometries.Text = "Geometries";
             // 
@@ -10201,7 +10201,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 31);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1368, 696);
+            this.panel6.Size = new System.Drawing.Size(1368, 706);
             this.panel6.TabIndex = 2;
             // 
             // gridSysGeom
@@ -10221,7 +10221,7 @@
             this.gridSysGeom.RowHeadersVisible = false;
             this.gridSysGeom.RowHeadersWidth = 62;
             this.gridSysGeom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSysGeom.Size = new System.Drawing.Size(1368, 696);
+            this.gridSysGeom.Size = new System.Drawing.Size(1368, 706);
             this.gridSysGeom.TabIndex = 0;
             // 
             // toolsSysGeom
@@ -10244,7 +10244,7 @@
             // 
             this.toolStripLabel43.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel43.Name = "toolStripLabel43";
-            this.toolStripLabel43.Size = new System.Drawing.Size(73, 28);
+            this.toolStripLabel43.Size = new System.Drawing.Size(90, 28);
             this.toolStripLabel43.Text = "Geometries";
             // 
             // toolStripSeparator23
@@ -10257,7 +10257,7 @@
             this.btnNewGeometry.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnNewGeometry.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNewGeometry.Name = "btnNewGeometry";
-            this.btnNewGeometry.Size = new System.Drawing.Size(59, 28);
+            this.btnNewGeometry.Size = new System.Drawing.Size(67, 28);
             this.btnNewGeometry.Text = "New";
             this.btnNewGeometry.Click += new System.EventHandler(this.miNewGeometry_Click);
             // 
@@ -10266,7 +10266,7 @@
             this.btnEditGeometry.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnEditGeometry.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditGeometry.Name = "btnEditGeometry";
-            this.btnEditGeometry.Size = new System.Drawing.Size(55, 28);
+            this.btnEditGeometry.Size = new System.Drawing.Size(63, 28);
             this.btnEditGeometry.Text = "Edit";
             this.btnEditGeometry.Click += new System.EventHandler(this.miEditGeometry_Click);
             // 
@@ -10275,7 +10275,7 @@
             this.btnDeleteGeometry.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnDeleteGeometry.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDeleteGeometry.Name = "btnDeleteGeometry";
-            this.btnDeleteGeometry.Size = new System.Drawing.Size(68, 28);
+            this.btnDeleteGeometry.Size = new System.Drawing.Size(81, 28);
             this.btnDeleteGeometry.Text = "Delete";
             this.btnDeleteGeometry.Click += new System.EventHandler(this.miDeleteGeometry_Click);
             // 
@@ -10284,9 +10284,9 @@
             this.tabSysPers.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSysPers.Controls.Add(this.gridSysPers);
             this.tabSysPers.Controls.Add(this.toolStrip14);
-            this.tabSysPers.Location = new System.Drawing.Point(4, 24);
+            this.tabSysPers.Location = new System.Drawing.Point(4, 27);
             this.tabSysPers.Name = "tabSysPers";
-            this.tabSysPers.Size = new System.Drawing.Size(1368, 727);
+            this.tabSysPers.Size = new System.Drawing.Size(1368, 737);
             this.tabSysPers.TabIndex = 12;
             this.tabSysPers.Text = "Persons";
             // 
@@ -10307,7 +10307,7 @@
             this.gridSysPers.RowHeadersVisible = false;
             this.gridSysPers.RowHeadersWidth = 62;
             this.gridSysPers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSysPers.Size = new System.Drawing.Size(1368, 696);
+            this.gridSysPers.Size = new System.Drawing.Size(1368, 706);
             this.gridSysPers.TabIndex = 1;
             // 
             // toolStrip14
@@ -10330,7 +10330,7 @@
             // 
             this.toolStripLabel16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel16.Name = "toolStripLabel16";
-            this.toolStripLabel16.Size = new System.Drawing.Size(50, 28);
+            this.toolStripLabel16.Size = new System.Drawing.Size(64, 28);
             this.toolStripLabel16.Text = "Persons";
             // 
             // toolStripSeparator34
@@ -10343,7 +10343,7 @@
             this.btnSysPersNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSysPersNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysPersNew.Name = "btnSysPersNew";
-            this.btnSysPersNew.Size = new System.Drawing.Size(59, 28);
+            this.btnSysPersNew.Size = new System.Drawing.Size(67, 28);
             this.btnSysPersNew.Text = "New";
             this.btnSysPersNew.Click += new System.EventHandler(this.miPersonNew_Click);
             // 
@@ -10352,7 +10352,7 @@
             this.btnSysPersEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnSysPersEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysPersEdit.Name = "btnSysPersEdit";
-            this.btnSysPersEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnSysPersEdit.Size = new System.Drawing.Size(63, 28);
             this.btnSysPersEdit.Text = "Edit";
             this.btnSysPersEdit.Click += new System.EventHandler(this.miPersonEdit_Click);
             // 
@@ -10361,7 +10361,7 @@
             this.btnSysPersDelete.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnSysPersDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysPersDelete.Name = "btnSysPersDelete";
-            this.btnSysPersDelete.Size = new System.Drawing.Size(68, 28);
+            this.btnSysPersDelete.Size = new System.Drawing.Size(81, 28);
             this.btnSysPersDelete.Text = "Delete";
             this.btnSysPersDelete.Click += new System.EventHandler(this.miPersonDelete_Click);
             // 
@@ -10370,9 +10370,9 @@
             this.tabSysSampParamNames.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSysSampParamNames.Controls.Add(this.gridSysSampParamNames);
             this.tabSysSampParamNames.Controls.Add(this.toolStrip18);
-            this.tabSysSampParamNames.Location = new System.Drawing.Point(4, 24);
+            this.tabSysSampParamNames.Location = new System.Drawing.Point(4, 27);
             this.tabSysSampParamNames.Name = "tabSysSampParamNames";
-            this.tabSysSampParamNames.Size = new System.Drawing.Size(1368, 727);
+            this.tabSysSampParamNames.Size = new System.Drawing.Size(1368, 737);
             this.tabSysSampParamNames.TabIndex = 13;
             this.tabSysSampParamNames.Text = "Sample parameter names";
             // 
@@ -10392,7 +10392,7 @@
             this.gridSysSampParamNames.RowHeadersVisible = false;
             this.gridSysSampParamNames.RowHeadersWidth = 62;
             this.gridSysSampParamNames.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSysSampParamNames.Size = new System.Drawing.Size(1368, 696);
+            this.gridSysSampParamNames.Size = new System.Drawing.Size(1368, 706);
             this.gridSysSampParamNames.TabIndex = 1;
             // 
             // toolStrip18
@@ -10415,7 +10415,7 @@
             // 
             this.toolStripLabel24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel24.Name = "toolStripLabel24";
-            this.toolStripLabel24.Size = new System.Drawing.Size(149, 28);
+            this.toolStripLabel24.Size = new System.Drawing.Size(187, 28);
             this.toolStripLabel24.Text = "Sample parameter names";
             // 
             // toolStripSeparator74
@@ -10428,7 +10428,7 @@
             this.btnSysSampParamNameNew.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnSysSampParamNameNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysSampParamNameNew.Name = "btnSysSampParamNameNew";
-            this.btnSysSampParamNameNew.Size = new System.Drawing.Size(59, 28);
+            this.btnSysSampParamNameNew.Size = new System.Drawing.Size(67, 28);
             this.btnSysSampParamNameNew.Text = "New";
             this.btnSysSampParamNameNew.Click += new System.EventHandler(this.btnSysSampParamNameNew_Click);
             // 
@@ -10437,7 +10437,7 @@
             this.btnSysSampParamNameEdit.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnSysSampParamNameEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysSampParamNameEdit.Name = "btnSysSampParamNameEdit";
-            this.btnSysSampParamNameEdit.Size = new System.Drawing.Size(55, 28);
+            this.btnSysSampParamNameEdit.Size = new System.Drawing.Size(63, 28);
             this.btnSysSampParamNameEdit.Text = "Edit";
             this.btnSysSampParamNameEdit.Click += new System.EventHandler(this.btnSysSampParamNameEdit_Click);
             // 
@@ -10446,7 +10446,7 @@
             this.btnSysSampParamNameDelete.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnSysSampParamNameDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSysSampParamNameDelete.Name = "btnSysSampParamNameDelete";
-            this.btnSysSampParamNameDelete.Size = new System.Drawing.Size(68, 28);
+            this.btnSysSampParamNameDelete.Size = new System.Drawing.Size(81, 28);
             this.btnSysSampParamNameDelete.Text = "Delete";
             this.btnSysSampParamNameDelete.Click += new System.EventHandler(this.btnSysSampParamNameDelete_Click);
             // 
@@ -10454,9 +10454,9 @@
             // 
             this.tabPrepAnal.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabPrepAnal.Controls.Add(this.splitContainer2);
-            this.tabPrepAnal.Location = new System.Drawing.Point(4, 24);
+            this.tabPrepAnal.Location = new System.Drawing.Point(4, 27);
             this.tabPrepAnal.Name = "tabPrepAnal";
-            this.tabPrepAnal.Size = new System.Drawing.Size(1382, 766);
+            this.tabPrepAnal.Size = new System.Drawing.Size(1382, 771);
             this.tabPrepAnal.TabIndex = 19;
             this.tabPrepAnal.Text = "Preparations and analyses";
             // 
@@ -10475,7 +10475,7 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tabsPrepAnal);
-            this.splitContainer2.Size = new System.Drawing.Size(1382, 766);
+            this.splitContainer2.Size = new System.Drawing.Size(1382, 771);
             this.splitContainer2.SplitterDistance = 397;
             this.splitContainer2.SplitterWidth = 3;
             this.splitContainer2.TabIndex = 4;
@@ -10488,7 +10488,7 @@
             this.panel31.Location = new System.Drawing.Point(0, 31);
             this.panel31.Name = "panel31";
             this.panel31.Padding = new System.Windows.Forms.Padding(12);
-            this.panel31.Size = new System.Drawing.Size(397, 735);
+            this.panel31.Size = new System.Drawing.Size(397, 740);
             this.panel31.TabIndex = 1;
             // 
             // treePrepAnal
@@ -10506,7 +10506,7 @@
             this.treePrepAnal.PathSeparator = "/";
             this.treePrepAnal.ShowNodeToolTips = true;
             this.treePrepAnal.ShowRootLines = false;
-            this.treePrepAnal.Size = new System.Drawing.Size(373, 711);
+            this.treePrepAnal.Size = new System.Drawing.Size(373, 716);
             this.treePrepAnal.TabIndex = 0;
             this.treePrepAnal.DrawNode += new System.Windows.Forms.DrawTreeNodeEventHandler(this.treePrepAnal_DrawNode);
             this.treePrepAnal.BeforeSelect += new System.Windows.Forms.TreeViewCancelEventHandler(this.treePrepAnal_BeforeSelect);
@@ -10531,7 +10531,7 @@
             this.btnPrepAnalSampleView.Image = global::DSA_lims.Properties.Resources.eye;
             this.btnPrepAnalSampleView.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrepAnalSampleView.Name = "btnPrepAnalSampleView";
-            this.btnPrepAnalSampleView.Size = new System.Drawing.Size(98, 28);
+            this.btnPrepAnalSampleView.Size = new System.Drawing.Size(117, 28);
             this.btnPrepAnalSampleView.Text = "Sample info";
             this.btnPrepAnalSampleView.ToolTipText = "View sample info";
             this.btnPrepAnalSampleView.Click += new System.EventHandler(this.btnPrepAnalSampleView_Click);
@@ -10544,20 +10544,20 @@
             this.miPrepAnalPrep.Image = global::DSA_lims.Properties.Resources.prep_anal;
             this.miPrepAnalPrep.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.miPrepAnalPrep.Name = "miPrepAnalPrep";
-            this.miPrepAnalPrep.Size = new System.Drawing.Size(105, 28);
+            this.miPrepAnalPrep.Size = new System.Drawing.Size(124, 28);
             this.miPrepAnalPrep.Text = "Preparation";
             // 
             // btnPrepAnalAddPrep
             // 
             this.btnPrepAnalAddPrep.Name = "btnPrepAnalAddPrep";
-            this.btnPrepAnalAddPrep.Size = new System.Drawing.Size(116, 22);
+            this.btnPrepAnalAddPrep.Size = new System.Drawing.Size(145, 26);
             this.btnPrepAnalAddPrep.Text = "&Add...";
             this.btnPrepAnalAddPrep.Click += new System.EventHandler(this.btnPrepAnalAddPrep_Click);
             // 
             // btnPrepAnalDelPrep
             // 
             this.btnPrepAnalDelPrep.Name = "btnPrepAnalDelPrep";
-            this.btnPrepAnalDelPrep.Size = new System.Drawing.Size(116, 22);
+            this.btnPrepAnalDelPrep.Size = new System.Drawing.Size(145, 26);
             this.btnPrepAnalDelPrep.Text = "&Delete...";
             this.btnPrepAnalDelPrep.Click += new System.EventHandler(this.btnPrepAnalDelPrep_Click);
             // 
@@ -10569,20 +10569,20 @@
             this.miPrepAnalAnal.Image = global::DSA_lims.Properties.Resources.prep_anal;
             this.miPrepAnalAnal.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.miPrepAnalAnal.Name = "miPrepAnalAnal";
-            this.miPrepAnalAnal.Size = new System.Drawing.Size(87, 28);
+            this.miPrepAnalAnal.Size = new System.Drawing.Size(100, 28);
             this.miPrepAnalAnal.Text = "Analysis";
             // 
             // btnPrepAnalAddAnal
             // 
             this.btnPrepAnalAddAnal.Name = "btnPrepAnalAddAnal";
-            this.btnPrepAnalAddAnal.Size = new System.Drawing.Size(116, 22);
+            this.btnPrepAnalAddAnal.Size = new System.Drawing.Size(145, 26);
             this.btnPrepAnalAddAnal.Text = "&Add...";
             this.btnPrepAnalAddAnal.Click += new System.EventHandler(this.btnPrepAnalAddAnal_Click);
             // 
             // btnPrepAnalDelAnal
             // 
             this.btnPrepAnalDelAnal.Name = "btnPrepAnalDelAnal";
-            this.btnPrepAnalDelAnal.Size = new System.Drawing.Size(116, 22);
+            this.btnPrepAnalDelAnal.Size = new System.Drawing.Size(145, 26);
             this.btnPrepAnalDelAnal.Text = "&Delete...";
             this.btnPrepAnalDelAnal.Click += new System.EventHandler(this.btnPrepAnalDelAnal_Click);
             // 
@@ -10596,7 +10596,7 @@
             this.tabsPrepAnal.Margin = new System.Windows.Forms.Padding(0);
             this.tabsPrepAnal.Name = "tabsPrepAnal";
             this.tabsPrepAnal.SelectedIndex = 0;
-            this.tabsPrepAnal.Size = new System.Drawing.Size(982, 766);
+            this.tabsPrepAnal.Size = new System.Drawing.Size(982, 771);
             this.tabsPrepAnal.TabIndex = 3;
             // 
             // tabPrepAnalSample
@@ -10606,9 +10606,9 @@
             this.tabPrepAnalSample.Controls.Add(this.splitContainer4);
             this.tabPrepAnalSample.Controls.Add(this.toolStrip3);
             this.tabPrepAnalSample.Controls.Add(this.panel80);
-            this.tabPrepAnalSample.Location = new System.Drawing.Point(4, 24);
+            this.tabPrepAnalSample.Location = new System.Drawing.Point(4, 27);
             this.tabPrepAnalSample.Name = "tabPrepAnalSample";
-            this.tabPrepAnalSample.Size = new System.Drawing.Size(974, 738);
+            this.tabPrepAnalSample.Size = new System.Drawing.Size(974, 740);
             this.tabPrepAnalSample.TabIndex = 5;
             this.tabPrepAnalSample.Text = "Sample";
             // 
@@ -10618,7 +10618,7 @@
             this.panel81.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel81.Location = new System.Drawing.Point(0, 221);
             this.panel81.Name = "panel81";
-            this.panel81.Size = new System.Drawing.Size(974, 491);
+            this.panel81.Size = new System.Drawing.Size(974, 493);
             this.panel81.TabIndex = 5;
             // 
             // groupBox1
@@ -10629,7 +10629,7 @@
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox1.Size = new System.Drawing.Size(974, 491);
+            this.groupBox1.Size = new System.Drawing.Size(974, 493);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Loss on drying (LOD)";
@@ -10667,7 +10667,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tbPrepAnalLODWaterPercent, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.tbPrepAnalLODFactor, 5, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 20);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 23);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -10675,7 +10675,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(962, 465);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(962, 464);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label69
@@ -10762,7 +10762,7 @@
             this.tbPrepAnalLODStartWeight.Location = new System.Drawing.Point(161, 26);
             this.tbPrepAnalLODStartWeight.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODStartWeight.Name = "tbPrepAnalLODStartWeight";
-            this.tbPrepAnalLODStartWeight.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODStartWeight.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODStartWeight.TabIndex = 7;
             this.tbPrepAnalLODStartWeight.TextChanged += new System.EventHandler(this.tbPrepAnalLODStartWeight_TextChanged);
             // 
@@ -10773,7 +10773,7 @@
             this.tbPrepAnalLODStartWeightAsh.Location = new System.Drawing.Point(161, 51);
             this.tbPrepAnalLODStartWeightAsh.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODStartWeightAsh.Name = "tbPrepAnalLODStartWeightAsh";
-            this.tbPrepAnalLODStartWeightAsh.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODStartWeightAsh.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODStartWeightAsh.TabIndex = 9;
             this.tbPrepAnalLODStartWeightAsh.TextChanged += new System.EventHandler(this.tbPrepAnalLODStartWeightAsh_TextChanged);
             // 
@@ -10784,7 +10784,7 @@
             this.tbPrepAnalLODStartWeightAsh2.Location = new System.Drawing.Point(161, 76);
             this.tbPrepAnalLODStartWeightAsh2.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODStartWeightAsh2.Name = "tbPrepAnalLODStartWeightAsh2";
-            this.tbPrepAnalLODStartWeightAsh2.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODStartWeightAsh2.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODStartWeightAsh2.TabIndex = 8;
             this.tbPrepAnalLODStartWeightAsh2.TextChanged += new System.EventHandler(this.tbPrepAnalLODStartWeightAsh2_TextChanged);
             // 
@@ -10795,7 +10795,7 @@
             this.tbPrepAnalLODTemperatureAsh.Location = new System.Drawing.Point(481, 51);
             this.tbPrepAnalLODTemperatureAsh.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODTemperatureAsh.Name = "tbPrepAnalLODTemperatureAsh";
-            this.tbPrepAnalLODTemperatureAsh.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODTemperatureAsh.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODTemperatureAsh.TabIndex = 10;
             this.tbPrepAnalLODTemperatureAsh.TextChanged += new System.EventHandler(this.tbPrepAnalLODTemperatureAsh_TextChanged);
             // 
@@ -10807,7 +10807,7 @@
             this.tbPrepAnalLODWaterPercentAsh.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODWaterPercentAsh.Name = "tbPrepAnalLODWaterPercentAsh";
             this.tbPrepAnalLODWaterPercentAsh.ReadOnly = true;
-            this.tbPrepAnalLODWaterPercentAsh.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODWaterPercentAsh.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODWaterPercentAsh.TabIndex = 11;
             // 
             // tbPrepAnalLODFactorAsh
@@ -10818,7 +10818,7 @@
             this.tbPrepAnalLODFactorAsh.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODFactorAsh.Name = "tbPrepAnalLODFactorAsh";
             this.tbPrepAnalLODFactorAsh.ReadOnly = true;
-            this.tbPrepAnalLODFactorAsh.Size = new System.Drawing.Size(160, 21);
+            this.tbPrepAnalLODFactorAsh.Size = new System.Drawing.Size(160, 24);
             this.tbPrepAnalLODFactorAsh.TabIndex = 12;
             // 
             // tbPrepAnalLODTemperatureAsh2
@@ -10828,7 +10828,7 @@
             this.tbPrepAnalLODTemperatureAsh2.Location = new System.Drawing.Point(481, 76);
             this.tbPrepAnalLODTemperatureAsh2.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODTemperatureAsh2.Name = "tbPrepAnalLODTemperatureAsh2";
-            this.tbPrepAnalLODTemperatureAsh2.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODTemperatureAsh2.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODTemperatureAsh2.TabIndex = 13;
             this.tbPrepAnalLODTemperatureAsh2.TextChanged += new System.EventHandler(this.tbPrepAnalLODTemperatureAsh2_TextChanged);
             // 
@@ -10840,7 +10840,7 @@
             this.tbPrepAnalLODWaterPercentAsh2.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODWaterPercentAsh2.Name = "tbPrepAnalLODWaterPercentAsh2";
             this.tbPrepAnalLODWaterPercentAsh2.ReadOnly = true;
-            this.tbPrepAnalLODWaterPercentAsh2.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODWaterPercentAsh2.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODWaterPercentAsh2.TabIndex = 14;
             // 
             // tbPrepAnalLODFactorAsh2
@@ -10851,7 +10851,7 @@
             this.tbPrepAnalLODFactorAsh2.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODFactorAsh2.Name = "tbPrepAnalLODFactorAsh2";
             this.tbPrepAnalLODFactorAsh2.ReadOnly = true;
-            this.tbPrepAnalLODFactorAsh2.Size = new System.Drawing.Size(160, 21);
+            this.tbPrepAnalLODFactorAsh2.Size = new System.Drawing.Size(160, 24);
             this.tbPrepAnalLODFactorAsh2.TabIndex = 15;
             // 
             // label65
@@ -10872,7 +10872,7 @@
             this.tbPrepAnalLODEndWeight.Location = new System.Drawing.Point(321, 26);
             this.tbPrepAnalLODEndWeight.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODEndWeight.Name = "tbPrepAnalLODEndWeight";
-            this.tbPrepAnalLODEndWeight.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODEndWeight.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODEndWeight.TabIndex = 17;
             this.tbPrepAnalLODEndWeight.TextChanged += new System.EventHandler(this.tbPrepAnalLODStartWeight_TextChanged);
             // 
@@ -10883,7 +10883,7 @@
             this.tbPrepAnalLODEndWeightAsh.Location = new System.Drawing.Point(321, 51);
             this.tbPrepAnalLODEndWeightAsh.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODEndWeightAsh.Name = "tbPrepAnalLODEndWeightAsh";
-            this.tbPrepAnalLODEndWeightAsh.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODEndWeightAsh.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODEndWeightAsh.TabIndex = 18;
             this.tbPrepAnalLODEndWeightAsh.TextChanged += new System.EventHandler(this.tbPrepAnalLODStartWeightAsh_TextChanged);
             // 
@@ -10894,7 +10894,7 @@
             this.tbPrepAnalLODEndWeightAsh2.Location = new System.Drawing.Point(321, 76);
             this.tbPrepAnalLODEndWeightAsh2.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODEndWeightAsh2.Name = "tbPrepAnalLODEndWeightAsh2";
-            this.tbPrepAnalLODEndWeightAsh2.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODEndWeightAsh2.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODEndWeightAsh2.TabIndex = 19;
             this.tbPrepAnalLODEndWeightAsh2.TextChanged += new System.EventHandler(this.tbPrepAnalLODStartWeightAsh2_TextChanged);
             // 
@@ -10905,7 +10905,7 @@
             this.tbPrepAnalLODTemperature.Location = new System.Drawing.Point(481, 26);
             this.tbPrepAnalLODTemperature.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODTemperature.Name = "tbPrepAnalLODTemperature";
-            this.tbPrepAnalLODTemperature.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODTemperature.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODTemperature.TabIndex = 20;
             this.tbPrepAnalLODTemperature.TextChanged += new System.EventHandler(this.tbPrepAnalLODTemperature_TextChanged);
             // 
@@ -10917,7 +10917,7 @@
             this.tbPrepAnalLODWaterPercent.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODWaterPercent.Name = "tbPrepAnalLODWaterPercent";
             this.tbPrepAnalLODWaterPercent.ReadOnly = true;
-            this.tbPrepAnalLODWaterPercent.Size = new System.Drawing.Size(158, 21);
+            this.tbPrepAnalLODWaterPercent.Size = new System.Drawing.Size(158, 24);
             this.tbPrepAnalLODWaterPercent.TabIndex = 21;
             // 
             // tbPrepAnalLODFactor
@@ -10928,7 +10928,7 @@
             this.tbPrepAnalLODFactor.Margin = new System.Windows.Forms.Padding(1);
             this.tbPrepAnalLODFactor.Name = "tbPrepAnalLODFactor";
             this.tbPrepAnalLODFactor.ReadOnly = true;
-            this.tbPrepAnalLODFactor.Size = new System.Drawing.Size(160, 21);
+            this.tbPrepAnalLODFactor.Size = new System.Drawing.Size(160, 24);
             this.tbPrepAnalLODFactor.TabIndex = 22;
             // 
             // splitContainer4
@@ -10971,7 +10971,7 @@
             this.panel66.Controls.Add(this.tbPrepAnalVolume);
             this.panel66.Controls.Add(this.panel67);
             this.panel66.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel66.Location = new System.Drawing.Point(6, 70);
+            this.panel66.Location = new System.Drawing.Point(6, 73);
             this.panel66.Name = "panel66";
             this.panel66.Size = new System.Drawing.Size(400, 25);
             this.panel66.TabIndex = 2;
@@ -10982,7 +10982,7 @@
             this.tbPrepAnalVolume.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPrepAnalVolume.Location = new System.Drawing.Point(93, 0);
             this.tbPrepAnalVolume.Name = "tbPrepAnalVolume";
-            this.tbPrepAnalVolume.Size = new System.Drawing.Size(307, 21);
+            this.tbPrepAnalVolume.Size = new System.Drawing.Size(307, 24);
             this.tbPrepAnalVolume.TabIndex = 2;
             this.tbPrepAnalVolume.TextChanged += new System.EventHandler(this.tbPrepAnalVolume_TextChanged);
             // 
@@ -11011,7 +11011,7 @@
             this.panel64.Controls.Add(this.tbPrepAnalDryWeight);
             this.panel64.Controls.Add(this.panel65);
             this.panel64.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel64.Location = new System.Drawing.Point(6, 45);
+            this.panel64.Location = new System.Drawing.Point(6, 48);
             this.panel64.Name = "panel64";
             this.panel64.Size = new System.Drawing.Size(400, 25);
             this.panel64.TabIndex = 1;
@@ -11022,7 +11022,7 @@
             this.tbPrepAnalDryWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPrepAnalDryWeight.Location = new System.Drawing.Point(93, 0);
             this.tbPrepAnalDryWeight.Name = "tbPrepAnalDryWeight";
-            this.tbPrepAnalDryWeight.Size = new System.Drawing.Size(307, 21);
+            this.tbPrepAnalDryWeight.Size = new System.Drawing.Size(307, 24);
             this.tbPrepAnalDryWeight.TabIndex = 1;
             this.tbPrepAnalDryWeight.TextChanged += new System.EventHandler(this.tbPrepAnalDryWeight_TextChanged);
             // 
@@ -11051,7 +11051,7 @@
             this.panel4.Controls.Add(this.tbPrepAnalWetWeight);
             this.panel4.Controls.Add(this.panel26);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(6, 20);
+            this.panel4.Location = new System.Drawing.Point(6, 23);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(400, 25);
             this.panel4.TabIndex = 0;
@@ -11062,7 +11062,7 @@
             this.tbPrepAnalWetWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPrepAnalWetWeight.Location = new System.Drawing.Point(93, 0);
             this.tbPrepAnalWetWeight.Name = "tbPrepAnalWetWeight";
-            this.tbPrepAnalWetWeight.Size = new System.Drawing.Size(307, 21);
+            this.tbPrepAnalWetWeight.Size = new System.Drawing.Size(307, 24);
             this.tbPrepAnalWetWeight.TabIndex = 0;
             this.tbPrepAnalWetWeight.TextChanged += new System.EventHandler(this.tbPrepAnalWetWeight_TextChanged);
             // 
@@ -11104,12 +11104,12 @@
             this.tbPrepAnalInfoComment.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPrepAnalInfoComment.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbPrepAnalInfoComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPrepAnalInfoComment.Location = new System.Drawing.Point(6, 20);
+            this.tbPrepAnalInfoComment.Location = new System.Drawing.Point(6, 23);
             this.tbPrepAnalInfoComment.Multiline = true;
             this.tbPrepAnalInfoComment.Name = "tbPrepAnalInfoComment";
             this.tbPrepAnalInfoComment.ReadOnly = true;
             this.tbPrepAnalInfoComment.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbPrepAnalInfoComment.Size = new System.Drawing.Size(523, 158);
+            this.tbPrepAnalInfoComment.Size = new System.Drawing.Size(523, 155);
             this.tbPrepAnalInfoComment.TabIndex = 3;
             // 
             // toolStrip3
@@ -11128,7 +11128,7 @@
             // 
             this.toolStripLabel11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel11.Name = "toolStripLabel11";
-            this.toolStripLabel11.Size = new System.Drawing.Size(75, 22);
+            this.toolStripLabel11.Size = new System.Drawing.Size(95, 22);
             this.toolStripLabel11.Text = "Sample data";
             // 
             // panel80
@@ -11136,7 +11136,7 @@
             this.panel80.Controls.Add(this.btnPrepAnalSampleDiscard);
             this.panel80.Controls.Add(this.btnPrepAnalSampleUpdate);
             this.panel80.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel80.Location = new System.Drawing.Point(0, 712);
+            this.panel80.Location = new System.Drawing.Point(0, 714);
             this.panel80.Name = "panel80";
             this.panel80.Size = new System.Drawing.Size(974, 26);
             this.panel80.TabIndex = 7;
@@ -11168,9 +11168,9 @@
             this.tabPrepAnalPreps.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabPrepAnalPreps.Controls.Add(this.panel10);
             this.tabPrepAnalPreps.Controls.Add(this.splitContainer3);
-            this.tabPrepAnalPreps.Location = new System.Drawing.Point(4, 22);
+            this.tabPrepAnalPreps.Location = new System.Drawing.Point(4, 25);
             this.tabPrepAnalPreps.Name = "tabPrepAnalPreps";
-            this.tabPrepAnalPreps.Size = new System.Drawing.Size(974, 735);
+            this.tabPrepAnalPreps.Size = new System.Drawing.Size(974, 745);
             this.tabPrepAnalPreps.TabIndex = 3;
             this.tabPrepAnalPreps.Text = "Preparations";
             // 
@@ -11181,7 +11181,7 @@
             this.panel10.Controls.Add(this.btnPrepAnalPrepUpdate);
             this.panel10.Controls.Add(this.label23);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(0, 709);
+            this.panel10.Location = new System.Drawing.Point(0, 719);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(974, 26);
             this.panel10.TabIndex = 1;
@@ -11204,10 +11204,10 @@
             this.cboxPrepAnalPrepWorkflowStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxPrepAnalPrepWorkflowStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxPrepAnalPrepWorkflowStatus.FormattingEnabled = true;
-            this.cboxPrepAnalPrepWorkflowStatus.ItemHeight = 15;
+            this.cboxPrepAnalPrepWorkflowStatus.ItemHeight = 18;
             this.cboxPrepAnalPrepWorkflowStatus.Location = new System.Drawing.Point(113, 0);
             this.cboxPrepAnalPrepWorkflowStatus.Name = "cboxPrepAnalPrepWorkflowStatus";
-            this.cboxPrepAnalPrepWorkflowStatus.Size = new System.Drawing.Size(140, 23);
+            this.cboxPrepAnalPrepWorkflowStatus.Size = new System.Drawing.Size(140, 26);
             this.cboxPrepAnalPrepWorkflowStatus.TabIndex = 7;
             this.cboxPrepAnalPrepWorkflowStatus.ValueMember = "Id";
             this.cboxPrepAnalPrepWorkflowStatus.SelectedIndexChanged += new System.EventHandler(this.cboxPrepAnalPrepWorkflowStatus_SelectedIndexChanged);
@@ -11324,7 +11324,7 @@
             this.tbPrepAnalPrepReqUnit.Location = new System.Drawing.Point(113, 0);
             this.tbPrepAnalPrepReqUnit.Name = "tbPrepAnalPrepReqUnit";
             this.tbPrepAnalPrepReqUnit.ReadOnly = true;
-            this.tbPrepAnalPrepReqUnit.Size = new System.Drawing.Size(428, 21);
+            this.tbPrepAnalPrepReqUnit.Size = new System.Drawing.Size(428, 24);
             this.tbPrepAnalPrepReqUnit.TabIndex = 6;
             // 
             // panel85
@@ -11363,7 +11363,7 @@
             this.tbPrepAnalPrepQuantity.Location = new System.Drawing.Point(113, 0);
             this.tbPrepAnalPrepQuantity.MaxLength = 32;
             this.tbPrepAnalPrepQuantity.Name = "tbPrepAnalPrepQuantity";
-            this.tbPrepAnalPrepQuantity.Size = new System.Drawing.Size(309, 21);
+            this.tbPrepAnalPrepQuantity.Size = new System.Drawing.Size(309, 24);
             this.tbPrepAnalPrepQuantity.TabIndex = 4;
             this.tbPrepAnalPrepQuantity.TextChanged += new System.EventHandler(this.tbPrepAnalPrepQuantity_TextChanged);
             // 
@@ -11375,7 +11375,7 @@
             this.cboxPrepAnalPrepQuantityUnit.FormattingEnabled = true;
             this.cboxPrepAnalPrepQuantityUnit.Location = new System.Drawing.Point(422, 0);
             this.cboxPrepAnalPrepQuantityUnit.Name = "cboxPrepAnalPrepQuantityUnit";
-            this.cboxPrepAnalPrepQuantityUnit.Size = new System.Drawing.Size(119, 23);
+            this.cboxPrepAnalPrepQuantityUnit.Size = new System.Drawing.Size(119, 26);
             this.cboxPrepAnalPrepQuantityUnit.TabIndex = 5;
             this.cboxPrepAnalPrepQuantityUnit.ValueMember = "Id";
             this.cboxPrepAnalPrepQuantityUnit.SelectedIndexChanged += new System.EventHandler(this.cboxPrepAnalPrepQuantityUnit_SelectedIndexChanged);
@@ -11416,7 +11416,7 @@
             this.tbPrepAnalPrepAmount.Location = new System.Drawing.Point(113, 0);
             this.tbPrepAnalPrepAmount.MaxLength = 32;
             this.tbPrepAnalPrepAmount.Name = "tbPrepAnalPrepAmount";
-            this.tbPrepAnalPrepAmount.Size = new System.Drawing.Size(309, 21);
+            this.tbPrepAnalPrepAmount.Size = new System.Drawing.Size(309, 24);
             this.tbPrepAnalPrepAmount.TabIndex = 2;
             this.tbPrepAnalPrepAmount.TextChanged += new System.EventHandler(this.tbPrepAnalPrepAmount_TextChanged);
             // 
@@ -11447,7 +11447,7 @@
             this.cboxPrepAnalPrepAmountUnit.FormattingEnabled = true;
             this.cboxPrepAnalPrepAmountUnit.Location = new System.Drawing.Point(422, 0);
             this.cboxPrepAnalPrepAmountUnit.Name = "cboxPrepAnalPrepAmountUnit";
-            this.cboxPrepAnalPrepAmountUnit.Size = new System.Drawing.Size(119, 23);
+            this.cboxPrepAnalPrepAmountUnit.Size = new System.Drawing.Size(119, 26);
             this.cboxPrepAnalPrepAmountUnit.TabIndex = 3;
             this.cboxPrepAnalPrepAmountUnit.ValueMember = "Id";
             this.cboxPrepAnalPrepAmountUnit.SelectedIndexChanged += new System.EventHandler(this.cboxPrepAnalPrepAmountUnit_SelectedIndexChanged);
@@ -11469,7 +11469,7 @@
             this.tbPrepAnalPrepFillHeight.Location = new System.Drawing.Point(113, 0);
             this.tbPrepAnalPrepFillHeight.MaxLength = 32;
             this.tbPrepAnalPrepFillHeight.Name = "tbPrepAnalPrepFillHeight";
-            this.tbPrepAnalPrepFillHeight.Size = new System.Drawing.Size(308, 21);
+            this.tbPrepAnalPrepFillHeight.Size = new System.Drawing.Size(308, 24);
             this.tbPrepAnalPrepFillHeight.TabIndex = 1;
             this.tbPrepAnalPrepFillHeight.TextChanged += new System.EventHandler(this.tbPrepAnalPrepFillHeight_TextChanged);
             // 
@@ -11488,7 +11488,7 @@
             this.lblPrepAnalPrepRange.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPrepAnalPrepRange.Location = new System.Drawing.Point(0, 0);
             this.lblPrepAnalPrepRange.Name = "lblPrepAnalPrepRange";
-            this.lblPrepAnalPrepRange.Size = new System.Drawing.Size(16, 15);
+            this.lblPrepAnalPrepRange.Size = new System.Drawing.Size(20, 18);
             this.lblPrepAnalPrepRange.TabIndex = 6;
             this.lblPrepAnalPrepRange.Text = "[,]";
             // 
@@ -11529,7 +11529,7 @@
             this.cboxPrepAnalPrepGeom.FormattingEnabled = true;
             this.cboxPrepAnalPrepGeom.Location = new System.Drawing.Point(113, 0);
             this.cboxPrepAnalPrepGeom.Name = "cboxPrepAnalPrepGeom";
-            this.cboxPrepAnalPrepGeom.Size = new System.Drawing.Size(428, 23);
+            this.cboxPrepAnalPrepGeom.Size = new System.Drawing.Size(428, 26);
             this.cboxPrepAnalPrepGeom.TabIndex = 0;
             this.cboxPrepAnalPrepGeom.ValueMember = "Id";
             this.cboxPrepAnalPrepGeom.SelectedIndexChanged += new System.EventHandler(this.cboxPrepAnalPrepGeom_SelectedIndexChanged);
@@ -11570,7 +11570,7 @@
             this.lblPreparationToolsCreator.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPreparationToolsCreator.Location = new System.Drawing.Point(6, 6);
             this.lblPreparationToolsCreator.Name = "lblPreparationToolsCreator";
-            this.lblPreparationToolsCreator.Size = new System.Drawing.Size(119, 14);
+            this.lblPreparationToolsCreator.Size = new System.Drawing.Size(136, 18);
             this.lblPreparationToolsCreator.TabIndex = 0;
             this.lblPreparationToolsCreator.Text = "<CreatorUpdator>";
             // 
@@ -11591,7 +11591,7 @@
             // 
             this.toolStripLabel13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel13.Name = "toolStripLabel13";
-            this.toolStripLabel13.Size = new System.Drawing.Size(97, 28);
+            this.toolStripLabel13.Size = new System.Drawing.Size(123, 28);
             this.toolStripLabel13.Text = "Preparation info";
             // 
             // btnPrepAnalPrepPrintLabel
@@ -11600,7 +11600,7 @@
             this.btnPrepAnalPrepPrintLabel.Image = global::DSA_lims.Properties.Resources.printer;
             this.btnPrepAnalPrepPrintLabel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrepAnalPrepPrintLabel.Name = "btnPrepAnalPrepPrintLabel";
-            this.btnPrepAnalPrepPrintLabel.Size = new System.Drawing.Size(88, 28);
+            this.btnPrepAnalPrepPrintLabel.Size = new System.Drawing.Size(104, 28);
             this.btnPrepAnalPrepPrintLabel.Text = "Print label";
             this.btnPrepAnalPrepPrintLabel.Click += new System.EventHandler(this.btnPrepAnalPrepPrintLabel_Click);
             // 
@@ -11656,7 +11656,7 @@
             // 
             this.toolStripLabel10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel10.Name = "toolStripLabel10";
-            this.toolStripLabel10.Size = new System.Drawing.Size(79, 28);
+            this.toolStripLabel10.Size = new System.Drawing.Size(100, 28);
             this.toolStripLabel10.Text = "Attachments";
             // 
             // toolStripSeparator26
@@ -11669,7 +11669,7 @@
             this.btnPrepAnalPrepScanAttachment.Image = global::DSA_lims.Properties.Resources.scan;
             this.btnPrepAnalPrepScanAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrepAnalPrepScanAttachment.Name = "btnPrepAnalPrepScanAttachment";
-            this.btnPrepAnalPrepScanAttachment.Size = new System.Drawing.Size(60, 28);
+            this.btnPrepAnalPrepScanAttachment.Size = new System.Drawing.Size(68, 28);
             this.btnPrepAnalPrepScanAttachment.Text = "Scan";
             this.btnPrepAnalPrepScanAttachment.Click += new System.EventHandler(this.btnPrepAnalPrepScanAttachment_Click);
             // 
@@ -11678,7 +11678,7 @@
             this.btnPrepAnalPrepBrowseAttachment.Image = global::DSA_lims.Properties.Resources.projects;
             this.btnPrepAnalPrepBrowseAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrepAnalPrepBrowseAttachment.Name = "btnPrepAnalPrepBrowseAttachment";
-            this.btnPrepAnalPrepBrowseAttachment.Size = new System.Drawing.Size(73, 28);
+            this.btnPrepAnalPrepBrowseAttachment.Size = new System.Drawing.Size(85, 28);
             this.btnPrepAnalPrepBrowseAttachment.Text = "Browse";
             this.btnPrepAnalPrepBrowseAttachment.Click += new System.EventHandler(this.btnPrepAnalPrepBrowseAttachment_Click);
             // 
@@ -11687,7 +11687,7 @@
             this.btnPrepAnalPrepDeleteAttachment.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnPrepAnalPrepDeleteAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrepAnalPrepDeleteAttachment.Name = "btnPrepAnalPrepDeleteAttachment";
-            this.btnPrepAnalPrepDeleteAttachment.Size = new System.Drawing.Size(68, 28);
+            this.btnPrepAnalPrepDeleteAttachment.Size = new System.Drawing.Size(81, 28);
             this.btnPrepAnalPrepDeleteAttachment.Text = "Delete";
             this.btnPrepAnalPrepDeleteAttachment.Click += new System.EventHandler(this.btnPrepAnalPrepDeleteAttachment_Click);
             // 
@@ -11696,9 +11696,9 @@
             this.tabPrepAnalAnalysis.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabPrepAnalAnalysis.Controls.Add(this.panel76);
             this.tabPrepAnalAnalysis.Controls.Add(this.panel63);
-            this.tabPrepAnalAnalysis.Location = new System.Drawing.Point(4, 22);
+            this.tabPrepAnalAnalysis.Location = new System.Drawing.Point(4, 25);
             this.tabPrepAnalAnalysis.Name = "tabPrepAnalAnalysis";
-            this.tabPrepAnalAnalysis.Size = new System.Drawing.Size(974, 735);
+            this.tabPrepAnalAnalysis.Size = new System.Drawing.Size(974, 745);
             this.tabPrepAnalAnalysis.TabIndex = 4;
             this.tabPrepAnalAnalysis.Text = "Analyses";
             // 
@@ -11709,7 +11709,7 @@
             this.panel76.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel76.Location = new System.Drawing.Point(0, 272);
             this.panel76.Name = "panel76";
-            this.panel76.Size = new System.Drawing.Size(974, 463);
+            this.panel76.Size = new System.Drawing.Size(974, 473);
             this.panel76.TabIndex = 3;
             // 
             // panel9
@@ -11719,7 +11719,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(974, 437);
+            this.panel9.Size = new System.Drawing.Size(974, 447);
             this.panel9.TabIndex = 4;
             // 
             // gridPrepAnalResults
@@ -11738,7 +11738,7 @@
             this.gridPrepAnalResults.RowHeadersVisible = false;
             this.gridPrepAnalResults.RowHeadersWidth = 62;
             this.gridPrepAnalResults.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridPrepAnalResults.Size = new System.Drawing.Size(974, 406);
+            this.gridPrepAnalResults.Size = new System.Drawing.Size(974, 416);
             this.gridPrepAnalResults.TabIndex = 0;
             // 
             // toolsSampleResRes
@@ -11762,7 +11762,7 @@
             // 
             this.toolStripLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel7.Name = "toolStripLabel7";
-            this.toolStripLabel7.Size = new System.Drawing.Size(111, 28);
+            this.toolStripLabel7.Size = new System.Drawing.Size(140, 28);
             this.toolStripLabel7.Text = "Identified isotopes";
             // 
             // toolStripSeparator28
@@ -11775,7 +11775,7 @@
             this.btnPrepAnalAddResult.Image = global::DSA_lims.Properties.Resources.new1;
             this.btnPrepAnalAddResult.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrepAnalAddResult.Name = "btnPrepAnalAddResult";
-            this.btnPrepAnalAddResult.Size = new System.Drawing.Size(57, 28);
+            this.btnPrepAnalAddResult.Size = new System.Drawing.Size(65, 28);
             this.btnPrepAnalAddResult.Text = "Add";
             this.btnPrepAnalAddResult.Click += new System.EventHandler(this.btnPrepAnalAddResult_Click);
             // 
@@ -11784,7 +11784,7 @@
             this.btnPrepAnalEditResult.Image = global::DSA_lims.Properties.Resources.edit;
             this.btnPrepAnalEditResult.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrepAnalEditResult.Name = "btnPrepAnalEditResult";
-            this.btnPrepAnalEditResult.Size = new System.Drawing.Size(55, 28);
+            this.btnPrepAnalEditResult.Size = new System.Drawing.Size(63, 28);
             this.btnPrepAnalEditResult.Text = "Edit";
             this.btnPrepAnalEditResult.Click += new System.EventHandler(this.btnPrepAnalEditResult_Click);
             // 
@@ -11793,7 +11793,7 @@
             this.btnPrepAnalRemoveResult.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnPrepAnalRemoveResult.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrepAnalRemoveResult.Name = "btnPrepAnalRemoveResult";
-            this.btnPrepAnalRemoveResult.Size = new System.Drawing.Size(78, 28);
+            this.btnPrepAnalRemoveResult.Size = new System.Drawing.Size(91, 28);
             this.btnPrepAnalRemoveResult.Text = "Remove";
             this.btnPrepAnalRemoveResult.Click += new System.EventHandler(this.btnPrepAnalRemoveResult_Click);
             // 
@@ -11801,7 +11801,7 @@
             // 
             this.toolStripLabel57.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel57.Name = "toolStripLabel57";
-            this.toolStripLabel57.Size = new System.Drawing.Size(197, 28);
+            this.toolStripLabel57.Size = new System.Drawing.Size(248, 28);
             this.toolStripLabel57.Text = "Sigma Activity: 2, Sigma MDA: 1.645";
             // 
             // panel14
@@ -11811,7 +11811,7 @@
             this.panel14.Controls.Add(this.btnPrepAnalAnalDiscard);
             this.panel14.Controls.Add(this.btnPrepAnalAnalUpdate);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel14.Location = new System.Drawing.Point(0, 437);
+            this.panel14.Location = new System.Drawing.Point(0, 447);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(974, 26);
             this.panel14.TabIndex = 5;
@@ -11824,7 +11824,7 @@
             this.cboxPrepAnalAnalWorkflowStatus.FormattingEnabled = true;
             this.cboxPrepAnalAnalWorkflowStatus.Location = new System.Drawing.Point(90, 0);
             this.cboxPrepAnalAnalWorkflowStatus.Name = "cboxPrepAnalAnalWorkflowStatus";
-            this.cboxPrepAnalAnalWorkflowStatus.Size = new System.Drawing.Size(140, 23);
+            this.cboxPrepAnalAnalWorkflowStatus.Size = new System.Drawing.Size(140, 26);
             this.cboxPrepAnalAnalWorkflowStatus.TabIndex = 6;
             this.cboxPrepAnalAnalWorkflowStatus.ValueMember = "Id";
             this.cboxPrepAnalAnalWorkflowStatus.SelectedIndexChanged += new System.EventHandler(this.cboxPrepAnalAnalWorkflowStatus_SelectedIndexChanged);
@@ -11948,7 +11948,7 @@
             this.tbPrepAnalAnalMDALib.Location = new System.Drawing.Point(138, 93);
             this.tbPrepAnalAnalMDALib.Name = "tbPrepAnalAnalMDALib";
             this.tbPrepAnalAnalMDALib.ReadOnly = true;
-            this.tbPrepAnalAnalMDALib.Size = new System.Drawing.Size(400, 21);
+            this.tbPrepAnalAnalMDALib.Size = new System.Drawing.Size(400, 24);
             this.tbPrepAnalAnalMDALib.TabIndex = 4;
             this.tbPrepAnalAnalMDALib.TextChanged += new System.EventHandler(this.tbPrepAnalAnalMDALib_TextChanged);
             // 
@@ -11968,7 +11968,7 @@
             this.tbPrepAnalAnalNuclLib.Location = new System.Drawing.Point(138, 63);
             this.tbPrepAnalAnalNuclLib.Name = "tbPrepAnalAnalNuclLib";
             this.tbPrepAnalAnalNuclLib.ReadOnly = true;
-            this.tbPrepAnalAnalNuclLib.Size = new System.Drawing.Size(400, 21);
+            this.tbPrepAnalAnalNuclLib.Size = new System.Drawing.Size(400, 24);
             this.tbPrepAnalAnalNuclLib.TabIndex = 3;
             this.tbPrepAnalAnalNuclLib.TextChanged += new System.EventHandler(this.tbPrepAnalAnalNuclLib_TextChanged);
             // 
@@ -11988,7 +11988,7 @@
             this.tbPrepAnalAnalSpecRef.Location = new System.Drawing.Point(138, 33);
             this.tbPrepAnalAnalSpecRef.MaxLength = 256;
             this.tbPrepAnalAnalSpecRef.Name = "tbPrepAnalAnalSpecRef";
-            this.tbPrepAnalAnalSpecRef.Size = new System.Drawing.Size(400, 21);
+            this.tbPrepAnalAnalSpecRef.Size = new System.Drawing.Size(400, 24);
             this.tbPrepAnalAnalSpecRef.TabIndex = 2;
             this.tbPrepAnalAnalSpecRef.TextChanged += new System.EventHandler(this.tbPrepAnalAnalSpecRef_TextChanged);
             // 
@@ -12033,7 +12033,7 @@
             this.cboxPrepAnalAnalUnit.FormattingEnabled = true;
             this.cboxPrepAnalAnalUnit.Location = new System.Drawing.Point(0, 0);
             this.cboxPrepAnalAnalUnit.Name = "cboxPrepAnalAnalUnit";
-            this.cboxPrepAnalAnalUnit.Size = new System.Drawing.Size(259, 23);
+            this.cboxPrepAnalAnalUnit.Size = new System.Drawing.Size(259, 26);
             this.cboxPrepAnalAnalUnit.TabIndex = 0;
             this.cboxPrepAnalAnalUnit.ValueMember = "id";
             this.cboxPrepAnalAnalUnit.SelectedIndexChanged += new System.EventHandler(this.cboxPrepAnalAnalUnit_SelectedIndexChanged);
@@ -12046,7 +12046,7 @@
             this.cboxPrepAnalAnalUnitType.FormattingEnabled = true;
             this.cboxPrepAnalAnalUnitType.Location = new System.Drawing.Point(259, 0);
             this.cboxPrepAnalAnalUnitType.Name = "cboxPrepAnalAnalUnitType";
-            this.cboxPrepAnalAnalUnitType.Size = new System.Drawing.Size(141, 23);
+            this.cboxPrepAnalAnalUnitType.Size = new System.Drawing.Size(141, 26);
             this.cboxPrepAnalAnalUnitType.TabIndex = 1;
             this.cboxPrepAnalAnalUnitType.ValueMember = "Id";
             this.cboxPrepAnalAnalUnitType.SelectedIndexChanged += new System.EventHandler(this.cboxPrepAnalAnalUnitType_SelectedIndexChanged);
@@ -12068,7 +12068,7 @@
             this.lblAnalysisToolsCreator.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAnalysisToolsCreator.Location = new System.Drawing.Point(6, 6);
             this.lblAnalysisToolsCreator.Name = "lblAnalysisToolsCreator";
-            this.lblAnalysisToolsCreator.Size = new System.Drawing.Size(70, 14);
+            this.lblAnalysisToolsCreator.Size = new System.Drawing.Size(80, 18);
             this.lblAnalysisToolsCreator.TabIndex = 0;
             this.lblAnalysisToolsCreator.Text = "<Creator>";
             // 
@@ -12090,7 +12090,7 @@
             // 
             this.toolStripLabel59.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel59.Name = "toolStripLabel59";
-            this.toolStripLabel59.Size = new System.Drawing.Size(50, 28);
+            this.toolStripLabel59.Size = new System.Drawing.Size(67, 28);
             this.toolStripLabel59.Text = "Analysis";
             // 
             // toolStripSeparator53
@@ -12105,13 +12105,13 @@
             this.ddPrepAnalImport2.Image = global::DSA_lims.Properties.Resources.import;
             this.ddPrepAnalImport2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ddPrepAnalImport2.Name = "ddPrepAnalImport2";
-            this.ddPrepAnalImport2.Size = new System.Drawing.Size(89, 28);
+            this.ddPrepAnalImport2.Size = new System.Drawing.Size(101, 28);
             this.ddPrepAnalImport2.Text = "Import...";
             // 
             // miImportLISFile2
             // 
             this.miImportLISFile2.Name = "miImportLISFile2";
-            this.miImportLISFile2.Size = new System.Drawing.Size(147, 22);
+            this.miImportLISFile2.Size = new System.Drawing.Size(185, 26);
             this.miImportLISFile2.Text = "Import LIS file";
             this.miImportLISFile2.Click += new System.EventHandler(this.miImportLISFile_Click);
             // 
@@ -12167,7 +12167,7 @@
             // 
             this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(79, 28);
+            this.toolStripLabel1.Size = new System.Drawing.Size(100, 28);
             this.toolStripLabel1.Text = "Attachments";
             // 
             // toolStripSeparator27
@@ -12180,7 +12180,7 @@
             this.btnPrepAnalAnalScanAttachment.Image = global::DSA_lims.Properties.Resources.scan;
             this.btnPrepAnalAnalScanAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrepAnalAnalScanAttachment.Name = "btnPrepAnalAnalScanAttachment";
-            this.btnPrepAnalAnalScanAttachment.Size = new System.Drawing.Size(60, 28);
+            this.btnPrepAnalAnalScanAttachment.Size = new System.Drawing.Size(68, 28);
             this.btnPrepAnalAnalScanAttachment.Text = "Scan";
             this.btnPrepAnalAnalScanAttachment.Click += new System.EventHandler(this.btnPrepAnalAnalScanAttachment_Click);
             // 
@@ -12189,7 +12189,7 @@
             this.btnPrepAnalAnalBrowseAttachment.Image = global::DSA_lims.Properties.Resources.projects;
             this.btnPrepAnalAnalBrowseAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrepAnalAnalBrowseAttachment.Name = "btnPrepAnalAnalBrowseAttachment";
-            this.btnPrepAnalAnalBrowseAttachment.Size = new System.Drawing.Size(73, 28);
+            this.btnPrepAnalAnalBrowseAttachment.Size = new System.Drawing.Size(85, 28);
             this.btnPrepAnalAnalBrowseAttachment.Text = "Browse";
             this.btnPrepAnalAnalBrowseAttachment.Click += new System.EventHandler(this.btnPrepAnalAnalBrowseAttachment_Click);
             // 
@@ -12198,7 +12198,7 @@
             this.btnPrepAnalAnalDeleteAttachment.Image = global::DSA_lims.Properties.Resources.delete;
             this.btnPrepAnalAnalDeleteAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrepAnalAnalDeleteAttachment.Name = "btnPrepAnalAnalDeleteAttachment";
-            this.btnPrepAnalAnalDeleteAttachment.Size = new System.Drawing.Size(68, 28);
+            this.btnPrepAnalAnalDeleteAttachment.Size = new System.Drawing.Size(81, 28);
             this.btnPrepAnalAnalDeleteAttachment.Text = "Delete";
             this.btnPrepAnalAnalDeleteAttachment.Click += new System.EventHandler(this.btnPrepAnalAnalDeleteAttachment_Click);
             // 
@@ -12210,7 +12210,7 @@
             this.btnMenu,
             this.lblCurrentTab,
             this.btnBack});
-            this.tools.Location = new System.Drawing.Point(0, 24);
+            this.tools.Location = new System.Drawing.Point(0, 28);
             this.tools.Name = "tools";
             this.tools.Size = new System.Drawing.Size(1390, 31);
             this.tools.TabIndex = 5;
@@ -12222,7 +12222,7 @@
             this.btnMenu.Image = global::DSA_lims.Properties.Resources.menu;
             this.btnMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(28, 28);
+            this.btnMenu.Size = new System.Drawing.Size(29, 28);
             this.btnMenu.Text = "Menu";
             this.btnMenu.Click += new System.EventHandler(this.miMainMenuView_Click);
             // 
@@ -12231,7 +12231,7 @@
             this.lblCurrentTab.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.lblCurrentTab.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblCurrentTab.Name = "lblCurrentTab";
-            this.lblCurrentTab.Size = new System.Drawing.Size(98, 28);
+            this.lblCurrentTab.Size = new System.Drawing.Size(126, 28);
             this.lblCurrentTab.Text = "<lblCurrentTab>";
             // 
             // btnBack
@@ -12240,14 +12240,14 @@
             this.btnBack.Image = global::DSA_lims.Properties.Resources.left;
             this.btnBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(28, 28);
+            this.btnBack.Size = new System.Drawing.Size(29, 28);
             this.btnBack.Text = "toolStripButton25";
             this.btnBack.ToolTipText = "Back";
             this.btnBack.Click += new System.EventHandler(this.miBack_Click);
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1390, 879);
             this.Controls.Add(this.tabs);

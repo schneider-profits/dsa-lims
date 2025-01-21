@@ -62,7 +62,7 @@ namespace DSA_lims
         {
             InitializeComponent();
 
-            SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
+            //SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
 
             Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en");
             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en");
